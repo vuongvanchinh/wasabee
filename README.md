@@ -7,5 +7,5 @@
     ```
 ## Trước khi viết code scss
 ```
-sass scss:css
+sass --watch scss:css
 ```
