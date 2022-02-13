@@ -3,7 +3,6 @@
 .header {
   &__banner {
     height: 100px;
-    background-color: yellow;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -38,6 +37,9 @@
           border-bottom: 2px solid $color-06;
           outline: 0;
           width: 450px;
+          &::placeholder {
+              color: $color-01;
+          }
         }
         button {
           height: 100%;
@@ -55,15 +57,6 @@
           }
         }
 
-        input {
-          padding: 0.5rem 0;
-          padding-right: $padding-right;
-          border: 0;
-          border-bottom: 2px solid $color-03;
-          outline: 0;
-          width: 450px;
-        }
-
         .language-option {
           border-left: 2px solid $color-06;
           border-right: 2px solid $color-06;
@@ -76,17 +69,18 @@
             align-items: center;
 
             li {
-              @extend .text-04;
-              @extend .font-600;
+              color: $color-07;
+              font-weight: 600;
               font-size: 0.875rem;
 
               &:first-child {
                 margin-right: 1rem;
               }
               &.selected {
-                @extend .text-01;
-                @extend .font-600;
+                color: $color-01;
+                font-weight: 600;
                 font-size: 1rem;
+                background-color: red;
               }
             }
           }
@@ -102,17 +96,19 @@
       align-items: center;
       display: flex;
       ul {
-        display: flex;
-        align-items: center;
-
-        .nav-item {
-          text-transform: uppercase;
-          margin-right: 2rem;
-          padding: 0.5rem;
-          font-size: 0.875rem;
-          color: $color-10;
-          font-weight: 600;
-        }
+          display: flex;
+          align-items: center;
+          font-size: $sm-text;
+          
+          li:first-child {
+              margin-right: 1rem;
+              
+          }
+          li.selected {
+              color: $color-01;
+              font-size: $lg-text;
+              font-weight: 600;
+          }
       }
     }
   }
@@ -120,13 +116,15 @@
     background-color: $bg-05;
     display: flex;
     justify-content: center;
+    align-items: center;
 
     .nav-item {
       text-transform: uppercase;
       margin-right: 2rem;
       padding: 0.5rem;
       font-size: 0.875rem;
-      color: $color-01;
+      color: $color-10;
+      font-weight: 600;
     }
   }
 }

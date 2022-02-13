@@ -29,7 +29,7 @@
     width: $w;
     height: $w;
     position: absolute;
-    top: calc(50% - #{$w / 2});
+    top: calc(50% - $w/2);
     right: 1rem;
     background-image: var(--arrow);
     background-position: center;
