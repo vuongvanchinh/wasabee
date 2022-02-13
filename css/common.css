@@ -1159,17 +1159,17 @@
     padding-top: 6rem;
     padding-bottom: 6rem;
   }
-
-  .md-px-0 {
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  .md-py-0 {
-    padding-top: 0;
-    padding-bottom: 0;
-  }
 }
+.md-px-0 {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.md-py-0 {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
 @media only screen and (max-width: 600px) {
   .sm-px-0 {
     padding-left: 0rem;
@@ -1300,17 +1300,17 @@
     padding-top: 6rem;
     padding-bottom: 6rem;
   }
-
-  .sm-px-0 {
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  .sm-py-0 {
-    padding-left: 0;
-    padding-right: 0;
-  }
 }
+.sm-px-0 {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.sm-py-0 {
+  padding-left: 0;
+  padding-right: 0;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
