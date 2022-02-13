@@ -1,0 +1,15 @@
+.slick-arrow {
+    $w: 50px;
+    width: $w;
+    height: $w;
+    color: red;
+    z-index: 1;
+
+    &.slick-prev {
+        left: 0;
+    }
+    &.slick-next {
+        right: 0;
+
+    }
+}

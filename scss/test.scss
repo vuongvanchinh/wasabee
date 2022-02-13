@@ -1,0 +1,45 @@
+@import './mixins';
+
+.product-contact-form {
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    padding: 0.5rem;
+
+    .fields {
+        display: flex;
+        span {
+            flex-grow: 1;
+        }
+        input[type="text"], input[type="tel"] {
+            font-size: 13px;
+            height: 33px;
+            background: #fff;
+            border: 1px solid #ced4da;
+            box-shadow: unset;
+            margin-right: 10px;
+            border-radius: 6px;
+            padding: 0 0.75rem;
+            outline: none;
+            color: #333;
+            width: 100%;
+        
+        }
+        input[type="submit"] {
+            background: #ff8a35;
+            border-radius: 32px;
+            height: 33px;
+            border: 0;
+            padding: 0 0.75rem;
+        }
+    }
+}
+
+@media screen and (max-width: 767.98px) {
+    .product-contact-form {
+        .fields {
+            input {
+                width: 100%;
+            }
+        }
+    }
+}

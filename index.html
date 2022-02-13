@@ -1,19 +1,332 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- <link rel="stylesheet" href="style.css.map"> -->
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="common.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="da.css">
-    <link rel="stylesheet" href="chinh.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/da.css" />
+    <link rel="stylesheet" href="css/chinh.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/custom-slick-slider.css">
+    <link rel="stylesheet" href="css/index.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <!-- Add the slick-theme.css if you want default styling -->
+   
+
+
     <title>Document</title>
-</head>
-<body>
-    <a href="#">Chinh</a>
-</body>
+  </head>
+  <body>
+    <div class="container">
+      <main>
+        <!-- Header  -->
+        <header class="header">
+          <div class="header__banner">Wasabe | Hello 2022</div>
+          <div class="header__main">
+            <div class="logo">
+              <img src="./media//svgs/logo.png" alt="logo" srcset="" />
+            </div>
+            <div class="search">
+              <form>
+                <input
+                  type="text"
+                  placeholder="Tìm kiếm sản phẩm phù hợp với bạn"
+                />
+                <button type="submit">Submit</button>
+              </form>
+            </div>
+            <div class="language-option">
+              <ul>
+                <li class="selected"><a href="#">Vie</a></li>
+                <li><a href="#">Eng</a></li>
+              </ul>
+            </div>
+            <div class="shop-manage">
+              <div class="account"><a href="#"></a></div>
+              <div class="love"><a href="#"></a></div>
+              <div class="shopping-cart"><a href="#"></a></div>
+            </div>
+          </div>
+          <ul class="header__nav flex">
+            <li class="nav-item"><a href="#">Mới</a></li>
+            <li class="nav-item"><a href="#">Nữ</a></li>
+            <li class="nav-item"><a href="#">Nam</a></li>
+            <li class="nav-item"><a href="#">Bộ sưu tập</a></li>
+            <li class="nav-item"><a href="#">Trend</a></li>
+            <li class="nav-item"><a href="#">Khuyến mãi</a></li>
+            <li class="nav-item"><a href="#">Hàng bán chạy</a></li>
+            <li class="nav-item"><a href="#">Hàng khuyến mãi lớn</a></li>
+            <li class="nav-item"><a href="#">Tiêu thụ lớn</a></li>
+          </ul>
+        </header>
+        <!-- End Header -->
+        <div class="main-content bg-06">
+          <!-- Slider banner -->
+          <section></section>
+          <!-- End Slider Banner -->
+
+          <!-- Coupon sectbion -->
+          <section>
+
+              <div class="grid grid-cols-2 sm-grid-cols-1 px-12 md-px-6 sm-px-0 py-6 gap-4">
+                    <div class="coupon bg-07">
+                        <div class="coupon__info">
+                            <h4 class="heading-02">Welcome Deal</h4>
+                            <p class="text-sm text-05">Lorem ipsum Aliquam,in adipisci magnam? Cumque nisi quod molestias?</p>
+
+                        </div>
+                        <div class="coupon__img">
+                            <img src="./media//svgs/coupon.png" alt="" srcset="">
+                        </div>
+                    </div>
+                    <div class="coupon bg-08">
+                        <div class="coupon__info">
+                            <h4 class="heading-02">Welcome Deal</h4>
+                            <p class="text-sm text-06">Lorem ipsum Aliquam,in adipisci magnam? Cumque nisi quod molestias?</p>
+
+                        </div>
+                        <div class="coupon__img">
+                            <img src="./media//svgs/coupon.png" alt="" srcset="">
+                        </div>
+                    </div>
+              </div>
+          </section>
+          <!-- End Coupon sectbion -->
+
+          <!-- New product Section -->
+          <section>
+              <h2 class="heading-02 text-center">Sản phẩm mới</h2>
+              <div>
+                <div class="new-products-slider">
+                    <div>
+                      <div class="product-card">
+                        <div class="product-card__inner">
+                          
+                          <div class="product-card__imgs">
+                            <img src="./media/imgs/product01.png">
+                            <img src="./media/imgs/product02.png">
+                            <div class="product-discount">
+                              - 20<sup>%</sup>
+                            </div>
+                            <div class="product-love">
+                              Love
+                            </div>
+                          </div>
+                          <div class="product-card__info">
+                            <h1 class="product__title">Knock on wood</h1>
+                            <p class="product__desc">Jacket with recyled-fabric filling</p>
+                            <div class="product__price">
+                              <p class="price-new">
+                                441,750 Vnđ
+                              </p>
+                              <p class="price-old">
+                                849,750 Vnđ
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div >
+                    </div>
+                    <div>
+                      <div class="product-card">
+                        <div class="product-card__inner">
+                         
+                          <div class="product-card__imgs">
+                            <img src="./media/imgs/product01.png">
+                            <img src="./media/imgs/product02.png">
+                            <div class="product-discount">
+                              - 20<sup>%</sup>
+                            </div>
+                            <div class="product-love">
+                              Love
+                            </div>
+                          </div>
+                          <div class="product-card__info">
+                            <h1 class="product__title">Knock on wood</h1>
+                            <p class="product__desc">Jacket with recyled-fabric filling</p>
+                            <div class="product__price">
+                              <p class="price-new">
+                                441,750 Vnđ
+                              </p>
+                              <p class="price-old">
+                                849,750 Vnđ
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div >
+                    </div>
+                    <div>
+                      <div class="product-card">
+                        <div class="product-card__inner">
+                          
+                          <div class="product-card__imgs">
+                            <img src="./media/imgs/product01.png">
+                            <img src="./media/imgs/product02.png">
+                            <div class="product-discount">
+                              - 20<sup>%</sup>
+                            </div>
+                            <div class="product-love">
+                              Love
+                            </div>
+                          </div>
+                          <div class="product-card__info">
+                            <h1 class="product__title">Knock on wood</h1>
+                            <p class="product__desc">Jacket with recyled-fabric filling</p>
+                            <div class="product__price">
+                              <p class="price-new">
+                                441,750 Vnđ
+                              </p>
+                              <p class="price-old">
+                                849,750 Vnđ
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div >
+                    </div>
+                    <div>
+                      <div class="product-card">
+                        <div class="product-card__inner">
+                          
+                          <div class="product-card__imgs">
+                            <img src="./media/imgs/product01.png">
+                            <img src="./media/imgs/product02.png">
+                            <div class="product-discount">
+                              - 20<sup>%</sup>
+                            </div>
+                            <div class="product-love">
+                              Love
+                            </div>
+                          </div>
+                          <div class="product-card__info">
+                            <h1 class="product__title">Knock on wood</h1>
+                            <p class="product__desc">Jacket with recyled-fabric filling</p>
+                            <div class="product__price">
+                              <p class="price-new">
+                                441,750 Vnđ
+                              </p>
+                              <p class="price-old">
+                                849,750 Vnđ
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div >
+                    </div>
+                    <div>
+                      <div class="product-card">
+                        <div class="product-card__inner">
+                          <div class="product-card__imgs">
+                            <img src="./media/imgs/product01.png">
+                            <img src="./media/imgs/product02.png">
+                            <div class="product-discount">
+                              - 20<sup>%</sup>
+                            </div>
+                            <div class="product-love">
+                              Love
+                            </div>
+                          </div>
+                          <div class="product-card__info">
+                            <h1 class="product__title">Knock on wood</h1>
+                            <p class="product__desc">Jacket with recyled-fabric filling</p>
+                            <div class="product__price">
+                              <p class="price-new">
+                                441,750 Vnđ
+                              </p>
+                              <p class="price-old">
+                                849,750 Vnđ
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div >
+                    </div>
+              </div>
+          </section>
+          <!-- End New product Section -->
+
+          <!-- popular product Section -->
+          <section></section>
+          <!-- End popular product Section -->
+
+          <!-- Middle banner Section -->
+          <section></section>
+          <!-- End Middle banner Section -->
+
+          <!--Colection Section -->
+          <section class="bg-02">Heloo</section>
+          <!-- End Colection Section -->
+        </div>
+
+        <footer class="footer bg-05">
+          <div
+            class="px-12 md-px-6 py-6 grid grid-cols-4 md-grid-cols-2 sm-grid-cols-1 gap-4"
+          >
+            <div>
+              <h4 class="headding-05">hỗ trợ người dùng</h4>
+              <p class="text-sm text-04">Liên hệ cho chúng tôi theo số</p>
+              <div class="text-icon mb-3">
+                <div class="text-icon__icon"></div>
+                <div class="text-icon__text text-01 text-xl">0123-456-789</div>
+              </div>
+              <p class="text-sm text-04">Hoặc gửi Email cho chúng tôi</p>
+              <div class="text-icon mb-4">
+                <div class="text-icon__icon text-01"></div>
+                <div class="text-icon__text text-01">info@wasabee.com</div>
+              </div>
+              <div class="social-icons">
+                <a href="facebook.com" class="social-icon"></a>
+                <a href="" class="social-icon"></a>
+                <a href="" class="social-icon"></a>
+              </div>
+            </div>
+            <div>
+              <h4 class="headding-05">Thương hiệu và xu hướng</h4>
+              <p><a href="#" class="text-01">Về Wasabee</a></p>
+              <p><a href="#" class="text-01">Bộ sưu tập</a></p>
+              <p><a href="#" class="text-01">Sản phẩm mới</a></p>
+              <p><a href="#" class="text-01">Thời trang nữ</a></p>
+              <p><a href="#" class="text-01">Thời trang nam</a></p>
+              <p><a href="#" class="text-01">Cửa hàng</a></p>
+            </div>
+            <div>
+              <h4 class="headding-05">Tài khoản</h4>
+              <p><a href="#" class="text-01">Đơn hàng</a></p>
+              <p><a href="#" class="text-01">Sản phẩm yêu thích</a></p>
+              <p><a href="#" class="text-01">Cài đặt tài khoản</a></p>
+              <p><a href="#" class="text-01">Đổi mật khẩu</a></p>
+            </div>
+            <div>
+              <h4 class="headding-05">Điều khoản mua hàng</h4>
+              <p><a href="#" class="text-01">Vận chuyển</a></p>
+              <p><a href="#" class="text-01">Chính sách đổi trả hàng</a></p>
+              <p><a href="#" class="text-01">Thanh toán</a></p>
+              <p><a href="#" class="text-01">Hướng dẫn kích thước</a></p>
+              <p><a href="#" class="text-01">Điều khoản và điều kiện</a></p>
+              <p><a href="#" class="text-01">Chính sách bảo mật</a></p>
+            </div>
+          </div>
+          <div class="px-12 py-2 text-01 copy-right">
+            2022 Wasabee Store Powered bg Wasabee Store
+          </div>
+        </footer>
+      </main>
+    </div>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script src="./js/slider.js"></script>
+    <script src="./js/index.js"></script>
+    <script>
+        
+    </script>
+  </body>
 </html>

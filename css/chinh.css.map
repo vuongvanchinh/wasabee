@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":[],"names":[],"mappings":"","file":"chinh.css"}
+{"version":3,"sourceRoot":"","sources":["../scss/chinh.scss","../scss/_variables.scss"],"names":[],"mappings":"AAEA;EACI;EACA;EACA,kBCqBI","file":"chinh.css"}
