@@ -1,5 +1,219 @@
-@import url("https://fonts.google.com/specimen/Fahkwang?query=fa&subset=vietnamese");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+.bg-00 {
+  background-color: #f6fefe;
+}
+
+.bg-01 {
+  background-color: #021d21;
+}
+
+.bg-02 {
+  background-color: #aae5de;
+}
+
+.bg-03 {
+  background-color: #707070;
+}
+
+.bg-04 {
+  background-color: #28a1b2;
+}
+
+.bg-05 {
+  background-color: #e9d7bf;
+}
+
+.bg-06 {
+  background-color: #e9d7bf;
+}
+
+.bg-07 {
+  background-color: #707070;
+}
+
+.bg-08 {
+  background-color: #393e41;
+}
+
+.tet-00 {
+  color: #fff;
+}
+
+.text-01 {
+  color: #021d21;
+}
+
+.text-02 {
+  color: #032e34;
+}
+
+.text-03 {
+  color: #393e41;
+}
+
+.text-04 {
+  color: #707070;
+}
+
+.text-05 {
+  color: #aae5de;
+}
+
+.text-06 {
+  color: #e9d7bf;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+}
+
+.text-md {
+  font-size: 1rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+}
+
+.text-2xl {
+  font-size: 1.75rem;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.font-400 {
+  font-weight: 400;
+}
+
+.font-500 {
+  font-weight: 500;
+}
+
+.font-600 {
+  font-weight: 600;
+}
+
+.font-700 {
+  font-weight: 700;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.bg-00 {
+  background-color: #f6fefe;
+}
+
+.bg-01 {
+  background-color: #021d21;
+}
+
+.bg-02 {
+  background-color: #aae5de;
+}
+
+.bg-03 {
+  background-color: #707070;
+}
+
+.bg-04 {
+  background-color: #28a1b2;
+}
+
+.bg-05 {
+  background-color: #e9d7bf;
+}
+
+.bg-06 {
+  background-color: #e9d7bf;
+}
+
+.bg-07 {
+  background-color: #707070;
+}
+
+.bg-08 {
+  background-color: #393e41;
+}
+
+.tet-00 {
+  color: #fff;
+}
+
+.text-01 {
+  color: #021d21;
+}
+
+.text-02 {
+  color: #032e34;
+}
+
+.text-03 {
+  color: #393e41;
+}
+
+.text-04 {
+  color: #707070;
+}
+
+.text-05 {
+  color: #aae5de;
+}
+
+.text-06 {
+  color: #e9d7bf;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+}
+
+.text-md {
+  font-size: 1rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+}
+
+.text-2xl {
+  font-size: 1.75rem;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.font-400 {
+  font-weight: 400;
+}
+
+.font-500 {
+  font-weight: 500;
+}
+
+.font-600 {
+  font-weight: 600;
+}
+
+.font-700 {
+  font-weight: 700;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
 .flex {
   display: flex;
   flex-wrap: wrap;
@@ -172,7 +386,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Fahkwang" sans-serif;
+  font-family: "Fahkwang", sans-serif;
 }
 
 html {
@@ -400,8 +614,61 @@ li {
   column-gap: 2rem;
 }
 
+@media only screen and (max-width: 1366px) {
+  .md-gap-1 {
+    gap: 0.5rem;
+  }
+
+  .md-gap-2 {
+    gap: 1rem;
+  }
+
+  .md-gap-3 {
+    gap: 1.5rem;
+  }
+
+  .md-gap-4 {
+    gap: 2rem;
+  }
+
+  .md-gap-x-1 {
+    column-gap: 0.5rem;
+  }
+
+  .md-gap-x-2 {
+    column-gap: 1rem;
+  }
+
+  .md-gap-x-3 {
+    column-gap: 1.5rem;
+  }
+
+  .md-gap-x-4 {
+    column-gap: 2rem;
+  }
+
+  .md-gap-y-1 {
+    column-gap: 0.5rem;
+  }
+
+  .md-gap-y-2 {
+    column-gap: 1rem;
+  }
+
+  .md-gap-y-3 {
+    column-gap: 1.5rem;
+  }
+
+  .md-gap-y-4 {
+    column-gap: 2rem;
+  }
+}
 .justify-center {
   justify-content: center;
+}
+
+.space-between {
+  justify-content: space-between;
 }
 
 .items-center {
@@ -416,6 +683,10 @@ li {
 
 .text-center {
   text-align: center;
+}
+
+section {
+  margin-bottom: 2rem;
 }
 
 /*# sourceMappingURL=base.css.map */

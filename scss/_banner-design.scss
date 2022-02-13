@@ -1,0 +1,16 @@
+.banner-design {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: var(--bg);
+    position: relative;
+    
+    // padding: 5rem 0;
+    &__info {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+    }
+}
