@@ -7,9 +7,10 @@
   text-transform: uppercase;
   margin-bottom: 2rem;
   color: $color-10;
-  font-size: 4rem;
+  font-size: 5rem;
   font-weight: bold;
   margin-bottom: 2rem;
+  line-height: 1.2;
 }
 
 .heading-02 {
@@ -66,7 +67,7 @@
 .bg-08 {
   background-color: $color-08;
 }
-.tet-00 {
+.text-00 {
   color: $color-10;
 }
 .text-01 {
@@ -303,3 +304,19 @@
     background-size: contain;
   }
 }
+
+.text-icon {
+  display:flex;
+  align-items: center;
+
+  &__icon {
+    $w: 18px;
+    width: $w;
+    height: $w;
+    
+  }
+  &__text {
+    margin-left: 1rem;
+  }
+
+} 

@@ -383,8 +383,8 @@
   background-color: red;
 }
 .header__main .language-option {
-  border-left: 2px solid #28a1b2;
-  border-right: 2px solid #28a1b2;
+  border-left: 2px solid #e9d7bf;
+  border-right: 2px solid #e9d7bf;
   padding: 0 2rem;
   height: 100%;
   align-items: center;
@@ -402,6 +402,47 @@
   color: #021d21;
   font-size: 1.125rem;
   font-weight: 600;
+}
+.header__main .shop-manage {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+.header__main .shop-manage .account {
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+.header__main .shop-manage .account > a > img {
+  width: 20px;
+  height: 20px;
+}
+.header__main .shop-manage .love {
+  margin-right: 1rem;
+}
+.header__main .shop-manage .love > a > img {
+  width: 20px;
+  height: 20px;
+}
+.header__main .shop-manage .shopping-cart > a {
+  position: relative;
+}
+.header__main .shop-manage .shopping-cart > a > img {
+  width: 20px;
+  height: 20px;
+}
+.header__main .shop-manage .shopping-cart > a span {
+  width: 10px;
+  height: 14px;
+  position: absolute;
+  font-size: 10px;
+  line-height: 14px;
+  text-align: center;
+  color: #fff;
+  font-weight: 700;
+  bottom: 0;
+  right: 0;
+  background-color: #28a1b2;
+  border-radius: 50%;
 }
 .header__nav {
   background-color: #33a1b2;

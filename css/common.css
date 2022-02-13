@@ -2,9 +2,10 @@
   text-transform: uppercase;
   margin-bottom: 2rem;
   color: #fff;
-  font-size: 4rem;
+  font-size: 5rem;
   font-weight: bold;
   margin-bottom: 2rem;
+  line-height: 1.2;
 }
 
 .heading-02 {
@@ -69,7 +70,7 @@
   background-color: #393e41;
 }
 
-.tet-00 {
+.text-00 {
   color: #fff;
 }
 
@@ -1234,6 +1235,18 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
+}
+
+.text-icon {
+  display: flex;
+  align-items: center;
+}
+.text-icon__icon {
+  width: 18px;
+  height: 18px;
+}
+.text-icon__text {
+  margin-left: 1rem;
 }
 
 /*# sourceMappingURL=common.css.map */

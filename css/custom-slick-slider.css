@@ -1,14 +1,33 @@
 .slick-arrow {
-  width: 50px;
-  height: 50px;
-  color: red;
+  width: 30px;
+  height: 40px;
   z-index: 1;
 }
+.slick-arrow:before {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 40px;
+  background-image: url("../media1/right-arrow.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.8;
+}
 .slick-arrow.slick-prev {
-  left: 0;
+  left: 2rem;
+}
+.slick-arrow.slick-prev::before {
+  transform: rotate(180deg);
 }
 .slick-arrow.slick-next {
-  right: 0;
+  right: 2rem;
+}
+
+.new-products-slider .slick-prev {
+  left: 1rem;
+}
+.new-products-slider .slick-next {
+  right: 1rem;
 }
 
 /*# sourceMappingURL=custom-slick-slider.css.map */

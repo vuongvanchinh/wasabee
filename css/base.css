@@ -456,7 +456,13 @@ li {
 }
 
 .items-center {
+  display: flex;
   align-items: center;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
 }
 
 .flex-center {
@@ -471,6 +477,14 @@ li {
 
 section {
   margin-bottom: 2rem;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.w-full {
+  width: 100%;
 }
 
 /*# sourceMappingURL=base.css.map */
