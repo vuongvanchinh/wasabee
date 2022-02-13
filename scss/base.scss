@@ -1,8 +1,6 @@
 @use 'sass:math';
-@import url('https://fonts.google.com/specimen/Fahkwang?query=fa&subset=vietnamese');
 @import 'variables';
 @import 'mixins';
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 $spacing-01: 0.5rem;
 // Flex
 .flex {
@@ -62,7 +60,7 @@ $spacing-01: 0.5rem;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Fahkwang' sans-serif;
+    font-family: 'Fahkwang', sans-serif;
 }
 
 html {
@@ -143,10 +141,31 @@ li {
         column-gap: $i * 0.5rem;
     }
 }
+@include tablet {
+    @for $i from 1 through 4 {
+        .md-gap-#{$i} {
+            gap: $i * 0.5rem;
+        }
+    }
+    @for $i from 1 through 4 {
+        .md-gap-x-#{$i} {
+            column-gap: $i * 0.5rem;
+        }
+    }
+    
+    @for $i from 1 through 4 {
+        .md-gap-y-#{$i} {
+            column-gap: $i * 0.5rem;
+        }
+    }
+}
 
 
 .justify-center {
     justify-content: center;
+}
+.space-between {
+    justify-content: space-between;
 }
 
 .items-center {
@@ -161,4 +180,8 @@ li {
 
 .text-center {
     text-align: center;
+}
+
+section {
+    margin-bottom: 2rem;
 }

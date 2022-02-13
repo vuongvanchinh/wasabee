@@ -1,22 +1,26 @@
-
+.new-products-slider {
+    div.product-card {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
 .product-card {
-    padding-left: 1rem;
-    padding-right: 1rem;
+    
     position: relative;
-
-
     &__inner {
         
         .product-card__imgs {
 
             width: 100%;
-            // height: 400px;
+            height: 120%;
             position: relative;
             cursor: pointer;
+            
 
             img {
                 width: 100%;
-                height: auto;
+                // height: auto;
+                aspect-ratio: 352 / 429;
                 
                 transition: all 0.5s ease-in-out;
                 &:nth-child(2) {
@@ -24,7 +28,7 @@
                     left: 0; 
                     opacity: 0;
                     width: 100%;
-                    height: 100%;
+                    height: auto;
                     position: absolute;
                 }
     
@@ -38,31 +42,75 @@
             }
             .product-discount {
                 position: absolute;
-                top: 1rem;
-                left: 1rem;
-                color:rgb(32, 92, 92);
+                top: 0.5rem;
+                left: 0.5rem;
+                color: $color-03;
                 z-index: 2;
-                font-weight: 600;
+                font-weight: 700;
+                // @extend .text-sm;
+
+
     
             } 
             .product-love {
+                $w: 20px;
+                width: $w;
+                height: $w;
                 position: absolute;
                 bottom: 1rem;
-                right: 1rem;
-                color:rgb(32, 92, 92);
+                right: 0.75rem;
+                color: $color-03;
                 z-index: 2;
                 font-weight: 600;
-    
+                z-index: 2;
+                background-image: url('../media1/heart-white-icon.svg');
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain;
+                &.active {
+                    background-image: url('../media1/heart-fill-icon.svg');
+                }
             } 
 
         }
         .product-card__info {
-            
+            padding-top: 1rem;
+            .product__title {
+                font-size: 16px;
+                text-transform: uppercase;
+                color: $color-01;
+                
+
+            }
+            .product__desc {
+                font-size: 15px;
+            }
             .product__price {
                 display: flex;
                 justify-content: space-between;
                 margin-top: 1rem;
+                font-size: 14px;
+
+                .price-new {
+                    font-size: 18px;
+                    font-weight: 600;
+                    color: $color-01;
+                }
+                .price-old {
+                    text-decoration: line-through;
+                    font-size: 15px;
+                    color: $color-07;
+                    font-weight: 600;
+
+                }
+
             }
+        }
+    }
+    &.price-vertical {
+
+        .product__price {
+            flex-direction: column;
         }
     }
 }
