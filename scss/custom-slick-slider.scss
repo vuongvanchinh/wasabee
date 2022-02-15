@@ -1,14 +1,40 @@
 .slick-arrow {
-  $w: 50px;
-  width: $w;
+  $w: 40px;
+  width: 30px;
   height: $w;
-  color: red;
   z-index: 1;
-
+  // background-color: red;
+  &:before {
+    content: '';
+    display: block;
+    $w: 40px;
+    width: 30px;
+    height: $w;
+   
+    // background-color: red;
+    background-image: url('../media1/right-arrow.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.8;
+  }
   &.slick-prev {
-    left: 0;
+    left: 2rem;
+    &::before {
+      transform: rotate(180deg);
+    }
+    
   }
   &.slick-next {
-    right: 0;
+    right: 2rem;
   }
+}
+.new-products-slider {
+  .slick-prev  {
+    left: 1rem;
+
+  }
+
+  .slick-next {
+    right: 1rem;
+  } 
 }
