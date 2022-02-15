@@ -31,10 +31,12 @@
 .new-products-slider {
   .slick-prev  {
     left: 1rem;
+    top: calc(50% - 50px);
 
   }
 
   .slick-next {
     right: 1rem;
+    top: calc(50% - 50px);
   } 
 }
