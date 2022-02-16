@@ -225,7 +225,9 @@ html {
   font-family: "Fahkwang", sans-serif;
 }
 
-p, span, div {
+p,
+span,
+div {
   font-weight: 600;
 }
 

@@ -40,7 +40,7 @@
           width: 450px;
           font-size: 1rem;
           &::placeholder {
-              color: $color-01;
+            color: $color-01;
           }
         }
         button {
@@ -71,78 +71,73 @@
       align-items: center;
       display: flex;
       ul {
-          display: flex;
-          align-items: center;
-          font-size: $sm-text;
-          margin-bottom: 0;
-          
-          li:first-child {
-              margin-right: 1rem;
-              
-          }
-          li.selected {
-              color: $color-01;
-              font-size: $lg-text;
-              font-weight: 600;
-          }
+        display: flex;
+        align-items: center;
+        font-size: $sm-text;
+        margin-bottom: 0;
+
+        li:first-child {
+          margin-right: 1rem;
+        }
+        li.selected {
+          color: $color-01;
+          font-size: $lg-text;
+          font-weight: 600;
+        }
       }
     }
 
     .shop-manage {
-        display: flex;
-        flex-wrap: nowrap;
-        align-items: center;
-        
-        .account {
-            margin-right: 1rem;
-            margin-left: 1rem;
-            &>a > img {
-                $w: 20px;
+      display: flex;
+      flex-wrap: nowrap;
+      align-items: center;
 
-                width: $w;
-                height: $w;
-            }
+      .account {
+        margin-right: 1rem;
+        margin-left: 1rem;
+        & > a > img {
+          $w: 20px;
+
+          width: $w;
+          height: $w;
         }
+      }
 
-        .love {
-            margin-right: 1rem;
-            &>a > img {
-                $w: 20px;
+      .love {
+        margin-right: 1rem;
+        & > a > img {
+          $w: 20px;
 
-                width: $w;
-                height: $w;
-            }
+          width: $w;
+          height: $w;
         }
-        .shopping-cart {
-            
-            &>a {
-                &> img {
-                    $w: 20px;
-    
-                    width: $w;
-                    height: $w;
-                }
-                position: relative;
-                span {
-                    width: 10px;
-                    height: 14px;
-                    position: absolute;
-                    font-size: 10px;
-                    line-height: 14px;
-                    text-align: center;
-                    color: #fff;
-                    font-weight: 700;
+      }
+      .shopping-cart {
+        & > a {
+          & > img {
+            $w: 20px;
 
-                    bottom: 0;
-                    right: 0;
-                    background-color: $color-03;
-                    border-radius: 50%;
-    
-                }
-            }
-            
+            width: $w;
+            height: $w;
+          }
+          position: relative;
+          span {
+            width: 10px;
+            height: 14px;
+            position: absolute;
+            font-size: 10px;
+            line-height: 14px;
+            text-align: center;
+            color: #fff;
+            font-weight: 700;
+
+            bottom: 0;
+            right: 0;
+            background-color: $color-03;
+            border-radius: 50%;
+          }
         }
-
+      }
     }
   }
   &__nav {

@@ -71,7 +71,7 @@
 }
 
 .bg-05 {
-  background-color: #e9d7bf;
+  background-color: #aae5de;
 }
 
 .bg-06 {
@@ -84,6 +84,14 @@
 
 .bg-08 {
   background-color: #393e41;
+}
+
+.bg-09 {
+  background-color: #e9f4f4;
+}
+
+.bg-10 {
+  background-color: #33a1b2;
 }
 
 .text-00 {
@@ -112,6 +120,26 @@
 
 .text-06 {
   color: #e9d7bf;
+}
+
+.text-10 {
+  color: #fff;
+}
+
+.text-11 {
+  color: #082e34;
+}
+
+.text-12 {
+  color: #082e34;
+}
+
+.text-13 {
+  color: #f58c6d;
+}
+
+.text-ssm {
+  font-size: 0.75rem;
 }
 
 .text-sm {

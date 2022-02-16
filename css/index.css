@@ -55,43 +55,42 @@
   height: auto;
   position: absolute;
 }
-.product-card__inner .product-card__imgs:hover img:nth-child(2) {
-  opacity: 1;
+.product-card__inner .product-card__imgs img .product-card__info {
+  padding-top: 1rem;
 }
-.product-card__inner .product-card__imgs .product-discount {
-  position: absolute;
-  top: 0.5rem;
-  left: 0.5rem;
-  color: #28a1b2;
-  z-index: 2;
+.product-card__inner .product-card__imgs img .product-card__info .product__title {
+  font-size: 16px !important;
+  text-transform: uppercase;
+  color: #021d21;
   font-weight: 700;
 }
-.product-card__inner .product-card__imgs .product-love {
-  width: 20px;
-  height: 20px;
-  position: absolute;
-  bottom: 1rem;
-  right: 0.75rem;
-  color: #28a1b2;
-  z-index: 2;
-  font-weight: 600;
-  z-index: 2;
-  background-image: url("../media1/heart-white-icon.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
+.product-card__inner .product-card__imgs img .product-card__info .product__desc {
+  font-size: 15px;
 }
-.product-card__inner .product-card__imgs .product-love.active {
-  background-image: url("../media1/heart-fill-icon.svg");
+.product-card__inner .product-card__imgs img .product-card__info .product__price {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  font-size: 14px;
+}
+.product-card__inner .product-card__imgs img .product-card__info .product__price .price-new {
+  font-size: 18px;
+  font-weight: 600;
+  color: #021d21;
+}
+.product-card__inner .product-card__imgs img .product-card__info .product__price .price-old {
+  text-decoration: line-through;
+  font-size: 15px;
+  color: #707070;
+  font-weight: 600;
 }
 .product-card__inner .product-card__info {
   padding-top: 1rem;
 }
 .product-card__inner .product-card__info .product__title {
-  font-size: 16px !important;
+  font-size: 16px;
   text-transform: uppercase;
   color: #021d21;
-  font-weight: 700;
 }
 .product-card__inner .product-card__info .product__desc {
   font-size: 15px;
@@ -258,17 +257,29 @@
   background-color: unset;
 }
 
+.accordion-button::after {
+  background-size: 0.8rem 0.8rem;
+  background-position: center;
+  background-image: url();
+}
+
 .accordion-button:not(.collapsed)::after {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%230c63e4'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
-  transform: rotate(-90deg);
+  background-image: url("../media/svgs/arrow-button-bl.svg");
+  transform: rotate(0deg);
 }
 
 .accordion-item {
   border: none;
 }
 
-.accordion-button {
-  background-color: #fff;
+.accordion-header .accordion-button {
+  padding: 1rem 0.6rem 1rem 1.5rem;
+}
+.accordion-header .accordion-button h2 {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  margin-bottom: 0;
 }
 
 .border-solid {
@@ -286,31 +297,29 @@
   }
 }
 .form-control-checkbox {
-  font-family: system-ui, sans-serif;
   font-size: 1rem;
-  font-weight: 300;
+  font-weight: 600;
   display: grid;
   grid-template-columns: 1em auto;
-  gap: 0.1em;
+  align-items: center;
+  gap: 0.6rem;
   padding: 0.3rem 0;
   cursor: pointer;
 }
-
+.form-control-checkbox.accordion-button input {
+  transform: translateY(50%);
+}
 .form-control-checkbox input {
   -webkit-appearance: none;
   appearance: none;
   margin: 0;
-  font: inherit;
-  color: currentColor;
   width: 0.7em;
   height: 0.7em;
-  border: 0.5px solid currentColor;
+  border: 0.5px solid #707070;
   border-radius: 100%;
-  transform: translateY(50%);
   display: grid;
   place-content: center;
 }
-
 .form-control-checkbox input::before {
   content: "";
   width: 0.4em;
@@ -318,17 +327,12 @@
   transform: scale(0);
   border-radius: 100%;
   transition: 120ms transform ease-in-out;
-  box-shadow: inset 1em 1em #aae5de;
+  box-shadow: inset 1em 1em #33a1b2;
+  cursor: pointer;
 }
-
 .form-control-checkbox input:checked::before {
   transform: scale(1);
 }
-
-.form-control-checkbox.accordion-button input {
-  transform: translateY(0%);
-}
-
 .form-control-checkbox.accordion-button::after {
   content: none;
 }
@@ -337,8 +341,12 @@
   padding: 0 0;
 }
 
-.left-2 {
-  margin-left: 2rem;
+.accordion-body.checkbox-list .form-control-checkbox {
+  color: #032e34;
+  font-size: 1rem;
+  font-weight: 300;
+  margin-left: 1.5rem;
+  line-height: 1.1rem;
 }
 
 .checkbox-list {
@@ -362,9 +370,9 @@
 }
 
 .product-color__inner {
-  width: 2.5vw;
+  width: 2vw;
   border-radius: 50%;
-  height: 2.5vw;
+  height: 2vw;
   cursor: pointer;
   transition: 0.2s all ease-in-out;
 }
@@ -567,6 +575,361 @@
 
 .nav-tabs {
   border-bottom: 0;
+}
+
+.location-path {
+  font-size: 0.65rem;
+}
+
+.path-icon {
+  background: url("../media/svgs/angle-down-btn.svg") no-repeat;
+  background-size: 5px 5px;
+  background-position: center;
+  display: inline-block;
+  color: #000;
+  width: 7px;
+  height: 7px;
+  transform: rotate(-90deg);
+}
+
+.dropdown-icon {
+  background: url("../media/svgs/angle-down-btn.svg") no-repeat;
+  background-size: 10px 10px;
+  background-position: center;
+  display: inline-block;
+  color: #000;
+  width: 10px;
+  height: 10px;
+  border: none;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.flex-2 {
+  flex: 2;
+}
+
+.flex-3 {
+  flex: 3;
+}
+
+.flex-4 {
+  flex: 4;
+}
+
+.flex-5 {
+  flex: 5;
+}
+
+.flex-6 {
+  flex: 6;
+}
+
+.flex-7 {
+  flex: 7;
+}
+
+.bold-bottom {
+  border-bottom: solid #082e34;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.table-title {
+  background: #082e34;
+  color: #fff;
+}
+
+.table > :not(caption) > * > * {
+  border-bottom-width: 0;
+}
+
+.table {
+  width: 100%;
+}
+.table tr th {
+  text-align: center;
+}
+.table .text-left {
+  text-align: left;
+}
+.table tr:not(:first-child) {
+  border-bottom: 1px dashed #d6dfdf;
+}
+.table tr:first-child,
+.table tr:last-child {
+  border-bottom: 1px solid #082e34;
+}
+
+.form-checkbox {
+  font-size: 1rem;
+  font-weight: 600;
+  gap: 0.6rem;
+  padding: 0.3rem 0;
+  cursor: pointer;
+}
+.form-checkbox.accordion-button input {
+  transform: translateY(50%);
+}
+.form-checkbox input {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+  width: 0.7em;
+  height: 0.7em;
+  border: 0.5px solid #707070;
+  border-radius: 100%;
+  display: grid;
+  place-content: center;
+}
+.form-checkbox input::before {
+  content: "";
+  width: 0.4em;
+  height: 0.4em;
+  transform: scale(0);
+  border-radius: 100%;
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em #33a1b2;
+  cursor: pointer;
+}
+.form-checkbox input:checked::before {
+  transform: scale(1);
+}
+
+.w-25\2  {
+  width: 12.5%;
+}
+
+.w-15 {
+  width: 15%;
+}
+
+.w-40 {
+  width: 40%;
+}
+
+.w-60 {
+  width: 60%;
+}
+
+.w-65 {
+  width: 65%;
+}
+
+.w-70 {
+  width: 70%;
+}
+
+.w-35 {
+  width: 35%;
+}
+
+.w-30 {
+  width: 30%;
+}
+
+.w-5 {
+  width: 5%;
+}
+
+.w-95 {
+  width: 95%;
+}
+
+.flex-nowrap {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.card-info {
+  display: flex;
+}
+.card-info .card-form {
+  width: 5rem;
+  height: 6rem;
+}
+.card-info .img {
+  width: 100%;
+  height: 100%;
+}
+.card-info .content {
+  position: relative;
+}
+.card-info .content span {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.mid {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.number-form {
+  width: 100%;
+}
+
+.value-button {
+  display: inline-block;
+  border: 1px solid #ddd;
+  width: 1.5rem;
+  height: 2rem;
+  text-align: center;
+  vertical-align: middle;
+  padding: 0.2rem 0;
+  background: #fff;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.value-button:hover {
+  cursor: pointer;
+}
+
+.number-form #decrease {
+  border-radius: 50px 0 0 50px;
+}
+
+.number-form #increase {
+  border-radius: 0 50px 50px 0;
+}
+
+.number-form #input-wrap {
+  margin: 0px;
+  padding: 0px;
+}
+
+input#number {
+  text-align: center;
+  border: none;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  margin: 0px;
+  width: 2rem;
+  height: 2rem;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.line-through {
+  text-decoration: line-through;
+}
+
+.order-summary h4 {
+  border-style: none none dashed;
+  border-width: 1px;
+  border-color: #d6dfdf;
+  padding-bottom: 1rem;
+}
+.order-summary .text-red {
+  color: #f6fefe;
+}
+
+.btn-form button {
+  padding: 0.5rem 2.5rem;
+}
+
+.btn-pri {
+  border-radius: 50rem;
+  border: none;
+}
+
+.update-store {
+  color: #082e34;
+  background: none;
+  text-decoration: underline;
+  border: none;
+}
+
+.continue-buy {
+  background-color: #aae5de;
+  border: none;
+}
+
+.delete-product {
+  border: 1px solid #082e34;
+  background: none;
+}
+
+.payment-card .payment-address {
+  border-left: 0.5rem solid #aae5de;
+}
+.payment-card .payment-address .desc {
+  padding: 0.8rem;
+  background-color: #fbffff;
+}
+.payment-card .payment-address .desc button {
+  text-decoration: underline;
+  background: none;
+}
+.payment-card .order-option {
+  border-bottom: 1px dashed #d6dfdf;
+}
+
+.addition-form button {
+  border: 1px solid #082e34;
+  padding: 0.3rem 0;
+  background: none;
+  width: 15rem;
+}
+
+.momo-logo {
+  background-image: url(../media1/momo.svg);
+  background-size: contain;
+  width: 2rem;
+  height: 2rem;
+}
+
+.dash {
+  border: 1px dashed #d6dfdf;
+}
+
+.btns button {
+  background: url("../media/svgs/angle-down-btn.svg") no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 2rem;
+  height: 2rem;
+  padding: 0;
+  border: none;
+}
+.btns .left {
+  transform: rotate(90deg);
+}
+.btns .right {
+  transform: rotate(-90deg);
+}
+
+.rounded-5 {
+  border-radius: 50rem;
+}
+
+.border-07 {
+  border: 0.5px solid #707070;
+}
+
+.bg_light-blue {
+  background-color: #afdbe0;
 }
 
 .policy-card img {

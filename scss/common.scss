@@ -70,7 +70,7 @@
 }
 
 .bg-05 {
-  background-color: $color-06;
+  background-color: $color-05;
 }
 
 .bg-06 {
@@ -82,6 +82,12 @@
 
 .bg-08 {
   background-color: $color-08;
+}
+.bg-09 {
+  background-color: $bg-09;
+}
+.bg-10 {
+  background-color: $bg-05;
 }
 .text-00 {
   color: $color-10;
@@ -110,6 +116,23 @@
   color: $color-06;
 }
 
+.text-10 {
+  color: $color-10;
+}
+
+.text-11 {
+  color: $color-11;
+}
+.text-12 {
+  color: $color-11;
+}
+.text-13 {
+  color: $color-13;
+}
+
+.text-ssm {
+  font-size: 0.75rem;
+}
 .text-sm {
   font-size: 0.875rem;
 }
@@ -286,7 +309,7 @@
 
   &:hover {
     zoom: 1.05;
-    
+
     // background-color: #fff;
     // color: $color-02;
     // --arrow: url("../media//svgs/arrow-button-bl.svg");
@@ -312,17 +335,15 @@
 }
 
 .text-icon {
-  display:flex;
+  display: flex;
   align-items: center;
 
   &__icon {
     $w: 18px;
     width: $w;
     height: $w;
-    
   }
   &__text {
     margin-left: 1rem;
   }
-
-} 
+}
