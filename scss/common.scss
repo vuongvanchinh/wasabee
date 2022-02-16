@@ -17,18 +17,23 @@
   text-transform: uppercase;
   margin-bottom: 1rem;
   color: $color-02;
-  font-size: 28px;
+  font-size: 2rem;
+  font-weight: 700;
 }
 
 .heading-03 {
   text-transform: uppercase;
   margin-bottom: 1rem;
   color: $color-01;
+  font-size: 1.5rem;
+  font-family: 700;
 }
 .heading-05 {
   text-transform: uppercase;
   margin-bottom: 2rem;
   color: $color-01;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 .heading-06 {
   text-transform: uppercase;
@@ -37,6 +42,17 @@
   font-size: 16px;
 }
 
+@include tablet {
+  .heading-01 {
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    color: $color-10;
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    line-height: 1.2;
+  }
+}
 .bg-00 {
   background-color: $color-00;
 }
@@ -235,14 +251,6 @@
   }
 }
 
-.md-px-0 {
-  padding-left: 0;
-  padding-right: 0;
-}
-.md-py-0 {
-  padding-top: 0;
-  padding-bottom: 0;
-}
 
 @include mobile {
   @for $i from 0 through 12 {
@@ -259,14 +267,6 @@
   }
 }
 
-.sm-px-0 {
-  padding-left: 0;
-  padding-right: 0;
-}
-.sm-py-0 {
-  padding-left: 0;
-  padding-right: 0;
-}
 
 .mx-auto {
   margin-left: auto;

@@ -2,6 +2,9 @@
 @import 'variables';
 @import 'mixins';
 $spacing-01: 0.5rem;
+html {
+    scroll-behavior: smooth;
+}
 // Flex
 .flex {
     display: flex;
@@ -20,6 +23,9 @@ $spacing-01: 0.5rem;
     $v: math.div($i, 12) * 100;
     .col-#{$i} {
         width: $v*1%;
+        max-width: $v*1%;
+        flex: unset;
+
     }
 }
 
@@ -31,6 +37,7 @@ $spacing-01: 0.5rem;
         $v: math.div($i, 12) * 100;
         .md-col-#{$i} {
             width: $v*1%;
+            max-width:  $v*1%;
         }
     }
 
@@ -46,6 +53,7 @@ $spacing-01: 0.5rem;
         $v: math.div($i, 12) * 100;
         .sm-col-#{$i} {
             width: $v*1%;
+            max-width: $v*1%;
         }
     }
 
@@ -61,6 +69,9 @@ $spacing-01: 0.5rem;
     margin: 0;
     box-sizing: border-box;
     font-family: 'Fahkwang', sans-serif;
+}
+p, span, div {
+    font-weight: 600;
 }
 
 html {
@@ -79,6 +90,9 @@ body {
 a {
     text-decoration: none;
     color: unset;
+    &:hover {
+        text-decoration: none;
+    }
 }
 
 img {

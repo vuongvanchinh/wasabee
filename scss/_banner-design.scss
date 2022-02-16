@@ -5,6 +5,10 @@
     background-image: var(--bg);
     position: relative;
     
+
+    img {
+        min-height: 300px;
+    }
     // padding: 5rem 0;
     &__info {
         position: absolute;
