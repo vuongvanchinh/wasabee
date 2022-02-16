@@ -55,7 +55,7 @@
 }
 
 .bg-05 {
-  background-color: #e9d7bf;
+  background-color: #aae5de;
 }
 
 .bg-06 {
@@ -68,6 +68,14 @@
 
 .bg-08 {
   background-color: #393e41;
+}
+
+.bg-09 {
+  background-color: #e9f4f4;
+}
+
+.bg-10 {
+  background-color: #33a1b2;
 }
 
 .text-00 {
@@ -96,6 +104,26 @@
 
 .text-06 {
   color: #e9d7bf;
+}
+
+.text-10 {
+  color: #fff;
+}
+
+.text-11 {
+  color: #082e34;
+}
+
+.text-12 {
+  color: #082e34;
+}
+
+.text-13 {
+  color: #f58c6d;
+}
+
+.text-ssm {
+  font-size: 0.75rem;
 }
 
 .text-sm {
@@ -1210,19 +1238,22 @@
 }
 
 .text-pre-icon {
-  --arrow: url("../media//svgs/arrow-button-green.svg");
+  --arrow: url("../media1/arrow-button-icon-black.svg");
   font-size: 14px;
   padding-left: 1rem;
   height: fit-content;
   position: relative;
   text-decoration: underline;
   transition: all 0.5s ease-in;
-  color: #0b343a;
+  color: #032e34;
   font-weight: 600;
 }
 .text-pre-icon:hover {
-  color: #032e34;
-  --arrow: url("../media//svgs/arrow-button-bl.svg");
+  zoom: 1.05;
+}
+.text-pre-icon.text-00 {
+  --arrow: url("../media1/arrow-button-icon.svg");
+  color: #fff;
 }
 .text-pre-icon::before {
   content: "";

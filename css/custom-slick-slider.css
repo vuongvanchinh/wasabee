@@ -25,9 +25,11 @@
 
 .new-products-slider .slick-prev {
   left: 1rem;
+  top: calc(50% - 50px);
 }
 .new-products-slider .slick-next {
   right: 1rem;
+  top: calc(50% - 50px);
 }
 
 /*# sourceMappingURL=custom-slick-slider.css.map */

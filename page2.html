@@ -32,14 +32,18 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="container">
+    <div class="container-page">
       <main>
         <!-- Header  -->
         <header class="header">
-          <div class="header__banner">Wasabe | Hello 2022</div>
+          <div class="header__banner" style="--bg: url('../media1/a.png')">
+            <div class="header__banner__info text-xl font-600 text-00">
+              Wasabe | Hello 2022
+            </div>
+          </div>
           <div class="header__main">
             <div class="logo">
-              <img src="./media//svgs/logo.png" alt="logo" srcset="" />
+              <img src="./media1/logo-main.svg" alt="logo" srcset="" />
             </div>
             <div class="search">
               <form>
@@ -47,7 +51,9 @@
                   type="text"
                   placeholder="Tìm kiếm sản phẩm phù hợp với bạn"
                 />
-                <button type="submit">Submit</button>
+                <button type="submit">
+                  <img src="./media1/search-icon.svg" alt="" srcset="">
+                </button>
               </form>
             </div>
             <div class="language-option">
@@ -56,10 +62,21 @@
                 <li><a href="#">Eng</a></li>
               </ul>
             </div>
-            <div class="shop-manage">
-              <div class="account"><a href="#"></a></div>
-              <div class="love"><a href="#"></a></div>
-              <div class="shopping-cart"><a href="#"></a></div>
+            <div class="shop-manage flex">
+              <div class="account">
+                <a href="#">
+                  <img src="./media1/user-icon.svg" alt="" srcset="">
+                </a>
+              </div>
+              <div class="love"><a href="#">
+                <img src="./media1/heart-icon.svg" alt="" srcset="">
+              </a></div>
+              <div class="shopping-cart ">
+                <a href="#">
+                  <img src="./media1/cart-icon.svg" alt="" srcset="">
+                  <span>0</span>
+                </a>
+              </div>
             </div>
           </div>
           <ul class="header__nav flex">

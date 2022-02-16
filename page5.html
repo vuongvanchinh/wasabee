@@ -32,14 +32,18 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="container-fluid">
+    <div class="container-page ">
       <main>
         <!-- Header  -->
         <header class="header">
-          <div class="header__banner">Wasabe | Hello 2022</div>
+          <div class="header__banner" style="--bg: url('../media1/a.png')">
+            <div class="header__banner__info text-xl font-600 text-00">
+              Wasabe | Hello 2022
+            </div>
+          </div>
           <div class="header__main">
             <div class="logo">
-              <img src="./media//svgs/logo.png" alt="logo" srcset="" />
+              <img src="./media1/logo-main.svg" alt="logo" srcset="" />
             </div>
             <div class="search">
               <form>
@@ -47,7 +51,9 @@
                   type="text"
                   placeholder="Tìm kiếm sản phẩm phù hợp với bạn"
                 />
-                <button type="submit">Submit</button>
+                <button type="submit">
+                  <img src="./media1/search-icon.svg" alt="" srcset="">
+                </button>
               </form>
             </div>
             <div class="language-option">
@@ -56,10 +62,21 @@
                 <li><a href="#">Eng</a></li>
               </ul>
             </div>
-            <div class="shop-manage">
-              <div class="account"><a href="#"></a></div>
-              <div class="love"><a href="#"></a></div>
-              <div class="shopping-cart"><a href="#"></a></div>
+            <div class="shop-manage flex">
+              <div class="account">
+                <a href="#">
+                  <img src="./media1/user-icon.svg" alt="" srcset="">
+                </a>
+              </div>
+              <div class="love"><a href="#">
+                <img src="./media1/heart-icon.svg" alt="" srcset="">
+              </a></div>
+              <div class="shopping-cart ">
+                <a href="#">
+                  <img src="./media1/cart-icon.svg" alt="" srcset="">
+                  <span>0</span>
+                </a>
+              </div>
             </div>
           </div>
           <ul class="header__nav flex">
@@ -75,44 +92,258 @@
           </ul>
         </header>
         <!-- End Header -->
-        <div class="main-content bg-06">
+        <div class="container">
           <div class="location-path">
-            <span class="cart text-sm text-bold">
-              giỏ hàng >
+            <span class="cart text-04">
+              Giỏ hàng <div class="path-icon"></div>
+              <!-- <img class="path-arrow" src="./media1/right-arrow.svg" alt="" srcset=""> -->
             </span>
-            <span class="order-payment text-sm">
-              Thanh toán đơn đặt hàng >
+            <span class="order-payment font-700">
+              Thanh toán đơn đặt hàng <div class="path-icon"></div>
             </span>
-            <span class="order-complete text-sm">
-              Đơn hàng hoàn thành >
+            <span class="order-complete text-04">
+              Đơn hàng hoàn thành 
             </span>
           </div>
+          <h2 class="heading-02 font-600 mt-5 mb-5">THANH TOÁN</h2>
           <!-- Slider banner -->
-          <section></section>
+          <section>
+          </section>
           <!-- End Slider Banner -->
 
           <!-- Coupon sectbion -->
           <section>
 
-              <div class="grid grid-cols-2 sm-grid-cols-1 px-12 md-px-6 sm-px-0 py-6 gap-4">
-                    <div class="coupon bg-07">
-                        <div class="coupon__info">
-                            <h4 class="heading-02">Welcome Deal</h4>
-                            <p class="text-sm text-05">Lorem ipsum Aliquam,in adipisci magnam? Cumque nisi quod molestias?</p>
+                  <div class="flex gap-3">
+                    <div class="flex-3">
+                      <div class="payment-card my-5">
+                          <div class="table-title text-md text-center w-25 p-2 ">Địa chỉ giao hàng</div><div class="bold-bottom mb-4"></div>
+                          <div class="payment-address flex-nowrap gap-5">
+                            <div class="desc flex-4">
+                              <h4 class="text-md font-600">Mahdi Changhari <span class="text-sm text-04 ml-5 font-400">0123 456 789</span></h4>
+                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, dolores aliquid. Architecto commodi earum quos nihil totam alias eaque voluptatibus! Dolore corrupti soluta debitis eum.</p>
+                              <button class="float-lg-end border-0">Chỉnh sửa</button>
+                            </div>
+                            <div class="addition-form flex-2 flex-column gap-3">
+                              <button class="btn-pri">Chọn địa chỉ khác</button>
+                              <button  class="btn-pri">+ Thêm địa chỉ mới</button>
+                            </div>
+                          </div>
+                      </div>
+                      <div class="payment-card my-5">
+                          <div class="table-title text-md text-center w-25 p-2 ">Tùy chọn giao hàng</div><div class="bold-bottom mb-4"></div>
+                          <div class="order-option flex-column py-3">
+                            <div class="desc flex-nowrap justify-content-between ">
+                              <div class="flex-nowrap gap-4 flex-center">
+                                <label class="form-checkbox ">
+                                  <input type="checkbox">
+                                </label>
+                                <div class="text-sm font-600 m-auto flex-column">
+                                  <span>Giao hàng tiết kiệm</span> 
+                                  <span class="text-sm text-04 font-400">Nhận hàng 5 - 7 ngày</span>
+                                </div>
+                              </div>
+                              <h6 class="flex-center my-auto">0 đ</h6>
+                            </div>
+                          </div>
+                          <div class="order-option flex-column py-3">
+                            <div class="desc flex-nowrap justify-content-between ">
+                              <div class="flex-nowrap gap-4 flex-center">
+                                <label class="form-checkbox ">
+                                  <input type="checkbox">
+                                </label>
+                                <div class="text-sm font-600 m-auto flex-column">
+                                  <span>Giao hàng nhanh</span> 
+                                  <span class="text-sm text-04 font-400">Nhận hàng 3 - 5 ngày</span>
+                                </div>
+                              </div>
+                              <h6 class="flex-center my-auto">60,000 đ</h6>
+                            </div>
+                          </div>
+                      </div>
+                      <div class="payment-card my-5">
+                          <div class="table-title text-md text-center w-25 p-2 ">Phương thức thanh toán</div><div class="bold-bottom mb-4"></div>
+                          <div class="order-option flex-column py-3">
+                            <div class="desc flex-nowrap justify-content-between ">
+                              <div class="flex-nowrap gap-4 flex-center">
+                                <label class="form-checkbox ">
+                                  <input type="checkbox">
+                                </label>
+                                <div class="text-sm font-600 m-auto flex-nowrap flex-center gap-3">
+                                  <div class="momo-logo"></div>
+                                  <div>Thanh toán khi nhận hàng</div> 
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="order-option flex-column py-3">
+                            <div class="desc flex-nowrap justify-content-between ">
+                              <div class="flex-nowrap gap-4 flex-center">
+                                <label class="form-checkbox ">
+                                  <input type="checkbox">
+                                </label>
+                                <div class="text-sm font-600 m-auto flex-nowrap flex-center gap-3">
+                                  <div class="momo-logo"></div>
+                                  <div>Thẻ ATM nội địa (Internet Banking)</div> 
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="order-option flex-column py-3">
+                            <div class="desc flex-nowrap justify-content-between ">
+                              <div class="flex-nowrap gap-4 flex-center">
+                                <label class="form-checkbox ">
+                                  <input type="checkbox">
+                                </label>
+                                <div class="text-sm font-600 m-auto flex-nowrap flex-center gap-3">
+                                  <div class="momo-logo"></div>
+                                  <div>Thẻ tín dụng / ghi nợ</div> 
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="order-option flex-column py-3">
+                            <div class="desc flex-nowrap justify-content-between ">
+                              <div class="flex-nowrap gap-4 flex-center">
+                                <label class="form-checkbox ">
+                                  <input type="checkbox">
+                                </label>
+                                <div class="text-sm font-600 m-auto flex-nowrap flex-center gap-3">
+                                  <div class="momo-logo"></div>
+                                  <div>(Miễn phí thanh toán) Ví MoMo</div> 
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="order-option flex-column py-3">
+                            <div class="desc flex-nowrap justify-content-between ">
+                              <div class="flex-nowrap gap-4 flex-center">
+                                <label class="form-checkbox ">
+                                  <input type="checkbox">
+                                </label>
+                                <div class="text-sm font-600 m-auto flex-nowrap flex-center gap-3">
+                                  <div class="momo-logo"></div>
+                                  <div>Thanh toán online qua cổng VNPay (ATM/Visa/MasterCard/JCB)</div> 
+                                </div>
+                              </div>
+                            </div>
+                          </div>
 
+                      </div>
+                      <div class="payment-card my-5">
+                        <div class="flex-nowrap justify-content-between">
+                          <div class="table-title text-md text-center w-25 p-2 ">Giỏ hàng của bạn</div>
+                          <p class="my-auto text-sm">6 sản phẩm</p>
                         </div>
-                        <div class="coupon__img">
-                            <img src="./media//svgs/coupon.png" alt="" srcset="">
-                        </div>
+                          <div class="bold-bottom mb-4"></div>
+                      </div>
                     </div>
-                    <div class="coupon bg-08">
-                        <div class="coupon__info">
-                            <h4 class="heading-02">Welcome Deal</h4>
-                            <p class="text-sm text-06">Lorem ipsum Aliquam,in adipisci magnam? Cumque nisi quod molestias?</p>
+
+                  
+                    <div class="flex-1">
+                      <div class="bg-09 p-4 order-form ">
+                        <div class="order-summary flex-column gap-3 justify-content-center">
+                            <h4 class="heading-04 font-700 ">Tóm tắt đơn hàng</h4>
+                            <div class="description flex-nowrap text-sm justify-content-between my-auto">
+                              <p class="my-auto">Tạm tính</p>
+                              <h6 class="price font-600 text-sm my-auto">1,325,250 vnđ </h6>
+                            </div>
+                            <div class="description flex-nowrap text-sm justify-content-between">
+                              <p class="my-auto">Phí giao hàng</p>
+                              <h6 class="price font-600 my-auto text-sm"> +0 vnđ
+                              </h6>
+                            </div>
+                            <div class="description  flex-nowrap  text-sm justify-content-between">
+                              <div class="flex-column my-auto">
+                                <span class="text-md">Giảm giá</span>
+                                <span class="text-04 text-sm">WELLCOMEDEAL</span>
+                              </div>
+                              <h6 class="price font-600 my-auto text-sm text-13">-100,000 vnđ
+                              </h6>
+                            </div>
+                            <div class="description  flex-nowrap  text-sm justify-content-between ">
+                              <p class="my-auto">Điểm Wasabee</p>
+                              <h6 class="price font-600 my-auto text-sm text-13">-96,000 vnđ </h6>
+                            </div>
+
+
+                            <div class="dash"></div>
+
+                            <div >
+                              <div class="flex-nowrap gap-1 text-sm">
+                                <p>Mã giảm giá</p>
+                                <span class="text-04 text-decoration-underline text-ssm ">Tất cả mã giảm giá</span>
+                              </div>
+                              <div class="flex-nowrap gap-2"> 
+                                <div class="flex-5 ">
+                                  <input type="text" class="w-full rounded-5 pl-1 border-07" />
+                                </div>
+                                <button class="flex-2 btn-pri bg_light-blue px-3 text-10 text-sm">Áp dụng</button>
+                              </div>
+                            </div>
+                            <div>
+                              <div class="flex-nowrap gap-1 text-sm">
+                                <p>Điểm Wasabee</p>
+                                <span class="text-04 text-decoration-underline text-ssm">(Tổng cộng: 96)</span>
+                              </div>
+                              <div class="flex-nowrap gap-2">
+                                <div class="flex-5 ">
+                                  <input type="text" class="w-full rounded-5 pl-1 border-07" value="96"  />
+                                </div>
+                                <button class="btn-pri bg-10 px-3 text-10 text-sm flex-2 ">Áp dụng</button>
+                              </div>
+                            </div>
+
+                            <div class="dash"></div>
+
+                            <div class="description flex-nowrap text-sm justify-content-between mt-4">
+                              <p class="">Tổng tiền thanh toán</p>
+                              <div class="price">
+                                <span class="font-600">1,325,250</span> vnd
+                              </div>
+                            </div>
+                            <div class="description  flex-nowrap  text-sm justify-content-between">
+                              <p class="text-sm">Điểm được tích lũy</p>
+                              <div class="price">
+                                132 điểm
+                              </div>
+                            </div>
+
+                            <div class="dash"></div>
+                            
+
+                            <div class="btn-form text-center mt-4 ">
+                              <button class="font-500 btn-pri bg-10 text-10 w-full">ĐẶT HÀNG</button>
+                            </div>
 
                         </div>
-                        <div class="coupon__img">
-                            <img src="./media//svgs/coupon.png" alt="" srcset="">
+                      </div>
+
+                      <div class="btn-form flex justify-content-end">
+                        <div class="btns py-3 flex-nowrap ">
+                          <button class="left"></button>
+                          <button class="right"></button>
+                        </div>
+                      </div>
+                        <div class="flex-column px-12 md-px-6 sm-px-0 gap-4">
+                          <div class="px-2 py-2 flex-nowrap align-items-center  justify-content-between  bg-02">
+                              <div class="px-5 py-2">
+                                  <h5 class="heading-05 my-auto">Sale off <span>70%</span></h5>
+                                  <p class="text-sm text-04 font-600 my-auto">Lorem ipsum is</p>
+                              </div>
+                              <div class="w-30">
+                                  <img src="./media1/voucher2.png" alt="" srcset="">
+                              </div>
+                          </div>
+                          <div class="p-2 flex-nowrap align-items-center justify-content-between  bg-06">
+                              <div class="px-5 py-2">
+                                <h5 class="heading-05 my-auto">Welcome <span>Deal</span></h6>
+                                <p class="text-sm text-04 font-600 my-auto">Lorem ipsum is</p>
+                              </div>
+                              <div class="w-50">
+                                  <img src="./media1/voucher1.png" alt="" srcset="">
+                              </div>
+                          </div>
                         </div>
                     </div>
               </div>
@@ -121,376 +352,11 @@
 
           <!-- New product Section -->
           <section>
-              <h2 class="heading-02 text-center">Sản phẩm mới</h2>
-              <div>
-                    <div class="banner-slider">
-                        <div class="flex">
-                            <div>
-                                <h2 class="heading-02">Out door <br>Collection</h2>
-                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam alias a fuga dignissimos veniam voluptatum, dolorum tenetur sequi eum perspiciatis.</p>
-                            </div>
-                            <div></div>
-                        </div>
-                        <div class="flex">
-                            <div>
-                                <h2 class="heading-02">Out door <br>Collection</h2>
-                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam alias a fuga dignissimos veniam voluptatum, dolorum tenetur sequi eum perspiciatis.</p>
-                            </div>
-                            <div></div>
-                        </div>
-                        <div class="flex">
-                            <div>
-                                <h2 class="heading-02">Out door <br>Collection</h2>
-                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam alias a fuga dignissimos veniam voluptatum, dolorum tenetur sequi eum perspiciatis.</p>
-                            </div>
-                            <div></div>
-                        </div>
-                    </div>
-                </div>
           </section>
           <!-- End New product Section -->
 
           <!-- popular product Section -->
           <section>
-            <div class="flex">
-              <div class="col-4">
-                <div class="accordion w-100" id="accordionPanelsStayOpenExample">
-                  <div class="accordion-item">
-                    <h2 class="accordion-header" id="panelsStayOpen-headingOne">
-                      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-                       <h2 class="heading-02">Danh mục sản phẩm</h2>
-                      </button>
-                    </h2>
-                    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
-                      <div class="accordion-body border-solid">
-
-                        <div class="accordion" id="accordionPanelsStayOpenExample">
-                          <div class="accordion-item">
-                            <h2 class="accordion-header" id="panelsStayOpen-heading_product1">
-                                <label class="form-control-checkbox ">
-                                  <input type="checkbox"  data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse_product1" aria-expanded="true" aria-controls="panelsStayOpen-collapse_product1">
-                                  THỜI TRANG NỮ
-                                </label>
-                            </h2>
-                            <div id="panelsStayOpen-collapse_product1" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-heading_product1">
-                              <div class="accordion-body checkbox-list">
-                                <label class="form-control-checkbox ">
-                                  <input type="checkbox">
-                                  Mới ra mắt
-                                </label>
-                                <label class="form-control-checkbox">
-                                  <input type="checkbox">
-                                  Bán chạy nhất
-                                </label>
-                                <label class="form-control-checkbox ">
-                                  <input type="checkbox">
-                                  Áo khoác ngoài
-                                </label>
-                                <label class="form-control-checkbox ">
-                                  <input type="checkbox">
-                                  Váy, áo liền quần
-                                </label>
-                                <label class="form-control-checkbox ">
-                                  <input type="checkbox">
-                                  Áo len
-                                </label>
-                                <label class="form-control-checkbox ">
-                                  <input type="checkbox">
-                                  Áo sơ mi
-                                </label>
-                                <label class="form-control-checkbox ">
-                                  <input type="checkbox">
-                                  Áo blouse
-                                </label>
-                                <label class="form-control-checkbox ">
-                                  <input type="checkbox">
-                                  Áo nỉ
-                                </label>
-                                <label class="form-control-checkbox ">
-                                  <input type="checkbox">
-                                  Áo sơ mi
-                                </label>
-                                <label class="form-control-checkbox ">
-                                  <input type="checkbox">
-                                  Áo khoác
-                                </label>
-                                <label class="form-control-checkbox ">
-                                  <input type="checkbox">
-                                  Quần
-                                </label>
-                                <label class="form-control-checkbox ">
-                                  <input type="checkbox">
-                                  Quần jean
-                                </label>
-                                <label class="form-control-checkbox ">
-                                  <input type="checkbox">
-                                  Váy
-                                </label>
-                                <label class="form-control-checkbox ">
-                                  <input type="checkbox">
-                                  Quần short
-                                </label>
-                                <label class="form-control-checkbox ">
-                                  <input type="checkbox">
-                                  Đồ lót
-                                </label>
-                                <label class="form-control-checkbox ">
-                                  <input type="checkbox">
-                                  Túi, giày
-                                </label>
-                                <label class="form-control-checkbox ">
-                                  <input type="checkbox">
-                                  Phụ kiện
-                                </label>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="accordion-item">
-                            <h2 class="accordion-header" id="panelsStayOpen-heading_product2">
-                              <label class="form-control-checkbox ">
-                                <input type="checkbox"  data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse_product2" aria-expanded="false" aria-controls="panelsStayOpen-collapse_product2">
-                                THỜI TRANG NAM
-                              </label>
-                            </h2>
-                            <div id="panelsStayOpen-collapse_product2" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-heading_product2">
-                              <div class="accordion-body">
-                                <strong>This is the second item's accordion body.</strong>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="accordion-item">
-                            <h2 class="accordion-header" id="panelsStayOpen-heading_product3">
-                              <label class="form-control-checkbox ">
-                                <input type="checkbox"  data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse_product3" aria-expanded="false" aria-controls="panelsStayOpen-collapse_product3">
-                                THỜI TRANG UNISEX
-                              </label>
-                            </h2>
-                            <div id="panelsStayOpen-collapse_product3" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-heading_product3">
-                              <div class="accordion-body">
-                                <strong>This is the third item's accordion body.</strong> 
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-
-                      </div>
-                    </div>
-                  </div>
-                  <div class="accordion-item w-100">
-                    <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-                        <h2 class="heading-02">Sản phẩm theo mùa</h2>
-                      </button>
-                    </h2>
-                    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
-                      <div class="accordion-body border-solid">
-                        
-                        
-                        <div class="accordion" id="accordionPanelsStayOpenExample">
-                          <div class="accordion-item">
-                            <h2 class="accordion-header" id="panelsStayOpen-heading_season1">
-                              
-                                <label class="form-control-checkbox ">
-                                  <input type="checkbox"  data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse_season1" aria-expanded="true" aria-controls="panelsStayOpen-collapse_season1">
-                                  MÙA XUÂN
-                                </label>
-                            </h2>
-                            <div id="panelsStayOpen-collapse_season1" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-heading_season1">
-                              <div class="accordion-body checkbox-list">
-                                <label class="form-control-checkbox">
-                                  <input type="checkbox">
-                                  Mới ra mắt
-                                </label>
-                                <label class="form-control-checkbox">
-                                  <input type="checkbox">
-                                  Bán chạy nhất
-                                </label>
-                                <label class="form-control-checkbox">
-                                  <input type="checkbox">
-                                  Áo khoác ngoài
-                                </label>
-                                <label class="form-control-checkbox">
-                                  <input type="checkbox">
-                                  Váy, áo liền quần
-                                </label>
-                                <label class="form-control-checkbox">
-                                  <input type="checkbox">
-                                  Áo len
-                                </label>
-                                <label class="form-control-checkbox">
-                                  <input type="checkbox">
-                                  Áo sơ mi
-                                </label>
-                                <label class="form-control-checkbox">
-                                  <input type="checkbox">
-                                  Áo blouse
-                                </label>
-                                <label class="form-control-checkbox">
-                                  <input type="checkbox">
-                                  Áo nỉ
-                                </label>
-                                <label class="form-control-checkbox">
-                                  <input type="checkbox">
-                                  Áo sơ mi
-                                </label>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="accordion-item">
-                            <h2 class="accordion-header" id="panelsStayOpen-heading_season2">
-                              <label class="form-control-checkbox ">
-                                <input type="checkbox"  data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse_season2" aria-expanded="false" aria-controls="panelsStayOpen-collapse_season2">
-                                MÙA HẠ
-                              </label>
-                            </h2>
-                            <div id="panelsStayOpen-collapse_season2" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-heading_season2">
-                              <div class="accordion-body">
-                                <strong>This is the second item's accordion body.</strong>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="accordion-item">
-                            <h2 class="accordion-header" id="panelsStayOpen-heading_season3">
-                              <label class="form-control-checkbox ">
-                                <input type="checkbox"  data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse_season3" aria-expanded="false" aria-controls="panelsStayOpen-collapse_season3">
-                                MÙA THU
-                              </label>
-                            </h2>
-                            <div id="panelsStayOpen-collapse_season3" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-heading_season3">
-                              <div class="accordion-body">
-                                <strong>This is the third item's accordion body.</strong> 
-                              </div>
-                            </div>
-                          </div>
-                          <div class="accordion-item">
-                            <h2 class="accordion-header" id="panelsStayOpen-heading_season4">
-                              <label class="form-control-checkbox ">
-                                <input type="checkbox"  data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse_season4" aria-expanded="false" aria-controls="panelsStayOpen-collapse_season4">
-                                MÙA ĐÔNG
-                              </label>
-                            </h2>
-                            <div id="panelsStayOpen-collapse_season4" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-heading_season4">
-                              <div class="accordion-body">
-                                <strong>This is the third item's accordion body.</strong> 
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-
-                      </div>
-                    </div>
-                  </div>
-                  <div class="accordion-item w-100 w-100">
-                    <h2 class="accordion-header" id="panelsStayOpen-headingThree">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
-                        <h2 class="heading-02">Thương hiệu</h2>
-                      </button>
-                    </h2>
-                    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
-                      <div class="accordion-body">
-                        <label class="form-control-checkbox">
-                          <input type="checkbox">
-                          ALEXANDER MCQUEEN
-                        </label>
-                        <label class="form-control-checkbox">
-                          <input type="checkbox">
-                          BALENCIAGA
-                        </label>
-                        <label class="form-control-checkbox">
-                          <input type="checkbox">
-                          BALMAIN
-                        </label>
-                        <label class="form-control-checkbox">
-                          <input type="checkbox">
-                          CHLOÉ
-                        </label>
-                        <label class="form-control-checkbox">
-                          <input type="checkbox">
-                          KENZO
-                        </label>
-                        <label class="form-control-checkbox">
-                          <input type="checkbox">
-                          MAISON MARGIELA
-                        </label>
-                        <label class="form-control-checkbox">
-                          <input type="checkbox">
-                          MOSCHINO
-                        </label>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="accordion-item w-100">
-                    <h2 class="accordion-header" id="panelsStayOpen-headingFive">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false" aria-controls="panelsStayOpen-collapseFive">
-                        <h2 class="heading-02">KÍCH THƯỚC</h2>
-                      </button>
-                    </h2>
-                    <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFive">
-                      <div class="accordion-body border-solid">
-                        <div class="grid grid-cols-4 gap-3 w-75 sm-grid-cols-2 md-grid-cols-3">
-                          <div class="product-size "><div class="product-size__inner flex-center">XS</div></div>
-                          <div class="product-size "><div class="product-size__inner flex-center">S</div></div>
-                          <div class="product-size "><div class="product-size__inner flex-center">M</div></div>
-                          <div class="product-size "><div class="product-size__inner flex-center">L</div></div>
-                          <div class="product-size "><div class="product-size__inner flex-center">XL</div></div>
-                          <div class="product-size "><div class="product-size__inner flex-center">2XL</div></div>
-                          <div class="product-size "><div class="product-size__inner flex-center">3XL</div></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="accordion-item w-100">
-                    <h2 class="accordion-header" id="panelsStayOpen-headingFour">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
-                        <h2 class="heading-02">Mức giá</h2>
-                      </button>
-                    </h2>
-                    <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFour">
-                      <div class="accordion-body border-solid">
-                        <label class="form-control-checkbox">
-                          <input type="checkbox">
-                          DƯỚI 500.000 VNĐ
-                        </label>
-                        <label class="form-control-checkbox">
-                          <input type="checkbox">
-                          500.000-1.000.000 VNĐ
-                        </label>
-                        <label class="form-control-checkbox">
-                          <input type="checkbox">
-                          1.000.000 - 5.000.000 VNĐ
-                        </label>
-                        <label class="form-control-checkbox">
-                          <input type="checkbox">
-                          TRÊN 5.000.000 VNĐ
-                        </label>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="accordion-item w-100">
-                    <h2 class="accordion-header" id="panelsStayOpen-headingSix">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSix" aria-expanded="false" aria-controls="panelsStayOpen-collapseSix">
-                        <h2 class="heading-02">Màu sắc</h2>
-                      </button>
-                    </h2>
-                    <div id="panelsStayOpen-collapseSix" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingSix">
-                      <div class="accordion-body border-solid">
-                        <div class="grid grid-cols-4 gap-3 w-75 sm-grid-cols-2 md-grid-cols-3">
-                          <div class="product-color "><div class="product-color__inner flex-center" style="background: red;"></div></div>
-                          <div class="product-color "><div class="product-color__inner flex-center" style="background: rgb(114, 116, 12);"></div></div>
-                          <div class="product-color "><div class="product-color__inner flex-center" style="background: rgb(249, 253, 27);"></div></div>
-                          <div class="product-color "><div class="product-color__inner flex-center active" style="background: rgb(84, 219, 102);"></div></div>
-                          <div class="product-color "><div class="product-color__inner flex-center" style="background: rgb(4, 46, 10);"></div></div>
-                          <div class="product-color "><div class="product-color__inner flex-center" style="background: rgb(194, 28, 130);"></div></div>
-                          <div class="product-color "><div class="product-color__inner flex-center" style="background: rgb(0, 8, 1);"></div></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                </div>
-            </div>
           </section>
           <!-- End popular product Section -->
 
@@ -499,7 +365,7 @@
           <!-- End Middle banner Section -->
 
           <!--Colection Section -->
-          <section class="bg-02">Heloo</section>
+          <section class="bg-02"></section>
           <!-- End Colection Section -->
         </div>
 

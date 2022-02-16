@@ -86,6 +86,7 @@
       border-radius: 100%;
       transition: 120ms transform ease-in-out;
       box-shadow: inset 1em 1em $bg-05;
+      cursor: pointer;
     }
     &:checked::before {
       transform: scale(1);

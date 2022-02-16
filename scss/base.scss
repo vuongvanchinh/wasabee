@@ -166,6 +166,10 @@ li {
   display: flex;
   align-items: center;
 }
+.items-end {
+    display: flex;
+    align-items: end;
+}
 .flex-column {
   display: flex;
   flex-direction: column;

@@ -5,14 +5,14 @@
   z-index: 1;
   // background-color: red;
   &:before {
-    content: '';
+    content: "";
     display: block;
     $w: 40px;
     width: 30px;
     height: $w;
-   
+
     // background-color: red;
-    background-image: url('../media1/right-arrow.svg');
+    background-image: url("../media1/right-arrow.svg");
     background-position: center;
     background-repeat: no-repeat;
     opacity: 0.8;
@@ -22,19 +22,19 @@
     &::before {
       transform: rotate(180deg);
     }
-    
   }
   &.slick-next {
     right: 2rem;
   }
 }
 .new-products-slider {
-  .slick-prev  {
+  .slick-prev {
     left: 1rem;
-
+    top: calc(50% - 50px);
   }
 
   .slick-next {
     right: 1rem;
-  } 
+    top: calc(50% - 50px);
+  }
 }

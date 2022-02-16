@@ -103,6 +103,9 @@
   flex-direction: column;
 }
 
+.popular-products {
+  padding-left: 1rem;
+}
 .popular-products .side-banner {
   display: flex;
   align-items: center;
@@ -257,6 +260,7 @@
   border-radius: 100%;
   transition: 120ms transform ease-in-out;
   box-shadow: inset 1em 1em #33a1b2;
+  cursor: pointer;
 }
 .form-control-checkbox input:checked::before {
   transform: scale(1);
@@ -402,6 +406,7 @@
   display: flex;
   align-items: center;
   font-size: 0.875rem;
+  margin-bottom: 0;
 }
 .header__main .language-option ul li:first-child {
   margin-right: 1rem;
@@ -465,6 +470,423 @@
   font-size: 0.875rem;
   color: #fff;
   font-weight: 600;
+}
+
+.landing-slider__slide {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.landing-slider .bg-buttom-right {
+  background-image: var(--bg);
+  background-position: bottom right;
+  background-repeat: no-repeat;
+}
+
+.style-card {
+  padding-top: 100%;
+  position: relative;
+}
+.style-card .style-card-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+}
+.style-card__info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.style-card__info .social-icons img {
+  width: 25px;
+  height: 25px;
+}
+
+.style-tab {
+  margin-bottom: 1rem;
+}
+.style-tab .nav-item a.nav-link {
+  transition: all 0.5s ease;
+  font-weight: 700;
+  color: #707070;
+  font-size: 0.875rem;
+  border: 0;
+  background-color: transparent;
+}
+.style-tab .nav-item a.nav-link:hover {
+  color: #032e34;
+  border: 0;
+}
+.style-tab .nav-item a.nav-link.nav-link.active {
+  font-size: 1rem;
+  color: #032e34;
+  background-color: transparent !important;
+  border: 0;
+  background-color: red;
+}
+
+.nav-tabs {
+  border-bottom: 0;
+}
+
+.location-path {
+  font-size: 0.65rem;
+}
+
+.path-icon {
+  background: url("../media/svgs/angle-down-btn.svg") no-repeat;
+  background-size: 5px 5px;
+  background-position: center;
+  display: inline-block;
+  color: #000;
+  width: 7px;
+  height: 7px;
+  transform: rotate(-90deg);
+}
+
+.dropdown-icon {
+  background: url("../media/svgs/angle-down-btn.svg") no-repeat;
+  background-size: 10px 10px;
+  background-position: center;
+  display: inline-block;
+  color: #000;
+  width: 10px;
+  height: 10px;
+  border: none;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.flex-2 {
+  flex: 2;
+}
+
+.flex-3 {
+  flex: 3;
+}
+
+.flex-4 {
+  flex: 4;
+}
+
+.flex-5 {
+  flex: 5;
+}
+
+.flex-6 {
+  flex: 6;
+}
+
+.flex-7 {
+  flex: 7;
+}
+
+.bold-bottom {
+  border-bottom: solid #082e34;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.table-title {
+  background: #082e34;
+  color: #fff;
+}
+
+.table > :not(caption) > * > * {
+  border-bottom-width: 0;
+}
+
+.table {
+  width: 100%;
+}
+.table tr th {
+  text-align: center;
+}
+.table .text-left {
+  text-align: left;
+}
+.table tr:not(:first-child) {
+  border-bottom: 1px dashed #d6dfdf;
+}
+.table tr:first-child,
+.table tr:last-child {
+  border-bottom: 1px solid #082e34;
+}
+
+.form-checkbox {
+  font-size: 1rem;
+  font-weight: 600;
+  gap: 0.6rem;
+  padding: 0.3rem 0;
+  cursor: pointer;
+}
+.form-checkbox.accordion-button input {
+  transform: translateY(50%);
+}
+.form-checkbox input {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+  width: 0.7em;
+  height: 0.7em;
+  border: 0.5px solid #707070;
+  border-radius: 100%;
+  display: grid;
+  place-content: center;
+}
+.form-checkbox input::before {
+  content: "";
+  width: 0.4em;
+  height: 0.4em;
+  transform: scale(0);
+  border-radius: 100%;
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em #33a1b2;
+  cursor: pointer;
+}
+.form-checkbox input:checked::before {
+  transform: scale(1);
+}
+
+.w-25\2  {
+  width: 12.5%;
+}
+
+.w-15 {
+  width: 15%;
+}
+
+.w-40 {
+  width: 40%;
+}
+
+.w-60 {
+  width: 60%;
+}
+
+.w-65 {
+  width: 65%;
+}
+
+.w-70 {
+  width: 70%;
+}
+
+.w-35 {
+  width: 35%;
+}
+
+.w-30 {
+  width: 30%;
+}
+
+.w-5 {
+  width: 5%;
+}
+
+.w-95 {
+  width: 95%;
+}
+
+.flex-nowrap {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.card-info {
+  display: flex;
+}
+.card-info .card-form {
+  width: 5rem;
+  height: 6rem;
+}
+.card-info .img {
+  width: 100%;
+  height: 100%;
+}
+.card-info .content {
+  position: relative;
+}
+.card-info .content span {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.mid {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.number-form {
+  width: 100%;
+}
+
+.value-button {
+  display: inline-block;
+  border: 1px solid #ddd;
+  width: 1.5rem;
+  height: 2rem;
+  text-align: center;
+  vertical-align: middle;
+  padding: 0.2rem 0;
+  background: #fff;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.value-button:hover {
+  cursor: pointer;
+}
+
+.number-form #decrease {
+  border-radius: 50px 0 0 50px;
+}
+
+.number-form #increase {
+  border-radius: 0 50px 50px 0;
+}
+
+.number-form #input-wrap {
+  margin: 0px;
+  padding: 0px;
+}
+
+input#number {
+  text-align: center;
+  border: none;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  margin: 0px;
+  width: 2rem;
+  height: 2rem;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.line-through {
+  text-decoration: line-through;
+}
+
+.order-summary h4 {
+  border-style: none none dashed;
+  border-width: 1px;
+  border-color: #d6dfdf;
+  padding-bottom: 1rem;
+}
+.order-summary .text-red {
+  color: #f6fefe;
+}
+
+.btn-form button {
+  padding: 0.5rem 2.5rem;
+}
+
+.btn-pri {
+  border-radius: 50rem;
+  border: none;
+}
+
+.update-store {
+  color: #082e34;
+  background: none;
+  text-decoration: underline;
+  border: none;
+}
+
+.continue-buy {
+  background-color: #aae5de;
+  border: none;
+}
+
+.delete-product {
+  border: 1px solid #082e34;
+  background: none;
+}
+
+.payment-card .payment-address {
+  border-left: 0.5rem solid #aae5de;
+}
+.payment-card .payment-address .desc {
+  padding: 0.8rem;
+  background-color: #fbffff;
+}
+.payment-card .payment-address .desc button {
+  text-decoration: underline;
+  background: none;
+}
+.payment-card .order-option {
+  border-bottom: 1px dashed #d6dfdf;
+}
+
+.addition-form button {
+  border: 1px solid #082e34;
+  padding: 0.3rem 0;
+  background: none;
+  width: 15rem;
+}
+
+.momo-logo {
+  background-image: url(../media1/momo.svg);
+  background-size: contain;
+  width: 2rem;
+  height: 2rem;
+}
+
+.dash {
+  border: 1px dashed #d6dfdf;
+}
+
+.btns button {
+  background: url("../media/svgs/angle-down-btn.svg") no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 2rem;
+  height: 2rem;
+  padding: 0;
+  border: none;
+}
+.btns .left {
+  transform: rotate(90deg);
+}
+.btns .right {
+  transform: rotate(-90deg);
+}
+
+.rounded-5 {
+  border-radius: 50rem;
+}
+
+.border-07 {
+  border: 0.5px solid #707070;
+}
+
+.bg_light-blue {
+  background-color: #afdbe0;
 }
 
 /*# sourceMappingURL=index.css.map */

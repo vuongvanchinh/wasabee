@@ -8,6 +8,7 @@
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Fahkwang:wght@200&display=swap');
     </style>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!-- <link rel="stylesheet" href="style.css.map"> -->
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
     <link rel="stylesheet" href="css/base.css" />
@@ -19,7 +20,10 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/custom-slick-slider.css">
     <link rel="stylesheet" href="css/index.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
     <!-- Add the slick-theme.css if you want default styling -->
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <!-- Add the slick-theme.css if you want default styling -->
@@ -29,7 +33,7 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="container">
+    <div class="container-page">
       <main>
         <!-- Header  -->
         <header class="header">
@@ -93,27 +97,36 @@
           <!-- Slider banner -->
           <section>
               <div class="landing-slider">
-                <div class="landing-slider__slide flex p-8 flex" style="height: 80vh; background-image:url('./media1/main-banner.jpg')">
-                  <div class="col-5 md-8 items-center h-full">
-                    <div>
-                      <h1 class="heading-01">Outdoor <br> Collecttion</h1>
-                      <p class="text-00 mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt quo obcaecati architecto odit, aut natus autem delectus</p>
-                      <button class="button-01">Tìm hiểu thêm</button>
+                <div>
+                  <div class="landing-slider__slide flex space-between p-8 " style="height: 80vh; min-height:500px; background-image:url('./media1/main-banner.jpg')">
+                    <div class="col-5 md-8 items-center h-full">
+                      <div>
+                        <h1 class="heading-01">Outdoor <br> Collecttion</h1>
+                        <p class="text-00 mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt quo obcaecati architecto odit, aut natus autem delectus</p>
+                        <p><button class="button-01">Tìm hiểu thêm</button></p>
+                      </div>
+                    </div>
+                    <div class="col-4 bg-buttom-right items-end" style="--bg: url('../media1/pc_01-1.png')">
+                      <div>
+                        <h3 class="heading-03 text-00 font-700">OUR SHOWROOM WILL BE OPEN THIS FRIDAY 21 JANUARY. SEE YOU</h3>
+                        <a href="#" class="text-pre-icon text-00">Khám phá ngay</a>
+                      </div>
+
                     </div>
                   </div>
-                  <div class="col-3 md-col-hidden"></div>
-                  <div class="col-4"></div>
                 </div>
-                <div class="landing-slider__slide flex p-8 flex" style="height: 80vh; background-image:url('./media1/main-banner.jpg')">
-                  <div class="col-5 md-8 items-center ">
-                    <div>
-                      <h1 class="heading-01 ">Outdoor <br> Collecttion</h1>
-                      <p class="text-00 mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt quo obcaecati architecto odit, aut natus autem delectus</p>
-                      <button class="button-01">Tìm hiểu thêm</button>
+                <div>
+                  <div class="landing-slider__slide flex p-8 flex" style="height: 80vh; background-image:url('./media1/main-banner.jpg')">
+                    <div class="col-5 md-8 items-center ">
+                      <div>
+                        <h1 class="heading-01 ">Outdoor <br> Collecttion</h1>
+                        <p class="text-00 mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt quo obcaecati architecto odit, aut natus autem delectus</p>
+                        <button class="button-01">Tìm hiểu thêm</button>
+                      </div>
                     </div>
+                    <div class="col-3 md-col-hidden"></div>
+                    <div class="col-4"></div>
                   </div>
-                  <div class="col-3 md-col-hidden"></div>
-                  <div class="col-4"></div>
                 </div>
               </div>
           </section>
@@ -944,6 +957,328 @@
 
             </div>
           </section>
+          <section>
+            <h2 class="heading-02 text-center">Wasabee style</h2>
+            <!-- Start Tabs -->
+            <div class="nav-tabs-wrapper">
+              <ul class="nav nav-tabs style-tab dragscroll horizontal justify-center">
+                  <li class="nav-item"><a class="nav-link text-04 text-md font-700 active" data-toggle="tab" href="#tabAll">Tất cả</a></li>
+                  <li class="nav-item"><a class="nav-link text-04 text-md font-700" data-toggle="tab" href="#tabFemale">Nữ</a></li>
+                  <li class="nav-item"><a class="nav-link text-04 text-md font-700" data-toggle="tab" href="#tabMale">Nam</a></li>
+              </ul>
+            </div>
+
+            <!-- <span class="nav-tabs-wrapper-border" role="presentation"></span> -->
+
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="tabAll">
+                <div>
+                  <div class="slider-style silder-style-01" id="silder-style-01">
+                    <div class="px-2">
+                      <div class="style-card">
+                        <img class="style-card-img" src="./media1/style1.jpg" alt="">
+                        <div class="style-card__info px-4 py-3 text-00 font-600 flex bg-01 align-center space-between">
+                          <span>Mahdi Changhard</span>
+                          <div class="social-icons flex align-center">
+                            <a href="#" class="pr-3">
+                              <img src="./media1/facebook.svg" alt="">
+                            </a>
+                            <a href="#" class="pr-3">
+                              <img src="./media1/instagram.svg" alt="">
+                            </a>
+                            <a href="#">
+                              <img src="./media1/twitter.svg" alt="">
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="px-2">
+                      <div class="style-card">
+                        <img class="style-card-img" src="./media1/style1.jpg" alt="">
+                        <div class="style-card__info px-4 py-3 text-00 font-600 flex bg-01 align-center space-between">
+                          <span>Mahdi Changhard</span>
+                          <div class="social-icons flex align-center">
+                            <a href="#" class="pr-3">
+                              <img src="./media1/facebook.svg" alt="">
+                            </a>
+                            <a href="#" class="pr-3">
+                              <img src="./media1/instagram.svg" alt="">
+                            </a>
+                            <a href="#">
+                              <img src="./media1/twitter.svg" alt="">
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="px-2">
+                      <div class="style-card">
+                        <img class="style-card-img" src="./media1/style2.jpg" alt="">
+                        <div class="style-card__info px-4 py-3 text-00 font-600 flex bg-01 align-center space-between">
+                          <span>Mahdi Changhard</span>
+                          <div class="social-icons flex align-center">
+                            <a href="#" class="pr-3">
+                              <img src="./media1/facebook.svg" alt="">
+                            </a>
+                            <a href="#" class="pr-3">
+                              <img src="./media1/instagram.svg" alt="">
+                            </a>
+                            <a href="#">
+                              <img src="./media1/twitter.svg" alt="">
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="px-2">
+                      <div class="style-card">
+                        <img class="style-card-img" src="./media1/style3.jpg" alt="">
+                        <div class="style-card__info px-4 py-3 text-00 font-600 flex bg-01 align-center space-between">
+                          <span>Mahdi Changhard</span>
+                          <div class="social-icons flex align-center">
+                            <a href="#" class="pr-3">
+                              <img src="./media1/facebook.svg" alt="">
+                            </a>
+                            <a href="#" class="pr-3">
+                              <img src="./media1/instagram.svg" alt="">
+                            </a>
+                            <a href="#">
+                              <img src="./media1/twitter.svg" alt="">
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="px-2">
+                      <div class="style-card">
+                        <img class="style-card-img" src="./media1/style4.jpg" alt="">
+                        <div class="style-card__info px-4 py-3 text-00 font-600 flex bg-01 align-center space-between">
+                          <span>Mahdi Changhard</span>
+                          <div class="social-icons flex align-center">
+                            <a href="#" class="pr-3">
+                              <img src="./media1/facebook.svg" alt="">
+                            </a>
+                            <a href="#" class="pr-3">
+                              <img src="./media1/instagram.svg" alt="">
+                            </a>
+                            <a href="#">
+                              <img src="./media1/twitter.svg" alt="">
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="tabFemale">
+                <div>
+                  <div class="slider-style" id="silder-style-02">
+                    <div class="px-2">
+                      <div class="style-card">
+                        <img class="style-card-img" src="./media1/style1.jpg" alt="">
+                        <div class="style-card__info px-4 py-3 text-00 font-600 flex bg-01 align-center space-between">
+                          <span>Mahdi Changhard</span>
+                          <div class="social-icons flex align-center">
+                            <a href="#" class="pr-3">
+                              <img src="./media1/facebook.svg" alt="">
+                            </a>
+                            <a href="#" class="pr-3">
+                              <img src="./media1/instagram.svg" alt="">
+                            </a>
+                            <a href="#">
+                              <img src="./media1/twitter.svg" alt="">
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="px-2">
+                      <div class="style-card">
+                        <img class="style-card-img" src="./media1/style1.jpg" alt="">
+                        <div class="style-card__info px-4 py-3 text-00 font-600 flex bg-01 align-center space-between">
+                          <span>Mahdi Changhard</span>
+                          <div class="social-icons flex align-center">
+                            <a href="#" class="pr-3">
+                              <img src="./media1/facebook.svg" alt="">
+                            </a>
+                            <a href="#" class="pr-3">
+                              <img src="./media1/instagram.svg" alt="">
+                            </a>
+                            <a href="#">
+                              <img src="./media1/twitter.svg" alt="">
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="px-2">
+                      <div class="style-card">
+                        <img class="style-card-img" src="./media1/style2.jpg" alt="">
+                        <div class="style-card__info px-4 py-3 text-00 font-600 flex bg-01 align-center space-between">
+                          <span>Mahdi Changhard</span>
+                          <div class="social-icons flex align-center">
+                            <a href="#" class="pr-3">
+                              <img src="./media1/facebook.svg" alt="">
+                            </a>
+                            <a href="#" class="pr-3">
+                              <img src="./media1/instagram.svg" alt="">
+                            </a>
+                            <a href="#">
+                              <img src="./media1/twitter.svg" alt="">
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="px-2">
+                      <div class="style-card">
+                        <img class="style-card-img" src="./media1/style3.jpg" alt="">
+                        <div class="style-card__info px-4 py-3 text-00 font-600 flex bg-01 align-center space-between">
+                          <span>Mahdi Changhard</span>
+                          <div class="social-icons flex align-center">
+                            <a href="#" class="pr-3">
+                              <img src="./media1/facebook.svg" alt="">
+                            </a>
+                            <a href="#" class="pr-3">
+                              <img src="./media1/instagram.svg" alt="">
+                            </a>
+                            <a href="#">
+                              <img src="./media1/twitter.svg" alt="">
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="px-2">
+                      <div class="style-card">
+                        <img class="style-card-img" src="./media1/style4.jpg" alt="">
+                        <div class="style-card__info px-4 py-3 text-00 font-600 flex bg-01 align-center space-between">
+                          <span>Mahdi Changhard</span>
+                          <div class="social-icons flex align-center">
+                            <a href="#" class="pr-3">
+                              <img src="./media1/facebook.svg" alt="">
+                            </a>
+                            <a href="#" class="pr-3">
+                              <img src="./media1/instagram.svg" alt="">
+                            </a>
+                            <a href="#">
+                              <img src="./media1/twitter.svg" alt="">
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="tabMale">
+                <div>
+                  <div class="slider-style" id="silder-style-03">
+                    <div class="px-2">
+                      <div class="style-card">
+                        <img class="style-card-img" src="./media1/style1.jpg" alt="">
+                        <div class="style-card__info px-4 py-3 text-00 font-600 flex bg-01 align-center space-between">
+                          <span>Mahdi Changhard</span>
+                          <div class="social-icons flex align-center">
+                            <a href="#" class="pr-3">
+                              <img src="./media1/facebook.svg" alt="">
+                            </a>
+                            <a href="#" class="pr-3">
+                              <img src="./media1/instagram.svg" alt="">
+                            </a>
+                            <a href="#">
+                              <img src="./media1/twitter.svg" alt="">
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="px-2">
+                      <div class="style-card">
+                        <img class="style-card-img" src="./media1/style1.jpg" alt="">
+                        <div class="style-card__info px-4 py-3 text-00 font-600 flex bg-01 align-center space-between">
+                          <span>Mahdi Changhard</span>
+                          <div class="social-icons flex align-center">
+                            <a href="#" class="pr-3">
+                              <img src="./media1/facebook.svg" alt="">
+                            </a>
+                            <a href="#" class="pr-3">
+                              <img src="./media1/instagram.svg" alt="">
+                            </a>
+                            <a href="#">
+                              <img src="./media1/twitter.svg" alt="">
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="px-2">
+                      <div class="style-card">
+                        <img class="style-card-img" src="./media1/style2.jpg" alt="">
+                        <div class="style-card__info px-4 py-3 text-00 font-600 flex bg-01 align-center space-between">
+                          <span>Mahdi Changhard</span>
+                          <div class="social-icons flex align-center">
+                            <a href="#" class="pr-3">
+                              <img src="./media1/facebook.svg" alt="">
+                            </a>
+                            <a href="#" class="pr-3">
+                              <img src="./media1/instagram.svg" alt="">
+                            </a>
+                            <a href="#">
+                              <img src="./media1/twitter.svg" alt="">
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="px-2">
+                      <div class="style-card">
+                        <img class="style-card-img" src="./media1/style3.jpg" alt="">
+                        <div class="style-card__info px-4 py-3 text-00 font-600 flex bg-01 align-center space-between">
+                          <span>Mahdi Changhard</span>
+                          <div class="social-icons flex align-center">
+                            <a href="#" class="pr-3">
+                              <img src="./media1/facebook.svg" alt="">
+                            </a>
+                            <a href="#" class="pr-3">
+                              <img src="./media1/instagram.svg" alt="">
+                            </a>
+                            <a href="#">
+                              <img src="./media1/twitter.svg" alt="">
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="px-2">
+                      <div class="style-card">
+                        <img class="style-card-img" src="./media1/style4.jpg" alt="">
+                        <div class="style-card__info px-4 py-3 text-00 font-600 flex bg-01 align-center space-between">
+                          <span>Mahdi Changhard</span>
+                          <div class="social-icons flex align-center">
+                            <a href="#" class="pr-3">
+                              <img src="./media1/facebook.svg" alt="">
+                            </a>
+                            <a href="#" class="pr-3">
+                              <img src="./media1/instagram.svg" alt="">
+                            </a>
+                            <a href="#">
+                              <img src="./media1/twitter.svg" alt="">
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+<!-- End Tabs -->
+
+          </section>
           <!-- End Colection Section -->
         </div>
 
@@ -956,7 +1291,7 @@
               <p class="text-sm text-08 font-600">Liên hệ cho chúng tôi theo số</p>
               <div class="text-icon mb-3">
                 <img class="text-icon__icon" src="./media1/phone-icon.svg"/>
-                <div class="text-icon__text text-00 text-xl">0123-456-789</div>
+                <div class="text-icon__text text-00 text-xl font-700">0123-456-789</div>
               </div>
               <p class="text-sm text-08 font-600">Hoặc gửi Email cho chúng tôi</p>
               <div class="text-icon mb-4">
