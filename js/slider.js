@@ -34,7 +34,7 @@ $(document).ready(() => {
             breakpoint: 768,
             settings: {
               arrows: false,
-              slidesToShow: 3
+              slidesToShow: 1
             }
           },
           {
@@ -49,6 +49,8 @@ $(document).ready(() => {
         ]
   });
 
+
+  // slider style
   $(".slider-style").slick({
     slidesToShow: 4,
     slidesToScroll: 1,
@@ -63,16 +65,16 @@ $(document).ready(() => {
         }
       },
         {
-          breakpoint: 650,
+          breakpoint: 900,
           settings: {
             arrows: false,
             // centerMode: true,
             // centerPadding: '40px',
-            slidesToShow: 1
+            slidesToShow: 2
           }
         },
         {
-          breakpoint: 480,
+          breakpoint: 600,
           settings: {
             arrows: false,
             // centerMode: true,
@@ -87,4 +89,45 @@ $('a[data-toggle="tab"]').on('shown.bs.tab', function(e) {
   e.relatedTarget
   $('.slider-style').slick('setPosition');
 });
+// End slider style
+// monopoly-slider 
+$('.monopoly-slider').slick({
+  slidesToShow: 1,
+  centerPadding: '20%',
+  slidesToScroll: 1,
+  centerMode: true,
+  responsive: [
+    {
+      breakpoint: 1280,
+      settings: {
+        arrows: true,
+        centerMode: true,
+        centerPadding: '22%',
+        slidesToShow: 1
+      }
+    },
+      {
+        breakpoint: 900,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '20%',
+          slidesToShow: 1
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '20%',
+          slidesToShow: 1
+        }
+      }
+    ]
+});
+
+// end monopoly 
 })
+
+

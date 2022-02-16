@@ -37,3 +37,66 @@
     background-size: contain;
   }
 }
+
+.button-02 {
+  --arrow: url("../media//svgs/arrow-button-bl.svg");
+  @extend .button;
+  color: $color-02;
+  display: block;
+  transition: all 0.3s ease;
+  align-items: center;
+  padding-right: calc(1rem + 22px);
+  line-height: 1;
+  background-color: #fff;
+
+  position: relative;
+
+  &:hover {
+    background-color: transparent;
+    color: #fff;
+    --arrow: url("../media//svgs/arrow-button.svg");
+  }
+
+  &::after {
+    $w: 12px;
+    content: "";
+    width: $w;
+    height: $w;
+    position: absolute;
+    top: calc(50% - $w/2);
+    right: 1rem;
+    background-image: var(--arrow);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+
+.button-03 {
+  border: 0;
+  outline: 0;
+  display: inline-block;
+  border-radius: 50%;
+  $w: 40px;
+  width: $w;
+  height: $w;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.5s ease-out;
+
+  &:hover, &:active {
+    outline: none;
+    border: 2px solid $color-02;
+    background-color: transparent;
+
+  }
+
+  img {
+    $w: 14px;
+    width: $w;
+    height: $w;
+    transform: rotate(-90deg);
+
+  }
+}

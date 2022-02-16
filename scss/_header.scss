@@ -1,6 +1,7 @@
 @import "variables";
-
 .header {
+
+
   &__banner {
     height: 100px;
     display: flex;
@@ -34,9 +35,10 @@
           padding: 0.5rem 0;
           padding-right: $padding-right;
           border: 0;
-          border-bottom: 2px solid $color-06;
+          border-bottom: 2px solid $border-color;
           outline: 0;
           width: 450px;
+          font-size: 1rem;
           &::placeholder {
             color: $color-01;
           }
@@ -57,40 +59,13 @@
           }
         }
 
-        .language-option {
-          border-left: 2px solid $color-06;
-          border-right: 2px solid $color-06;
-          padding: 0 2rem;
-          height: 100%;
-          align-items: center;
-          display: flex;
-          ul {
-            display: flex;
-            align-items: center;
-
-            li {
-              color: $color-07;
-              font-weight: 600;
-              font-size: 0.875rem;
-
-              &:first-child {
-                margin-right: 1rem;
-              }
-              &.selected {
-                color: $color-01;
-                font-weight: 600;
-                font-size: 1rem;
-                background-color: red;
-              }
-            }
-          }
-        }
+       
       }
     }
 
     .language-option {
-      border-left: 2px solid $color-06;
-      border-right: 2px solid $color-06;
+      border-left: 2px solid $border-color;
+      border-right: 2px solid $border-color;
       padding: 0 2rem;
       height: 100%;
       align-items: center;
@@ -171,13 +146,13 @@
     justify-content: center;
     align-items: center;
 
-    .nav-item {
+    .header__nav-item {
       text-transform: uppercase;
       margin-right: 2rem;
       padding: 0.5rem;
-      font-size: 0.875rem;
+      font-size: 1rem;
       color: $color-10;
-      font-weight: 600;
+      font-weight: 700;
     }
   }
 }

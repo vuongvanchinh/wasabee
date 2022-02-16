@@ -3,5 +3,27 @@
 .footer {
     .copy-right {
         border-top: 1px solid $color-04;
+        position: relative;
+        .go-to-top {
+            position: absolute;
+            bottom: calc(100% + 1rem);
+            right: 1rem;
+        
+        }
+        
+    }
+    
+    .social-icons {
+        
+        img {
+            $w: 40px;
+            width: $w;
+            height: $w;
+        }
+        a {
+            &:not(:last-child) {
+                margin-right: 1rem;
+            }
+        }
     }
 }
