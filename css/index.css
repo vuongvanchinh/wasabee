@@ -313,27 +313,19 @@
 }
 .form-control-checkbox input {
   -webkit-appearance: none;
-  appearance: none;
   margin: 0;
-  width: 0.7em;
-  height: 0.7em;
-  border: 0.5px solid #707070;
-  border-radius: 100%;
+  width: 0.7rem;
+  height: 0.7rem;
+  border: 2.5px solid #fff;
+  outline: 2px solid rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  cursor: pointer;
   display: grid;
   place-content: center;
 }
-.form-control-checkbox input::before {
-  content: "";
-  width: 0.4em;
-  height: 0.4em;
-  transform: scale(0);
-  border-radius: 100%;
-  transition: 120ms transform ease-in-out;
-  box-shadow: inset 1em 1em #33a1b2;
-  cursor: pointer;
-}
-.form-control-checkbox input:checked::before {
-  transform: scale(1);
+.form-control-checkbox input:checked {
+  outline: 2px solid rgba(0, 0, 0, 0.15);
+  background: #33a1b2;
 }
 .form-control-checkbox.accordion-button::after {
   content: none;
@@ -606,6 +598,32 @@
   border: none;
 }
 
+.dropdown-btn {
+  border: none;
+  background-color: white;
+  position: relative;
+}
+.dropdown-btn::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  margin-top: -5px;
+  border: none;
+  background: url("../media/svgs/angle-down-btn.svg") no-repeat;
+  background-size: 10px 10px;
+  background-position: center;
+  width: 10px;
+  height: 10px;
+}
+
+.dropdown-menu {
+  min-width: 0;
+  padding: 0;
+}
+.dropdown-menu .dropdown-toggle {
+  width: 10rem;
+}
+
 .flex-1 {
   flex: 1;
 }
@@ -643,6 +661,10 @@
 }
 
 .table-title {
+  border: none;
+  background: none;
+}
+.table-title.active {
   background: #082e34;
   color: #fff;
 }
@@ -680,27 +702,19 @@
 }
 .form-checkbox input {
   -webkit-appearance: none;
-  appearance: none;
   margin: 0;
-  width: 0.7em;
-  height: 0.7em;
-  border: 0.5px solid #707070;
-  border-radius: 100%;
+  width: 0.7rem;
+  height: 0.7rem;
+  cursor: pointer;
+  border: 2.5px solid #fff;
+  outline: 2px solid rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
   display: grid;
   place-content: center;
 }
-.form-checkbox input::before {
-  content: "";
-  width: 0.4em;
-  height: 0.4em;
-  transform: scale(0);
-  border-radius: 100%;
-  transition: 120ms transform ease-in-out;
-  box-shadow: inset 1em 1em #33a1b2;
-  cursor: pointer;
-}
-.form-checkbox input:checked::before {
-  transform: scale(1);
+.form-checkbox input:checked {
+  outline: 2px solid rgba(0, 0, 0, 0.15);
+  background: #33a1b2;
 }
 
 .w-25\2  {
@@ -859,6 +873,7 @@ input[type=number]::-webkit-outer-spin-button {
 .btn-pri {
   border-radius: 50rem;
   border: none;
+  background: none;
 }
 
 .update-store {
@@ -956,6 +971,14 @@ input[type=number]::-webkit-outer-spin-button {
   background-color: #fff;
 }
 
+.img-list button.active img {
+  filter: opacity(100%);
+}
+.img-list img {
+  filter: opacity(30%);
+  cursor: pointer;
+}
+
 .delivery-details {
   position: relative;
   width: 13rem;
@@ -983,6 +1006,21 @@ input[type=number]::-webkit-outer-spin-button {
   background-size: cover;
   background-position: center;
   display: inline-block;
+}
+
+.btn-pri .product-love {
+  width: 1.5rem;
+  height: 1.5rem;
+  color: #28a1b2;
+  font-weight: 600;
+  z-index: 2;
+  background-image: url(../media1/heart-icon.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.btn-pri.active .product-love {
+  background-image: url(../media1/heart-white-icon.svg);
 }
 
 .policy-card img {

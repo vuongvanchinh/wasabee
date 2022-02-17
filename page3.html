@@ -110,18 +110,52 @@
           </div>
           <!-- Details-->
           <section>
+            <div class="d-flex align-items-start">
+
+
+            </div>
             <div class="form flex-nowrap mt-5 border-bottom">
-              <div class="img-list w-5 flex-column gap-2">
-                <img src="./media/imgs/product02.png" alt="" srcset="">
-                <img src="./media/imgs/product02.png" alt="" srcset="">
-                <img src="./media/imgs/product02.png" alt="" srcset="">
-                <img src="./media/imgs/product02.png" alt="" srcset="">
-                <img src="./media/imgs/product02.png" alt="" srcset="">
+              <div class="img-list w-5 ">
+                <div class="nav flex-column nav-pills gap-2" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                  <button class="btn-pri active" id="v-pills-product1-tab" data-bs-toggle="pill" data-bs-target="#v-pills-product1" type="button" role="tab" aria-controls="v-pills-product1" aria-selected="true">         
+                    <img src="./media/imgs/product02.png" alt="" srcset="">
+                  </button>
+                  <button class="btn-pri" id="v-pills-product2-tab" data-bs-toggle="pill" data-bs-target="#v-pills-product2" type="button" role="tab" aria-controls="v-pills-product2" aria-selected="false">
+                  <img src="./media/imgs/product02.png" alt="" srcset="">
+                    </button>
+                  <button class="btn-pri" id="v-pills-product3-tab" data-bs-toggle="pill" data-bs-target="#v-pills-product3" type="button" role="tab" aria-controls="v-pills-product3" aria-selected="false">
+                  <img src="./media/imgs/product01.png" alt="" srcset="">
+                  </button>
+                  <button class="btn-pri" id="v-pills-product4-tab" data-bs-toggle="pill" data-bs-target="#v-pills-product4" type="button" role="tab" aria-controls="v-pills-product4" aria-selected="false">
+                  <img src="./media/imgs/product02.png" alt="" srcset="">
+                  </button>
+                  <button class="btn-pri" id="v-pills-product5-tab" data-bs-toggle="pill" data-bs-target="#v-pills-product5" type="button" role="tab" aria-controls="v-pills-product5" aria-selected="false">
+                  <img src="./media/imgs/product01.png" alt="" srcset="">
+                  </button>
+                </div>
+
               </div>
               <div class="w-95 pl-3 pr-12">
+
                 <div class="main-img flex-nowrap">
                   <div class="img w-50 ">
-                    <img src="./media/imgs/product02.png" alt="" srcset="">
+                    <div class="tab-content" id="v-pills-tabContent">
+                      <div class="tab-pane fade show active" id="v-pills-product1" role="tabpanel" aria-labelledby="v-pills-product1-tab">
+                        <img src="./media/imgs/product02.png" alt="" srcset="">
+                      </div>
+                      <div class="tab-pane fade" id="v-pills-product2" role="tabpanel" aria-labelledby="v-pills-product2-tab">
+                        <img src="./media/imgs/product02.png" alt="" srcset="">
+                      </div>
+                      <div class="tab-pane fade" id="v-pills-product3" role="tabpanel" aria-labelledby="v-pills-product3-tab">
+                        <img src="./media/imgs/product01.png" alt="" srcset="">
+                      </div>
+                      <div class="tab-pane fade" id="v-pills-product4" role="tabpanel" aria-labelledby="v-pills-product4-tab">
+                        <img src="./media/imgs/product02.png" alt="" srcset="">
+                      </div>
+                      <div class="tab-pane fade" id="v-pills-product5" role="tabpanel" aria-labelledby="v-pills-product5-tab">
+                        <img src="./media/imgs/product01.png" alt="" srcset="">
+                      </div>
+                    </div>
                   </div>
                   <div class="details w-50 py-6 pl-10">
                     <h2 class="heading-02 font-600 my-auto">KNOCK ON WOOD</h2>
@@ -169,17 +203,17 @@
                     <div class="flex-nowrap cart-btns text-sm gap-3">
                       <button class="btn-pri px-4 py-1 border-07 font-600">Mua ngay</button>
                       <button class="btn-pri px-4 py-1 border-07 font-600">Thêm vào giỏ hàng</button>
-                      <button class="btn-pri">traitim</button>
+                      <button class="btn-pri"><div class="product-love"></div></button>
                     </div>
 
-                    <div class="w-70 my-3">
+                    <div class="w-70 my-4">
                       <!-- <img src="./media1/thanhtoan-icon.svg" alt="" srcset=""> -->
                       <p class="delivery-details my-auto text-ssm">Free shipping over $300(3-7days) & free returns</p>
                     </div>
 
                     <div class=" mt-6">
                       <div class="flex-nowrap md-px-6 sm-px-0 gap-4 ">
-                        <div class="p-2 flex-nowrap align-items-center  justify-content-between  bg-02 flex-1 gap-2">
+                        <div class="p-2 flex-nowrap align-items-center  justify-content-between  bg-02 flex-1 gap-5">
                             <div class="px-1 py-1">
                                 <h6 class="heading-06 my-auto">Sale off <span>70%</span></h6>
                                 <p class="text-sm text-04 font-600 my-auto">Lorem ipsum</p>
@@ -188,7 +222,7 @@
                                 <img src="./media1/voucher2.png" alt="" srcset="">
                             </div>
                         </div>
-                        <div class="p-2 flex-nowrap align-items-center justify-content-between bg-06 flex-1">
+                        <div class="p-2 flex-nowrap align-items-center justify-content-between bg-06 flex-1 gap-5">
                             <div class="px-1 py-1">
                               <h6 class="heading-06 my-auto">Welcome <span>Deal</span></h6>
                               <p class="text-sm text-04 font-600 my-auto">Lorem ipsum</p>
@@ -204,31 +238,46 @@
                 </div>
                 <div class="description">
 
-                  <div class="payment-card my-5">
-                    <div class="bold-bottom mb-4 flex-nowrap">
-                      <div class="table-title text-md text-center w-20 p-2 ">Tùy chọn giao hàng</div>
-                      <div class=" text-md text-center w-20 p-2 ">Khách hàng đánh giá</div>
-                      <div class=" text-md text-center w-20 p-2 ">Chính sách đổi trả</div>
-                    </div>
+                  <div class="payment-card my-5" >
 
-                    <div class="font-400">
-                      <p> <span class="font-600">Chất liệu: </span> 52% sợi acrylic 28% nylon 20% sợi polyester</p>
-                      <p><span class="font-600">Độ co giãn:</span> có</p>
-                      <p> <span class="font-600">Lớp lót trong:</span> Không</p>
-                    </div>
-       
-                    <div class="font-400">
-                      <p class="m-auto"><span class="note-icon mr-1" ></span>Xin vui lòng tham khảo chất liệu cũng như màu sắc trên ảnh đơn của sản phẩm. Tuy nhiên cần chú ý màu sắc khi xem qua màn hình máy tính/ điện thoại có thể sẽ hơi khác so với màu sản phầm thực tế. Màu của sản phẩm thực tế là màu chuẩn.</p>
-                      <p class="m-auto"><span class="note-icon mr-1"></span>Những sản hẩm sáng/đậm màu được khuyên giặt riêng</p>
-                      <p class="m-auto"><span class="note-icon mr-1"></span>Tất cả sản phẩm chất liệu len và vải mỏng cần được bỏ vào túi khi giặt</p>
-                    </div>
+                    <ul class="nav nav-tabs bold-bottom mb-4 flex-nowrap" id="myTab" role="tablist">
+                      <li class="nav-item" role="presentation">
+                        <button class="table-title text-md text-center py-2 px-4 active" id="order-option-tab" data-bs-toggle="tab" data-bs-target="#order-option" type="button" role="tab" aria-controls="order-option" aria-selected="true">Tùy chọn giao hàng</button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button class="table-title text-md text-center  py-2 px-4 " id="customer-rate-tab" data-bs-toggle="tab" data-bs-target="#customer-rate" type="button" role="tab" aria-controls="customer-rate" aria-selected="false">Khách hàng đánh giá</button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button class="table-title text-md text-center  py-2 px-4 " id="swap-policy-tab" data-bs-toggle="tab" data-bs-target="#swap-policy" type="button" role="tab" aria-controls="swap-policy" aria-selected="false">Chính sách đổi trả</button>
+                      </li>
+                    </ul>
 
+                    <div class="tab-content" id="myTabContent">
+                      <div class="tab-pane fade show active" id="order-option" role="tabpanel" aria-labelledby="order-option-tab">
+                        <div class="font-400">
+                          <p> <span class="font-600">Chất liệu: </span> 52% sợi acrylic 28% nylon 20% sợi polyester</p>
+                          <p><span class="font-600">Độ co giãn:</span> có</p>
+                          <p> <span class="font-600">Lớp lót trong:</span> Không</p>
+                        </div>
+           
+                        <div class="font-400">
+                          <p class="m-auto"><span class="note-icon mr-1" ></span>Xin vui lòng tham khảo chất liệu cũng như màu sắc trên ảnh đơn của sản phẩm. Tuy nhiên cần chú ý màu sắc khi xem qua màn hình máy tính/ điện thoại có thể sẽ hơi khác so với màu sản phầm thực tế. Màu của sản phẩm thực tế là màu chuẩn.</p>
+                          <p class="m-auto"><span class="note-icon mr-1"></span>Những sản hẩm sáng/đậm màu được khuyên giặt riêng</p>
+                          <p class="m-auto"><span class="note-icon mr-1"></span>Tất cả sản phẩm chất liệu len và vải mỏng cần được bỏ vào túi khi giặt</p>
+                        </div>
+    
+
+                      </div>
+                      <div class="tab-pane fade" id="customer-rate" role="tabpanel" aria-labelledby="customer-rate-tab">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam vero ut repellendus. Nisi, accusamus impedit. Sed animi facere dolorum repellendus autem quasi corrupti facilis magni.</div>
+                      <div class="tab-pane fade" id="swap-policy" role="tabpanel" aria-labelledby="swap-policy-tab">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde minima mollitia molestiae veritatis! Ad cum corporis sequi debitis aliquid quos obcaecati eveniet odit, quod alias nisi excepturi doloribus tempora. Saepe incidunt doloremque, odit quibusdam perferendis, illum totam id in consequuntur laudantium expedita magni. Incidunt quia explicabo error, modi ullam repellat.</div>
+                    </div>
                     <div class="gallery grid grid-cols-2 gap-3 w-full mt-4">
                       <img src="./media/imgs/product02.png" alt="" srcset="">
                       <img src="./media/imgs/product01.png" alt="" srcset="">
                       <img src="./media/imgs/product02.png" alt="" srcset="">
                       <img src="./media/imgs/product01.png" alt="" srcset="">
                     </div>
+
                   </div>
                   
                 </div>
