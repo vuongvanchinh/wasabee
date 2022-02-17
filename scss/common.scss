@@ -1,5 +1,4 @@
 @use "sass:math";
-
 @import "variables";
 @import "mixins";
 
@@ -27,6 +26,14 @@
   color: $color-01;
   font-size: 1.5rem;
   font-family: 700;
+  
+}
+.heading-04 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: $color-01;
+  text-transform: uppercase;
+
 }
 .heading-05 {
   text-transform: uppercase;
@@ -172,6 +179,16 @@
 }
 .uppercase {
   text-transform: uppercase;
+}
+.rounded-full {
+  border-radius: 50%;
+}
+
+.bg-img {
+  background-image: var(--bg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 // Padding
 @for $i from 0 through 12 {
