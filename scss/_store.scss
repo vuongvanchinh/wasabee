@@ -78,10 +78,18 @@
 .text-left {
   text-align: left;
 }
+
 .table-title {
-  background: $color-11;
-  color: $white;
+  & {
+    border: none;
+    background: none;
+  }
+  &.active {
+    background: $color-11;
+    color: $white;
+  }
 }
+
 .table > :not(caption) > * > * {
   border-bottom-width: 0;
 }
@@ -278,6 +286,7 @@ input[type="number"]::-webkit-outer-spin-button {
 .btn-pri {
   border-radius: 50rem;
   border: none;
+  background: none;
 }
 
 .update-store {

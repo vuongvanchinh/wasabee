@@ -18,6 +18,20 @@
   }
 }
 
+.img-list {
+  button {
+    &.active {
+      img {
+        filter: opacity(100%);
+      }
+    }
+  }
+  img {
+    filter: opacity(30%);
+    cursor: pointer;
+  }
+}
+
 .delivery-details {
   position: relative;
   width: 13rem;
@@ -58,4 +72,23 @@
   //   width: 10px;
   //   height: 10px;
   // }
+}
+.btn-pri {
+  .product-love {
+    width: 1.5rem;
+    height: 1.5rem;
+    color: rgb(40, 161, 178);
+    font-weight: 600;
+    z-index: 2;
+    background-image: url(../media1/heart-icon.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  &.active {
+    .product-love {
+      background-image: url(../media1/heart-white-icon.svg);
+    }
+  }
 }
