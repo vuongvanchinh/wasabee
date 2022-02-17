@@ -367,19 +367,19 @@
   transition: 0.2s all ease-in-out;
 }
 .product-size__inner.active {
-  background-color: #aae5de;
+  background-color: #33a1b2;
   color: #fff;
 }
 
 .product-color__inner {
-  width: 2vw;
+  width: 2.6vw;
   border-radius: 50%;
-  height: 2vw;
+  height: 2.6vw;
   cursor: pointer;
+  border: 3px solid #fff;
   transition: 0.2s all ease-in-out;
 }
 .product-color__inner.active {
-  border: 3px solid #fff;
   outline: 1px solid;
 }
 
@@ -711,6 +711,10 @@
   width: 15%;
 }
 
+.w-20 {
+  width: 20%;
+}
+
 .w-40 {
   width: 40%;
 }
@@ -933,6 +937,52 @@ input[type=number]::-webkit-outer-spin-button {
 
 .bg_light-blue {
   background-color: #afdbe0;
+}
+
+.cart-btns button:nth-child(1) {
+  background-color: #fff;
+}
+.cart-btns button:nth-child(1).active {
+  color: #fff;
+  background-color: #33a1b2;
+  border-color: #33a1b2;
+}
+.cart-btns button:nth-child(2) {
+  background-color: #082e34;
+  color: #fff;
+}
+.cart-btns button:nth-child(2).active {
+  color: #082e34;
+  background-color: #fff;
+}
+
+.delivery-details {
+  position: relative;
+  width: 13rem;
+  margin-left: 3rem;
+}
+.delivery-details::after {
+  content: "";
+  background: url("../media1/thanhtoan-icon.svg");
+  background-size: contain;
+  position: absolute;
+  right: 102%;
+  top: 0;
+  width: 2rem;
+  height: 2rem;
+}
+
+.font-400 p {
+  font-weight: 400;
+}
+
+.note-icon {
+  width: 12px;
+  height: 12px;
+  background: url("../media/svgs/arrow-button-bl.svg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: inline-block;
 }
 
 .policy-card img {
