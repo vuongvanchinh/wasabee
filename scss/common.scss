@@ -274,7 +274,6 @@
   }
 }
 
-
 @include mobile {
   @for $i from 0 through 12 {
     .sm-px-#{$i} {
@@ -289,7 +288,6 @@
     }
   }
 }
-
 
 .mx-auto {
   margin-left: auto;
@@ -346,4 +344,7 @@
   &__text {
     margin-left: 1rem;
   }
+}
+.pointer {
+  cursor: pointer;
 }

@@ -10,6 +10,11 @@ $(document).ready(() => {
             $(this).toggleClass('active');
         });
     });
+    $( ".cart-btns button" ).each(function(index) {
+        $(this).on("click", function(){
+            $(this).toggleClass('active');
+        });
+    });
 })
 
 function increaseValue(that) {

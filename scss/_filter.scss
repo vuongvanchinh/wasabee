@@ -10,8 +10,10 @@
   box-shadow: unset;
   background-color: unset;
 }
+
 .accordion-button:not(.collapsed) {
 }
+
 .accordion-button::after {
   // background-image: url("../media/svgs/arrow-button.svg");
   background-size: 0.8rem 0.8rem;
@@ -125,21 +127,20 @@
     cursor: pointer;
     transition: 0.2s all ease-in-out;
     &.active {
-      background-color: $bg-04;
+      background-color: $bg-05;
       color: $bg-01;
     }
   }
 }
 .product-color {
   &__inner {
-    width: 2vw;
+    width: 2.6vw;
     border-radius: 50%;
-    height: 2vw;
+    height: 2.6vw;
     cursor: pointer;
-
+    border: 3px solid #fff;
     transition: 0.2s all ease-in-out;
     &.active {
-      border: 3px solid #fff;
       outline: 1px solid;
     }
   }
