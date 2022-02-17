@@ -1,1 +1,19 @@
 @import "variables";
+.cart-btns {
+  button:nth-child(1) {
+    background-color: $white;
+    &.active {
+      color: $white;
+      background-color: $bg-05;
+      border-color: $bg-05;
+    }
+  }
+  button:nth-child(2) {
+    background-color: $color-11;
+    color: $white;
+    &.active {
+      color: $color-11;
+      background-color: $white;
+    }
+  }
+}

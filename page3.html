@@ -35,9 +35,9 @@
     <div class="container-page ">
       <main>
         <!-- Header  -->
-        <header class="header">
+        <header class="header" id="header">
           <div class="header__banner" style="--bg: url('../media1/a.png')">
-            <div class="header__banner__info text-xl font-600 text-00">
+            <div class="header__banner__info text-xl font-700 text-01">
               Wasabe | Hello 2022
             </div>
           </div>
@@ -79,20 +79,20 @@
               </div>
             </div>
           </div>
-          <ul class="header__nav flex">
-            <li class="nav-item"><a href="#">Mới</a></li>
-            <li class="nav-item"><a href="#">Nữ</a></li>
-            <li class="nav-item"><a href="#">Nam</a></li>
-            <li class="nav-item"><a href="#">Bộ sưu tập</a></li>
-            <li class="nav-item"><a href="#">Trend</a></li>
-            <li class="nav-item"><a href="#">Khuyến mãi</a></li>
-            <li class="nav-item"><a href="#">Hàng bán chạy</a></li>
-            <li class="nav-item"><a href="#">Hàng khuyến mãi lớn</a></li>
-            <li class="nav-item"><a href="#">Tiêu thụ lớn</a></li>
+          <ul class="header__nav flex mb-0">
+            <li class="header__nav-item"><a href="#">Mới</a></li>
+            <li class="header__nav-item"><a href="#">Nữ</a></li>
+            <li class="header__nav-item"><a href="#">Nam</a></li>
+            <li class="header__nav-item"><a href="#">Bộ sưu tập</a></li>
+            <li class="header__nav-item"><a href="#">Trend</a></li>
+            <li class="header__nav-item"><a href="#">Khuyến mãi</a></li>
+            <li class="header__nav-item"><a href="#">Hàng bán chạy</a></li>
+            <li class="header__nav-item"><a href="#">Hàng khuyến mãi lớn</a></li>
+            <li class="header__nav-item"><a href="#">Tiêu thụ lớn</a></li>
           </ul>
         </header>
         <!-- End Header -->
-        <div class="container-fluid px-4 ">
+        <div class="container-fluid px-4 pt-3 ">
           <div class="location-path">
             <span class="text-04 font-400">
               Trang chủ <div class="path-icon"></div>
@@ -123,50 +123,57 @@
                   <div class="img w-50 ">
                     <img src="./media/imgs/product02.png" alt="" srcset="">
                   </div>
-                  <div class="details w-50 p-5">
-                    <h2 class="heading-02 font-600">KNOCK ON WOOD</h2>
+                  <div class="details w-50 py-6 px-10">
+                    <h2 class="heading-02 font-600 my-auto">KNOCK ON WOOD</h2>
                     <p class="text-04 text-sm">Jacket with recycled-fabric filling</p>
                     <div class="price">
-                      <p>441,750 Vnđ</p>
-                      <p>891,750 Vnđ</p>
+                      <p class="my-auto font-600">441,750 Vnđ</p>
+                      <p class="my-auto text-sm text-decoration-line-through text-04">891,750 Vnđ</p>
                     </div>
 
-                    <div class="dash"></div>
+                    <div class="dash my-4"></div>
                     <div class="color">
-                      <div>Màu sắc: cam</div>
+                      <div class="mb-3">Màu sắc: cam</div>
                       <div class="flex-nowrap gap-2">
-                        <button class="color"></button>
-                        <button class="color"></button>
-                        <button class="color"></button>
-                        <button class="color"></button>
-                        <button class="color"></button>
-                        <button class="color"></button>
-                        <button class="color"></button>
+                        <div class="grid grid-cols-8 gap-3 sm-grid-cols-3 md-grid-cols-5">
+                          <div class="product-color "><div class="product-color__inner flex-center" style="background: red;"></div></div>
+                          <div class="product-color "><div class="product-color__inner flex-center" style="background: rgb(114, 116, 12);"></div></div>
+                          <div class="product-color "><div class="product-color__inner flex-center" style="background: rgb(249, 253, 27);"></div></div>
+                          <div class="product-color "><div class="product-color__inner flex-center" style="background: rgb(84, 219, 102);"></div></div>
+                          <div class="product-color "><div class="product-color__inner flex-center" style="background: rgb(4, 46, 10);"></div></div>
+                          <div class="product-color "><div class="product-color__inner flex-center" style="background: rgb(194, 28, 130);"></div></div>
+                          <div class="product-color "><div class="product-color__inner flex-center" style="background: rgb(0, 8, 1);"></div></div>
+                          <div class="product-color "><div class="product-color__inner flex-center" style="background: rgb(160, 107, 10);"></div></div>
+                        </div>
                       </div>
                     </div>
                     <div class="size">
-                      <div>Kích thước: M</div>
-                      <div class="flex-nowrap gap-2">
-                        <button class="color">XS</button>
-                        <button class="color">S</button>
-                        <button class="color">M</button>
-                        <button class="color">L</button>
-                        <button class="color">XL</button>
-                        <button class="color">2XL</button>
-                        <button class="color">3XL</button>
+                      <div class="mt-4 mb-3">Kích thước: M</div>
+                      <div class="flex-nowrap">
+                        <div class="grid grid-cols-7 gap-3 sm-grid-cols-3 md-grid-cols-5">
+                          <div class="product-size "><div class="product-size__inner flex-center">XS</div></div>
+                          <div class="product-size "><div class="product-size__inner flex-center">S</div></div>
+                          <div class="product-size "><div class="product-size__inner flex-center">M</div></div>
+                          <div class="product-size "><div class="product-size__inner flex-center">L</div></div>
+                          <div class="product-size "><div class="product-size__inner flex-center">XL</div></div>
+                          <div class="product-size "><div class="product-size__inner flex-center">2XL</div></div>
+                          <div class="product-size "><div class="product-size__inner flex-center">3XL</div></div>
+                        </div>
                       </div>
                     </div>
-                    <p class="text-decoration-underline">Hướng dẫn đo kích thước</p>
-                    <div class="dash"></div>
+                    <div class="flex-nowrap">
+                      <p class="text-decoration-underline my-4 text-sm text-04 pointer text-pre-icon">Hướng dẫn đo kích thước</p>
+                    </div>
+                    <div class="dash my-4"></div>
 
-                    <div class="btn-form">
-                      <button>Mua ngay</button>
-                      <button>Thêm vào giỏ hàng</button>
-                      <button></button>
+                    <div class="flex-nowrap cart-btns text-sm gap-3">
+                      <button class="btn-pri px-4 py-1 border-07 font-600">Mua ngay</button>
+                      <button class="btn-pri px-4 py-1 border-07 font-600">Thêm vào giỏ hàng</button>
+                      <button class="btn-pri">traitim</button>
                     </div>
 
-                    <div>
-                      <p>Free shipping over $300(3-7days) & free returns</p>
+                    <div class="w-70">
+                      <p class="">Free shipping over $300(3-7days) & free returns</p>
                     </div>
                     <div class="coupon">
                       <div class="flex-nowrap px-12 md-px-6 sm-px-0 gap-4">
