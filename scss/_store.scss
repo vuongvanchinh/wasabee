@@ -2,6 +2,7 @@
 .location-path {
   font-size: 0.65rem;
 }
+
 .path-icon {
   background: url("../media/svgs/angle-down-btn.svg") no-repeat;
   background-size: 5px 5px;
@@ -12,6 +13,7 @@
   height: 7px;
   transform: rotate(-90deg);
 }
+
 .dropdown-icon {
   background: url("../media/svgs/angle-down-btn.svg") no-repeat;
   background-size: 10px 10px;
@@ -40,6 +42,7 @@
     height: 10px;
   }
 }
+
 .dropdown-menu {
   padding: 0;
   position: absolute;
@@ -51,34 +54,42 @@
     width: 10rem;
   }
 }
+
 // .path-icon {
 //   visibility: hidden;
 // }
-
 .flex-1 {
   flex: 1;
 }
+
 .flex-2 {
   flex: 2;
 }
+
 .flex-3 {
   flex: 3;
 }
+
 .flex-4 {
   flex: 4;
 }
+
 .flex-5 {
   flex: 5;
 }
+
 .flex-6 {
   flex: 6;
 }
+
 .flex-7 {
   flex: 7;
 }
+
 .bold-bottom {
   border-bottom: solid $color-11;
 }
+
 .text-left {
   text-align: left;
 }
@@ -97,6 +108,7 @@
 .table > :not(caption) > * > * {
   border-bottom-width: 0;
 }
+
 .table {
   width: 100%;
   tr {
@@ -134,50 +146,61 @@
     border: 2.5px solid $white;
     outline: 2px solid $border-color-00;
     border-radius: 50%;
-
     display: grid;
     place-content: center;
-
     &:checked {
+      border: 2px solid $white;
       outline: 2px solid $border-color;
       background: $bg-05;
       // outline: 2px solid $black;
     }
   }
 }
+
 .w-25\2 {
   width: 12.5%;
 }
+
 .w-15 {
   width: 15%;
 }
+
 .w-20 {
   width: 20%;
 }
+
 .w-40 {
   width: 40%;
 }
+
 .w-60 {
   width: 60%;
 }
+
 .w-65 {
   width: 65%;
 }
+
 .w-70 {
   width: 70%;
 }
+
 .w-35 {
   width: 35%;
 }
+
 .w-30 {
   width: 30%;
 }
+
 .w-5 {
   width: 5%;
 }
+
 .w-95 {
   width: 95%;
 }
+
 .w-110 {
   width: 110%;
 }
@@ -186,13 +209,18 @@
   min-width: 100%;
   width: 100%;
 }
+
+.bg-none {
+  background: none;
+}
+
 .flex-nowrap {
   display: flex;
   flex-wrap: nowrap;
 }
+
 .card-info {
   display: flex;
-
   .card-form {
     width: 5rem;
     height: 6rem;
@@ -212,10 +240,12 @@
     }
   }
 }
+
 .mid {
   text-align: center;
   vertical-align: middle;
 }
+
 .flex-col {
   display: flex;
   flex-direction: column;
@@ -278,6 +308,7 @@ input[type="number"]::-webkit-outer-spin-button {
 .line-through {
   text-decoration: line-through;
 }
+
 .order-summary {
   h4 {
     border-style: none none dashed;
@@ -285,20 +316,20 @@ input[type="number"]::-webkit-outer-spin-button {
     border-color: $dash;
     padding-bottom: 1rem;
   }
-
   .text-red {
     color: $bg-06;
   }
 }
+
 .btn-form {
   button {
     padding: 0.5rem 2.5rem;
   }
 }
+
 .btn-pri {
   border-radius: 50rem;
   border: none;
-  background: none;
 }
 
 .update-store {
@@ -307,11 +338,17 @@ input[type="number"]::-webkit-outer-spin-button {
   text-decoration: underline;
   border: none;
 }
+
 .continue-buy {
   background-color: $bg-04;
   border: none;
 }
+
 .delete-product {
   border: 1px solid $color-11;
   background: none;
+}
+
+.w-10r {
+  width: 10rem;
 }
