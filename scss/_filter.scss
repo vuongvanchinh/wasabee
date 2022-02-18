@@ -1,139 +1,146 @@
 @import "./variables";
-
 .accordion-button:focus {
-  z-index: 3;
-  border-color: #eeeeee;
-  outline: 0;
-  box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.25);
-}
-.accordion-button:not(.collapsed) {
-  box-shadow: unset;
-  background-color: unset;
+    z-index: 3;
+    border-color: #eeeeee;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.25);
 }
 
 .accordion-button:not(.collapsed) {
+    box-shadow: unset;
+    background-color: unset;
 }
+
+.accordion-button:not(.collapsed) {}
 
 .accordion-button::after {
-  // background-image: url("../media/svgs/arrow-button.svg");
-  background-size: 0.8rem 0.8rem;
-  background-position: center;
-  background-image: url();
+    background-size: 0.8rem 0.8rem;
+    background-position: center;
+    // background-image: url();
+    // background-image: url("../media/svgs/arrow-button.svg");
+    background-image: url("../media/svgs/arrow-button-bl.svg");
 }
 
 .accordion-button:not(.collapsed)::after {
-  background-image: url("../media/svgs/arrow-button-bl.svg");
-  transform: rotate(0deg);
+    background-image: url("../media/svgs/arrow-button-bl.svg");
+    transform: rotate(0deg);
 }
 
 .accordion-item {
-  border: none;
+    border: none;
+    background: transparent;
 }
 
 .accordion-header {
-  .accordion-button {
-    padding: 1rem 0.6rem 1rem 1.5rem;
-    h2 {
-      display: flex;
-      align-items: center;
-      font-weight: 600;
-      margin-bottom: 0;
+    .accordion-button {
+        padding: 1rem 0.6rem 1rem 1.5rem;
+        background-color: transparent;
+        h2 {
+            display: flex;
+            align-items: center;
+            font-weight: 600;
+            margin-bottom: 0;
+        }
     }
-  }
 }
 
 .border-solid {
-  border-top: 0.5px solid;
+    border-top: 0.5px solid;
 }
 
 @media (prefers-reduced-motion: reduce) {
-  *,
-  :after,
-  :before {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    scroll-behavior: auto !important;
-    transition-duration: 0.01ms !important;
-  }
+    *,
+     :after,
+     :before {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+    }
 }
 
 .form-control-checkbox {
-  font-size: 1rem;
-  font-weight: 600;
-  display: grid;
-  grid-template-columns: 1em auto;
-  align-items: center;
-  gap: 0.6rem;
-  padding: 0.3rem 0;
-  cursor: pointer;
-  &.accordion-button input {
-    transform: translateY(50%);
-  }
-  input {
-    -webkit-appearance: none;
-    margin: 0;
-    width: 0.7rem;
-    height: 0.7rem;
-    border: 2.5px solid $white;
-    outline: 2px solid $border-color-00;
-    border-radius: 50%;
-    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 600;
     display: grid;
-    place-content: center;
-
-    &:checked {
-      outline: 2px solid $border-color;
-      background: $bg-05;
+    grid-template-columns: 1em auto;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.3rem 0;
+    cursor: pointer;
+    &.accordion-button input {
+        transform: translateY(50%);
     }
-  }
-  &.accordion-button::after {
-    content: none;
-  }
+    input {
+        -webkit-appearance: none;
+        margin: 0;
+        width: 0.7rem;
+        height: 0.7rem;
+        border: 2.5px solid $white;
+        outline: 2px solid $border-color-00;
+        border-radius: 50%;
+        cursor: pointer;
+        display: grid;
+        place-content: center;
+        &:checked {
+            border: 2px solid $white;
+            outline: 2px solid $border-color;
+            background: $bg-05;
+        }
+    }
+    &.accordion-button::after {
+        content: none;
+    }
 }
 
-.accordion-body > .form-control-checkbox {
-  padding: 0 0;
+.accordion-body>.form-control-checkbox {
+    padding: 0 0;
 }
 
 .accordion-body.checkbox-list .form-control-checkbox {
-  color: $color-02;
-  font-size: 1rem;
-  font-weight: 300;
-  margin-left: 1.5rem;
-  line-height: 1.1rem;
+    color: $color-02;
+    font-size: 0.8rem;
+    font-weight: 300;
+    margin-left: 1.5rem;
+    line-height: 1.1rem;
 }
 
 .checkbox-list {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
 }
 
 .product-size {
-  &__inner {
-    border: 0.5px solid;
-    border-radius: 50%;
-    width: 2.5vw;
-    height: 2.5vw;
-    font-size: 1vw;
-    cursor: pointer;
-    transition: 0.2s all ease-in-out;
-    &.active {
-      background-color: $bg-05;
-      color: $bg-01;
+    &__inner {
+        border: 0.5px solid;
+        border-radius: 50%;
+        width: 2.5vw;
+        height: 2.5vw;
+        font-size: 1vw;
+        cursor: pointer;
+        transition: 0.2s all ease-in-out;
+        &.active {
+            background-color: $bg-05;
+            color: $bg-01;
+        }
     }
-  }
 }
+
 .product-color {
-  &__inner {
-    width: 2.6vw;
-    border-radius: 50%;
-    height: 2.6vw;
-    cursor: pointer;
-    border: 3px solid #fff;
-    transition: 0.2s all ease-in-out;
-    &.active {
-      outline: 1px solid;
+    &__inner {
+        width: 2.6vw;
+        border-radius: 50%;
+        height: 2.6vw;
+        cursor: pointer;
+        border: 3px solid #fff;
+        transition: 0.2s all ease-in-out;
+        &.active {
+            outline: 1px solid;
+        }
     }
-  }
+}
+
+.bg-trans {
+    background: transparent;
 }

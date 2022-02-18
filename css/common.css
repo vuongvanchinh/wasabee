@@ -1270,7 +1270,7 @@
   font-weight: 600;
 }
 .text-pre-icon:hover {
-  zoom: 1.05;
+  color: #33a1b2;
 }
 .text-pre-icon.text-00 {
   --arrow: url("../media1/arrow-button-icon.svg");

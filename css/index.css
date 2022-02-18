@@ -84,6 +84,13 @@
 .product-card__inner .product-card__imgs .product-love.active {
   background-image: url("../media1/heart-fill-icon.svg");
 }
+.product-card__inner .product-card__imgs .product-quantity {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.4);
+  height: 2rem;
+}
 .product-card__inner .product-card__info {
   padding-top: 1rem;
 }
@@ -262,7 +269,7 @@
 .accordion-button::after {
   background-size: 0.8rem 0.8rem;
   background-position: center;
-  background-image: url();
+  background-image: url("../media/svgs/arrow-button-bl.svg");
 }
 
 .accordion-button:not(.collapsed)::after {
@@ -272,10 +279,12 @@
 
 .accordion-item {
   border: none;
+  background: transparent;
 }
 
 .accordion-header .accordion-button {
   padding: 1rem 0.6rem 1rem 1.5rem;
+  background-color: transparent;
 }
 .accordion-header .accordion-button h2 {
   display: flex;
@@ -299,7 +308,7 @@
   }
 }
 .form-control-checkbox {
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 600;
   display: grid;
   grid-template-columns: 1em auto;
@@ -324,6 +333,7 @@
   place-content: center;
 }
 .form-control-checkbox input:checked {
+  border: 2px solid #fff;
   outline: 2px solid rgba(0, 0, 0, 0.15);
   background: #33a1b2;
 }
@@ -337,7 +347,7 @@
 
 .accordion-body.checkbox-list .form-control-checkbox {
   color: #032e34;
-  font-size: 1rem;
+  font-size: 0.8rem;
   font-weight: 300;
   margin-left: 1.5rem;
   line-height: 1.1rem;
@@ -373,6 +383,10 @@
 }
 .product-color__inner.active {
   outline: 1px solid;
+}
+
+.bg-trans {
+  background: transparent;
 }
 
 .header {
@@ -604,7 +618,7 @@
 
 .dropdown-btn {
   border: none;
-  background-color: white;
+  background-color: transparent;
   position: relative;
 }
 .dropdown-btn::after {
@@ -621,8 +635,12 @@
 }
 
 .dropdown-menu {
-  min-width: 0;
   padding: 0;
+  position: absolute;
+  right: 0;
+  inset: 0px auto auto 0px;
+  min-width: 100%;
+  transform: translate3d(0px, 29px, 0px);
 }
 .dropdown-menu .dropdown-toggle {
   width: 10rem;
@@ -717,6 +735,7 @@
   place-content: center;
 }
 .form-checkbox input:checked {
+  border: 2px solid #fff;
   outline: 2px solid rgba(0, 0, 0, 0.15);
   background: #33a1b2;
 }
@@ -763,6 +782,19 @@
 
 .w-95 {
   width: 95%;
+}
+
+.w-110 {
+  width: 110%;
+}
+
+.mw-100 {
+  min-width: 100%;
+  width: 100%;
+}
+
+.bg-none {
+  background: none;
 }
 
 .flex-nowrap {
@@ -877,7 +909,6 @@ input[type=number]::-webkit-outer-spin-button {
 .btn-pri {
   border-radius: 50rem;
   border: none;
-  background: none;
 }
 
 .update-store {
@@ -895,6 +926,10 @@ input[type=number]::-webkit-outer-spin-button {
 .delete-product {
   border: 1px solid #082e34;
   background: none;
+}
+
+.w-10r {
+  width: 10rem;
 }
 
 .payment-card .payment-address {
@@ -956,6 +991,24 @@ input[type=number]::-webkit-outer-spin-button {
 
 .bg_light-blue {
   background-color: #afdbe0;
+}
+
+.top-right-navigator-slider-001 .slick-next {
+  right: 0.5rem;
+  position: absolute;
+  top: 35%;
+}
+.top-right-navigator-slider-001 .slick-prev {
+  left: 0.5rem;
+  position: absolute;
+  top: 35%;
+}
+
+.right-side-banner {
+  background: url("../media/imgs/bannerdesign.jpg") no-repeat;
+  background-size: 400px 400px;
+  background-position: top left;
+  height: 20rem;
 }
 
 .cart-btns button:nth-child(1) {
