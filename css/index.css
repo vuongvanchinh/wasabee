@@ -375,6 +375,10 @@
   outline: 1px solid;
 }
 
+.header {
+  position: sticky;
+  top: 0;
+}
 .header__banner {
   height: 100px;
   display: flex;
