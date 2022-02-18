@@ -2,6 +2,13 @@
 @import "variables";
 @import "mixins";
 
+.sticky-top-0 {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0; /* required */
+
+}
+
 .heading-01 {
   text-transform: uppercase;
   margin-bottom: 2rem;

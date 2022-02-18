@@ -1,6 +1,7 @@
 @import "variables";
 .header {
-
+  position: sticky;
+  top: 0;
 
   &__banner {
     height: 100px;
