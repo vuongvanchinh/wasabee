@@ -1,4 +1,6 @@
 @import "./variables";
+
+
 .accordion-button:focus {
     z-index: 3;
     border-color: #eeeeee;
@@ -11,13 +13,9 @@
     background-color: unset;
 }
 
-.accordion-button:not(.collapsed) {}
-
 .accordion-button::after {
     background-size: 0.8rem 0.8rem;
     background-position: center;
-    // background-image: url();
-    // background-image: url("../media/svgs/arrow-button.svg");
     background-image: url("../media/svgs/arrow-button-bl.svg");
 }
 
@@ -29,11 +27,24 @@
 .accordion-item {
     border: none;
     background: transparent;
+
+    .accordion-body {
+        padding-bottom: 0;
+        padding-top: 2rem;
+
+    }
+    & > .accordion-item {
+        .accordion-body {
+            padding-bottom: 0;
+            padding-top: 1rem;
+    
+        }
+    }
 }
 
 .accordion-header {
     .accordion-button {
-        padding: 1rem 0.6rem 1rem 1.5rem;
+        padding: 1rem 0 1rem 0;
         background-color: transparent;
         h2 {
             display: flex;
@@ -45,7 +56,7 @@
 }
 
 .border-solid {
-    border-top: 0.5px solid;
+    border-top: 1px solid $border-color;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -62,26 +73,29 @@
 .form-control-checkbox {
     font-size: 0.9rem;
     font-weight: 600;
-    display: grid;
-    grid-template-columns: 1em auto;
+    display: flex;
     align-items: center;
-    gap: 0.6rem;
     padding: 0.3rem 0;
     cursor: pointer;
     &.accordion-button input {
         transform: translateY(50%);
     }
-    input {
+    input[type="checkbox"] {
+        $w: 12px;
         -webkit-appearance: none;
+        margin-right: 0.5rem !important;
         margin: 0;
-        width: 0.7rem;
-        height: 0.7rem;
+        flex-shrink: 0;
+        width: $w;
+        height: $w;
+        max-width: $w;
+        max-height: $w;
         border: 2.5px solid $white;
         outline: 2px solid $border-color-00;
         border-radius: 50%;
         cursor: pointer;
-        display: grid;
-        place-content: center;
+        // display: grid;
+        // place-content: center;
         &:checked {
             border: 2px solid $white;
             outline: 2px solid $border-color;
@@ -99,10 +113,10 @@
 
 .accordion-body.checkbox-list .form-control-checkbox {
     color: $color-02;
-    font-size: 0.8rem;
-    font-weight: 300;
+    font-size: 0.875rem;
+    font-weight: 700;
     margin-left: 1.5rem;
-    line-height: 1.1rem;
+    
 }
 
 .checkbox-list {
@@ -143,4 +157,32 @@
 
 .bg-trans {
     background: transparent;
+}
+
+.filter-product {
+
+    .level1 {
+        // margin-bottom: 1rem;
+        font-weight: 700;
+        .accordion-body {
+            padding-top: 2rem;
+            padding-bottom:0;
+        }
+
+        .level2 {
+            margin-bottom: 1rem;
+            .accordion-body {
+                padding-top: 1rem;
+                padding-bottom: 0rem;
+            }
+
+            .level3 {
+                margin-bottom: 0.5rem;
+                // margin-left: 1rem;
+            }
+        }
+
+    }
+
+
 }
