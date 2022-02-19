@@ -251,7 +251,7 @@
         height: 100vh;
         width: 100vw;
         background-color: rgba(0, 0, 0, 0.8);
-        z-index: 100;
+        z-index: 1001;
         padding: 0 !important;
 
         & > .accordion {
@@ -261,7 +261,7 @@
             padding: 1rem;
             padding-top: 3rem;
             width: 80%;
-            max-width: 350px;
+            max-width: 300px;
             height: 100%;
             overflow:auto;
             &::-webkit-scrollbar {
@@ -304,10 +304,20 @@
 
 @keyframes scroll-in{
     0% {
-        left: -100%;
+        left: -300px;
 
     }
     100% {
         left: 0;
+    }
+}
+
+@keyframes scroll-out{
+    0% {
+        left: 0;
+
+    }
+    100% {
+        left: -300px;
     }
 }
