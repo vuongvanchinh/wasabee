@@ -1144,11 +1144,10 @@
 .card-info .content {
   position: relative;
 }
-.card-info .content span {
+.card-info .content a {
   position: absolute;
   bottom: 0;
   left: 0;
-  text-decoration: underline;
   cursor: pointer;
 }
 
@@ -1237,6 +1236,7 @@ input[type=number]::-webkit-outer-spin-button {
 .btn-pri {
   border-radius: 50rem;
   border: none;
+  background: transparent;
 }
 
 .update-store {
@@ -1260,6 +1260,34 @@ input[type=number]::-webkit-outer-spin-button {
   width: 10rem;
 }
 
+.container,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl,
+.container-xxl {
+  max-width: 1420px;
+}
+
+.table th {
+  position: sticky;
+  top: 0;
+}
+
+@media (max-width: 1024px) {
+  .table {
+    min-width: 1024px;
+  }
+
+  .btn-manipulation {
+    min-width: 1024px;
+  }
+
+  .croll-table {
+    padding-bottom: 1rem;
+    overflow-x: auto;
+  }
+}
 .payment-card .payment-address .desc {
   border-left: 0.5rem solid #aae5de;
   padding: 0.8rem;
@@ -1336,6 +1364,11 @@ input[type=number]::-webkit-outer-spin-button {
   height: 20rem;
 }
 
+.mx--1 {
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
+}
+
 .cart-btns button:nth-child(1) {
   background-color: #fff;
 }
@@ -1354,7 +1387,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .left-side-img-list {
-  width: 5rem;
+  width: 6rem;
 }
 .left-side-img-list button.active img {
   filter: opacity(100%);
