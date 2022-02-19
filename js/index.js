@@ -37,15 +37,6 @@ const closeSidebarHeader = (e) => {
 };
 // end sidebar
 
-const closeSidebarHeader = (e) => {
-    let sidebarInner = document.querySelector("#sidebar-header .sidebar-header__inner");
-    if (!sidebarInner.contains(e.target)) {
-        onCloseSideBarHeader();
-        document.getElementById("sidebar-header").removeEventListener("mousedown", closeSidebarHeader);
-    }
-};
-// end sidebar
-
 $(document).ready(() => {
     $(".product-color__inner").each(function (index) {
         $(this).on("click", function () {
