@@ -32,7 +32,7 @@
   margin-bottom: 1rem;
   color: $color-01;
   font-size: 1.5rem;
-  font-family: 700;
+  font-weight: 700;
 }
 .heading-04 {
   font-size: 1rem;
@@ -142,6 +142,10 @@
   color: $color-13;
 }
 
+.text-08 {
+  color: #accdd1;
+}
+
 .text-ssm {
   font-size: 0.75rem;
 }
@@ -198,100 +202,100 @@
 // Padding
 @for $i from 0 through 12 {
   .p-#{$i} {
-    padding: $i * 0.5rem;
+    padding: $i * 0.5rem !important;
   }
 }
 
 @for $i from 0 through 12 {
   .pl-#{$i} {
-    padding-left: $i * 0.5rem;
+    padding-left: $i * 0.5rem !important;
   }
 }
 
 @for $i from 0 through 12 {
   .pt-#{$i} {
-    padding-top: $i * 0.5rem;
+    padding-top: $i * 0.5rem !important;
   }
 }
 
 @for $i from 0 through 12 {
   .pr-#{$i} {
-    padding-right: $i * 0.5rem;
+    padding-right: $i * 0.5rem !important;
   }
 }
 @for $i from 0 through 12 {
   .pb-#{$i} {
-    padding-bottom: $i * 0.5rem;
+    padding-bottom: $i * 0.5rem !important;
   }
 }
 
 @for $i from 0 through 12 {
   .px-#{$i} {
-    padding-left: $i * 0.5rem;
-    padding-right: $i * 0.5rem;
+    padding-left: $i * 0.5rem !important;
+    padding-right: $i * 0.5rem !important;
   }
 }
 @for $i from 0 through 12 {
   .py-#{$i} {
-    padding-top: $i * 0.5rem;
-    padding-bottom: $i * 0.5rem;
+    padding-top: $i * 0.5rem !important;
+    padding-bottom: $i * 0.5rem !important;
   }
 }
 
 // Margin
 @for $i from 0 through 12 {
   .m-#{$i} {
-    margin: $i * 0.5rem;
+    margin: $i * 0.5rem !important;
   }
 }
 
 @for $i from 0 through 12 {
   .ml-#{$i} {
-    margin-left: $i * 0.5rem;
+    margin-left: $i * 0.5rem !important;
   }
 }
 
 @for $i from 0 through 12 {
   .mt-#{$i} {
-    margin-top: $i * 0.5rem;
+    margin-top: $i * 0.5rem !important;
   }
 }
 
 @for $i from 0 through 12 {
   .mr-#{$i} {
-    margin-right: $i * 0.5rem;
+    margin-right: $i * 0.5rem !important;
   }
 }
 @for $i from 0 through 12 {
   .mb-#{$i} {
-    margin-bottom: $i * 0.5rem;
+    margin-bottom: $i * 0.5rem !important;
   }
 }
 
 @for $i from 0 through 12 {
   .mx-#{$i} {
-    margin-left: $i * 0.5rem;
-    margin-right: $i * 0.5rem;
+    margin-left: $i * 0.5rem !important;
+    margin-right: $i * 0.5rem !important;
   }
 }
 @for $i from 0 through 12 {
   .my-#{$i} {
-    margin-top: $i * 0.5rem;
-    margin-bottom: $i * 0.5rem;
+    margin-top: $i * 0.5rem !important;
+    margin-bottom: $i * 0.5rem !important;
   }
 }
 
 @include tablet {
   @for $i from 0 through 12 {
     .md-px-#{$i} {
-      padding-left: $i * 0.5rem;
-      padding-right: $i * 0.5rem;
+      padding-left: $i * 0.5rem !important;
+      padding-right: $i * 0.5rem !important;
     }
   }
   @for $i from 0 through 12 {
     .md-py-#{$i} {
-      padding-top: $i * 0.5rem;
-      padding-bottom: $i * 0.5rem;
+      padding-top: $i * 0.5rem !important;
+      padding-bottom: $i * 0.5rem !important;
     }
   }
 }
@@ -299,17 +303,47 @@
 @include mobile {
   @for $i from 0 through 12 {
     .sm-px-#{$i} {
-      padding-left: $i * 0.5rem;
-      padding-right: $i * 0.5rem;
+      padding-left: $i * 0.5rem !important;
+      padding-right: $i * 0.5rem !important;
     }
   }
   @for $i from 0 through 12 {
     .sm-py-#{$i} {
-      padding-top: $i * 0.5rem;
-      padding-bottom: $i * 0.5rem;
+      padding-top: $i * 0.5rem !important;
+      padding-bottom: $i * 0.5rem !important;
+    }
+  }
+  .sm-pl-0 {
+    padding-left: 0 !important;
+  }
+}
+
+@include tablet {
+  @for $i from 0 through 12 {
+    .md-mb-#{$i} {
+      margin-bottom: $i * 0.5rem !important;
+    }
+  }
+  @for $i from 0 through 12 {
+    .md-mt-#{$i} {
+      margin-top: $i * 0.5rem !important;
     }
   }
 }
+
+@include mobile {
+  @for $i from 0 through 12 {
+    .sm-mb-#{$i} {
+      margin-bottom: $i * 0.5rem !important;
+    }
+  }
+  @for $i from 0 through 12 {
+    .sm-mt-#{$i} {
+      margin-top: $i * 0.5rem !important;
+    }
+  }
+}
+
 
 .mx-auto {
   margin-left: auto;
