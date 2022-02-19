@@ -1,12 +1,41 @@
+// filter
+const onCloseFilter = () => {
+    let duration = 300;
+    $("#filter-product > .accordion").css("animation-name", "scroll-out");
+    $("#filter-product > .accordion").css("animation-duration", `${duration}ms`);
+    setTimeout(() => {
+        $(".filter-product").removeClass("open");
+    }, duration);
+};
+
 const closeFilterProduct = (e) => {
     console.log(e.target);
     let filterInner = document.querySelector("#filter-product > .accordion");
     console.log(filterInner);
     if (!filterInner.contains(e.target)) {
-        $(".filter-product").removeClass("open");
+        onCloseFilter();
         document.getElementById("filter-product").removeEventListener("mousedown", closeFilterProduct);
     }
 };
+// end filter
+// sidebar
+const onCloseSideBarHeader = () => {
+    let duration = 300;
+    $("#sidebar-header .sidebar-header__inner").css("animation-name", "sidebar-scroll-out");
+    $("#sidebar-header .sidebar-header__inner").css("animation-duration", `${duration}ms`);
+    setTimeout(() => {
+        $("#sidebar-header").removeClass("open");
+    }, duration);
+};
+
+const closeSidebarHeader = (e) => {
+    let sidebarInner = document.querySelector("#sidebar-header .sidebar-header__inner");
+    if (!sidebarInner.contains(e.target)) {
+        onCloseSideBarHeader();
+        document.getElementById("sidebar-header").removeEventListener("mousedown", closeSidebarHeader);
+    }
+};
+// end sidebar
 
 $(document).ready(() => {
     $(".product-color__inner").each(function (index) {
@@ -28,14 +57,37 @@ $(document).ready(() => {
     // Toggle filter in mobile page 2
     $("#mobile-filter-toggle").on("click", () => {
         $("#filter-product").addClass("open");
+        $("#filter-product > .accordion").css("animation-name", "scroll-in");
+        $("#filter-product > .accordion").css("animation-duration", "300ms");
         document.getElementById("filter-product").addEventListener("mousedown", closeFilterProduct);
     });
 
     $(".filter-product .accordion .close").on("click", () => {
-        $("#filter-product").removeClass("open");
+        onCloseFilter();
         document.getElementById("filter-product").removeEventListener("mousedown", closeFilterProduct);
     });
     // end Toggle filter in mobile page 2
+
+    // sidebar header
+    $("#toggle-sidebar-header").on("click", () => {
+        $("#sidebar-header").addClass("open");
+        $("#sidebar-header .sidebar-header__inner").css("animation-name", "sidebar-scroll-in");
+        $("#sidebar-header .sidebar-header__inner").css("animation-duration", "300ms");
+        document.getElementById("sidebar-header").addEventListener("mousedown", closeSidebarHeader);
+    });
+
+    $("#sidebar-header .sidebar-header__inner").on("click", () => {
+        onCloseSideBarHeader();
+        document.getElementById("sidebar-header").removeEventListener("mousedown", closeFilterProduct);
+    });
+
+    // end sidebar header
+
+    // mobile search icon
+    $("#mobile-search-icon").on("click", () => {
+        $("#mobile-search").toggleClass("open");
+    });
+    // end mobile search icon
 });
 
 function increaseValue(that) {
