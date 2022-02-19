@@ -1,84 +1,88 @@
 @import "variables";
 .cart-btns {
-  button:nth-child(1) {
-    background-color: $white;
-    &.active {
-      color: $white;
-      background-color: $bg-05;
-      border-color: $bg-05;
+    button:nth-child(1) {
+        background-color: $white;
+        &.active {
+            color: $white;
+            background-color: $bg-05;
+            border-color: $bg-05;
+        }
     }
-  }
-  button:nth-child(2) {
-    background-color: $color-11;
-    color: $white;
-    &.active {
-      color: $color-11;
-      background-color: $white;
+    button:nth-child(2) {
+        background-color: $color-11;
+        color: $white;
+        &.active {
+            color: $color-11;
+            background-color: $white;
+        }
     }
-  }
 }
 
-.img-list {
-  button {
-    &.active {
-      img {
-        filter: opacity(100%);
-      }
+.left-side-img-list {
+    width: 5rem;
+    button {
+        &.active {
+            img {
+                filter: opacity(100%);
+            }
+        }
     }
-  }
-  img {
-    filter: opacity(30%);
-    cursor: pointer;
-  }
+    img {
+        filter: opacity(30%);
+        cursor: pointer;
+    }
 }
 
 .delivery-details {
-  position: relative;
-  width: 13rem;
-  margin-left: 3rem;
-  &::after {
-    content: "";
-    background: url("../media1/thanhtoan-icon.svg");
-    background-size: contain;
-    position: absolute;
-    right: 102%;
-    top: 0;
-    width: 2rem;
-    height: 2rem;
-  }
+    position: relative;
+    width: 13rem;
+    margin-left: 3rem;
+    &::after {
+        content: "";
+        background: url("../media1/thanhtoan-icon.svg");
+        background-size: contain;
+        position: absolute;
+        right: 102%;
+        top: 0;
+        width: 2rem;
+        height: 2rem;
+    }
 }
 
 .font-400 {
-  & p {
-    font-weight: 400;
-  }
+    & p {
+        font-weight: 400;
+    }
 }
 
 .note-icon {
-  width: 12px;
-  height: 12px;
-  background: url("../media/svgs/arrow-button-bl.svg") no-repeat;
-  background-size: cover;
-  background-position: center;
-  display: inline-block;
+    width: 12px;
+    height: 12px;
+    background: url("../media/svgs/arrow-button-bl.svg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: inline-block;
 }
 
 .btn-pri {
-  .product-love {
-    width: 1.5rem;
-    height: 1.5rem;
-    color: rgb(40, 161, 178);
-    font-weight: 600;
-    z-index: 2;
-    background-image: url(../media1/heart-icon.svg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
-
-  &.active {
     .product-love {
-      background-image: url(../media1/heart-white-icon.svg);
+        width: 1.5rem;
+        height: 1.5rem;
+        color: rgb(40, 161, 178);
+        font-weight: 600;
+        z-index: 2;
+        background-image: url(../media1/heart-icon.svg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
     }
-  }
+
+    &.active {
+        .product-love {
+            background-image: url(../media1/heart-white-icon.svg);
+        }
+    }
+}
+.coupon_logo {
+    // height: 5rem;
 }

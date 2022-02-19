@@ -1265,6 +1265,10 @@
     padding-left: 0 !important;
   }
 
+  .sm-pl-0 {
+    padding-left: 0 !important;
+  }
+
   .sm-pr-1 {
     padding-right: 0.5rem;
   }

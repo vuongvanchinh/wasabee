@@ -164,6 +164,35 @@ $(document).ready(() => {
     // prevArrow: '<button class="slider-arrow prev-arrow">Pre</button>',
     // nextArrow: '<button class="slider-arrow next-arrow">Next</button>'
   });
+  // end monopoly
+  //top-right-navigator-slider
+  $(".top-right-navigator-slider-002").slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: false,
+          // centerMode: true,
+          // centerPadding: '40px',
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          arrows: false,
+          // centerMode: true,
+          // centerPadding: '40px',
+          slidesToShow: 1,
+        },
+      },
+    ],
+    // prevArrow: '<button class="slider-arrow prev-arrow">Pre</button>',
+    // nextArrow: '<button class="slider-arrow next-arrow">Next</button>'
+  });
+
   $(".top-right-navigator-slider-001").slick({
     slidesToShow: 5,
     slidesToScroll: 1,

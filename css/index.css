@@ -1076,10 +1076,8 @@ input[type=number]::-webkit-outer-spin-button {
   width: 10rem;
 }
 
-.payment-card .payment-address {
-  border-left: 0.5rem solid #aae5de;
-}
 .payment-card .payment-address .desc {
+  border-left: 0.5rem solid #aae5de;
   padding: 0.8rem;
   background-color: #fbffff;
 }
@@ -1095,7 +1093,7 @@ input[type=number]::-webkit-outer-spin-button {
   border: 1px solid #082e34;
   padding: 0.3rem 0;
   background: none;
-  width: 15rem;
+  min-width: 15rem;
 }
 
 .momo-logo {
@@ -1150,8 +1148,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 .right-side-banner {
   background: url("../media/imgs/bannerdesign.jpg") no-repeat;
-  background-size: 400px 400px;
-  background-position: top left;
+  background-position: top right;
   height: 20rem;
 }
 
@@ -1172,10 +1169,13 @@ input[type=number]::-webkit-outer-spin-button {
   background-color: #fff;
 }
 
-.img-list button.active img {
+.left-side-img-list {
+  width: 5rem;
+}
+.left-side-img-list button.active img {
   filter: opacity(100%);
 }
-.img-list img {
+.left-side-img-list img {
   filter: opacity(30%);
   cursor: pointer;
 }
