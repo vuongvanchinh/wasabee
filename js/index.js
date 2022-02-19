@@ -1,3 +1,14 @@
+const closeFilterProduct = (e) => {
+    
+    console.log(e.target)
+    let filterInner = document.querySelector('#filter-product > .accordion')
+    console.log(filterInner)
+    if (! filterInner.contains(e.target)) {
+        $('.filter-product').removeClass('open')
+        document.getElementById('filter-product').removeEventListener('mousedown', closeFilterProduct)
+    } 
+}
+
 $(document).ready(() => { 
 
     $( ".product-color__inner" ).each(function(index) {
@@ -15,6 +26,19 @@ $(document).ready(() => {
             $(this).toggleClass('active');
         });
     });
+    
+    // Toggle filter in mobile page 2
+    $('#mobile-filter-toggle').on("click", () => {
+        $('#filter-product').addClass('open')
+        document.getElementById('filter-product').addEventListener('mousedown', closeFilterProduct)
+    })
+
+    $('.filter-product .accordion .close').on("click", () => {
+        $('#filter-product').removeClass('open')
+        document.getElementById('filter-product').removeEventListener('mousedown', closeFilterProduct)
+    })
+    // end Toggle filter in mobile page 2
+    
 })
 
 function increaseValue(that) {

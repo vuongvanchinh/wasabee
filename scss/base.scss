@@ -136,35 +136,35 @@ li {
 
 @for $i from 1 through 4 {
   .gap-#{$i} {
-    gap: $i * 0.5rem;
+    gap: $i * 0.5rem !important;
   }
 }
 @for $i from 1 through 4 {
   .gap-x-#{$i} {
-    column-gap: $i * 0.5rem;
+    column-gap: $i * 0.5rem !important;
   }
 }
 
 @for $i from 1 through 4 {
   .gap-y-#{$i} {
-    column-gap: $i * 0.5rem;
+    column-gap: $i * 0.5rem !important;
   }
 }
 @include tablet {
   @for $i from 1 through 4 {
     .md-gap-#{$i} {
-      gap: $i * 0.5rem;
+      gap: $i * 0.5rem !important;
     }
   }
   @for $i from 1 through 4 {
     .md-gap-x-#{$i} {
-      column-gap: $i * 0.5rem;
+      column-gap: $i * 0.5rem !important;
     }
   }
 
   @for $i from 1 through 4 {
     .md-gap-y-#{$i} {
-      column-gap: $i * 0.5rem;
+      column-gap: $i * 0.5rem !important;
     }
   }
 }
