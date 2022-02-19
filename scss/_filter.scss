@@ -1,6 +1,5 @@
 @import "./variables";
 
-
 .accordion-button:focus {
     z-index: 3;
     border-color: #eeeeee;
@@ -31,13 +30,11 @@
     .accordion-body {
         padding-bottom: 0;
         padding-top: 2rem;
-
     }
     & > .accordion-item {
         .accordion-body {
             padding-bottom: 0;
             padding-top: 1rem;
-    
         }
     }
 }
@@ -61,8 +58,8 @@
 
 @media (prefers-reduced-motion: reduce) {
     *,
-     :after,
-     :before {
+    :after,
+    :before {
         animation-duration: 0.01ms !important;
         animation-iteration-count: 1 !important;
         scroll-behavior: auto !important;
@@ -107,7 +104,7 @@
     }
 }
 
-.accordion-body>.form-control-checkbox {
+.accordion-body > .form-control-checkbox {
     padding: 0 0;
 }
 
@@ -115,7 +112,6 @@
     color: $color-02;
     font-size: 0.875rem;
     font-weight: 700;
-    
 }
 
 // .checkbox-list {
@@ -132,7 +128,7 @@
         width: $w;
         height: $w;
         font-size: 1.2rem;
-        line-height: $w; 
+        line-height: $w;
         cursor: pointer;
         transition: 0.2s all ease-in-out;
         &.active {
@@ -162,13 +158,12 @@
 }
 
 .filter-product {
-
     .level1 {
         // margin-bottom: 1rem;
         font-weight: 700;
         .accordion-body {
             padding-top: 2rem;
-            padding-bottom:0;
+            padding-bottom: 0;
         }
 
         .level2 {
@@ -190,16 +185,12 @@
                 // margin-left: 1rem;
             }
         }
-
     }
-
-
 }
 
 .filter-product {
-
     .accordion {
-        .close  {
+        .close {
             display: none;
         }
     }
@@ -210,7 +201,7 @@
     outline: none !important;
     border: 0;
     background-color: transparent;
-   
+
     align-items: center;
     display: none;
     color: $color-01;
@@ -218,7 +209,7 @@
     $w: 32px;
     font-weight: 700;
     i {
-        color: $color-01;   
+        color: $color-01;
         font-size: 32px;
         width: $w;
         height: $w;
@@ -226,20 +217,17 @@
     }
     span {
         line-height: $w;
-        margin-left:  0.5rem;
+        margin-left: 0.5rem;
     }
     &:hover {
         color: $color-02;
     }
-
 }
 
 @include tablet {
-    #mobile-filter-toggle  {
+    #mobile-filter-toggle {
         display: flex;
     }
-    
-
 }
 @include tablet {
     .filter-product {
@@ -263,7 +251,7 @@
             width: 80%;
             max-width: 350px;
             height: 100%;
-            overflow:auto;
+            overflow: auto;
             &::-webkit-scrollbar {
                 display: none;
             }
@@ -297,15 +285,13 @@
                 animation-delay: 0;
                 animation-fill-mode: forwards;
             }
-
         }
     }
 }
 
-@keyframes scroll-in{
+@keyframes scroll-in {
     0% {
         left: -100%;
-
     }
     100% {
         left: 0;
