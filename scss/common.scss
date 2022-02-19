@@ -2,365 +2,404 @@
 @import "variables";
 @import "mixins";
 
+.sticky-top-0 {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0; /* required */
+}
+
 .heading-01 {
-  text-transform: uppercase;
-  margin-bottom: 2rem;
-  color: $color-10;
-  font-size: 5rem;
-  font-weight: bold;
-  margin-bottom: 2rem;
-  line-height: 1.2;
-}
-
-.heading-02 {
-  text-transform: uppercase;
-  margin-bottom: 1rem;
-  color: $color-02;
-  font-size: 2rem;
-  font-weight: 700;
-}
-
-.heading-03 {
-  text-transform: uppercase;
-  margin-bottom: 1rem;
-  color: $color-01;
-  font-size: 1.5rem;
-  font-family: 700;
-}
-.heading-04 {
-  font-size: 1rem;
-  font-weight: 700;
-  color: $color-01;
-  text-transform: uppercase;
-}
-.heading-05 {
-  text-transform: uppercase;
-  margin-bottom: 2rem;
-  color: $color-01;
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-.heading-06 {
-  text-transform: uppercase;
-  margin-bottom: 0;
-  color: $color-01;
-  font-size: 16px;
-}
-
-@include tablet {
-  .heading-01 {
     text-transform: uppercase;
     margin-bottom: 2rem;
     color: $color-10;
-    font-size: 4rem;
+    font-size: 5rem;
     font-weight: bold;
     margin-bottom: 2rem;
     line-height: 1.2;
-  }
+}
+
+.heading-02 {
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    color: $color-02;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.heading-03 {
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    color: $color-01;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.heading-04 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: $color-01;
+    text-transform: uppercase;
+}
+.heading-05 {
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    color: $color-01;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.heading-06 {
+    text-transform: uppercase;
+    margin-bottom: 0;
+    color: $color-01;
+    font-size: 16px;
+}
+
+@include tablet {
+    .heading-01 {
+        text-transform: uppercase;
+        margin-bottom: 2rem;
+        color: $color-10;
+        font-size: 4rem;
+        font-weight: bold;
+        margin-bottom: 2rem;
+        line-height: 1.2;
+    }
 }
 .bg-00 {
-  background-color: $color-00;
+    background-color: $color-00;
 }
 .bg-01 {
-  background-color: $color-01;
+    background-color: $color-01;
 }
 .bg-02 {
-  background-color: $color-05;
+    background-color: $color-05;
 }
 .bg-03 {
-  background-color: $color-07;
+    background-color: $color-07;
 }
 .bg-04 {
-  background-color: $color-03;
+    background-color: $color-03;
 }
 
 .bg-05 {
-  background-color: $color-05;
+    background-color: $color-05;
 }
 
 .bg-06 {
-  background-color: $color-06;
+    background-color: $color-06;
 }
 .bg-07 {
-  background-color: $color-07;
+    background-color: $color-07;
 }
 
 .bg-08 {
-  background-color: $color-08;
+    background-color: $color-08;
 }
 .bg-09 {
-  background-color: $bg-09;
+    background-color: $bg-09;
 }
 .bg-10 {
-  background-color: $bg-05;
+    background-color: $bg-05;
 }
 .text-00 {
-  color: $color-10;
+    color: $color-10;
 }
 .text-01 {
-  color: $color-01;
+    color: $color-01;
 }
 
 .text-02 {
-  color: $color-02;
+    color: $color-02;
 }
 
 .text-03 {
-  color: $color-08;
+    color: $color-08;
 }
 
 .text-04 {
-  color: $color-07;
+    color: $color-07;
 }
 
 .text-05 {
-  color: $color-05;
+    color: $color-05;
 }
 
 .text-06 {
-  color: $color-06;
+    color: $color-06;
 }
 
 .text-10 {
-  color: $color-10;
+    color: $color-10;
 }
 
 .text-11 {
-  color: $color-11;
+    color: $color-11;
 }
 .text-12 {
-  color: $color-11;
+    color: $color-11;
 }
 .text-13 {
-  color: $color-13;
+    color: $color-13;
+}
+
+.text-08 {
+    color: #accdd1;
 }
 
 .text-ssm {
-  font-size: 0.75rem;
+    font-size: 0.75rem;
 }
 .text-sm {
-  font-size: 0.875rem;
+    font-size: 0.875rem;
 }
 
 .text-md {
-  font-size: 1rem;
+    font-size: 1rem;
 }
 
 .text-lg {
-  font-size: 1.125rem;
+    font-size: 1.125rem;
 }
 
 .text-xl {
-  font-size: 1.25rem;
+    font-size: 1.25rem;
 }
 
 .text-2xl {
-  font-size: 1.75rem;
+    font-size: 1.75rem;
 }
 
 .text-white {
-  color: $color-10;
+    color: $color-10;
 }
 
 .font-400 {
-  font-weight: 400;
+    font-weight: 400;
 }
 .font-500 {
-  font-weight: 500;
+    font-weight: 500;
 }
 .font-600 {
-  font-weight: 600;
+    font-weight: 600;
 }
 
 .font-700 {
-  font-weight: 700;
+    font-weight: 700;
 }
 .uppercase {
-  text-transform: uppercase;
+    text-transform: uppercase;
 }
 .rounded-full {
-  border-radius: 50%;
+    border-radius: 50%;
 }
 
 .bg-img {
-  background-image: var(--bg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+    background-image: var(--bg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 // Padding
 @for $i from 0 through 12 {
-  .p-#{$i} {
-    padding: $i * 0.5rem;
-  }
+    .p-#{$i} {
+        padding: $i * 0.5rem !important;
+    }
 }
 
 @for $i from 0 through 12 {
-  .pl-#{$i} {
-    padding-left: $i * 0.5rem;
-  }
+    .pl-#{$i} {
+        padding-left: $i * 0.5rem !important;
+    }
 }
 
 @for $i from 0 through 12 {
-  .pt-#{$i} {
-    padding-top: $i * 0.5rem;
-  }
+    .pt-#{$i} {
+        padding-top: $i * 0.5rem !important;
+    }
 }
 
 @for $i from 0 through 12 {
-  .pr-#{$i} {
-    padding-right: $i * 0.5rem;
-  }
+    .pr-#{$i} {
+        padding-right: $i * 0.5rem !important;
+    }
 }
 @for $i from 0 through 12 {
-  .pb-#{$i} {
-    padding-bottom: $i * 0.5rem;
-  }
+    .pb-#{$i} {
+        padding-bottom: $i * 0.5rem !important;
+    }
 }
 
 @for $i from 0 through 12 {
-  .px-#{$i} {
-    padding-left: $i * 0.5rem;
-    padding-right: $i * 0.5rem;
-  }
+    .px-#{$i} {
+        padding-left: $i * 0.5rem !important;
+        padding-right: $i * 0.5rem !important;
+    }
 }
 @for $i from 0 through 12 {
-  .py-#{$i} {
-    padding-top: $i * 0.5rem;
-    padding-bottom: $i * 0.5rem;
-  }
+    .py-#{$i} {
+        padding-top: $i * 0.5rem !important;
+        padding-bottom: $i * 0.5rem !important;
+    }
 }
 
 // Margin
 @for $i from 0 through 12 {
-  .m-#{$i} {
-    margin: $i * 0.5rem;
-  }
+    .m-#{$i} {
+        margin: $i * 0.5rem !important;
+    }
 }
 
 @for $i from 0 through 12 {
-  .ml-#{$i} {
-    margin-left: $i * 0.5rem;
-  }
+    .ml-#{$i} {
+        margin-left: $i * 0.5rem !important;
+    }
 }
 
 @for $i from 0 through 12 {
-  .mt-#{$i} {
-    margin-top: $i * 0.5rem;
-  }
+    .mt-#{$i} {
+        margin-top: $i * 0.5rem !important;
+    }
 }
 
 @for $i from 0 through 12 {
-  .mr-#{$i} {
-    margin-right: $i * 0.5rem;
-  }
+    .mr-#{$i} {
+        margin-right: $i * 0.5rem !important;
+    }
 }
 @for $i from 0 through 12 {
-  .mb-#{$i} {
-    margin-bottom: $i * 0.5rem;
-  }
+    .mb-#{$i} {
+        margin-bottom: $i * 0.5rem !important;
+    }
 }
 
 @for $i from 0 through 12 {
-  .mx-#{$i} {
-    margin-left: $i * 0.5rem;
-    margin-right: $i * 0.5rem;
-  }
+    .mx-#{$i} {
+        margin-left: $i * 0.5rem !important;
+        margin-right: $i * 0.5rem !important;
+    }
 }
 @for $i from 0 through 12 {
-  .my-#{$i} {
-    margin-top: $i * 0.5rem;
-    margin-bottom: $i * 0.5rem;
-  }
+    .my-#{$i} {
+        margin-top: $i * 0.5rem !important;
+        margin-bottom: $i * 0.5rem !important;
+    }
 }
 
 @include tablet {
-  @for $i from 0 through 12 {
-    .md-px-#{$i} {
-      padding-left: $i * 0.5rem;
-      padding-right: $i * 0.5rem;
+    @for $i from 0 through 12 {
+        .md-px-#{$i} {
+            padding-left: $i * 0.5rem !important;
+            padding-right: $i * 0.5rem !important;
+        }
     }
-  }
-  @for $i from 0 through 12 {
-    .md-py-#{$i} {
-      padding-top: $i * 0.5rem;
-      padding-bottom: $i * 0.5rem;
+    @for $i from 0 through 12 {
+        .md-py-#{$i} {
+            padding-top: $i * 0.5rem !important;
+            padding-bottom: $i * 0.5rem !important;
+        }
     }
-  }
 }
 
 @include mobile {
-  @for $i from 0 through 12 {
-    .sm-px-#{$i} {
-      padding-left: $i * 0.5rem;
-      padding-right: $i * 0.5rem;
+    @for $i from 0 through 12 {
+        .sm-px-#{$i} {
+            padding-left: $i * 0.5rem !important;
+            padding-right: $i * 0.5rem !important;
+        }
     }
-  }
-  @for $i from 0 through 12 {
-    .sm-py-#{$i} {
-      padding-top: $i * 0.5rem;
-      padding-bottom: $i * 0.5rem;
+    @for $i from 0 through 12 {
+        .sm-py-#{$i} {
+            padding-top: $i * 0.5rem !important;
+            padding-bottom: $i * 0.5rem !important;
+        }
     }
-  }
+    .sm-pl-0 {
+        padding-left: 0 !important;
+    }
+}
+
+@include tablet {
+    @for $i from 0 through 12 {
+        .md-mb-#{$i} {
+            margin-bottom: $i * 0.5rem !important;
+        }
+    }
+    @for $i from 0 through 12 {
+        .md-mt-#{$i} {
+            margin-top: $i * 0.5rem !important;
+        }
+    }
+}
+
+@include mobile {
+    @for $i from 0 through 12 {
+        .sm-mb-#{$i} {
+            margin-bottom: $i * 0.5rem !important;
+        }
+    }
+    @for $i from 0 through 12 {
+        .sm-mt-#{$i} {
+            margin-top: $i * 0.5rem !important;
+        }
+    }
 }
 
 .mx-auto {
-  margin-left: auto;
-  margin-right: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .text-pre-icon {
-  --arrow: url("../media1/arrow-button-icon-black.svg");
-  font-size: 14px;
-  padding-left: 1rem;
-  height: fit-content;
-  position: relative;
-  text-decoration: underline;
-  transition: all 0.5s ease-in;
-  color: $color-02;
-  font-weight: 600;
+    --arrow: url("../media1/arrow-button-icon-black.svg");
+    font-size: 14px;
+    padding-left: 1rem;
+    height: fit-content;
+    position: relative;
+    text-decoration: underline;
+    transition: all 0.5s ease-in;
+    color: $color-02;
+    font-weight: 600;
 
-  &:hover {
-    // zoom: 1.05;
-    color: $bg-05;
+    &:hover {
+        // zoom: 1.05;
+        color: $bg-05;
 
-    // background-color: #fff;
-    // color: $color-02;
-    // --arrow: url("../media//svgs/arrow-button-bl.svg");
-  }
-  &.text-00 {
-    --arrow: url("../media1/arrow-button-icon.svg");
-    color: $color-10;
-  }
+        // background-color: #fff;
+        // color: $color-02;
+        // --arrow: url("../media//svgs/arrow-button-bl.svg");
+    }
+    &.text-00 {
+        --arrow: url("../media1/arrow-button-icon.svg");
+        color: $color-10;
+    }
 
-  &::before {
-    $w: 12px;
-    content: "";
-    width: $w;
-    height: $w;
-    position: absolute;
-    top: calc(50% - calc($w / 2));
-    left: 0;
-    background-image: var(--arrow);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
+    &::before {
+        $w: 12px;
+        content: "";
+        width: $w;
+        height: $w;
+        position: absolute;
+        top: calc(50% - calc($w / 2));
+        left: 0;
+        background-image: var(--arrow);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
 }
 
 .text-icon {
-  display: flex;
-  align-items: center;
+    display: flex;
+    align-items: center;
 
-  &__icon {
-    $w: 18px;
-    width: $w;
-    height: $w;
-  }
-  &__text {
-    margin-left: 1rem;
-  }
+    &__icon {
+        $w: 18px;
+        width: $w;
+        height: $w;
+    }
+    &__text {
+        margin-left: 1rem;
+    }
 }
 .pointer {
-  cursor: pointer;
+    cursor: pointer;
 }

@@ -1,7 +1,5 @@
 @import "variables";
 .header {
-
-
   &__banner {
     height: 100px;
     display: flex;
@@ -39,6 +37,7 @@
           outline: 0;
           width: 450px;
           font-size: 1rem;
+          background-color: inherit;
           &::placeholder {
             color: $color-01;
           }
@@ -51,12 +50,11 @@
           position: absolute;
           right: 0;
           top: 0;
-          padding: 0.5rem;
           padding-right: 0;
           outline: 0;
           img {
-            width: 100%;
-            height: 100%;
+            width: 25px;
+            height: 25px;
           }
         }
 
@@ -76,6 +74,7 @@
         align-items: center;
         font-size: $sm-text;
         margin-bottom: 0;
+        padding: 0;
 
         li:first-child {
           margin-right: 1rem;
@@ -107,7 +106,7 @@
       .love {
         margin-right: 1rem;
         & > a > img {
-          $w: 20px;
+          $w: 22px;
 
           width: $w;
           height: $w;
@@ -116,7 +115,7 @@
       .shopping-cart {
         & > a {
           & > img {
-            $w: 20px;
+            $w: 25px;
 
             width: $w;
             height: $w;

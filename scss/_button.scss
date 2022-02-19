@@ -3,6 +3,8 @@
   border-radius: 32px;
   padding: 0.6rem 1rem;
   background-color: transparent;
+  outline: none !important;
+  cursor: pointer;
 }
 
 .button-01 {
@@ -14,6 +16,7 @@
   align-items: center;
   padding-right: calc(1rem + 22px);
   line-height: 1;
+  outline: 0;
 
   position: relative;
 
@@ -48,7 +51,8 @@
   padding-right: calc(1rem + 22px);
   line-height: 1;
   background-color: #fff;
-
+  outline: none;
+  
   position: relative;
 
   &:hover {
