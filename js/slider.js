@@ -157,7 +157,7 @@ $(document).ready(() => {
           arrows: false,
           // centerMode: true,
           // centerPadding: '40px',
-          slidesToShow: 1,
+          slidesToShow: 2,
         },
       },
     ],
@@ -225,12 +225,21 @@ $(document).ready(() => {
     slidesToScroll: 1,
     responsive: [
       {
+        breakpoint: 1025,
+        settings: {
+          arrows: false,
+          // centerMode: true,
+          // centerPadding: '40px',
+          slidesToShow: 5,
+        },
+      },
+      {
         breakpoint: 768,
         settings: {
           arrows: false,
           // centerMode: true,
           // centerPadding: '40px',
-          slidesToShow: 3,
+          slidesToShow: 4,
         },
       },
       {
@@ -239,7 +248,7 @@ $(document).ready(() => {
           arrows: false,
           // centerMode: true,
           centerPadding: "0",
-          slidesToShow: 1,
+          slidesToShow: 2,
         },
       },
     ],

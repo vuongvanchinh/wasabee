@@ -1125,6 +1125,10 @@
     padding-top: 6rem !important;
     padding-bottom: 6rem !important;
   }
+
+  .md-pr-0 {
+    padding-right: 0 !important;
+  }
 }
 @media only screen and (max-width: 600px) {
   .sm-px-0 {
@@ -1259,6 +1263,14 @@
 
   .sm-pl-0 {
     padding-left: 0 !important;
+  }
+
+  .sm-pl-0 {
+    padding-left: 0 !important;
+  }
+
+  .sm-pr-1 {
+    padding-right: 0.5rem;
   }
 }
 @media only screen and (max-width: 1366px) {
