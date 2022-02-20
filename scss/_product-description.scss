@@ -20,6 +20,45 @@
 
 .left-side-img-list {
     width: 6rem;
+    max-height: 500px;
+    overflow-y: auto;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+    button {
+        &.active {
+            img {
+                filter: opacity(100%);
+            }
+        }
+    }
+    img {
+        filter: opacity(30%);
+        cursor: pointer;
+        -webkit-user-drag: none;
+    }
+    &::-webkit-scrollbar {
+        width: 1px;
+        // display: none;
+    }
+    &::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+    &::-webkit-scrollbar-thumb {
+        background: #888;
+    }
+
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+    @include tablet {
+        & {
+            display: none;
+        }
+    }
+}
+.bot-side-img-list {
+    display: none;
     button {
         &.active {
             img {
@@ -31,8 +70,31 @@
         filter: opacity(30%);
         cursor: pointer;
     }
+
+    @include tablet {
+        & {
+            display: block;
+            .nav {
+                &.__scroll {
+                    width: 100%;
+                    overflow-x: auto;
+                    button {
+                        width: 100%;
+                    }
+                }
+            }
+            img {
+                height: 10vh;
+                width: auto;
+            }
+        }
+    }
 }
 
+.scroll-x {
+    max-width: 100%;
+    overflow-x: auto;
+}
 .delivery-details {
     position: relative;
     width: 13rem;
@@ -85,4 +147,10 @@
 }
 .coupon_logo {
     // height: 5rem;
+}
+.nav {
+    &.__scroll {
+        overflow-y: hidden;
+        max-height: 100%;
+    }
 }
