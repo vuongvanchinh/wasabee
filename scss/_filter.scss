@@ -122,12 +122,12 @@
 
 .product-size {
     &__inner {
-        $w: 50px;
+        $w: 45px;
         border: 0.5px solid;
         border-radius: 50%;
         width: $w;
         height: $w;
-        font-size: 1.2rem;
+        font-size: 1.125rem;
         line-height: $w;
         cursor: pointer;
         transition: 0.2s all ease-in-out;
