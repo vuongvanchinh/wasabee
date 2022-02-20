@@ -1,7 +1,7 @@
 @import 'mixins';
 
 .slick-arrow {
-  --bg: url("../media1/right-arrow.svg");
+  --bg: url("../media/right-arrow.svg");
   $w: 40px;
   width: 30px;
   height: $w;
@@ -51,7 +51,7 @@
     background-position: center;
     background-repeat: no-repeat;
     &::before {
-      background-image: url("../media1/right-arrow-dark.svg");
+      background-image: url("../media/right-arrow-dark.svg");
 
     }
 

@@ -53,12 +53,12 @@
                 z-index: 2;
                 font-weight: 600;
                 z-index: 2;
-                background-image: url("../media1/heart-white-icon.svg");
+                background-image: url("../media/heart-white-icon.svg");
                 background-position: center;
                 background-repeat: no-repeat;
                 background-size: contain;
                 &.active {
-                    background-image: url("../media1/green-heart-icon-hover.svg");
+                    background-image: url("../media/green-heart-icon-hover.svg");
                 }
             }
             .product-quantity {

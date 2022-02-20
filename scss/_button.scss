@@ -8,7 +8,7 @@
 }
 
 .button-01 {
-  --arrow: url("../media//svgs/arrow-button.svg");
+  --arrow: url("../media//arrow-button.svg");
   @extend .button;
   color: #fff;
   display: block;
@@ -23,7 +23,7 @@
   &:hover {
     background-color: #fff;
     color: $color-02;
-    --arrow: url("../media//svgs/arrow-button-bl.svg");
+    --arrow: url("../media//arrow-button-bl.svg");
   }
 
   &::after {
@@ -42,7 +42,7 @@
 }
 
 .button-02 {
-  --arrow: url("../media//svgs/arrow-button-bl.svg");
+  --arrow: url("../media//arrow-button-bl.svg");
   @extend .button;
   color: $color-02;
   display: block;
@@ -58,7 +58,7 @@
   &:hover {
     background-color: transparent;
     color: #fff;
-    --arrow: url("../media//svgs/arrow-button.svg");
+    --arrow: url("../media//arrow-button.svg");
   }
 
   &::after {

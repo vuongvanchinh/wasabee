@@ -99,13 +99,13 @@
   z-index: 2;
   font-weight: 600;
   z-index: 2;
-  background-image: url("../media1/heart-white-icon.svg");
+  background-image: url("../media/heart-white-icon.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
 }
 .product-card__inner .product-card__imgs .product-love.active {
-  background-image: url("../media1/green-heart-icon-hover.svg");
+  background-image: url("../media/green-heart-icon-hover.svg");
 }
 .product-card__inner .product-card__imgs .product-quantity {
   position: absolute;
@@ -220,7 +220,7 @@
 }
 
 .button-01 {
-  --arrow: url("../media//svgs/arrow-button.svg");
+  --arrow: url("../media//arrow-button.svg");
   color: #fff;
   display: block;
   transition: all 0.3s ease;
@@ -233,7 +233,7 @@
 .button-01:hover {
   background-color: #fff;
   color: #032e34;
-  --arrow: url("../media//svgs/arrow-button-bl.svg");
+  --arrow: url("../media//arrow-button-bl.svg");
 }
 .button-01::after {
   content: "";
@@ -249,7 +249,7 @@
 }
 
 .button-02 {
-  --arrow: url("../media//svgs/arrow-button-bl.svg");
+  --arrow: url("../media//arrow-button-bl.svg");
   color: #032e34;
   display: block;
   transition: all 0.3s ease;
@@ -263,7 +263,7 @@
 .button-02:hover {
   background-color: transparent;
   color: #fff;
-  --arrow: url("../media//svgs/arrow-button.svg");
+  --arrow: url("../media//arrow-button.svg");
 }
 .button-02::after {
   content: "";
@@ -316,11 +316,11 @@
 .accordion-button::after {
   background-size: 0.8rem 0.8rem;
   background-position: center;
-  background-image: url("../media/svgs/arrow-button-bl.svg");
+  background-image: url("../media/arrow-button-bl.svg");
 }
 
 .accordion-button:not(.collapsed)::after {
-  background-image: url("../media/svgs/arrow-button-bl.svg");
+  background-image: url("../media/arrow-button-bl.svg");
   transform: rotate(0deg);
 }
 
@@ -987,7 +987,7 @@
 }
 
 .path-icon {
-  background: url("../media/svgs/angle-down-btn.svg") no-repeat;
+  background: url("../media/angle-down-btn.svg") no-repeat;
   background-size: 5px 5px;
   background-position: center;
   display: inline-block;
@@ -998,7 +998,7 @@
 }
 
 .dropdown-icon {
-  background: url("../media/svgs/angle-down-btn.svg") no-repeat;
+  background: url("../media/angle-down-btn.svg") no-repeat;
   background-size: 10px 10px;
   background-position: center;
   display: inline-block;
@@ -1019,7 +1019,7 @@
   top: 50%;
   margin-top: -5px;
   border: none;
-  background: url("../media/svgs/angle-down-btn.svg") no-repeat;
+  background: url("../media/angle-down-btn.svg") no-repeat;
   background-size: 10px 10px;
   background-position: center;
   width: 10px;
@@ -1117,14 +1117,15 @@
 .form-checkbox input {
   -webkit-appearance: none;
   margin: 0;
-  width: 0.7rem;
-  height: 0.7rem;
-  cursor: pointer;
+  flex-shrink: 0;
+  width: 12px;
+  height: 12px;
+  max-width: 12px;
+  max-height: 12px;
   border: 2.5px solid #fff;
   outline: 2px solid rgba(0, 0, 0, 0.3);
   border-radius: 50%;
-  display: grid;
-  place-content: center;
+  cursor: pointer;
 }
 .form-checkbox input:checked {
   border: 2px solid #fff;
@@ -1343,10 +1344,26 @@ input[type=number]::-webkit-outer-spin-button {
   }
 }
 
+.croll-table {
+  margin-bottom: 1rem;
+  /* Track */
+  /* Handle */
+}
 @media only screen and (max-width: 1366px) {
   .croll-table {
     overflow-x: auto;
   }
+}
+.croll-table::-webkit-scrollbar {
+  width: 10px;
+  height: 4px;
+}
+.croll-table::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+.croll-table::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 10px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -1386,7 +1403,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .momo-logo {
-  background-image: url(../media1/momo.svg);
+  background-image: url(../media/momo.svg);
   background-size: contain;
   width: 2rem;
   height: 2rem;
@@ -1397,7 +1414,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .btns button {
-  background: url("../media/svgs/angle-down-btn.svg") no-repeat;
+  background: url("../media/angle-down-btn.svg") no-repeat;
   background-size: contain;
   background-position: center;
   width: 2rem;
@@ -1529,6 +1546,19 @@ input[type=number]::-webkit-outer-spin-button {
 .scroll-x {
   max-width: 100%;
   overflow-x: auto;
+  /* Track */
+  /* Handle */
+}
+.scroll-x::-webkit-scrollbar {
+  width: 10px;
+  height: 4px;
+}
+.scroll-x::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+.scroll-x::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 10px;
 }
 
 .delivery-details {
@@ -1538,7 +1568,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 .delivery-details::after {
   content: "";
-  background: url("../media1/thanhtoan-icon.svg");
+  background: url("../media/thanhtoan-icon.svg");
   background-size: contain;
   position: absolute;
   right: 102%;
@@ -1554,7 +1584,7 @@ input[type=number]::-webkit-outer-spin-button {
 .note-icon {
   width: 12px;
   height: 12px;
-  background: url("../media/svgs/arrow-button-bl.svg") no-repeat;
+  background: url("../media/arrow-button-bl.svg") no-repeat;
   background-size: cover;
   background-position: center;
   display: inline-block;
@@ -1566,13 +1596,13 @@ input[type=number]::-webkit-outer-spin-button {
   color: #28a1b2;
   font-weight: 600;
   z-index: 2;
-  background-image: url(../media1/heart-icon.svg);
+  background-image: url(../media/heart-icon.svg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: contain;
 }
 .btn-pri.active .product-love {
-  background-image: url(../media1/heart-white-icon.svg);
+  background-image: url(../media/heart-white-icon.svg);
 }
 
 .nav.__scroll {
@@ -1698,7 +1728,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .slick-arrow {
-  --bg: url("../media1/right-arrow.svg");
+  --bg: url("../media/right-arrow.svg");
   width: 30px;
   height: 40px;
   z-index: 1;
@@ -1742,7 +1772,7 @@ input[type=number]::-webkit-outer-spin-button {
   background-repeat: no-repeat;
 }
 .top-right-navigator-slider .slick-arrow::before {
-  background-image: url("../media1/right-arrow-dark.svg");
+  background-image: url("../media/right-arrow-dark.svg");
 }
 .top-right-navigator-slider .slick-prev {
   right: 4rem;

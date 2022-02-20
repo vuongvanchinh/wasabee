@@ -94,6 +94,21 @@
 .scroll-x {
     max-width: 100%;
     overflow-x: auto;
+    &::-webkit-scrollbar {
+        width: 10px;
+        height: 4px;
+      }
+      
+      /* Track */
+    &::-webkit-scrollbar-track {
+        border-radius: 10px;
+      }
+      
+      /* Handle */
+    &::-webkit-scrollbar-thumb {
+        background: #c1c1c1;
+        border-radius: 10px;
+    }
 }
 .delivery-details {
     position: relative;
@@ -101,7 +116,7 @@
     margin-left: 3rem;
     &::after {
         content: "";
-        background: url("../media1/thanhtoan-icon.svg");
+        background: url("../media/thanhtoan-icon.svg");
         background-size: contain;
         position: absolute;
         right: 102%;
@@ -120,7 +135,7 @@
 .note-icon {
     width: 12px;
     height: 12px;
-    background: url("../media/svgs/arrow-button-bl.svg") no-repeat;
+    background: url("../media/arrow-button-bl.svg") no-repeat;
     background-size: cover;
     background-position: center;
     display: inline-block;
@@ -133,7 +148,7 @@
         color: rgb(40, 161, 178);
         font-weight: 600;
         z-index: 2;
-        background-image: url(../media1/heart-icon.svg);
+        background-image: url(../media/heart-icon.svg);
         background-position: center center;
         background-repeat: no-repeat;
         background-size: contain;
@@ -141,7 +156,7 @@
 
     &.active {
         .product-love {
-            background-image: url(../media1/heart-white-icon.svg);
+            background-image: url(../media/heart-white-icon.svg);
         }
     }
 }
