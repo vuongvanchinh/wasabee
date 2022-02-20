@@ -53,16 +53,83 @@
     font-size: 16px;
 }
 
+
 @include tablet {
+        
     .heading-01 {
         text-transform: uppercase;
         margin-bottom: 2rem;
         color: $color-10;
-        font-size: 4rem;
+        font-size: 5rem;
+        font-weight: bold;
+        line-height: 1.2;
+    }
+
+    .heading-02 {
+        text-transform: uppercase;
+        margin-bottom: 1rem;
+        color: $color-02;
+        font-size: 2rem;
+        font-weight: 700;
+    }
+
+    .heading-03 {
+        text-transform: uppercase;
+        margin-bottom: 1rem;
+        color: $color-01;
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+    .heading-04 {
+        font-size: 1rem;
+        font-weight: 700;
+        color: $color-01;
+        text-transform: uppercase;
+    }
+    .heading-05 {
+        text-transform: uppercase;
+        margin-bottom: 2rem;
+        color: $color-01;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    .heading-06 {
+        text-transform: uppercase;
+        margin-bottom: 0;
+        color: $color-01;
+        font-size: 16px;
+    }
+}
+
+
+@include mobile {
+        
+    .heading-01 {
+        text-transform: uppercase;
+        margin-bottom: 2rem;
+        color: $color-10;
+        font-size: 2rem;
         font-weight: bold;
         margin-bottom: 2rem;
         line-height: 1.2;
     }
+
+    .heading-02 {
+        text-transform: uppercase;
+        margin-bottom: 1rem;
+        color: $color-02;
+        font-size: 1.25rem;
+        font-weight: 700;
+    }
+
+    .heading-03 {
+        text-transform: uppercase;
+        margin-bottom: 1rem;
+        color: $color-01;
+        font-size: 1.125rem;
+        font-weight: 700;
+    }
+    
 }
 .bg-00 {
     background-color: $color-00;
@@ -411,4 +478,8 @@
 }
 .pointer {
     cursor: pointer;
+}
+.overflow-x-auto {
+    overflow-x: auto;
+    overflow-y: visible;
 }

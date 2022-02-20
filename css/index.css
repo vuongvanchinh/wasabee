@@ -33,6 +33,7 @@
 }
 .coupon__info {
   flex-grow: 1;
+  width: 60%;
   padding: 0 1rem;
   padding-left: 0;
 }
@@ -121,9 +122,21 @@
   text-transform: uppercase;
   color: #021d21;
   font-weight: 700;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-word;
 }
 .product-card__inner .product-card__info .product__desc {
   font-size: 15px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-word;
 }
 .product-card__inner .product-card__info .product__price {
   display: flex;
@@ -132,7 +145,7 @@
   font-size: 14px;
 }
 .product-card__inner .product-card__info .product__price .price-new {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
   color: #021d21;
   margin-bottom: 0;
@@ -147,6 +160,11 @@
   flex-direction: column;
 }
 
+@media only screen and (max-width: 600px) {
+  .product-card .product__price {
+    flex-direction: column;
+  }
+}
 .popular-products .side-banner {
   display: flex;
   align-items: center;
@@ -169,6 +187,11 @@
   z-index: 1;
 }
 
+@media only screen and (max-width: 600px) {
+  .popular-products .side-banner {
+    padding: 2rem 1rem;
+  }
+}
 .banner-design {
   display: flex;
   align-items: center;
@@ -178,6 +201,7 @@
 }
 .banner-design img {
   min-height: 300px;
+  object-fit: cover;
 }
 .banner-design__info {
   position: absolute;
@@ -385,10 +409,10 @@
 .product-size__inner {
   border: 0.5px solid;
   border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  font-size: 1.2rem;
-  line-height: 50px;
+  width: 45px;
+  height: 45px;
+  font-size: 1.125rem;
+  line-height: 45px;
   cursor: pointer;
   transition: 0.2s all ease-in-out;
 }
@@ -398,15 +422,16 @@
 }
 
 .product-color__inner {
-  width: 50px;
+  display: block;
+  width: 40px;
   border-radius: 50%;
-  height: 50px;
+  height: 40px;
   cursor: pointer;
   border: 3px solid #fff;
   transition: 0.2s all ease-in-out;
 }
 .product-color__inner.active {
-  outline: 1px solid;
+  outline: 2px solid;
 }
 
 .bg-trans {
@@ -441,6 +466,11 @@
   display: none;
 }
 
+@media only screen and (max-width: 1366px) {
+  .filter-product .heading-03 {
+    font-size: 1.125rem;
+  }
+}
 #mobile-filter-toggle {
   display: none;
   outline: none !important;
@@ -691,6 +721,9 @@
   .header-mobile {
     display: block;
   }
+  .header-mobile + * {
+    padding-top: 80px;
+  }
 }
 .header-mobile {
   position: fixed;
@@ -698,9 +731,6 @@
   width: 100%;
   z-index: 1000;
   background-color: #fff;
-}
-.header-mobile + * {
-  padding-top: 80px;
 }
 .header-mobile .top-header {
   height: 80px;
@@ -819,7 +849,7 @@
 .header-mobile .sidebar-header__inner .sidebar-header__nav .sidebar__nav-item.active {
   color: #55c2a4;
 }
-.header-mobile .sidebar-header__inner .close {
+.header-mobile .sidebar-header__inner .my-close {
   display: initial;
   transition: all 0.5s ease;
   cursor: pointer;
@@ -831,7 +861,7 @@
   top: 1rem;
   border-radius: 50%;
 }
-.header-mobile .sidebar-header__inner .close:hover {
+.header-mobile .sidebar-header__inner .my-close:hover {
   background-color: rgba(0, 0, 0, 0.5);
   color: #fff;
 }
@@ -866,6 +896,40 @@
   background-repeat: no-repeat;
 }
 
+@media only screen and (max-width: 1366px) {
+  .landing-slider__slide {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 0rem 3rem !important;
+    height: 50vh;
+    max-height: 50vh;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .landing-slider__slide {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 0rem 1rem !important;
+    height: 50vh;
+    max-height: 50vh;
+  }
+  .landing-slider p {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-word;
+  }
+  .landing-slider .bg-buttom-right {
+    background-image: var(--bg);
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
 .style-card {
   padding-top: 100%;
   position: relative;
@@ -1565,7 +1629,8 @@ input[type=number]::-webkit-outer-spin-button {
 }
 @media only screen and (max-width: 1366px) {
   .monopoly-slider .slick-slide .monopoly-slider__slide {
-    height: 300px;
+    height: 320px;
+    padding: 2rem 1.5rem;
   }
   .monopoly-slider .slick-slide .monopoly-slider__slide .monopoly__info {
     font-size: 2rem;
@@ -1573,7 +1638,8 @@ input[type=number]::-webkit-outer-spin-button {
 }
 @media only screen and (max-width: 600px) {
   .monopoly-slider .slick-slide .monopoly-slider__slide {
-    height: 300px;
+    height: 150px;
+    padding: 1.5rem 1rem;
   }
   .monopoly-slider .slick-slide .monopoly-slider__slide .monopoly__info {
     font-size: 1.5rem;

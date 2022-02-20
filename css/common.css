@@ -58,10 +58,74 @@
     text-transform: uppercase;
     margin-bottom: 2rem;
     color: #fff;
-    font-size: 4rem;
+    font-size: 5rem;
+    font-weight: bold;
+    line-height: 1.2;
+  }
+
+  .heading-02 {
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    color: #032e34;
+    font-size: 2rem;
+    font-weight: 700;
+  }
+
+  .heading-03 {
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    color: #021d21;
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+
+  .heading-04 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #021d21;
+    text-transform: uppercase;
+  }
+
+  .heading-05 {
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    color: #021d21;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  .heading-06 {
+    text-transform: uppercase;
+    margin-bottom: 0;
+    color: #021d21;
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .heading-01 {
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    color: #fff;
+    font-size: 2rem;
     font-weight: bold;
     margin-bottom: 2rem;
     line-height: 1.2;
+  }
+
+  .heading-02 {
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    color: #032e34;
+    font-size: 1.25rem;
+    font-weight: 700;
+  }
+
+  .heading-03 {
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    color: #021d21;
+    font-size: 1.125rem;
+    font-weight: 700;
   }
 }
 .bg-00 {
@@ -1533,6 +1597,11 @@
 
 .pointer {
   cursor: pointer;
+}
+
+.overflow-x-auto {
+  overflow-x: auto;
+  overflow-y: visible;
 }
 
 /*# sourceMappingURL=common.css.map */

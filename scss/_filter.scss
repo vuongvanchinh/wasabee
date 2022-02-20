@@ -122,12 +122,12 @@
 
 .product-size {
     &__inner {
-        $w: 50px;
+        $w: 45px;
         border: 0.5px solid;
         border-radius: 50%;
         width: $w;
         height: $w;
-        font-size: 1.2rem;
+        font-size: 1.125rem;
         line-height: $w;
         cursor: pointer;
         transition: 0.2s all ease-in-out;
@@ -140,7 +140,8 @@
 
 .product-color {
     &__inner {
-        $w: 50px;
+        display: block;
+        $w: 40px;
         width: $w;
         border-radius: 50%;
         height: $w;
@@ -148,7 +149,7 @@
         border: 3px solid #fff;
         transition: 0.2s all ease-in-out;
         &.active {
-            outline: 1px solid;
+            outline: 2px solid;
         }
     }
 }
@@ -194,8 +195,17 @@
             display: none;
         }
     }
+    
 }
 
+@include tablet {
+    .filter-product {
+        .heading-03 {
+            font-size: 1.125rem;
+        }
+    }
+    
+}
 #mobile-filter-toggle {
     display: none;
     outline: none !important;

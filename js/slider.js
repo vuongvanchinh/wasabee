@@ -67,7 +67,7 @@ $(document).ready(() => {
       {
         breakpoint: 1280,
         settings: {
-          // arrows: false,
+          arrows: true,
           // centerMode: true,
           // centerPadding: '40px',
           slidesToShow: 3,
@@ -76,7 +76,7 @@ $(document).ready(() => {
       {
         breakpoint: 900,
         settings: {
-          arrows: false,
+          arrows: true,
           // centerMode: true,
           // centerPadding: '40px',
           slidesToShow: 2,
@@ -85,7 +85,7 @@ $(document).ready(() => {
       {
         breakpoint: 600,
         settings: {
-          arrows: false,
+          arrows: true,
           // centerMode: true,
           centerPadding: "40px",
           slidesToShow: 1,
@@ -118,18 +118,18 @@ $(document).ready(() => {
       {
         breakpoint: 900,
         settings: {
-          arrows: false,
+          arrows: true,
           centerMode: true,
-          centerPadding: "20%",
+          centerPadding: "15%",
           slidesToShow: 1,
         },
       },
       {
         breakpoint: 600,
         settings: {
-          arrows: false,
+          arrows: true,
           centerMode: true,
-          centerPadding: "20%",
+          centerPadding: "12%",
           slidesToShow: 1,
         },
       },
@@ -145,7 +145,7 @@ $(document).ready(() => {
       {
         breakpoint: 768,
         settings: {
-          arrows: false,
+          arrows: true,
           // centerMode: true,
           // centerPadding: '40px',
           slidesToShow: 3,
@@ -154,7 +154,7 @@ $(document).ready(() => {
       {
         breakpoint: 480,
         settings: {
-          arrows: false,
+          arrows: true,
           // centerMode: true,
           // centerPadding: '40px',
           slidesToShow: 2,
@@ -227,7 +227,7 @@ $(document).ready(() => {
       {
         breakpoint: 1025,
         settings: {
-          arrows: false,
+          arrows: true,
           // centerMode: true,
           // centerPadding: '40px',
           slidesToShow: 5,
@@ -236,7 +236,7 @@ $(document).ready(() => {
       {
         breakpoint: 768,
         settings: {
-          arrows: false,
+          arrows: true,
           // centerMode: true,
           // centerPadding: '40px',
           slidesToShow: 4,
@@ -245,7 +245,7 @@ $(document).ready(() => {
       {
         breakpoint: 480,
         settings: {
-          arrows: false,
+          arrows: true,
           // centerMode: true,
           centerPadding: "0",
           slidesToShow: 2,
