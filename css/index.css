@@ -105,7 +105,7 @@
   background-size: contain;
 }
 .product-card__inner .product-card__imgs .product-love.active {
-  background-image: url("../media1/heart-fill-icon.svg");
+  background-image: url("../media1/green-heart-icon-hover.svg");
 }
 .product-card__inner .product-card__imgs .product-quantity {
   position: absolute;

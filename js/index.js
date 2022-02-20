@@ -88,6 +88,11 @@ $(document).ready(() => {
         $("#mobile-search").toggleClass("open");
     });
     // end mobile search icon
+
+    //click change color heart
+    $(".product-card .product-love").click((e) => {
+        $(e.target).toggleClass("active");
+    });
 });
 
 function increaseValue(that) {
