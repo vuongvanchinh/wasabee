@@ -1,287 +1,1139 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- <link rel="stylesheet" href="style.css.map"> -->
-    <style>
-      @import url('https://fonts.googleapis.com/css2?family=Fahkwang:wght@200&display=swap');
-    </style>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- <link rel="stylesheet" href="style.css.map"> -->
+        <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet" />
+        <style>
+            @import url("https://fonts.googleapis.com/css2?family=Fahkwang:wght@200;300;400;500;600;700&display=swap");
+        </style>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
 
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
-    <link rel="stylesheet" href="css/base.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/common.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/da.css" />
-    <link rel="stylesheet" href="css/chinh.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/custom-slick-slider.css">
-    <link rel="stylesheet" href="css/index.css" />
-    <link rel="stylesheet" href="css/duc.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <!-- Add the slick-theme.css if you want default styling -->
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <!-- CSS only -->
-    <!-- Add the slick-theme.css if you want default styling -->
-   
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+        <link rel="stylesheet" href="css/base.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/common.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/da.css" />
+        <link rel="stylesheet" href="css/chinh.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/custom-slick-slider.css" />
+        <link rel="stylesheet" href="css/index.css" />
+        <link rel="stylesheet" href="css/duc.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- Add the slick-theme.css if you want default styling -->
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+        <!-- CSS only -->
+        <!-- Add the slick-theme.css if you want default styling -->
 
+        <title>Document</title>
+    </head>
 
-    <title>Document</title>
-  </head>
-  <body>
-    <div class="container-page ">
-      <main>
-        <!-- Header  -->
-        <header class="header">
-          <div class="header__banner" style="--bg: url('../media1/a.png')">
-            <div class="header__banner__info text-xl font-600 text-00">
-              Wasabe | Hello 2022
-            </div>
-          </div>
-          <div class="header__main">
-            <div class="logo">
-              <img src="./media1/logo-main.svg" alt="logo" srcset="" />
-            </div>
-            <div class="search">
-              <form>
-                <input
-                  type="text"
-                  placeholder="Tìm kiếm sản phẩm phù hợp với bạn"
-                />
-                <button type="submit">
-                  <img src="./media1/search-icon.svg" alt="" srcset="">
-                </button>
-              </form>
-            </div>
-            <div class="language-option">
-              <ul>
-                <li class="selected"><a href="#">Vie</a></li>
-                <li><a href="#">Eng</a></li>
-              </ul>
-            </div>
-            <div class="shop-manage flex">
-              <div class="account">
-                <a href="#">
-                  <img src="./media1/user-icon.svg" alt="" srcset="">
-                </a>
-              </div>
-              <div class="love"><a href="#">
-                <img src="./media1/heart-icon.svg" alt="" srcset="">
-              </a></div>
-              <div class="shopping-cart ">
-                <a href="#">
-                  <img src="./media1/cart-icon.svg" alt="" srcset="">
-                  <span>0</span>
-                </a>
-              </div>
-            </div>
-          </div>
-          <ul class="header__nav flex">
-            <li class="nav-item"><a href="#">Mới</a></li>
-            <li class="nav-item"><a href="#">Nữ</a></li>
-            <li class="nav-item"><a href="#">Nam</a></li>
-            <li class="nav-item"><a href="#">Bộ sưu tập</a></li>
-            <li class="nav-item"><a href="#">Trend</a></li>
-            <li class="nav-item"><a href="#">Khuyến mãi</a></li>
-            <li class="nav-item"><a href="#">Hàng bán chạy</a></li>
-            <li class="nav-item"><a href="#">Hàng khuyến mãi lớn</a></li>
-            <li class="nav-item"><a href="#">Tiêu thụ lớn</a></li>
-          </ul>
-        </header>
-        <!-- End Header -->
-        <div class="container-fluid px-4 ">
-          <div class="location-path">
-            <span class="text-04 font-400">
-              Trang chủ <div class="path-icon"></div>
-              <!-- <img class="path-arrow" src="./media1/right-arrow.svg" alt="" srcset=""> -->
-            </span>
-            <span class="text-04">
-              Bộ sưu tập <div class="path-icon"></div>
-            </span>
-            <span class="text-04">
-              Áo khoác <div class="path-icon"></div>
-            </span>
-            <span class="font-700">
-              KNOCK ON WOOD 
-            </span>
-          </div>
-          <!-- Details-->
-          <section>
-            <div class="form flex-nowrap gap-3 mt-5">
-              <div class="img-list w-5 flex-column gap-2">
-                <img src="./media/imgs/product02.png" alt="" srcset="">
-                <img src="./media/imgs/product02.png" alt="" srcset="">
-                <img src="./media/imgs/product02.png" alt="" srcset="">
-                <img src="./media/imgs/product02.png" alt="" srcset="">
-                <img src="./media/imgs/product02.png" alt="" srcset="">
-              </div>
-              <div class="w-95">
-                <div class="main-img flex-nowrap">
-                  <div class="img w-50 ">
-                    <img src="./media/imgs/product02.png" alt="" srcset="">
-                  </div>
-                  <div class="details w-50 p-5">
-                    <h2 class="heading-02 font-600">KNOCK ON WOOD</h2>
-                    <p class="text-04 text-sm">Jacket with recycled-fabric filling</p>
-                    <div class="price">
-                      <p>441,750 Vnđ</p>
-                      <p>891,750 Vnđ</p>
+    <body>
+        <div class="container-page">
+            <div class="header-mobile">
+                <div class="top-header">
+                    <div class="logo">
+                        <img src="./media//logo-main.svg" alt="logo" />
                     </div>
 
-                    <div class="dash"></div>
-                    <div class="color">
-                      <div>Màu sắc: cam</div>
-                      <div class="flex-nowrap gap-2">
-                        <button class="color"></button>
-                        <button class="color"></button>
-                        <button class="color"></button>
-                        <button class="color"></button>
-                        <button class="color"></button>
-                        <button class="color"></button>
-                        <button class="color"></button>
-                      </div>
-                    </div>
-                    <div class="size">
-                      <div>Kích thước: M</div>
-                      <div class="flex-nowrap gap-2">
-                        <button class="color">XS</button>
-                        <button class="color">S</button>
-                        <button class="color">M</button>
-                        <button class="color">L</button>
-                        <button class="color">XL</button>
-                        <button class="color">2XL</button>
-                        <button class="color">3XL</button>
-                      </div>
-                    </div>
-                    <p class="text-decoration-underline">Hướng dẫn đo kích thước</p>
-                    <div class="dash"></div>
-
-                    <div class="btn-form">
-                      <button>Mua ngay</button>
-                      <button>Thêm vào giỏ hàng</button>
-                      <button></button>
-                    </div>
-
-                    <div>
-                      <p>Free shipping over $300(3-7days) & free returns</p>
-                    </div>
-                    <div class="coupon">
-                      <div class="flex-nowrap px-12 md-px-6 sm-px-0 gap-4">
-                        <div class="px-3 py-2 flex-nowrap align-items-center  justify-content-between  bg-02">
-                            <div class="px-4 py-2">
-                                <h5 class="heading-05 my-auto">Sale off <span>70%</span></h5>
-                                <p class="text-sm text-04 font-600 my-auto">Lorem ipsum is</p>
-                            </div>
-                            <div class="w-30">
-                                <img src="./media1/voucher2.png" alt="" srcset="">
-                            </div>
+                    <div class="right">
+                        <div class="search">
+                            <img src="./media/search-icon.svg" alt="" id="mobile-search-icon" />
+                            <form id="mobile-search" method="get">
+                                <input type="text" />
+                                <!-- <button type="submit"></button> -->
+                            </form>
                         </div>
-                        <div class="p-2 flex-nowrap align-items-center justify-content-between  bg-06">
-                            <div class="px-5 py-2">
-                              <h5 class="heading-05 my-auto">Welcome <span>Deal</span></h6>
-                              <p class="text-sm text-04 font-600 my-auto">Lorem ipsum is</p>
-                            </div>
-                            <div class="w-50">
-                                <img src="./media1/voucher1.png" alt="" srcset="">
-                            </div>
+                        <div class="shopping-cart">
+                            <a href="#">
+                                <img src="./media//cart-icon.svg" alt="" />
+                                <span>2</span>
+                            </a>
                         </div>
-                      </div>
+                        <button id="toggle-sidebar-header">
+                            <img src="/media//menu.svg" alt="" srcset="" />
+                        </button>
                     </div>
-
-                  </div>
-
                 </div>
-                <div class="description"></div>
-              </div>
+                <div class="sidebar-header" id="sidebar-header">
+                    <div class="sidebar-header__inner">
+                        <i class="bx bx-x my-close"></i>
+                        <div class="sidebar__banner bg-img py-6 px-4 font-700 text-01" style="--bg: url('../media/a.png')">Wasabee | Hello 2022</div>
+                        <ul class="sidebar-header__nav">
+                            <li class="sidebar__nav-item active"><a href="#">Mới</a></li>
+                            <li class="sidebar__nav-item"><a href="#">Nữ</a></li>
+                            <li class="sidebar__nav-item"><a href="#">Nam</a></li>
+                            <li class="sidebar__nav-item"><a href="#">Bộ sưu tập</a></li>
+                            <li class="sidebar__nav-item"><a href="#">Trend</a></li>
+                            <li class="sidebar__nav-item"><a href="#">Khuyến mãi</a></li>
+                            <li class="sidebar__nav-item"><a href="#">Hàng bán chạy</a></li>
+                            <li class="sidebar__nav-item">
+                                <a href="#">Hàng khuyến mãi lớn</a>
+                            </li>
+                            <li class="sidebar__nav-item"><a href="#">Tiêu thụ lớn</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-          </section>
-          <!-- End Details-->
+            <main>
+                <!-- Header  -->
+                <header class="header" id="header">
+                    <div class="header__banner" style="--bg: url('../media/a.png')">
+                        <div class="header__banner__info text-xl font-700 text-01">Wasabe | Hello 2022</div>
+                    </div>
+                    <div class="header__main">
+                        <div class="logo">
+                            <img src="./media/logo-main.svg" alt="logo" srcset="" />
+                        </div>
+                        <div class="search">
+                            <form>
+                                <input type="text" placeholder="Tìm kiếm sản phẩm phù hợp với bạn" />
+                                <button type="submit">
+                                    <img src="./media/search-icon.svg" alt="" srcset="" />
+                                </button>
+                            </form>
+                        </div>
+                        <div class="language-option">
+                            <ul>
+                                <li class="selected"><a href="#">Vie</a></li>
+                                <li><a href="#">Eng</a></li>
+                            </ul>
+                        </div>
+                        <div class="shop-manage flex">
+                            <div class="account">
+                                <a href="#">
+                                    <img src="./media/user-icon.svg" alt="" srcset="" />
+                                </a>
+                            </div>
+                            <div class="love">
+                                <a href="#">
+                                    <img src="./media/heart-icon.svg" alt="" srcset="" />
+                                </a>
+                            </div>
+                            <div class="shopping-cart">
+                                <a href="#">
+                                    <img src="./media/cart-icon.svg" alt="" srcset="" />
+                                    <span>0</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="header__nav flex mb-0">
+                        <li class="header__nav-item"><a href="#">Mới</a></li>
+                        <li class="header__nav-item"><a href="#">Nữ</a></li>
+                        <li class="header__nav-item"><a href="#">Nam</a></li>
+                        <li class="header__nav-item"><a href="#">Bộ sưu tập</a></li>
+                        <li class="header__nav-item"><a href="#">Trend</a></li>
+                        <li class="header__nav-item"><a href="#">Khuyến mãi</a></li>
+                        <li class="header__nav-item"><a href="#">Hàng bán chạy</a></li>
+                        <li class="header__nav-item">
+                            <a href="#">Hàng khuyến mãi lớn</a>
+                        </li>
+                        <li class="header__nav-item"><a href="#">Tiêu thụ lớn</a></li>
+                    </ul>
+                </header>
+                <!-- End Header -->
+                <div class="container-fluid px-2 pt-3 md-px-1">
+                    <div class="location-path px-1">
+                        <span class="text-04">
+                            Trang chủ
+                            <div class="path-icon"></div>
+                            <!-- <img class="path-arrow" src="./media/right-arrow.svg" alt="" srcset=""> -->
+                        </span>
+                        <span class="text-04">
+                            Bộ sưu tập
+                            <div class="path-icon"></div>
+                        </span>
+                        <span class="text-04">
+                            Áo khoác
+                            <div class="path-icon"></div>
+                        </span>
+                        <span class="font-700"> KNOCK ON WOOD </span>
+                    </div>
+                    <!-- Details-->
+                    <section class="border-bottom">
+                        <div class="d-flex align-items-start"></div>
+                        <div class="form flex-nowrap mt-5">
+                            <div class="left-side-img-list col-1 pl-0 pr-1 mr-2">
+                                <div class="nav nav_scroll flex-column nav-pills gap-2" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                    <button class="btn-pri active" id="v-pills-product1-tab" data-bs-toggle="pill" data-bs-target="#v-pills-product1" type="button" role="tab" aria-controls="v-pills-product1" aria-selected="true">
+                                        <img src="./media/hangdocquyen4.jpg" alt="" srcset="" />
+                                    </button>
+                                    <button class="btn-pri" id="v-pills-product2-tab" data-bs-toggle="pill" data-bs-target="#v-pills-product2" type="button" role="tab" aria-controls="v-pills-product2" aria-selected="false">
+                                        <img src="./media/hangdocquyen4.jpg" alt="" srcset="" />
+                                    </button>
+                                    <button class="btn-pri" id="v-pills-product3-tab" data-bs-toggle="pill" data-bs-target="#v-pills-product3" type="button" role="tab" aria-controls="v-pills-product3" aria-selected="false">
+                                        <img src="./media/hangdocquyen5.jpg" alt="" srcset="" />
+                                    </button>
+                                    <button class="btn-pri" id="v-pills-product4-tab" data-bs-toggle="pill" data-bs-target="#v-pills-product4" type="button" role="tab" aria-controls="v-pills-product4" aria-selected="false">
+                                        <img src="./media/hangdocquyen4.jpg" alt="" srcset="" />
+                                    </button>
+                                    <button class="btn-pri" id="v-pills-product5-tab" data-bs-toggle="pill" data-bs-target="#v-pills-product5" type="button" role="tab" aria-controls="v-pills-product5" aria-selected="false">
+                                        <img src="./media/hangdocquyen5.jpg" alt="" srcset="" />
+                                    </button>
+                                    <button class="btn-pri" id="v-pills-product5-tab" data-bs-toggle="pill" data-bs-target="#v-pills-product5" type="button" role="tab" aria-controls="v-pills-product5" aria-selected="false">
+                                        <img src="./media/hangdocquyen5.jpg" alt="" srcset="" />
+                                    </button>
+                                    <button class="btn-pri" id="v-pills-product5-tab" data-bs-toggle="pill" data-bs-target="#v-pills-product5" type="button" role="tab" aria-controls="v-pills-product5" aria-selected="false">
+                                        <img src="./media/hangdocquyen5.jpg" alt="" srcset="" />
+                                    </button>
+                                    <button class="btn-pri" id="v-pills-product5-tab" data-bs-toggle="pill" data-bs-target="#v-pills-product5" type="button" role="tab" aria-controls="v-pills-product5" aria-selected="false">
+                                        <img src="./media/hangdocquyen5.jpg" alt="" srcset="" />
+                                    </button>
+                                    <button class="btn-pri" id="v-pills-product5-tab" data-bs-toggle="pill" data-bs-target="#v-pills-product5" type="button" role="tab" aria-controls="v-pills-product5" aria-selected="false">
+                                        <img src="./media/hangdocquyen5.jpg" alt="" srcset="" />
+                                    </button>
+                                    <button class="btn-pri" id="v-pills-product5-tab" data-bs-toggle="pill" data-bs-target="#v-pills-product5" type="button" role="tab" aria-controls="v-pills-product5" aria-selected="false">
+                                        <img src="./media/hangdocquyen5.jpg" alt="" srcset="" />
+                                    </button>
+                                    <button class="btn-pri" id="v-pills-product5-tab" data-bs-toggle="pill" data-bs-target="#v-pills-product5" type="button" role="tab" aria-controls="v-pills-product5" aria-selected="false">
+                                        <img src="./media/hangdocquyen5.jpg" alt="" srcset="" />
+                                    </button>
+                                    <button class="btn-pri" id="v-pills-product5-tab" data-bs-toggle="pill" data-bs-target="#v-pills-product5" type="button" role="tab" aria-controls="v-pills-product5" aria-selected="false">
+                                        <img src="./media/hangdocquyen5.jpg" alt="" srcset="" />
+                                    </button>
+                                    <button class="btn-pri" id="v-pills-product5-tab" data-bs-toggle="pill" data-bs-target="#v-pills-product5" type="button" role="tab" aria-controls="v-pills-product5" aria-selected="false">
+                                        <img src="./media/hangdocquyen5.jpg" alt="" srcset="" />
+                                    </button>
+                                    <button class="btn-pri" id="v-pills-product5-tab" data-bs-toggle="pill" data-bs-target="#v-pills-product5" type="button" role="tab" aria-controls="v-pills-product5" aria-selected="false">
+                                        <img src="./media/hangdocquyen5.jpg" alt="" srcset="" />
+                                    </button>
+                                    <button class="btn-pri" id="v-pills-product5-tab" data-bs-toggle="pill" data-bs-target="#v-pills-product5" type="button" role="tab" aria-controls="v-pills-product5" aria-selected="false">
+                                        <img src="./media/hangdocquyen5.jpg" alt="" srcset="" />
+                                    </button>
+                                    <button class="btn-pri" id="v-pills-product5-tab" data-bs-toggle="pill" data-bs-target="#v-pills-product5" type="button" role="tab" aria-controls="v-pills-product5" aria-selected="false">
+                                        <img src="./media/hangdocquyen5.jpg" alt="" srcset="" />
+                                    </button>
+                                    <button class="btn-pri" id="v-pills-product5-tab" data-bs-toggle="pill" data-bs-target="#v-pills-product5" type="button" role="tab" aria-controls="v-pills-product5" aria-selected="false">
+                                        <img src="./media/hangdocquyen5.jpg" alt="" srcset="" />
+                                    </button>
+                                    <button class="btn-pri" id="v-pills-product5-tab" data-bs-toggle="pill" data-bs-target="#v-pills-product5" type="button" role="tab" aria-controls="v-pills-product5" aria-selected="false">
+                                        <img src="./media/hangdocquyen5.jpg" alt="" srcset="" />
+                                    </button>
+                                    <button class="btn-pri" id="v-pills-product5-tab" data-bs-toggle="pill" data-bs-target="#v-pills-product5" type="button" role="tab" aria-controls="v-pills-product5" aria-selected="false">
+                                        <img src="./media/hangdocquyen5.jpg" alt="" srcset="" />
+                                    </button>
+                                    <button class="btn-pri" id="v-pills-product5-tab" data-bs-toggle="pill" data-bs-target="#v-pills-product5" type="button" role="tab" aria-controls="v-pills-product5" aria-selected="false">
+                                        <img src="./media/hangdocquyen5.jpg" alt="" srcset="" />
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="col-11 md-col-12 pl-3 pr-12 md-px-1 px-0">
+                                <div class="main-img flex">
+                                    <div class="img col-6 md-col-12 px-0">
+                                        <div class="tab-content" id="v-pills-tabContent">
+                                            <div class="tab-pane fade show active" id="v-pills-product1" role="tabpanel" aria-labelledby="v-pills-product1-tab">
+                                                <img src="./media/hangdocquyen4.jpg" alt="" srcset="" />
+                                            </div>
+                                            <div class="tab-pane fade" id="v-pills-product2" role="tabpanel" aria-labelledby="v-pills-product2-tab">
+                                                <img src="./media/hangdocquyen4.jpg" alt="" srcset="" />
+                                            </div>
+                                            <div class="tab-pane fade" id="v-pills-product3" role="tabpanel" aria-labelledby="v-pills-product3-tab">
+                                                <img src="./media/hangdocquyen5.jpg" alt="" srcset="" />
+                                            </div>
+                                            <div class="tab-pane fade" id="v-pills-product4" role="tabpanel" aria-labelledby="v-pills-product4-tab">
+                                                <img src="./media/hangdocquyen4.jpg" alt="" srcset="" />
+                                            </div>
+                                            <div class="tab-pane fade" id="v-pills-product5" role="tabpanel" aria-labelledby="v-pills-product5-tab">
+                                                <img src="./media/hangdocquyen5.jpg" alt="" srcset="" />
+                                            </div>
+                                        </div>
 
+                                        <div class="md-col-12 col-0 scroll-x px-0 pt-3 pb-1">
+                                            <div class="bot-side-img-list">
+                                                <div class="nav nav_scroll flex-nowrap nav-pills gap-2" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                                    <button class="btn-pri active" id="v-pills-product1-tab" data-bs-toggle="pill" data-bs-target="#v-pills-product1" type="button" role="tab" aria-controls="v-pills-product1" aria-selected="true">
+                                                        <img src="./media/hangdocquyen4.jpg" alt="" srcset="" />
+                                                    </button>
+                                                    <button class="btn-pri" id="v-pills-product2-tab" data-bs-toggle="pill" data-bs-target="#v-pills-product2" type="button" role="tab" aria-controls="v-pills-product2" aria-selected="false">
+                                                        <img src="./media/hangdocquyen4.jpg" alt="" srcset="" />
+                                                    </button>
+                                                    <button class="btn-pri" id="v-pills-product3-tab" data-bs-toggle="pill" data-bs-target="#v-pills-product3" type="button" role="tab" aria-controls="v-pills-product3" aria-selected="false">
+                                                        <img src="./media/hangdocquyen5.jpg" alt="" srcset="" />
+                                                    </button>
+                                                    <button class="btn-pri" id="v-pills-product4-tab" data-bs-toggle="pill" data-bs-target="#v-pills-product4" type="button" role="tab" aria-controls="v-pills-product4" aria-selected="false">
+                                                        <img src="./media/hangdocquyen4.jpg" alt="" srcset="" />
+                                                    </button>
+                                                    <button class="btn-pri" id="v-pills-product5-tab" data-bs-toggle="pill" data-bs-target="#v-pills-product5" type="button" role="tab" aria-controls="v-pills-product5" aria-selected="false">
+                                                        <img src="./media/hangdocquyen5.jpg" alt="" srcset="" />
+                                                    </button>
+                                                    <button class="btn-pri" id="v-pills-product5-tab" data-bs-toggle="pill" data-bs-target="#v-pills-product5" type="button" role="tab" aria-controls="v-pills-product5" aria-selected="false">
+                                                        <img src="./media/hangdocquyen5.jpg" alt="" srcset="" />
+                                                    </button>
+                                                    <button class="btn-pri" id="v-pills-product5-tab" data-bs-toggle="pill" data-bs-target="#v-pills-product5" type="button" role="tab" aria-controls="v-pills-product5" aria-selected="false">
+                                                        <img src="./media/hangdocquyen5.jpg" alt="" srcset="" />
+                                                    </button>
+                                                    <button class="btn-pri" id="v-pills-product5-tab" data-bs-toggle="pill" data-bs-target="#v-pills-product5" type="button" role="tab" aria-controls="v-pills-product5" aria-selected="false">
+                                                        <img src="./media/hangdocquyen5.jpg" alt="" srcset="" />
+                                                    </button>
+                                                    <button class="btn-pri" id="v-pills-product5-tab" data-bs-toggle="pill" data-bs-target="#v-pills-product5" type="button" role="tab" aria-controls="v-pills-product5" aria-selected="false">
+                                                        <img src="./media/hangdocquyen5.jpg" alt="" srcset="" />
+                                                    </button>
+                                                    <button class="btn-pri" id="v-pills-product5-tab" data-bs-toggle="pill" data-bs-target="#v-pills-product5" type="button" role="tab" aria-controls="v-pills-product5" aria-selected="false">
+                                                        <img src="./media/hangdocquyen5.jpg" alt="" srcset="" />
+                                                    </button>
+                                                    <button class="btn-pri" id="v-pills-product5-tab" data-bs-toggle="pill" data-bs-target="#v-pills-product5" type="button" role="tab" aria-controls="v-pills-product5" aria-selected="false">
+                                                        <img src="./media/hangdocquyen5.jpg" alt="" srcset="" />
+                                                    </button>
+                                                    <button class="btn-pri" id="v-pills-product5-tab" data-bs-toggle="pill" data-bs-target="#v-pills-product5" type="button" role="tab" aria-controls="v-pills-product5" aria-selected="false">
+                                                        <img src="./media/hangdocquyen5.jpg" alt="" srcset="" />
+                                                    </button>
+                                                    <button class="btn-pri" id="v-pills-product5-tab" data-bs-toggle="pill" data-bs-target="#v-pills-product5" type="button" role="tab" aria-controls="v-pills-product5" aria-selected="false">
+                                                        <img src="./media/hangdocquyen5.jpg" alt="" srcset="" />
+                                                    </button>
+                                                    <button class="btn-pri" id="v-pills-product5-tab" data-bs-toggle="pill" data-bs-target="#v-pills-product5" type="button" role="tab" aria-controls="v-pills-product5" aria-selected="false">
+                                                        <img src="./media/hangdocquyen5.jpg" alt="" srcset="" />
+                                                    </button>
+                                                    <button class="btn-pri" id="v-pills-product5-tab" data-bs-toggle="pill" data-bs-target="#v-pills-product5" type="button" role="tab" aria-controls="v-pills-product5" aria-selected="false">
+                                                        <img src="./media/hangdocquyen5.jpg" alt="" srcset="" />
+                                                    </button>
+                                                    <button class="btn-pri" id="v-pills-product5-tab" data-bs-toggle="pill" data-bs-target="#v-pills-product5" type="button" role="tab" aria-controls="v-pills-product5" aria-selected="false">
+                                                        <img src="./media/hangdocquyen5.jpg" alt="" srcset="" />
+                                                    </button>
+                                                    <button class="btn-pri" id="v-pills-product5-tab" data-bs-toggle="pill" data-bs-target="#v-pills-product5" type="button" role="tab" aria-controls="v-pills-product5" aria-selected="false">
+                                                        <img src="./media/hangdocquyen5.jpg" alt="" srcset="" />
+                                                    </button>
+                                                    <button class="btn-pri" id="v-pills-product5-tab" data-bs-toggle="pill" data-bs-target="#v-pills-product5" type="button" role="tab" aria-controls="v-pills-product5" aria-selected="false">
+                                                        <img src="./media/hangdocquyen5.jpg" alt="" srcset="" />
+                                                    </button>
+                                                    <button class="btn-pri" id="v-pills-product5-tab" data-bs-toggle="pill" data-bs-target="#v-pills-product5" type="button" role="tab" aria-controls="v-pills-product5" aria-selected="false">
+                                                        <img src="./media/hangdocquyen5.jpg" alt="" srcset="" />
+                                                    </button>
+                                                    <button class="btn-pri" id="v-pills-product5-tab" data-bs-toggle="pill" data-bs-target="#v-pills-product5" type="button" role="tab" aria-controls="v-pills-product5" aria-selected="false">
+                                                        <img src="./media/hangdocquyen5.jpg" alt="" srcset="" />
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="details col-6 md-col-12 py-6 pl-10 md-px-0">
+                                        <div class="details__infos flex justify-content-between md-px-0 sm-px-0">
+                                            <div class="col-12 px-0 md-col-6 sm-col-12">
+                                                <h2 class="heading-02 font-600 my-auto">KNOCK ON WOOD</h2>
+                                                <p class="text-04 text-sm font-400">Jacket with recycled-fabric filling</p>
+                                            </div>
+                                            <div class="price col-12 px-0 md-col-6 md-px-5 sm-col-12 sm-px-0">
+                                                <p class="my-auto font-600">441,750 Vnđ</p>
+                                                <p class="my-auto text-sm text-decoration-line-through text-04 font-400">891,750 Vnđ</p>
+                                            </div>
+                                        </div>
 
-          <!-- New product Section -->
-          <section>
-          </section>
-          <!-- End New product Section -->
+                                        <div class="dash my-3 sm-mb-1 sm-mt-1"></div>
+                                        <div class="flex">
+                                            <div class="color md-col-12 px-0 sm-col-12 sm-px-0">
+                                                <div class="mt-1 mb-2">Màu sắc: cam</div>
+                                                <div class="flex-nowrap gap-2">
+                                                    <div class="grid grid-cols-8 gap-3 sm-grid-cols-4 md-grid-cols-6">
+                                                        <div class="product-color">
+                                                            <div class="product-color__inner flex-center" style="background: red"></div>
+                                                        </div>
+                                                        <div class="product-color">
+                                                            <div class="product-color__inner flex-center" style="background: rgb(114, 116, 12)"></div>
+                                                        </div>
+                                                        <div class="product-color">
+                                                            <div class="product-color__inner flex-center" style="background: rgb(249, 253, 27)"></div>
+                                                        </div>
+                                                        <div class="product-color">
+                                                            <div class="product-color__inner flex-center" style="background: rgb(84, 219, 102)"></div>
+                                                        </div>
+                                                        <div class="product-color">
+                                                            <div class="product-color__inner flex-center" style="background: rgb(4, 46, 10)"></div>
+                                                        </div>
+                                                        <div class="product-color">
+                                                            <div class="product-color__inner flex-center" style="background: rgb(194, 28, 130)"></div>
+                                                        </div>
+                                                        <div class="product-color">
+                                                            <div class="product-color__inner flex-center" style="background: rgb(0, 8, 1)"></div>
+                                                        </div>
+                                                        <div class="product-color">
+                                                            <div class="product-color__inner flex-center" style="background: rgb(160, 107, 10)"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="size md-col-12 px-0 sm-col-12 sm-px-0">
+                                                <div class="mt-3 mb-2">Kích thước: M</div>
+                                                <div class="flex-nowrap">
+                                                    <div class="grid grid-cols-7 gap-3 sm-grid-cols-4 md-grid-cols-6">
+                                                        <div class="product-size">
+                                                            <div class="product-size__inner flex-center">XS</div>
+                                                        </div>
+                                                        <div class="product-size">
+                                                            <div class="product-size__inner flex-center">S</div>
+                                                        </div>
+                                                        <div class="product-size">
+                                                            <div class="product-size__inner flex-center">M</div>
+                                                        </div>
+                                                        <div class="product-size">
+                                                            <div class="product-size__inner flex-center">L</div>
+                                                        </div>
+                                                        <div class="product-size">
+                                                            <div class="product-size__inner flex-center">XL</div>
+                                                        </div>
+                                                        <div class="product-size">
+                                                            <div class="product-size__inner flex-center">2XL</div>
+                                                        </div>
+                                                        <div class="product-size">
+                                                            <div class="product-size__inner flex-center">3XL</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
 
-          <!-- popular product Section -->
-          <section>
-          </section>
-          <!-- End popular product Section -->
+                                        <div class="flex-nowrap mt-3 mb-2">
+                                            <p class="text-decoration-underline text-sm text-04 pointer text-pre-icon">Hướng dẫn đo kích thước</p>
+                                        </div>
+                                        <div class="dash my-3"></div>
 
-          <!-- Middle banner Section -->
-          <section></section>
-          <!-- End Middle banner Section -->
+                                        <div class="flex cart-btns text-sm col-12 px-0 gap-4">
+                                            <button class="btn-pri py-1 border-07 font-600 col-3 sm-col-12 px-0">Mua ngay</button>
+                                            <button class="btn-pri py-1 border-07 font-600 col-5 sm-col-9 px-0">Thêm vào giỏ hàng</button>
+                                            <button class="btn-pri bg-none col-1 px-0">
+                                                <div class="product-love"></div>
+                                            </button>
+                                        </div>
 
-          <!--Colection Section -->
-          <section class="bg-02"></section>
-          <!-- End Colection Section -->
+                                        <div class="w-70 my-4">
+                                            <!-- <img src="./media/thanhtoan-icon.svg" alt="" srcset=""> -->
+                                            <p class="delivery-details my-auto text-ssm">Free shipping over $300(3-7days) & free returns</p>
+                                        </div>
+
+                                        <div class="mt-6">
+                                            <div class="flex px-0">
+                                                <div class="col-6 sm-col-12 pr-1 pl-0">
+                                                    <div class="coupon_logo px-2 py-1 flex align-items-center justify-content-between bg-02 h-full">
+                                                        <div class="px-1 col-6">
+                                                            <h6 class="heading-06 my-auto">Sale off <span>70%</span></h6>
+                                                            <p class="text-sm text-04 font-600 my-auto">Lorem ipsum</p>
+                                                        </div>
+                                                        <div class="col-6 flex-center">
+                                                            <img src="./media/voucher2.png" alt="" srcset="" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6 sm-col-12 pl-0 pr-0 sm-mt-2">
+                                                    <div class="coupon_logo px-2 py-1 flex align-items-center justify-content-between bg-06 h-full">
+                                                        <div class="px-1 col-6">
+                                                            <h6 class="heading-06 my-auto">Welcome <span>Deal</span></h6>
+                                                            <p class="text-sm text-04 font-600 my-auto">Lorem ipsum</p>
+                                                        </div>
+                                                        <div class="col-6 flex-center">
+                                                            <img src="./media/voucher1.png" alt="" srcset="" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="description">
+                                    <div class="payment-card my-5">
+                                        <ul class="nav nav-tabs bold-bottom mb-4 flex" id="myTab" role="tablist">
+                                            <li class="nav-item sm-col-4 md-col-3 px-0" role="presentation">
+                                                <button class="table-title text-md text-center py-2 px-4 sm-px-1 sm-py-1 h-full active font-600" id="order-option-tab" data-bs-toggle="tab" data-bs-target="#order-option" type="button" role="tab" aria-controls="order-option" aria-selected="true">Tùy chọn giao hàng</button>
+                                            </li>
+                                            <li class="nav-item sm-col-4 md-col-3 px-0" role="presentation">
+                                                <button class="table-title text-md text-center py-2 px-4 sm-px-1 sm-py-1 h-full font-600" id="customer-rate-tab" data-bs-toggle="tab" data-bs-target="#customer-rate" type="button" role="tab" aria-controls="customer-rate" aria-selected="false">Khách hàng đánh giá</button>
+                                            </li>
+                                            <li class="nav-item sm-col-4 md-col-3 px-0" role="presentation">
+                                                <button class="table-title text-md text-center py-2 px-4 sm-px-1 sm-py-1 h-full font-600" id="swap-policy-tab" data-bs-toggle="tab" data-bs-target="#swap-policy" type="button" role="tab" aria-controls="swap-policy" aria-selected="false">Chính sách đổi trả</button>
+                                            </li>
+                                        </ul>
+
+                                        <div class="tab-content" id="myTabContent">
+                                            <div class="tab-pane fade show active" id="order-option" role="tabpanel" aria-labelledby="order-option-tab">
+                                                <div class="font-400">
+                                                    <p><span class="font-600">Chất liệu: </span> 52% sợi acrylic 28% nylon 20% sợi polyester</p>
+                                                    <p><span class="font-600">Độ co giãn:</span> có</p>
+                                                    <p><span class="font-600">Lớp lót trong:</span> Không</p>
+                                                </div>
+
+                                                <div class="font-400">
+                                                    <p class="m-auto"><span class="note-icon mr-1"></span>Xin vui lòng tham khảo chất liệu cũng như màu sắc trên ảnh đơn của sản phẩm. Tuy nhiên cần chú ý màu sắc khi xem qua màn hình máy tính/ điện thoại có thể sẽ hơi khác so với màu sản phầm thực tế. Màu của sản phẩm thực tế là màu chuẩn.</p>
+                                                    <p class="m-auto"><span class="note-icon mr-1"></span>Những sản hẩm sáng/đậm màu được khuyên giặt riêng</p>
+                                                    <p class="m-auto"><span class="note-icon mr-1"></span>Tất cả sản phẩm chất liệu len và vải mỏng cần được bỏ vào túi khi giặt</p>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="customer-rate" role="tabpanel" aria-labelledby="customer-rate-tab">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam vero ut repellendus. Nisi, accusamus impedit. Sed animi facere dolorum repellendus autem quasi corrupti facilis magni.</div>
+                                            <div class="tab-pane fade" id="swap-policy" role="tabpanel" aria-labelledby="swap-policy-tab">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde minima mollitia molestiae veritatis! Ad cum corporis sequi debitis aliquid quos obcaecati eveniet odit, quod alias nisi excepturi doloribus tempora. Saepe incidunt doloremque, odit quibusdam perferendis, illum totam id in consequuntur laudantium expedita magni. Incidunt quia explicabo error, modi ullam repellat.</div>
+                                        </div>
+                                        <div class="gallery grid grid-cols-2 sm-grid-cols-1 gap-3 w-full mt-4">
+                                            <img src="./media/hangdocquyen4.jpg" alt="" srcset="" />
+                                            <img src="./media/hangdocquyen5.jpg" alt="" srcset="" />
+                                            <img src="./media/hangdocquyen4.jpg" alt="" srcset="" />
+                                            <img src="./media/hangdocquyen5.jpg" alt="" srcset="" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- End Details-->
+
+                    <!-- New product Section -->
+                    <section></section>
+                    <!-- End New product Section -->
+
+                    <!-- popular product Section -->
+                    <section></section>
+                    <!-- End popular product Section -->
+
+                    <!-- Middle banner Section -->
+                    <section></section>
+                    <!-- End Middle banner Section -->
+
+                    <!--Colection Section -->
+                    <section class="bg-02"></section>
+                    <!-- End Colection Section -->
+                </div>
+
+                <!--Similar products 1 -->
+                <section class="pt-4 pl-2 pr-2 md-px-1">
+                    <h2 class="heading-02 pl-1 sm-mb-8">Sản phẩm tương tự</h2>
+                    <div class="flex">
+                        <div class="side-banner flex-center col-4 md-col-12 bg-02 bg-img" style="--bg: url('../media/cua-hang-hermes.jpg')"></div>
+                        <div class="product-grid-wrapper col-8 md-col-12 pr-0 pl-1 md-px-0">
+                            <!-- <h2 class="heading-02">Sản phẩm nổi bật</h2> -->
+                            <div class="top-right-navigator-slider top-right-navigator-slider-01">
+                                <div>
+                                    <div class="product-card price-vertical">
+                                        <div class="product-card__inner">
+                                            <div class="product-card__imgs">
+                                                <img src="./media/hangdocquyen5.jpg" />
+                                                <img src="./media/hangdocquyen4.jpg" />
+                                                <div class="product-discount">- 20<sup>%</sup></div>
+                                                <div class="product-love"></div>
+                                            </div>
+                                            <div class="product-card__info">
+                                                <h1 class="product__title">Knock on wood</h1>
+                                                <p class="product__desc">Jacket with recyled-fabric filling</p>
+                                                <div class="product__price">
+                                                    <p class="price-new">441,750 Vnđ</p>
+                                                    <p class="price-old">849,750 Vnđ</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="product-card price-vertical">
+                                        <div class="product-card__inner">
+                                            <div class="product-card__imgs">
+                                                <img src="./media/hangdocquyen5.jpg" />
+                                                <img src="./media/hangdocquyen4.jpg" />
+                                                <div class="product-discount">- 20<sup>%</sup></div>
+                                                <div class="product-love"></div>
+                                            </div>
+                                            <div class="product-card__info">
+                                                <h1 class="product__title">Knock on wood</h1>
+                                                <p class="product__desc">Jacket with recyled-fabric filling</p>
+                                                <div class="product__price">
+                                                    <p class="price-new">441,750 Vnđ</p>
+                                                    <p class="price-old">849,750 Vnđ</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="product-card price-vertical">
+                                        <div class="product-card__inner">
+                                            <div class="product-card__imgs">
+                                                <img src="./media/hangdocquyen5.jpg" />
+                                                <img src="./media/hangdocquyen4.jpg" />
+                                                <div class="product-discount">- 20<sup>%</sup></div>
+                                                <div class="product-love"></div>
+                                            </div>
+                                            <div class="product-card__info">
+                                                <h1 class="product__title">Knock on wood</h1>
+                                                <p class="product__desc">Jacket with recyled-fabric filling</p>
+                                                <div class="product__price">
+                                                    <p class="price-new">441,750 Vnđ</p>
+                                                    <p class="price-old">849,750 Vnđ</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="product-card price-vertical">
+                                        <div class="product-card__inner">
+                                            <div class="product-card__imgs">
+                                                <img src="./media/hangdocquyen5.jpg" />
+                                                <img src="./media/hangdocquyen4.jpg" />
+                                                <div class="product-discount">- 20<sup>%</sup></div>
+                                                <div class="product-love"></div>
+                                            </div>
+                                            <div class="product-card__info">
+                                                <h1 class="product__title">Knock on wood</h1>
+                                                <p class="product__desc">Jacket with recyled-fabric filling</p>
+                                                <div class="product__price">
+                                                    <p class="price-new">441,750 Vnđ</p>
+                                                    <p class="price-old">849,750 Vnđ</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="product-card price-vertical">
+                                        <div class="product-card__inner">
+                                            <div class="product-card__imgs">
+                                                <img src="./media/hangdocquyen5.jpg" />
+                                                <img src="./media/hangdocquyen4.jpg" />
+                                                <div class="product-discount">- 20<sup>%</sup></div>
+                                                <div class="product-love"></div>
+                                            </div>
+                                            <div class="product-card__info">
+                                                <h1 class="product__title">Knock on wood</h1>
+                                                <p class="product__desc">Jacket with recyled-fabric filling</p>
+                                                <div class="product__price">
+                                                    <p class="price-new">441,750 Vnđ</p>
+                                                    <p class="price-old">849,750 Vnđ</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="product-card price-vertical">
+                                        <div class="product-card__inner">
+                                            <div class="product-card__imgs">
+                                                <img src="./media/hangdocquyen5.jpg" />
+                                                <img src="./media/hangdocquyen4.jpg" />
+                                                <div class="product-discount">- 20<sup>%</sup></div>
+                                                <div class="product-love"></div>
+                                            </div>
+                                            <div class="product-card__info">
+                                                <h1 class="product__title">Knock on wood</h1>
+                                                <p class="product__desc">Jacket with recyled-fabric filling</p>
+                                                <div class="product__price">
+                                                    <p class="price-new">441,750 Vnđ</p>
+                                                    <p class="price-old">849,750 Vnđ</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="product-card price-vertical">
+                                        <div class="product-card__inner">
+                                            <div class="product-card__imgs">
+                                                <img src="./media/hangdocquyen5.jpg" />
+                                                <img src="./media/hangdocquyen4.jpg" />
+                                                <div class="product-discount">- 20<sup>%</sup></div>
+                                                <div class="product-love"></div>
+                                            </div>
+                                            <div class="product-card__info">
+                                                <h1 class="product__title">Knock on wood</h1>
+                                                <p class="product__desc">Jacket with recyled-fabric filling</p>
+                                                <div class="product__price">
+                                                    <p class="price-new">441,750 Vnđ</p>
+                                                    <p class="price-old">849,750 Vnđ</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!--End similar 1-->
+
+                <!--Maybe you interesting Section -->
+
+                <!-- Middle banner Section -->
+                <section class="px-2 sm-px-2">
+                    <div class="banner-design">
+                        <img src="./media/redesign.jpg" alt="" srcset="" />
+                        <div class="banner-design__info sm-w-full">
+                            <h2 class="heading-01 text-center">RE.DESIGN</h2>
+                            <p class="text-white text-center mb-4 sm-2-line">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur soluta blanditiis exceptur</p>
+                            <button class="button-01 font-600 text-sm mx-auto">Tìm hiểu thêm</button>
+                        </div>
+                    </div>
+                </section>
+                <!-- End Middle banner Section -->
+
+                <!--Similar products  -->
+                <section class="pr-2 pl-1 md-px-1">
+                    <h2 class="heading-02 pl-1 sm-mb-8">Sản phẩm tương tự</h2>
+                    <div class="flex">
+                        <div class="col-12 px-0">
+                            <div class="top-right-navigator-slider top-right-navigator-slider-02">
+                                <div>
+                                    <div class="product-card price-vertical">
+                                        <div class="product-card__inner">
+                                            <div class="product-card__imgs">
+                                                <img src="./media/hangdocquyen5.jpg" />
+                                                <img src="./media/hangdocquyen4.jpg" />
+                                                <div class="product-discount">- 20<sup>%</sup></div>
+                                                <div class="product-love"></div>
+                                            </div>
+                                            <div class="product-card__info">
+                                                <h1 class="product__title">Knock on wood</h1>
+                                                <p class="product__desc">Jacket with recyled-fabric filling</p>
+                                                <div class="product__price">
+                                                    <p class="price-new">441,750 Vnđ</p>
+                                                    <p class="price-old">849,750 Vnđ</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="product-card price-vertical">
+                                        <div class="product-card__inner">
+                                            <div class="product-card__imgs">
+                                                <img src="./media/hangdocquyen5.jpg" />
+                                                <img src="./media/hangdocquyen4.jpg" />
+                                                <div class="product-discount">- 20<sup>%</sup></div>
+                                                <div class="product-love"></div>
+                                            </div>
+                                            <div class="product-card__info">
+                                                <h1 class="product__title">Knock on wood</h1>
+                                                <p class="product__desc">Jacket with recyled-fabric filling</p>
+                                                <div class="product__price">
+                                                    <p class="price-new">441,750 Vnđ</p>
+                                                    <p class="price-old">849,750 Vnđ</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="product-card price-vertical">
+                                        <div class="product-card__inner">
+                                            <div class="product-card__imgs">
+                                                <img src="./media/hangdocquyen5.jpg" />
+                                                <img src="./media/hangdocquyen4.jpg" />
+                                                <div class="product-discount">- 20<sup>%</sup></div>
+                                                <div class="product-love"></div>
+                                            </div>
+                                            <div class="product-card__info">
+                                                <h1 class="product__title">Knock on wood</h1>
+                                                <p class="product__desc">Jacket with recyled-fabric filling</p>
+                                                <div class="product__price">
+                                                    <p class="price-new">441,750 Vnđ</p>
+                                                    <p class="price-old">849,750 Vnđ</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="product-card price-vertical">
+                                        <div class="product-card__inner">
+                                            <div class="product-card__imgs">
+                                                <img src="./media/hangdocquyen5.jpg" />
+                                                <img src="./media/hangdocquyen4.jpg" />
+                                                <div class="product-discount">- 20<sup>%</sup></div>
+                                                <div class="product-love"></div>
+                                            </div>
+                                            <div class="product-card__info">
+                                                <h1 class="product__title">Knock on wood</h1>
+                                                <p class="product__desc">Jacket with recyled-fabric filling</p>
+                                                <div class="product__price">
+                                                    <p class="price-new">441,750 Vnđ</p>
+                                                    <p class="price-old">849,750 Vnđ</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="product-card price-vertical">
+                                        <div class="product-card__inner">
+                                            <div class="product-card__imgs">
+                                                <img src="./media/hangdocquyen5.jpg" />
+                                                <img src="./media/hangdocquyen4.jpg" />
+                                                <div class="product-discount">- 20<sup>%</sup></div>
+                                                <div class="product-love"></div>
+                                            </div>
+                                            <div class="product-card__info">
+                                                <h1 class="product__title">Knock on wood</h1>
+                                                <p class="product__desc">Jacket with recyled-fabric filling</p>
+                                                <div class="product__price">
+                                                    <p class="price-new">441,750 Vnđ</p>
+                                                    <p class="price-old">849,750 Vnđ</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="product-card price-vertical">
+                                        <div class="product-card__inner">
+                                            <div class="product-card__imgs">
+                                                <img src="./media/hangdocquyen5.jpg" />
+                                                <img src="./media/hangdocquyen4.jpg" />
+                                                <div class="product-discount">- 20<sup>%</sup></div>
+                                                <div class="product-love"></div>
+                                            </div>
+                                            <div class="product-card__info">
+                                                <h1 class="product__title">Knock on wood</h1>
+                                                <p class="product__desc">Jacket with recyled-fabric filling</p>
+                                                <div class="product__price">
+                                                    <p class="price-new">441,750 Vnđ</p>
+                                                    <p class="price-old">849,750 Vnđ</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="product-card price-vertical">
+                                        <div class="product-card__inner">
+                                            <div class="product-card__imgs">
+                                                <img src="./media/hangdocquyen5.jpg" />
+                                                <img src="./media/hangdocquyen4.jpg" />
+                                                <div class="product-discount">- 20<sup>%</sup></div>
+                                                <div class="product-love"></div>
+                                            </div>
+                                            <div class="product-card__info">
+                                                <h1 class="product__title">Knock on wood</h1>
+                                                <p class="product__desc">Jacket with recyled-fabric filling</p>
+                                                <div class="product__price">
+                                                    <p class="price-new">441,750 Vnđ</p>
+                                                    <p class="price-old">849,750 Vnđ</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="product-card price-vertical">
+                                        <div class="product-card__inner">
+                                            <div class="product-card__imgs">
+                                                <img src="./media/hangdocquyen5.jpg" />
+                                                <img src="./media/hangdocquyen4.jpg" />
+                                                <div class="product-discount">- 20<sup>%</sup></div>
+                                                <div class="product-love"></div>
+                                            </div>
+                                            <div class="product-card__info">
+                                                <h1 class="product__title">Knock on wood</h1>
+                                                <p class="product__desc">Jacket with recyled-fabric filling</p>
+                                                <div class="product__price">
+                                                    <p class="price-new">441,750 Vnđ</p>
+                                                    <p class="price-old">849,750 Vnđ</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="product-card price-vertical">
+                                        <div class="product-card__inner">
+                                            <div class="product-card__imgs">
+                                                <img src="./media/hangdocquyen5.jpg" />
+                                                <img src="./media/hangdocquyen4.jpg" />
+                                                <div class="product-discount">- 20<sup>%</sup></div>
+                                                <div class="product-love"></div>
+                                            </div>
+                                            <div class="product-card__info">
+                                                <h1 class="product__title">Knock on wood</h1>
+                                                <p class="product__desc">Jacket with recyled-fabric filling</p>
+                                                <div class="product__price">
+                                                    <p class="price-new">441,750 Vnđ</p>
+                                                    <p class="price-old">849,750 Vnđ</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!--End similar -->
+                <!--Suggest -->
+                <section class="pl-1 pr-2 mb-8 md-px-1">
+                    <h2 class="heading-02 pl-1 sm-mb-8">Cực kỳ hợp nếu mặc cùng</h2>
+                    <div class="flex">
+                        <div class="product-grid-wrapper col-8 md-col-12 pl-0 pr-1 md-pr-0">
+                            <div class="top-right-navigator-slider top-right-navigator-slider-01">
+                                <div>
+                                    <div class="product-card price-vertical">
+                                        <div class="product-card__inner">
+                                            <div class="product-card__imgs">
+                                                <img src="./media/hangdocquyen5.jpg" />
+                                                <img src="./media/hangdocquyen4.jpg" />
+                                                <div class="product-discount">- 20<sup>%</sup></div>
+                                                <div class="product-love"></div>
+                                            </div>
+                                            <div class="product-card__info">
+                                                <h1 class="product__title">Knock on wood</h1>
+                                                <p class="product__desc">Jacket with recyled-fabric filling</p>
+                                                <div class="product__price">
+                                                    <p class="price-new">441,750 Vnđ</p>
+                                                    <p class="price-old">849,750 Vnđ</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="product-card price-vertical">
+                                        <div class="product-card__inner">
+                                            <div class="product-card__imgs">
+                                                <img src="./media/hangdocquyen5.jpg" />
+                                                <img src="./media/hangdocquyen4.jpg" />
+                                                <div class="product-discount">- 20<sup>%</sup></div>
+                                                <div class="product-love"></div>
+                                            </div>
+                                            <div class="product-card__info">
+                                                <h1 class="product__title">Knock on wood</h1>
+                                                <p class="product__desc">Jacket with recyled-fabric filling</p>
+                                                <div class="product__price">
+                                                    <p class="price-new">441,750 Vnđ</p>
+                                                    <p class="price-old">849,750 Vnđ</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="product-card price-vertical">
+                                        <div class="product-card__inner">
+                                            <div class="product-card__imgs">
+                                                <img src="./media/hangdocquyen5.jpg" />
+                                                <img src="./media/hangdocquyen4.jpg" />
+                                                <div class="product-discount">- 20<sup>%</sup></div>
+                                                <div class="product-love"></div>
+                                            </div>
+                                            <div class="product-card__info">
+                                                <h1 class="product__title">Knock on wood</h1>
+                                                <p class="product__desc">Jacket with recyled-fabric filling</p>
+                                                <div class="product__price">
+                                                    <p class="price-new">441,750 Vnđ</p>
+                                                    <p class="price-old">849,750 Vnđ</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="product-card price-vertical">
+                                        <div class="product-card__inner">
+                                            <div class="product-card__imgs">
+                                                <img src="./media/hangdocquyen5.jpg" />
+                                                <img src="./media/hangdocquyen4.jpg" />
+                                                <div class="product-discount">- 20<sup>%</sup></div>
+                                                <div class="product-love"></div>
+                                            </div>
+                                            <div class="product-card__info">
+                                                <h1 class="product__title">Knock on wood</h1>
+                                                <p class="product__desc">Jacket with recyled-fabric filling</p>
+                                                <div class="product__price">
+                                                    <p class="price-new">441,750 Vnđ</p>
+                                                    <p class="price-old">849,750 Vnđ</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="product-card price-vertical">
+                                        <div class="product-card__inner">
+                                            <div class="product-card__imgs">
+                                                <img src="./media/hangdocquyen5.jpg" />
+                                                <img src="./media/hangdocquyen4.jpg" />
+                                                <div class="product-discount">- 20<sup>%</sup></div>
+                                                <div class="product-love"></div>
+                                            </div>
+                                            <div class="product-card__info">
+                                                <h1 class="product__title">Knock on wood</h1>
+                                                <p class="product__desc">Jacket with recyled-fabric filling</p>
+                                                <div class="product__price">
+                                                    <p class="price-new">441,750 Vnđ</p>
+                                                    <p class="price-old">849,750 Vnđ</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="product-card price-vertical">
+                                        <div class="product-card__inner">
+                                            <div class="product-card__imgs">
+                                                <img src="./media/hangdocquyen5.jpg" />
+                                                <img src="./media/hangdocquyen4.jpg" />
+                                                <div class="product-discount">- 20<sup>%</sup></div>
+                                                <div class="product-love"></div>
+                                            </div>
+                                            <div class="product-card__info">
+                                                <h1 class="product__title">Knock on wood</h1>
+                                                <p class="product__desc">Jacket with recyled-fabric filling</p>
+                                                <div class="product__price">
+                                                    <p class="price-new">441,750 Vnđ</p>
+                                                    <p class="price-old">849,750 Vnđ</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="product-card price-vertical">
+                                        <div class="product-card__inner">
+                                            <div class="product-card__imgs">
+                                                <img src="./media/hangdocquyen5.jpg" />
+                                                <img src="./media/hangdocquyen4.jpg" />
+                                                <div class="product-discount">- 20<sup>%</sup></div>
+                                                <div class="product-love"></div>
+                                            </div>
+                                            <div class="product-card__info">
+                                                <h1 class="product__title">Knock on wood</h1>
+                                                <p class="product__desc">Jacket with recyled-fabric filling</p>
+                                                <div class="product__price">
+                                                    <p class="price-new">441,750 Vnđ</p>
+                                                    <p class="price-old">849,750 Vnđ</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="side-banner bg-img col-4 md-col-12" style="--bg: url('../media/cua-hang-hermes.jpg')"></div>
+                    </div>
+                </section>
+                <!--end sugestion -->
+                <!-- Policy section -->
+                <section class="py-8" style="border-top: 2px solid rgba(0, 0, 0, 0.15)">
+                    <div class="grid grid-cols-4 md-grid-cols-2 sm-grid-cols-1 gap-4 px-12 md-px-0">
+                        <div class="policy-card px-4 sm-px-2">
+                            <img src="./media/thanhtoan-icon.svg" alt="" srcset="" />
+                            <div class="policy-card__info">
+                                <h3 class="heading-04">DELIVERY</h3>
+                                <p>
+                                    Free delivery for orders over 500.000đ <br />
+                                    Worldwide delivery.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="policy-card px-4 sm-px-2">
+                            <img src="./media/thanhtoan-icon.svg" alt="" srcset="" />
+                            <div class="policy-card__info">
+                                <h3 class="heading-04">Chăm sóc khách hàng</h3>
+                                <p>
+                                    Free delivery for orders over 500.000đ <br />
+                                    Worldwide delivery.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="policy-card px-4 sm-px-2">
+                            <img src="./media/thanhtoan-icon.svg" alt="" srcset="" />
+                            <div class="policy-card__info">
+                                <h3 class="heading-04">Thanh toán an toàn</h3>
+                                <p>
+                                    Free delivery for orders over 500.000đ <br />
+                                    Worldwide delivery.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="policy-card px-4 sm-px-2">
+                            <img src="./media/thanhtoan-icon.svg" alt="" srcset="" />
+                            <div class="policy-card__info">
+                                <h3 class="heading-04 mb-4">Sản phẩm chính hãng</h3>
+                                <p>
+                                    Free delivery for orders over 500.000đ <br />
+                                    Worldwide delivery.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- End Policy Section -->
+                <!-- Subcrice section -->
+                <section class="mb-0">
+                    <div class="flex px-12 py-8 sm-px-2 sm-py-4 subcribe-section" style="--bg: url('../media/get-in-touch.jpg')">
+                        <div class="col-6 md-col-10 sm-col-12">
+                            <h3 class="heading-03 text-00 font-600 text-xxl mb-6">Nhận tin mới nhất</h3>
+                            <h1 class="getintouch text-00 pb-4 mb-4" style="border-bottom: 1px solid #d8d8d8">Get in touch</h1>
+                            <button class="button-02 mb-8 font-600 text-sm">Đăng ký ngay</button>
+                            <p class="text-00 font-600">
+                                Đừng bỏ lỡ tin tức và những ưu đãi của chúng tôi. <br />
+                                Và nhận ngay voucher giamr 10% chơ đơn hàng đầu tiên của bạn trên website của Wasabee!
+                            </p>
+                        </div>
+                        <!-- <div class="col-6"></div> -->
+                    </div>
+                </section>
+                <!-- End subcrice -->
+                <footer class="footer bg-04">
+                    <div class="px-12 sm-px-4 md-px-6 py-6 grid grid-cols-4 md-grid-cols-2 sm-grid-cols-1 gap-4">
+                        <div>
+                            <h4 class="heading-05 text-00">hỗ trợ người dùng</h4>
+                            <p class="text-sm text-08 font-600">Liên hệ cho chúng tôi theo số</p>
+                            <div class="text-icon mb-3">
+                                <img class="text-icon__icon" src="./media/phone-icon.svg" />
+                                <div class="text-icon__text text-00 text-xl font-700">0123-456-789</div>
+                            </div>
+                            <p class="text-sm text-08 font-600">Hoặc gửi Email cho chúng tôi</p>
+                            <div class="text-icon mb-8">
+                                <img class="text-icon__icon text-00" src="./media/email-icon.svg" />
+                                <div class="text-icon__text text-00">info@wasabee.com</div>
+                            </div>
+                            <div class="social-icons">
+                                <a href="facebook.com" class="social-icon">
+                                    <img src="./media/facebook.svg" alt="fb logo" srcset="" />
+                                </a>
+                                <a href="" class="social-icon">
+                                    <img src="./media/instagram.svg" alt="insta logo" srcset="" />
+                                </a>
+                                <a href="" class="social-icon">
+                                    <img src="./media/twitter.svg" alt="twitter" srcset="" />
+                                </a>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 class="heading-05 text-00">Thương hiệu và xu hướng</h4>
+                            <p><a href="#" class="text-00">Về Wasabee</a></p>
+                            <p><a href="#" class="text-00">Bộ sưu tập</a></p>
+                            <p><a href="#" class="text-00">Sản phẩm mới</a></p>
+                            <p><a href="#" class="text-00">Thời trang nữ</a></p>
+                            <p><a href="#" class="text-00">Thời trang nam</a></p>
+                            <p><a href="#" class="text-00">Cửa hàng</a></p>
+                        </div>
+                        <div>
+                            <h4 class="heading-05 text-00">Tài khoản</h4>
+                            <p><a href="#" class="text-00">Đơn hàng</a></p>
+                            <p><a href="#" class="text-00">Sản phẩm yêu thích</a></p>
+                            <p><a href="#" class="text-00">Cài đặt tài khoản</a></p>
+                            <p><a href="#" class="text-00">Đổi mật khẩu</a></p>
+                        </div>
+                        <div>
+                            <h4 class="heading-05 text-00">Điều khoản mua hàng</h4>
+                            <p><a href="#" class="text-00">Vận chuyển</a></p>
+                            <p><a href="#" class="text-00">Chính sách đổi trả hàng</a></p>
+                            <p><a href="#" class="text-00">Thanh toán</a></p>
+                            <p><a href="#" class="text-00">Hướng dẫn kích thước</a></p>
+                            <p><a href="#" class="text-00">Điều khoản và điều kiện</a></p>
+                            <p><a href="#" class="text-00">Chính sách bảo mật</a></p>
+                        </div>
+                    </div>
+                    <div class="px-12 md-px-6 sm-px-4 py-2 text-00 copy-right">
+                        &copy; 2022 Wasabee Store Powered bg Wasabee Store
+                        <a href="#header" class="go-to-top">
+                            <button class="button-03">
+                                <img src="./media/arrow-button-icon-black.svg" alt="" srcset="" />
+                            </button>
+                        </a>
+                    </div>
+                </footer>
+            </main>
         </div>
+        <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
-        <footer class="footer bg-05">
-          <div
-            class="px-12 md-px-6 py-6 grid grid-cols-4 md-grid-cols-2 sm-grid-cols-1 gap-4"
-          >
-            <div>
-              <h4 class="headding-05">hỗ trợ người dùng</h4>
-              <p class="text-sm text-04">Liên hệ cho chúng tôi theo số</p>
-              <div class="text-icon mb-3">
-                <div class="text-icon__icon"></div>
-                <div class="text-icon__text text-01 text-xl">0123-456-789</div>
-              </div>
-              <p class="text-sm text-04">Hoặc gửi Email cho chúng tôi</p>
-              <div class="text-icon mb-4">
-                <div class="text-icon__icon text-01"></div>
-                <div class="text-icon__text text-01">info@wasabee.com</div>
-              </div>
-              <div class="social-icons">
-                <a href="facebook.com" class="social-icon"></a>
-                <a href="" class="social-icon"></a>
-                <a href="" class="social-icon"></a>
-              </div>
-            </div>
-            <div>
-              <h4 class="headding-05">Thương hiệu và xu hướng</h4>
-              <p><a href="#" class="text-01">Về Wasabee</a></p>
-              <p><a href="#" class="text-01">Bộ sưu tập</a></p>
-              <p><a href="#" class="text-01">Sản phẩm mới</a></p>
-              <p><a href="#" class="text-01">Thời trang nữ</a></p>
-              <p><a href="#" class="text-01">Thời trang nam</a></p>
-              <p><a href="#" class="text-01">Cửa hàng</a></p>
-            </div>
-            <div>
-              <h4 class="headding-05">Tài khoản</h4>
-              <p><a href="#" class="text-01">Đơn hàng</a></p>
-              <p><a href="#" class="text-01">Sản phẩm yêu thích</a></p>
-              <p><a href="#" class="text-01">Cài đặt tài khoản</a></p>
-              <p><a href="#" class="text-01">Đổi mật khẩu</a></p>
-            </div>
-            <div>
-              <h4 class="headding-05">Điều khoản mua hàng</h4>
-              <p><a href="#" class="text-01">Vận chuyển</a></p>
-              <p><a href="#" class="text-01">Chính sách đổi trả hàng</a></p>
-              <p><a href="#" class="text-01">Thanh toán</a></p>
-              <p><a href="#" class="text-01">Hướng dẫn kích thước</a></p>
-              <p><a href="#" class="text-01">Điều khoản và điều kiện</a></p>
-              <p><a href="#" class="text-01">Chính sách bảo mật</a></p>
-            </div>
-          </div>
-          <div class="px-12 py-2 text-01 copy-right">
-            2022 Wasabee Store Powered bg Wasabee Store
-          </div>
-        </footer>
-      </main>
-    </div>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-
-    <script src="./js/slider.js"></script>
-    <script src="./js/index.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-    <script>
-        
-    </script>
-  </body>
+        <script src="./js/slider.js"></script>
+        <script src="./js/index.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+        <script></script>
+    </body>
 </html>

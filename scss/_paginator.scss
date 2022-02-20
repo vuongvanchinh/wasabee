@@ -1,0 +1,26 @@
+.paginators {
+    .paginator {
+        font-size: 16px;
+        font-weight: 700;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        margin-right: 1rem;
+
+        &.current {
+            border: 2px solid $border-color;
+            background-color: $bg-05;
+            color: #fff;
+        }
+        &:hover {
+            color: $color-02;
+            border: 1px solid $border-color;
+        } 
+    }
+
+    
+
+}

@@ -1,5 +1,5 @@
 .popular-products {
-    padding-left: 1rem;
+    // padding-left: 1rem;
     .side-banner {
         display: flex;
         align-items: center;
@@ -22,6 +22,16 @@
         .side-banner__info {
             color: #fff;
             z-index: 1;
+        }
+    }
+}
+
+@include mobile {
+    .popular-products {
+        // padding-left: 1rem;
+        .side-banner {
+            
+            padding: 2rem 1rem;
         }
     }
 }

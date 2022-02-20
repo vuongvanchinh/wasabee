@@ -2,6 +2,7 @@
 
 .coupon {
     display: flex;
+    flex-wrap: wrap;
     padding: 2rem;
     align-items: center;
 
@@ -11,7 +12,25 @@
     }
 
     &__info {
+        flex-grow: 1;
+        width: 60%;
         padding: 0 1rem;
+        padding-left:0;
     }
 }
 
+@include mobile {
+    .coupon {
+        padding: 1rem;
+        
+        &__img {
+            width: 100%;
+            flex-shrink: 0;
+        }
+    
+        &__info {
+            padding: 0 1rem;
+            padding-left:0;
+        }
+    }
+}
