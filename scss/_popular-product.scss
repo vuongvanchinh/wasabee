@@ -25,3 +25,13 @@
         }
     }
 }
+
+@include mobile {
+    .popular-products {
+        // padding-left: 1rem;
+        .side-banner {
+            
+            padding: 2rem 1rem;
+        }
+    }
+}

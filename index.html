@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet" />
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Fahkwang:wght@200&display=swap');
     </style>
@@ -65,8 +66,8 @@
             <div class="sidebar-header" id="sidebar-header">
               
               <div class="sidebar-header__inner">
-                <i class="bx bx-x close"></i>
-                <div class="sidebar__banner bg-img py-6 px-4 font-700" style="--bg: url('../media1/a.png')">
+                <i class="bx bx-x my-close"></i>
+                <div class="sidebar__banner bg-img py-6 px-4 font-700 text-01" style="--bg: url('../media1/a.png')">
                   Wasabee | Hello 2022
                 </div>
                 <ul class="sidebar-header__nav">
@@ -84,7 +85,7 @@
                 </ul>
               </div>
             </div>
-          </div>
+        </div>
         <main>
             <!-- Header  -->
     
@@ -94,7 +95,7 @@
                 Wasabe | Hello 2022
             </div>
         </div>
-        <div id="sticky-header">
+        <div>
             <div class="header__main">
                 <div class="logo">
                     <img src="./media1/logo-main.svg" alt="logo" srcset="" />
@@ -151,15 +152,15 @@
                 <section>
                     <div class="landing-slider">
                         <div>
-                            <div class="landing-slider__slide flex space-between p-8 md-p-0 " style="height: 80vh; min-height:500px; background-image:url('./media1/main-banner.jpg')">
-                                <div class="col-5 md-8 items-center h-full">
+                            <div class="landing-slider__slide flex space-between p-8 md-p-0 " style="height: 80vh; min-height:400px; background-image:url('./media1/main-banner.jpg')">
+                                <div class="col-5 md-col-12 items-center h-full">
                                     <div>
                                         <h1 class="heading-01">Outdoor <br> Collecttion</h1>
                                         <p class="text-00 mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt quo obcaecati architecto odit, aut natus autem delectus</p>
                                         <p><button class="button-01 font-600 text-sm">Tìm hiểu thêm</button></p>
                                     </div>
                                 </div>
-                                <div class="col-4 bg-buttom-right items-end" style="--bg: url('../media1/pc_01-1.png')">
+                                <div class="col-4 bg-buttom-right items-end hide-md" style="--bg: url('../media1/pc_01-1.png')">
                                     <div>
                                         <h3 class="heading-03 text-00 font-700">OUR SHOWROOM WILL BE OPEN THIS FRIDAY 21 JANUARY. SEE YOU</h3>
                                         <a href="#" class="text-pre-icon text-00">Khám phá ngay</a>
@@ -169,16 +170,21 @@
                             </div>
                         </div>
                         <div>
-                            <div class="landing-slider__slide flex p-8 flex" style="height: 80vh; background-image:url('./media1/main-banner.jpg')">
-                                <div class="col-5 md-8 items-center ">
+                            <div class="landing-slider__slide flex space-between p-8 md-p-0 " style="height: 80vh; min-height:400px; background-image:url('./media1/main-banner.jpg')">
+                                <div class="col-5 md-col-12 items-center h-full">
                                     <div>
-                                        <h1 class="heading-01 ">Outdoor <br> Collecttion</h1>
+                                        <h1 class="heading-01">Outdoor <br> Collecttion</h1>
                                         <p class="text-00 mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt quo obcaecati architecto odit, aut natus autem delectus</p>
-                                        <button class="button-01 font-600 text-sm">Tìm hiểu thêm</button>
+                                        <p><button class="button-01 font-600 text-sm">Tìm hiểu thêm</button></p>
                                     </div>
                                 </div>
-                                <div class="col-3 md-col-hidden"></div>
-                                <div class="col-4"></div>
+                                <div class="col-4 bg-buttom-right items-end hide-md" style="--bg: url('../media1/pc_01-1.png')">
+                                    <div>
+                                        <h3 class="heading-03 text-00 font-700">OUR SHOWROOM WILL BE OPEN THIS FRIDAY 21 JANUARY. SEE YOU</h3>
+                                        <a href="#" class="text-pre-icon text-00">Khám phá ngay</a>
+                                    </div>
+
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -524,7 +530,7 @@
                             <div class="side-banner__info">
                                 <h3 class="heading-03 text-white text-center mb-0">Cửa hàng</h3>
                                 <h2 class="heading-01 text-center">HERMES</h2>
-                                <p class="text-white text-center mb-4">
+                                <p class="text-white text-center mb-4 md-2-line ">
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur soluta blanditiis exceptur
                                 </p>
                                 <button class="button-01 font-600 text-sm text-01 mx-auto">
@@ -740,9 +746,9 @@
                 <section class="px-2 sm-px-2">
                     <div class="banner-design">
                         <img src="./media1/redesign.jpg" alt="" srcset="">
-                        <div class="banner-design__info">
+                        <div class="banner-design__info sm-w-full">
                             <h2 class="heading-01 text-center">RE.DESIGN</h2>
-                            <p class="text-white text-center mb-4">
+                            <p class="text-white text-center mb-4 sm-2-line">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur soluta blanditiis exceptur
                             </p>
                             <button class="button-01 font-600 text-sm mx-auto">
@@ -1483,39 +1489,52 @@
 
                 </section>
                 <!-- Policy section -->
-                <section class="py-8" style="border-top: 2px solid rgba(0, 0, 0, 0.15);">
-                    <div class="grid grid-cols-4 md-grid-cols-2 sm-grid-cols-1 gap-8 px-12 md-px-0">
+                <section class="py-8" style="border-top: 2px solid rgba(0, 0, 0, 0.15)">
+                    <div class="grid grid-cols-4 md-grid-cols-2 sm-grid-cols-1 gap-4 px-12 md-px-0">
                         <div class="policy-card px-4 sm-px-2">
-                            <img src="./media1/thanhtoan-icon.svg" alt="" srcset="">
+                            <img src="./media1/thanhtoan-icon.svg" alt="" srcset="" />
                             <div class="policy-card__info">
                                 <h3 class="heading-04">DELIVERY</h3>
-                                <p>Free delivery for orders over 500.000đ <br> Worldwide delivery.</p>
+                                <p>
+                                    Free delivery for orders over 500.000đ <br />
+                                    Worldwide delivery.
+                                </p>
                             </div>
                         </div>
                         <div class="policy-card px-4 sm-px-2">
-                            <img src="./media1/thanhtoan-icon.svg" alt="" srcset="">
+                            <img src="./media1/thanhtoan-icon.svg" alt="" srcset="" />
                             <div class="policy-card__info">
                                 <h3 class="heading-04">Chăm sóc khách hàng</h3>
-                                <p>Free delivery for orders over 500.000đ <br> Worldwide delivery.</p>
+                                <p>
+                                    Free delivery for orders over 500.000đ <br />
+                                    Worldwide delivery.
+                                </p>
                             </div>
                         </div>
                         <div class="policy-card px-4 sm-px-2">
-                            <img src="./media1/thanhtoan-icon.svg" alt="" srcset="">
+                            <img src="./media1/thanhtoan-icon.svg" alt="" srcset="" />
                             <div class="policy-card__info">
                                 <h3 class="heading-04">Thanh toán an toàn</h3>
-                                <p>Free delivery for orders over 500.000đ <br> Worldwide delivery.</p>
+                                <p>
+                                    Free delivery for orders over 500.000đ <br />
+                                    Worldwide delivery.
+                                </p>
                             </div>
                         </div>
                         <div class="policy-card px-4 sm-px-2">
-                            <img src="./media1/thanhtoan-icon.svg" alt="" srcset="">
+                            <img src="./media1/thanhtoan-icon.svg" alt="" srcset="" />
                             <div class="policy-card__info">
                                 <h3 class="heading-04 mb-4">Sản phẩm chính hãng</h3>
-                                <p>Free delivery for orders over 500.000đ <br> Worldwide delivery.</p>
+                                <p>
+                                    Free delivery for orders over 500.000đ <br />
+                                    Worldwide delivery.
+                                </p>
                             </div>
                         </div>
                     </div>
                 </section>
                 <!-- End Policy Section -->
+
                 <!-- Subcrice section -->
                 <section class="mb-0">
                     <div class="flex px-12 py-8 sm-px-2 sm-py-4 subcribe-section" style="--bg: url('../media1/get-in-touch.jpg')">
@@ -1524,7 +1543,8 @@
                             <h1 class="getintouch text-00 pb-4 mb-4" style="border-bottom: 1px solid #d8d8d8">Get in touch</h1>
                             <button class="button-02 mb-8 font-600 text-sm">Đăng ký ngay</button>
                             <p class="text-00 font-600">
-                                Đừng bỏ lỡ tin tức và những ưu đãi của chúng tôi. <br> Và nhận ngay voucher giamr 10% chơ đơn hàng đầu tiên của bạn trên website của Wasabee!
+                                Đừng bỏ lỡ tin tức và những ưu đãi của chúng tôi. <br />
+                                Và nhận ngay voucher giamr 10% chơ đơn hàng đầu tiên của bạn trên website của Wasabee!
                             </p>
                         </div>
                         <!-- <div class="col-6"></div> -->
@@ -1549,13 +1569,13 @@
                             </div>
                             <div class="social-icons">
                                 <a href="facebook.com" class="social-icon">
-                                    <img src="./media1/facebook.svg" alt="fb logo" srcset="">
+                                    <img src="./media1/facebook.svg" alt="fb logo" srcset="" />
                                 </a>
                                 <a href="" class="social-icon">
-                                    <img src="./media1/instagram.svg" alt="insta logo" srcset="">
+                                    <img src="./media1/instagram.svg" alt="insta logo" srcset="" />
                                 </a>
                                 <a href="" class="social-icon">
-                                    <img src="./media1/twitter.svg" alt="twitter" srcset="">
+                                    <img src="./media1/twitter.svg" alt="twitter" srcset="" />
                                 </a>
                             </div>
                         </div>
@@ -1585,12 +1605,12 @@
                             <p><a href="#" class="text-00">Chính sách bảo mật</a></p>
                         </div>
                     </div>
-                    <div class="px-12 py-2 text-00 copy-right">
-                        2022 Wasabee Store Powered bg Wasabee Store
+                    <div class="px-12 md-px-6 sm-px-4 py-2 text-00 copy-right">
+                        &copy; 2022 Wasabee Store Powered bg Wasabee Store
                         <a href="#header" class="go-to-top">
                             <button class="button-03">
-                <img src="./media1/arrow-button-icon-black.svg" alt="" srcset="">
-              </button>
+                                <img src="./media1/arrow-button-icon-black.svg" alt="" srcset="" />
+                            </button>
                         </a>
                     </div>
                 </footer>
