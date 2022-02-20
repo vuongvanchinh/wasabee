@@ -5,6 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <!-- <link rel="stylesheet" href="style.css.map"> -->
+        <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet" />
         <style>
             @import url("https://fonts.googleapis.com/css2?family=Fahkwang:wght@200;300;400;500;600;700&display=swap");
         </style>
@@ -34,49 +35,52 @@
         <div class="container-page">
             <div class="header-mobile">
                 <div class="top-header">
-                    <div class="logo">
-                        <img src="./media1//logo-main.svg" alt="logo" />
+                  <div class="logo">
+                    <img src="./media1//logo-main.svg" alt="logo">
+                  </div>
+                  
+                  <div class="right">
+                    <div class="search">
+                      <img src="./media1/search-icon.svg" alt="" id="mobile-search-icon">
+                      <form id="mobile-search" method="get">
+                        <input type="text">
+                        <!-- <button type="submit"></button> -->
+                      </form>
                     </div>
-
-                    <div class="right">
-                        <div class="search">
-                            <img src="./media1/search-icon.svg" alt="" id="mobile-search-icon" />
-                            <form id="mobile-search" method="get">
-                                <input type="text" />
-                                <!-- <button type="submit"></button> -->
-                            </form>
-                        </div>
-                        <div class="shopping-cart">
-                            <a href="#">
-                                <img src="./media1//cart-icon.svg" alt="" />
-                                <span>2</span>
-                            </a>
-                        </div>
-                        <button id="toggle-sidebar-header">
-                            <img src="/media1//menu.svg" alt="" srcset="" />
-                        </button>
+                    <div class="shopping-cart">
+                      <a href="#">
+                        <img src="./media1//cart-icon.svg" alt="">
+                        <span>2</span>
+                      </a>
                     </div>
+                    <button id="toggle-sidebar-header">
+                      <img src="/media1//menu.svg" alt="" srcset="">
+                    </button>
+                  </div>
                 </div>
                 <div class="sidebar-header" id="sidebar-header">
-                    <div class="sidebar-header__inner">
-                        <i class="bx bx-x close"></i>
-                        <div class="sidebar__banner bg-img py-6 px-4 font-700" style="--bg: url('../media1/a.png')">Wasabee | Hello 2022</div>
-                        <ul class="sidebar-header__nav">
-                            <li class="sidebar__nav-item active"><a href="#">Mới</a></li>
-                            <li class="sidebar__nav-item"><a href="#">Nữ</a></li>
-                            <li class="sidebar__nav-item"><a href="#">Nam</a></li>
-                            <li class="sidebar__nav-item"><a href="#">Bộ sưu tập</a></li>
-                            <li class="sidebar__nav-item"><a href="#">Trend</a></li>
-                            <li class="sidebar__nav-item"><a href="#">Khuyến mãi</a></li>
-                            <li class="sidebar__nav-item"><a href="#">Hàng bán chạy</a></li>
-                            <li class="sidebar__nav-item">
-                                <a href="#">Hàng khuyến mãi lớn</a>
-                            </li>
-                            <li class="sidebar__nav-item"><a href="#">Tiêu thụ lớn</a></li>
-                        </ul>
+                  
+                  <div class="sidebar-header__inner">
+                    <i class="bx bx-x my-close"></i>
+                    <div class="sidebar__banner bg-img py-6 px-4 font-700" style="--bg: url('../media1/a.png')">
+                      Wasabee | Hello 2022
                     </div>
+                    <ul class="sidebar-header__nav">
+                      <li class="sidebar__nav-item active"><a href="#">Mới</a></li>
+                      <li class="sidebar__nav-item"><a href="#">Nữ</a></li>
+                      <li class="sidebar__nav-item"><a href="#">Nam</a></li>
+                      <li class="sidebar__nav-item"><a href="#">Bộ sưu tập</a></li>
+                      <li class="sidebar__nav-item"><a href="#">Trend</a></li>
+                      <li class="sidebar__nav-item"><a href="#">Khuyến mãi</a></li>
+                      <li class="sidebar__nav-item"><a href="#">Hàng bán chạy</a></li>
+                      <li class="sidebar__nav-item">
+                          <a href="#">Hàng khuyến mãi lớn</a>
+                      </li>
+                      <li class="sidebar__nav-item"><a href="#">Tiêu thụ lớn</a></li>
+                    </ul>
+                  </div>
                 </div>
-            </div>
+              </div>
             <main>
                 <!-- Header  -->
                 <header class="header" id="header">
@@ -135,7 +139,7 @@
                     </ul>
                 </header>
                 <!-- End Header -->
-                <div class="container-fluid px-4 pt-3 md-px-2">
+                <div class="container-fluid px-2 pt-3 md-px-1">
                     <div class="location-path">
                         <span class="text-04">
                             Trang chủ
@@ -490,52 +494,16 @@
                     <!-- End Colection Section -->
                 </div>
 
-                <!--Similar products  -->
-                <section class="pr-2 pl-1 md-px-1">
-                    <h2 class="heading-02 pl-1">Sản phẩm tương tự</h2>
+                <!--Similar products 1 -->
+                <section class="pt-4 pl-2 pr-2 md-px-1">
+                    <h2 class="heading-02 pl-1 sm-mb-8">Sản phẩm tương tự</h2>
                     <div class="flex">
-                        <div class="col-12 px-0">
+                        <div class="side-banner flex-center col-4 md-col-12 bg-02 bg-img" style="--bg: url('../media1/cua-hang-hermes.jpg')">
+                        
+                        </div>
+                        <div class="product-grid-wrapper col-8 md-col-12 pr-0 pl-1 md-px-0">
+                            <!-- <h2 class="heading-02">Sản phẩm nổi bật</h2> -->
                             <div class="top-right-navigator-slider top-right-navigator-slider-01">
-                                <div>
-                                    <div class="product-card price-vertical">
-                                        <div class="product-card__inner">
-                                            <div class="product-card__imgs">
-                                                <img src="./media1/hangdocquyen5.jpg" />
-                                                <img src="./media1/hangdocquyen4.jpg" />
-                                                <div class="product-discount">- 20<sup>%</sup></div>
-                                                <div class="product-love"></div>
-                                            </div>
-                                            <div class="product-card__info">
-                                                <h1 class="product__title">Knock on wood</h1>
-                                                <p class="product__desc">Jacket with recyled-fabric filling</p>
-                                                <div class="product__price">
-                                                    <p class="price-new">441,750 Vnđ</p>
-                                                    <p class="price-old">849,750 Vnđ</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div>
-                                    <div class="product-card price-vertical">
-                                        <div class="product-card__inner">
-                                            <div class="product-card__imgs">
-                                                <img src="./media1/hangdocquyen5.jpg" />
-                                                <img src="./media1/hangdocquyen4.jpg" />
-                                                <div class="product-discount">- 20<sup>%</sup></div>
-                                                <div class="product-love"></div>
-                                            </div>
-                                            <div class="product-card__info">
-                                                <h1 class="product__title">Knock on wood</h1>
-                                                <p class="product__desc">Jacket with recyled-fabric filling</p>
-                                                <div class="product__price">
-                                                    <p class="price-new">441,750 Vnđ</p>
-                                                    <p class="price-old">849,750 Vnđ</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
                                 <div>
                                     <div class="product-card price-vertical">
                                         <div class="product-card__inner">
@@ -680,24 +648,30 @@
                         </div>
                     </div>
                 </section>
-                <!--End similar -->
+                <!--End similar 1-->
+
                 <!--Maybe you interesting Section -->
 
                 <!-- Middle banner Section -->
-                <section class="px-4">
+                <section class="px-2 sm-px-2">
                     <div class="banner-design">
-                        <img src="./media1/redesign.jpg" alt="" srcset="" />
-                        <div class="banner-design__info">
+                        <img src="./media1/redesign.jpg" alt="" srcset="">
+                        <div class="banner-design__info sm-w-full">
                             <h2 class="heading-01 text-center">RE.DESIGN</h2>
-                            <p class="text-white text-center mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur soluta blanditiis exceptur</p>
-                            <button class="button-01 font-600 text-sm mx-auto">Tìm hiểu thêm</button>
+                            <p class="text-white text-center mb-4 sm-2-line">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur soluta blanditiis exceptur
+                            </p>
+                            <button class="button-01 font-600 text-sm mx-auto">
+                    Tìm hiểu thêm
+                  </button>
                         </div>
                     </div>
                 </section>
                 <!-- End Middle banner Section -->
+
                 <!--Similar products  -->
                 <section class="pr-2 pl-1 md-px-1">
-                    <h2 class="heading-02 pl-1">Sản phẩm tương tự</h2>
+                    <h2 class="heading-02 pl-1 sm-mb-8">Sản phẩm tương tự</h2>
                     <div class="flex">
                         <div class="col-12 px-0">
                             <div class="top-right-navigator-slider top-right-navigator-slider-02">
@@ -888,155 +862,218 @@
                 <!--End similar -->
                 <!--Suggest -->
                 <section class="pl-1 pr-2 mb-8 md-px-1">
-                    <h2 class="heading-02 pl-1">Cực kỳ hợp nếu mặc cùng</h2>
-                    <div class="flex">
-                        <div class="product-grid-wrapper col-8 md-col-12 pl-0 pr-1 md-pr-0">
-                            <div class="top-right-navigator-slider top-right-navigator-slider-002">
-                                <div>
-                                    <div class="product-card price-vertical">
-                                        <div class="product-card__inner">
-                                            <div class="product-card__imgs">
-                                                <img src="./media1/hangdocquyen5.jpg" />
-                                                <img src="./media1/hangdocquyen4.jpg" />
-                                                <div class="product-discount">- 20<sup>%</sup></div>
-                                                <div class="product-love"></div>
-                                            </div>
-                                            <div class="product-card__info">
-                                                <h1 class="product__title">Knock on wood</h1>
-                                                <p class="product__desc">Jacket with recyled-fabric filling</p>
-                                                <div class="product__price">
-                                                    <p class="price-new">441,750 Vnđ</p>
-                                                    <p class="price-old">849,750 Vnđ</p>
-                                                </div>
+                <h2 class="heading-02 pl-1 sm-mb-8">Cực kỳ hợp nếu mặc cùng</h2>
+                <div class="flex">
+                    <div class="product-grid-wrapper col-8 md-col-12 pl-0 pr-1 md-pr-0">
+                        <div class="top-right-navigator-slider top-right-navigator-slider-01">
+                            <div>
+                                <div class="product-card price-vertical">
+                                    <div class="product-card__inner">
+                                        <div class="product-card__imgs">
+                                            <img src="./media1/hangdocquyen5.jpg" />
+                                            <img src="./media1/hangdocquyen4.jpg" />
+                                            <div class="product-discount">- 20<sup>%</sup></div>
+                                            <div class="product-love"></div>
+                                        </div>
+                                        <div class="product-card__info">
+                                            <h1 class="product__title">Knock on wood</h1>
+                                            <p class="product__desc">Jacket with recyled-fabric filling</p>
+                                            <div class="product__price">
+                                                <p class="price-new">441,750 Vnđ</p>
+                                                <p class="price-old">849,750 Vnđ</p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div>
-                                    <div class="product-card price-vertical">
-                                        <div class="product-card__inner">
-                                            <div class="product-card__imgs">
-                                                <img src="./media1/hangdocquyen5.jpg" />
-                                                <img src="./media1/hangdocquyen4.jpg" />
-                                                <div class="product-discount">- 20<sup>%</sup></div>
-                                                <div class="product-love"></div>
-                                            </div>
-                                            <div class="product-card__info">
-                                                <h1 class="product__title">Knock on wood</h1>
-                                                <p class="product__desc">Jacket with recyled-fabric filling</p>
-                                                <div class="product__price">
-                                                    <p class="price-new">441,750 Vnđ</p>
-                                                    <p class="price-old">849,750 Vnđ</p>
-                                                </div>
+                            </div>
+                            <div>
+                                <div class="product-card price-vertical">
+                                    <div class="product-card__inner">
+                                        <div class="product-card__imgs">
+                                            <img src="./media1/hangdocquyen5.jpg" />
+                                            <img src="./media1/hangdocquyen4.jpg" />
+                                            <div class="product-discount">- 20<sup>%</sup></div>
+                                            <div class="product-love"></div>
+                                        </div>
+                                        <div class="product-card__info">
+                                            <h1 class="product__title">Knock on wood</h1>
+                                            <p class="product__desc">Jacket with recyled-fabric filling</p>
+                                            <div class="product__price">
+                                                <p class="price-new">441,750 Vnđ</p>
+                                                <p class="price-old">849,750 Vnđ</p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div>
-                                    <div class="product-card price-vertical">
-                                        <div class="product-card__inner">
-                                            <div class="product-card__imgs">
-                                                <img src="./media1/hangdocquyen5.jpg" />
-                                                <img src="./media1/hangdocquyen4.jpg" />
-                                                <div class="product-discount">- 20<sup>%</sup></div>
-                                                <div class="product-love"></div>
-                                            </div>
-                                            <div class="product-card__info">
-                                                <h1 class="product__title">Knock on wood</h1>
-                                                <p class="product__desc">Jacket with recyled-fabric filling</p>
-                                                <div class="product__price">
-                                                    <p class="price-new">441,750 Vnđ</p>
-                                                    <p class="price-old">849,750 Vnđ</p>
-                                                </div>
+                            </div>
+                            <div>
+                                <div class="product-card price-vertical">
+                                    <div class="product-card__inner">
+                                        <div class="product-card__imgs">
+                                            <img src="./media1/hangdocquyen5.jpg" />
+                                            <img src="./media1/hangdocquyen4.jpg" />
+                                            <div class="product-discount">- 20<sup>%</sup></div>
+                                            <div class="product-love"></div>
+                                        </div>
+                                        <div class="product-card__info">
+                                            <h1 class="product__title">Knock on wood</h1>
+                                            <p class="product__desc">Jacket with recyled-fabric filling</p>
+                                            <div class="product__price">
+                                                <p class="price-new">441,750 Vnđ</p>
+                                                <p class="price-old">849,750 Vnđ</p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div>
-                                    <div class="product-card price-vertical">
-                                        <div class="product-card__inner">
-                                            <div class="product-card__imgs">
-                                                <img src="./media1/hangdocquyen5.jpg" />
-                                                <img src="./media1/hangdocquyen4.jpg" />
-                                                <div class="product-discount">- 20<sup>%</sup></div>
-                                                <div class="product-love"></div>
-                                            </div>
-                                            <div class="product-card__info">
-                                                <h1 class="product__title">Knock on wood</h1>
-                                                <p class="product__desc">Jacket with recyled-fabric filling</p>
-                                                <div class="product__price">
-                                                    <p class="price-new">441,750 Vnđ</p>
-                                                    <p class="price-old">849,750 Vnđ</p>
-                                                </div>
+                            </div>
+                            <div>
+                                <div class="product-card price-vertical">
+                                    <div class="product-card__inner">
+                                        <div class="product-card__imgs">
+                                            <img src="./media1/hangdocquyen5.jpg" />
+                                            <img src="./media1/hangdocquyen4.jpg" />
+                                            <div class="product-discount">- 20<sup>%</sup></div>
+                                            <div class="product-love"></div>
+                                        </div>
+                                        <div class="product-card__info">
+                                            <h1 class="product__title">Knock on wood</h1>
+                                            <p class="product__desc">Jacket with recyled-fabric filling</p>
+                                            <div class="product__price">
+                                                <p class="price-new">441,750 Vnđ</p>
+                                                <p class="price-old">849,750 Vnđ</p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div>
-                                    <div class="product-card price-vertical">
-                                        <div class="product-card__inner">
-                                            <div class="product-card__imgs">
-                                                <img src="./media1/hangdocquyen5.jpg" />
-                                                <img src="./media1/hangdocquyen4.jpg" />
-                                                <div class="product-discount">- 20<sup>%</sup></div>
-                                                <div class="product-love"></div>
-                                            </div>
-                                            <div class="product-card__info">
-                                                <h1 class="product__title">Knock on wood</h1>
-                                                <p class="product__desc">Jacket with recyled-fabric filling</p>
-                                                <div class="product__price">
-                                                    <p class="price-new">441,750 Vnđ</p>
-                                                    <p class="price-old">849,750 Vnđ</p>
-                                                </div>
+                            </div>
+                            <div>
+                                <div class="product-card price-vertical">
+                                    <div class="product-card__inner">
+                                        <div class="product-card__imgs">
+                                            <img src="./media1/hangdocquyen5.jpg" />
+                                            <img src="./media1/hangdocquyen4.jpg" />
+                                            <div class="product-discount">- 20<sup>%</sup></div>
+                                            <div class="product-love"></div>
+                                        </div>
+                                        <div class="product-card__info">
+                                            <h1 class="product__title">Knock on wood</h1>
+                                            <p class="product__desc">Jacket with recyled-fabric filling</p>
+                                            <div class="product__price">
+                                                <p class="price-new">441,750 Vnđ</p>
+                                                <p class="price-old">849,750 Vnđ</p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div>
-                                    <div class="product-card price-vertical">
-                                        <div class="product-card__inner">
-                                            <div class="product-card__imgs">
-                                                <img src="./media1/hangdocquyen5.jpg" />
-                                                <img src="./media1/hangdocquyen4.jpg" />
-                                                <div class="product-discount">- 20<sup>%</sup></div>
-                                                <div class="product-love"></div>
-                                            </div>
-                                            <div class="product-card__info">
-                                                <h1 class="product__title">Knock on wood</h1>
-                                                <p class="product__desc">Jacket with recyled-fabric filling</p>
-                                                <div class="product__price">
-                                                    <p class="price-new">441,750 Vnđ</p>
-                                                    <p class="price-old">849,750 Vnđ</p>
-                                                </div>
+                            </div>
+                            <div>
+                                <div class="product-card price-vertical">
+                                    <div class="product-card__inner">
+                                        <div class="product-card__imgs">
+                                            <img src="./media1/hangdocquyen5.jpg" />
+                                            <img src="./media1/hangdocquyen4.jpg" />
+                                            <div class="product-discount">- 20<sup>%</sup></div>
+                                            <div class="product-love"></div>
+                                        </div>
+                                        <div class="product-card__info">
+                                            <h1 class="product__title">Knock on wood</h1>
+                                            <p class="product__desc">Jacket with recyled-fabric filling</p>
+                                            <div class="product__price">
+                                                <p class="price-new">441,750 Vnđ</p>
+                                                <p class="price-old">849,750 Vnđ</p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div>
-                                    <div class="product-card price-vertical">
-                                        <div class="product-card__inner">
-                                            <div class="product-card__imgs">
-                                                <img src="./media1/hangdocquyen5.jpg" />
-                                                <img src="./media1/hangdocquyen4.jpg" />
-                                                <div class="product-discount">- 20<sup>%</sup></div>
-                                                <div class="product-love"></div>
-                                            </div>
-                                            <div class="product-card__info">
-                                                <h1 class="product__title">Knock on wood</h1>
-                                                <p class="product__desc">Jacket with recyled-fabric filling</p>
-                                                <div class="product__price">
-                                                    <p class="price-new">441,750 Vnđ</p>
-                                                    <p class="price-old">849,750 Vnđ</p>
-                                                </div>
+                            </div>
+                            <div>
+                                <div class="product-card price-vertical">
+                                    <div class="product-card__inner">
+                                        <div class="product-card__imgs">
+                                            <img src="./media1/hangdocquyen5.jpg" />
+                                            <img src="./media1/hangdocquyen4.jpg" />
+                                            <div class="product-discount">- 20<sup>%</sup></div>
+                                            <div class="product-love"></div>
+                                        </div>
+                                        <div class="product-card__info">
+                                            <h1 class="product__title">Knock on wood</h1>
+                                            <p class="product__desc">Jacket with recyled-fabric filling</p>
+                                            <div class="product__price">
+                                                <p class="price-new">441,750 Vnđ</p>
+                                                <p class="price-old">849,750 Vnđ</p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="side-banner bg-img col-4 md-col-12" style="--bg: url('../media1/cua-hang-hermes.jpg')"></div>
+                    </div>
+                    <div class="side-banner bg-img col-4 md-col-12" style="--bg: url('../media1/cua-hang-hermes.jpg')"></div>
+                </div>
+                </section>
+                <!--end sugestion -->
+                <!-- Policy section -->
+                <section class="py-8" style="border-top: 2px solid rgba(0, 0, 0, 0.15)">
+                    <div class="grid grid-cols-4 md-grid-cols-2 sm-grid-cols-1 gap-4 px-12 md-px-0">
+                        <div class="policy-card px-4 sm-px-2">
+                            <img src="./media1/thanhtoan-icon.svg" alt="" srcset="" />
+                            <div class="policy-card__info">
+                                <h3 class="heading-04">DELIVERY</h3>
+                                <p>
+                                    Free delivery for orders over 500.000đ <br />
+                                    Worldwide delivery.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="policy-card px-4 sm-px-2">
+                            <img src="./media1/thanhtoan-icon.svg" alt="" srcset="" />
+                            <div class="policy-card__info">
+                                <h3 class="heading-04">Chăm sóc khách hàng</h3>
+                                <p>
+                                    Free delivery for orders over 500.000đ <br />
+                                    Worldwide delivery.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="policy-card px-4 sm-px-2">
+                            <img src="./media1/thanhtoan-icon.svg" alt="" srcset="" />
+                            <div class="policy-card__info">
+                                <h3 class="heading-04">Thanh toán an toàn</h3>
+                                <p>
+                                    Free delivery for orders over 500.000đ <br />
+                                    Worldwide delivery.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="policy-card px-4 sm-px-2">
+                            <img src="./media1/thanhtoan-icon.svg" alt="" srcset="" />
+                            <div class="policy-card__info">
+                                <h3 class="heading-04 mb-4">Sản phẩm chính hãng</h3>
+                                <p>
+                                    Free delivery for orders over 500.000đ <br />
+                                    Worldwide delivery.
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </section>
+                <!-- End Policy Section -->
+                <!-- Subcrice section -->
+                <section class="mb-0">
+                    <div class="flex px-12 py-8 sm-px-2 sm-py-4 subcribe-section" style="--bg: url('../media1/get-in-touch.jpg')">
+                        <div class="col-6 md-col-10 sm-col-12">
+                            <h3 class="heading-03 text-00 font-600 text-xxl mb-6">Nhận tin mới nhất</h3>
+                            <h1 class="getintouch text-00 pb-4 mb-4" style="border-bottom: 1px solid #d8d8d8">Get in touch</h1>
+                            <button class="button-02 mb-8 font-600 text-sm">Đăng ký ngay</button>
+                            <p class="text-00 font-600">
+                                Đừng bỏ lỡ tin tức và những ưu đãi của chúng tôi. <br />
+                                Và nhận ngay voucher giamr 10% chơ đơn hàng đầu tiên của bạn trên website của Wasabee!
+                            </p>
+                        </div>
+                        <!-- <div class="col-6"></div> -->
+                    </div>
+                </section>
+                <!-- End subcrice -->
                 <footer class="footer bg-04">
                     <div class="px-12 sm-px-4 md-px-6 py-6 grid grid-cols-4 md-grid-cols-2 sm-grid-cols-1 gap-4">
                         <div>
@@ -1089,8 +1126,8 @@
                             <p><a href="#" class="text-00">Chính sách bảo mật</a></p>
                         </div>
                     </div>
-                    <div class="px-12 py-2 text-00 copy-right">
-                        2022 Wasabee Store Powered bg Wasabee Store
+                    <div class="px-12 md-px-6 sm-px-4 py-2 text-00 copy-right">
+                        &copy; 2022 Wasabee Store Powered bg Wasabee Store
                         <a href="#header" class="go-to-top">
                             <button class="button-03">
                                 <img src="./media1/arrow-button-icon-black.svg" alt="" srcset="" />
