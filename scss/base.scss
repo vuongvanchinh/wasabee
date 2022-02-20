@@ -10,7 +10,9 @@ html {
     display: flex;
     flex-wrap: wrap;
 }
-
+input[type="text"] {
+    outline: none;
+}
 [class*="col-"] {
     padding: 0 math.div($spacing, 2);
 
@@ -39,9 +41,9 @@ html {
         }
     }
 
-  .hide-md {
-    display: none !important;
-  }
+    .hide-md {
+        display: none !important;
+    }
 }
 
 // small screen
@@ -55,9 +57,9 @@ html {
         }
     }
 
-  .hide-sm {
-    display: none !important;
-  }
+    .hide-sm {
+        display: none !important;
+    }
 }
 
 * {
@@ -213,33 +215,33 @@ section {
 // Text truncate
 
 @include tablet {
-  @for $i from 1 through 4 {
-    .md-#{$i}-line {
-      display:-webkit-box;
-      -webkit-line-clamp:$i;
-      -webkit-box-orient: vertical;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      word-break: break-word;
+    @for $i from 1 through 4 {
+        .md-#{$i}-line {
+            display: -webkit-box;
+            -webkit-line-clamp: $i;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            word-break: break-word;
+        }
     }
-  }
-  .md-w-full {
-    width: 100%;
-  }
+    .md-w-full {
+        width: 100%;
+    }
 }
 
 @include mobile {
-  @for $i from 1 through 4 {
-    .sm-#{$i}-line {
-      display:-webkit-box;
-      -webkit-line-clamp:$i;
-      -webkit-box-orient: vertical;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      word-break: break-word;
+    @for $i from 1 through 4 {
+        .sm-#{$i}-line {
+            display: -webkit-box;
+            -webkit-line-clamp: $i;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            word-break: break-word;
+        }
     }
-  }
-  .sm-w-full {
-    width: 100%;
-  }
+    .sm-w-full {
+        width: 100%;
+    }
 }

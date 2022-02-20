@@ -7,6 +7,10 @@ html {
   flex-wrap: wrap;
 }
 
+input[type=text] {
+  outline: none;
+}
+
 [class*=col-] {
   padding: 0 24px;
 }

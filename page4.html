@@ -4,6 +4,8 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet" />
+        <script src="https://unpkg.com/boxicons@2.1.1/dist/boxicons.js"></script>
         <!-- <link rel="stylesheet" href="style.css.map"> -->
         <style>
             @import url("https://fonts.googleapis.com/css2?family=Fahkwang:wght@200;300;400;500;600;700&display=swap");
@@ -59,8 +61,8 @@
                 </div>
                 <div class="sidebar-header" id="sidebar-header">
                     <div class="sidebar-header__inner">
-                        <i class="bx bx-x close"></i>
-                        <div class="sidebar__banner bg-img py-6 px-4 font-700" style="--bg: url('../media1/a.png')">Wasabee | Hello 2022</div>
+                        <i class="bx bx-x my-close"></i>
+                        <div class="sidebar__banner bg-img py-6 px-4 font-700 text-01" style="--bg: url('../media1/a.png')">Wasabee | Hello 2022</div>
                         <ul class="sidebar-header__nav">
                             <li class="sidebar__nav-item active"><a href="#">Mới</a></li>
                             <li class="sidebar__nav-item"><a href="#">Nữ</a></li>
@@ -153,10 +155,10 @@
                     <section>
                         <div class="landing-slider">
                             <div>
-                                <div class="landing-slider__slide flex space-between p-8 md-p-0" style="height: 60vh; min-height: 400px; background-image: url('./media1/main-banner.jpg')">
+                                <div class="landing-slider__slide flex space-between p-8 md-px-4" style="height: 60vh; min-height: 400px; background-image: url('./media1/main-banner.jpg')">
                                     <div class="col-5 md-8 items-center h-full">
                                         <div>
-                                            <h1 class="heading-01 text-1xl">
+                                            <h1 class="heading-01">
                                                 Outdoor <br />
                                                 Collecttion
                                             </h1>
@@ -167,7 +169,7 @@
                                 </div>
                             </div>
                             <div>
-                                <div class="landing-slider__slide flex p-8 flex" style="height: 60vh; min-height: 400px; background-image: url('./media1/main-banner.jpg')">
+                                <div class="landing-slider__slide flex p-8 flex md-px-4" style="height: 60vh; min-height: 400px; background-image: url('./media1/main-banner.jpg')">
                                     <div class="col-5 md-8 items-center">
                                         <div>
                                             <h1 class="heading-01">
@@ -183,6 +185,7 @@
                             </div>
                         </div>
                     </section>
+
                     <!-- End Slider Banner -->
 
                     <!-- Coupon sectbion -->
@@ -408,18 +411,20 @@
                                     </table>
 
                                     <!-- end table -->
-                                    <div class="flex justify-content-between text-sm btn-manipulation">
-                                        <span>
-                                            <button class="mr-1 px-4 py-2 delete-product btn-pri font-600">Xóa tất cả sản phẩm</button>
-                                            <button class="ml-1 px-4 py-2 continue-buy btn-pri font-600">Tiếp tục mua hàng</button>
-                                        </span>
+                                </div>
+                                <div class="flex justify-content-between text-sm btn-manipulation">
+                                    <div class="btn-manipulation__inner1">
+                                        <button class="mr-1 px-4 py-1 delete-product btn-pri font-600 sm-col-10">Xóa tất cả sản phẩm</button>
+                                        <button class="ml-1 px-4 py-1 continue-buy btn-pri font-600 sm-col-10">Tiếp tục mua hàng</button>
+                                    </div>
 
-                                        <button class="update-store font-600">Cập nhật giỏ hàng</button>
+                                    <div class="btn-manipulation__inner2">
+                                        <button class="update-store font-600 sm-col-12">Cập nhật giỏ hàng</button>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="col-4 md-col-12 md-mt-4 pr-0">
+                            <div class="col-4 md-col-12 md-mt-4 pr-0 md-px-0">
                                 <div class="bg-09 p-4 order-form md-px-2">
                                     <div class="order-summary">
                                         <h4 class="heading-03 font-600">Tóm tắt đơn hàng</h4>
@@ -463,24 +468,11 @@
                     <section class="bg-02"></section>
                     <!-- End Colection Section -->
                 </div>
-
                 <!--Maybe you interesting Section -->
                 <section class="pt-4 pl-2 pr-2 md-px-1">
-                    <h2 class="heading-02">có thể bạn Quan tâm...</h2>
+                    <h2 class="heading-02 pl-1 sm-mb-8">có thể bạn Quan tâm...</h2>
                     <div class="flex">
-                        <div class="side-banner flex-center col-4 md-col-12 bg-02 bg-img" style="--bg: url('../media1/cua-hang-hermes.jpg')">
-                            <!-- <img src="./media/imgs/side-bannerpopular.jpeg" alt="" srcset=""> -->
-                            <!-- <div class="side-banner__info">
-                        <h3 class="heading-03 text-white text-center mb-0">Cửa hàng</h3>
-                        <h2 class="heading-01 text-center">HERMES</h2>
-                        <p class="text-white text-center mb-4">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur soluta blanditiis exceptur
-                        </p>
-                        <button class="button-01 font-600 text-sm text-01 mx-auto">
-            <span>Tìm hiểu thêm</span>
-          </button>
-                    </div> -->
-                        </div>
+                        <div class="side-banner flex-center col-4 md-col-12 bg-02 bg-img" style="--bg: url('../media1/cua-hang-hermes.jpg')"></div>
                         <div class="product-grid-wrapper col-8 md-col-12 pr-0 pl-1 md-px-0">
                             <!-- <h2 class="heading-02">Sản phẩm nổi bật</h2> -->
                             <div class="top-right-navigator-slider top-right-navigator-slider-01">
@@ -631,7 +623,7 @@
                 <!--End Maybe you interesting Section -->
                 <!--Similar products  -->
                 <section class="pr-2 pl-1 md-px-1">
-                    <h2 class="heading-02 pl-1">Sản phẩm tương tự</h2>
+                    <h2 class="heading-02 pl-1 sm-mb-8">Sản phẩm tương tự</h2>
                     <div class="flex">
                         <div class="col-12 px-0">
                             <div class="top-right-navigator-slider top-right-navigator-slider-02">
@@ -822,10 +814,10 @@
                 <!--End similar -->
                 <!--Suggest -->
                 <section class="pl-1 pr-2 mb-8 md-px-1">
-                    <h2 class="heading-02 pl-1">Cực kỳ hợp nếu mặc cùng</h2>
+                    <h2 class="heading-02 pl-1 sm-mb-8">Cực kỳ hợp nếu mặc cùng</h2>
                     <div class="flex">
                         <div class="product-grid-wrapper col-8 md-col-12 pl-0 pr-1 md-pr-0">
-                            <div class="top-right-navigator-slider top-right-navigator-slider-002">
+                            <div class="top-right-navigator-slider top-right-navigator-slider-01">
                                 <div>
                                     <div class="product-card price-vertical">
                                         <div class="product-card__inner">
@@ -973,9 +965,9 @@
                 </section>
                 <!--end sugestion -->
                 <!-- Policy section -->
-                <section class="py-8" style="border-top: 2px solid rgba(0, 0, 0, 0.2)">
-                    <div class="grid grid-cols-4 md-grid-cols-2 sm-grid-cols-1 gap-8 px-12">
-                        <div class="policy-card px-4">
+                <section class="py-8" style="border-top: 2px solid rgba(0, 0, 0, 0.15)">
+                    <div class="grid grid-cols-4 md-grid-cols-2 sm-grid-cols-1 gap-4 px-12 md-px-0">
+                        <div class="policy-card px-4 sm-px-2">
                             <img src="./media1/thanhtoan-icon.svg" alt="" srcset="" />
                             <div class="policy-card__info">
                                 <h3 class="heading-04">DELIVERY</h3>
@@ -985,7 +977,7 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="policy-card px-4">
+                        <div class="policy-card px-4 sm-px-2">
                             <img src="./media1/thanhtoan-icon.svg" alt="" srcset="" />
                             <div class="policy-card__info">
                                 <h3 class="heading-04">Chăm sóc khách hàng</h3>
@@ -995,7 +987,7 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="policy-card px-4">
+                        <div class="policy-card px-4 sm-px-2">
                             <img src="./media1/thanhtoan-icon.svg" alt="" srcset="" />
                             <div class="policy-card__info">
                                 <h3 class="heading-04">Thanh toán an toàn</h3>
@@ -1005,7 +997,7 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="policy-card px-4">
+                        <div class="policy-card px-4 sm-px-2">
                             <img src="./media1/thanhtoan-icon.svg" alt="" srcset="" />
                             <div class="policy-card__info">
                                 <h3 class="heading-04 mb-4">Sản phẩm chính hãng</h3>
@@ -1020,10 +1012,10 @@
                 <!-- End Policy Section -->
                 <!-- Subcrice section -->
                 <section class="mb-0">
-                    <div class="flex px-12 py-8 subcribe-section" style="--bg: url('../media1/get-in-touch.jpg')">
-                        <div class="col-6 md-col-10">
+                    <div class="flex px-12 py-8 sm-px-2 sm-py-4 subcribe-section" style="--bg: url('../media1/get-in-touch.jpg')">
+                        <div class="col-6 md-col-10 sm-col-12">
                             <h3 class="heading-03 text-00 font-600 text-xxl mb-6">Nhận tin mới nhất</h3>
-                            <h1 class="getintouch text-00">Get in touch</h1>
+                            <h1 class="getintouch text-00 pb-4 mb-4" style="border-bottom: 1px solid #d8d8d8">Get in touch</h1>
                             <button class="button-02 mb-8 font-600 text-sm">Đăng ký ngay</button>
                             <p class="text-00 font-600">
                                 Đừng bỏ lỡ tin tức và những ưu đãi của chúng tôi. <br />
@@ -1086,8 +1078,8 @@
                             <p><a href="#" class="text-00">Chính sách bảo mật</a></p>
                         </div>
                     </div>
-                    <div class="px-12 py-2 text-00 copy-right">
-                        2022 Wasabee Store Powered bg Wasabee Store
+                    <div class="px-12 md-px-6 sm-px-4 py-2 text-00 copy-right">
+                        &copy; 2022 Wasabee Store Powered bg Wasabee Store
                         <a href="#header" class="go-to-top">
                             <button class="button-03">
                                 <img src="./media1/arrow-button-icon-black.svg" alt="" srcset="" />

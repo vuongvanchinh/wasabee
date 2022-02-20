@@ -105,7 +105,7 @@
   background-size: contain;
 }
 .product-card__inner .product-card__imgs .product-love.active {
-  background-image: url("../media1/heart-fill-icon.svg");
+  background-image: url("../media1/green-heart-icon-hover.svg");
 }
 .product-card__inner .product-card__imgs .product-quantity {
   position: absolute;
@@ -1337,21 +1337,34 @@ input[type=number]::-webkit-outer-spin-button {
   position: sticky;
   top: 0;
 }
-
-@media (max-width: 1024px) {
+@media only screen and (max-width: 1366px) {
   .table {
     min-width: 1024px;
   }
+}
 
-  .btn-manipulation {
-    min-width: 1024px;
-  }
-
+@media only screen and (max-width: 1366px) {
   .croll-table {
-    padding-bottom: 1rem;
     overflow-x: auto;
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .btn-manipulation {
+    text-align: center;
+  }
+  .btn-manipulation button {
+    margin: 0.5rem 0 0.5rem 0 !important;
+    padding: 0px;
+  }
+  .btn-manipulation__inner2 {
+    margin: 0 auto;
+  }
+  .btn-manipulation__inner1 {
+    margin: 0 auto;
+  }
+}
+
 .payment-card .payment-address .desc {
   border-left: 0.5rem solid #aae5de;
   padding: 0.8rem;
