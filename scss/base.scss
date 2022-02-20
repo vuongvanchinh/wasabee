@@ -39,7 +39,7 @@ html {
   }
 
   .hide-md {
-    display: none;
+    display: none !important;
   }
 }
 
@@ -55,7 +55,7 @@ html {
   }
 
   .hide-sm {
-    display: none;
+    display: none !important;
   }
 }
 
@@ -207,4 +207,38 @@ section {
 
 .w-full {
   width: 100%;
+}
+
+// Text truncate
+
+@include tablet {
+  @for $i from 1 through 4 {
+    .md-#{$i}-line {
+      display:-webkit-box;
+      -webkit-line-clamp:$i;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      word-break: break-word;
+    }
+  }
+  .md-w-full {
+    width: 100%;
+  }
+}
+
+@include mobile {
+  @for $i from 1 through 4 {
+    .sm-#{$i}-line {
+      display:-webkit-box;
+      -webkit-line-clamp:$i;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      word-break: break-word;
+    }
+  }
+  .sm-w-full {
+    width: 100%;
+  }
 }

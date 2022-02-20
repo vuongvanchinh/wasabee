@@ -53,7 +53,8 @@
 
         @include tablet {
             .monopoly-slider__slide {
-                height: 300px;
+                height: 320px;
+                padding: 2rem 1.5rem;
 
                 .monopoly__info {
                     font-size: 2rem;
@@ -63,7 +64,8 @@
         }
         @include mobile {
             .monopoly-slider__slide {
-                height: 300px;
+                height: 150px;
+                padding: 1.5rem 1rem;
 
                 .monopoly__info {
                     font-size: 1.5rem;
