@@ -19,3 +19,9 @@
 
 @import "./top-right-slider";
 @import "custom-slick-slider";
+
+main {
+    // max-width:1536px;
+    margin: 0 auto;
+    background-color: $bg-01;
+}

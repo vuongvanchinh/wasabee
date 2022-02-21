@@ -37,7 +37,7 @@ const closeSidebarHeader = (e) => {
 };
 // end sidebar
 
-$(document).ready(() => {
+
     $(".product-color__inner").each(function (index) {
         $(this).on("click", function () {
             $(this).toggleClass("active");
@@ -93,7 +93,7 @@ $(document).ready(() => {
     $(".product-card .product-love").click((e) => {
         $(e.target).toggleClass("active");
     });
-});
+
 
 function increaseValue(that) {
     let val = parseInt(that.previousSibling.previousSibling.value);

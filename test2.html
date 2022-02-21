@@ -1,0 +1,184 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
+        <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet" />
+        <style>
+            @import url("https://fonts.googleapis.com/css2?family=Fahkwang:wght@200;300;400;500;600;700&display=swap");
+        </style>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css.map">
+        <link rel="stylesheet" href="css/base.css" />
+        <link rel="stylesheet" href="css/common.css" />
+        <link rel="stylesheet" href="css/index.css" />
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="css/slick/slick.min.js"></script>
+        <title>Document</title>
+    </head>
+    <style>
+
+    </style>
+<body>
+    <div class="container-page">
+        <div class="header-mobile">
+            <div class="top-header">
+              <div class="logo">
+                <img src="./media//logo-main.svg" alt="logo">
+              </div>
+              
+              <div class="right">
+                <div class="search">
+                  <img src="./media/search-icon.svg" alt="" id="mobile-search-icon">
+                  <form id="mobile-search" method="get">
+                    <input type="text">
+                    <!-- <button type="submit"></button> -->
+                  </form>
+                </div>
+                <div class="shopping-cart">
+                  <a href="#">
+                    <img src="./media//cart-icon.svg" alt="">
+                    <span>2</span>
+                  </a>
+                </div>
+                <button id="toggle-sidebar-header">
+                  <img src="./media//menu.svg" alt="" srcset="">
+                </button>
+              </div>
+            </div>
+            <div class="sidebar-header" id="sidebar-header">
+              
+              <div class="sidebar-header__inner">
+                <i class="bx bx-x my-close"></i>
+                <div class="sidebar__banner bg-img py-6 px-4 font-700" style="--bg: url('../media/a.png')">
+                  Wasabee | Hello 2022
+                </div>
+                <ul class="sidebar-header__nav">
+                  <li class="sidebar__nav-item active"><a href="#">Mới</a></li>
+                  <li class="sidebar__nav-item"><a href="#">Nữ</a></li>
+                  <li class="sidebar__nav-item"><a href="#">Nam</a></li>
+                  <li class="sidebar__nav-item"><a href="#">Bộ sưu tập</a></li>
+                  <li class="sidebar__nav-item"><a href="#">Trend</a></li>
+                  <li class="sidebar__nav-item"><a href="#">Khuyến mãi</a></li>
+                  <li class="sidebar__nav-item"><a href="#">Hàng bán chạy</a></li>
+                  <li class="sidebar__nav-item">
+                      <a href="#">Hàng khuyến mãi lớn</a>
+                  </li>
+                  <li class="sidebar__nav-item"><a href="#">Tiêu thụ lớn</a></li>
+                </ul>
+              </div>
+            </div>
+        </div>
+        <main>
+            
+    
+            <header class="header bg-red" id="header">
+                <div class="header__banner">
+                    <div class="header__banner__info text-xl font-700 text-01">
+                        Wasabe | Hello 2022
+                    </div>
+                </div>
+                <div>
+                    <div class="header__main">
+                        <div class="logo">
+                            <img src="./media/logo-main.svg" alt="logo" srcset="" />
+                        </div>
+                        <div class="search">
+                            <form>
+                                <input type="text" placeholder="Tìm kiếm sản phẩm phù hợp với bạn" />
+                                <button type="submit">
+                    <img src="./media/search-icon.svg" alt="" srcset="">
+                    </button>
+                            </form>
+                        </div>
+                        <div class="language-option">
+                            <ul>
+                                <li class="selected"><a href="#">Vie</a></li>
+                                <li><a href="#">Eng</a></li>
+                            </ul>
+                        </div>
+                        <div class="shop-manage flex">
+                            <div class="account">
+                                <a href="#">
+                                    <img src="./media/user-icon.svg" alt="" srcset="">
+                                </a>
+                            </div>
+                            <div class="love">
+                                <a href="#">
+                                    <img src="./media/heart-icon.svg" alt="" srcset="">
+                                </a>
+                            </div>
+                            <div class="shopping-cart ">
+                                <a href="#">
+                                    <img src="./media/cart-icon.svg" alt="" srcset="">
+                                    <span>0</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="header__nav flex mb-0">
+                        <li class="header__nav-item"><a href="#">Mới</a></li>
+                        <li class="header__nav-item"><a href="#">Nữ</a></li>
+                        <li class="header__nav-item"><a href="#">Nam</a></li>
+                        <li class="header__nav-item"><a href="#">Bộ sưu tập</a></li>
+                        <li class="header__nav-item"><a href="#">Trend</a></li>
+                        <li class="header__nav-item"><a href="#">Khuyến mãi</a></li>
+                        <li class="header__nav-item"><a href="#">Hàng bán chạy</a></li>
+                        <li class="header__nav-item"><a href="#">Hàng khuyến mãi lớn</a></li>
+                        <li class="header__nav-item"><a href="#">Tiêu thụ lớn</a></li>
+                    </ul>
+                </div>
+            </header>
+            <section>
+                <div class="landing-slider">
+                    <div>
+                        <div class="landing-slider__slide flex space-between p-8 md-p-0 " style="height: 80vh; min-height:400px; ">
+                            <div class="col-5 md-col-12 items-center h-full">
+                                <div>
+                                    <h1 class="heading-01">Outdoor <br> Collecttion</h1>
+                                    <p class="text-00 mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt quo obcaecati architecto odit, aut natus autem delectus</p>
+                                    <p><button class="button-01 font-600 text-sm">Tìm hiểu thêm</button></p>
+                                </div>
+                            </div>
+                            <div class="col-4 bg-buttom-right items-end hide-md">
+                                <div>
+                                    <h3 class="heading-03 text-00 font-700">OUR SHOWROOM WILL BE OPEN THIS FRIDAY 21 JANUARY. SEE YOU</h3>
+                                    <a href="#" class="text-pre-icon text-00">Khám phá ngay</a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="landing-slider__slide flex space-between p-8 md-p-0 " style="height: 80vh; min-height:400px;">
+                            <div class="col-5 md-col-12 items-center h-full">
+                                <div>
+                                    <h1 class="heading-01">Outdoor <br> Collecttion</h1>
+                                    <p class="text-00 mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt quo obcaecati architecto odit, aut natus autem delectus</p>
+                                    <p><button class="button-01 font-600 text-sm">Tìm hiểu thêm</button></p>
+                                </div>
+                            </div>
+                            <div class="col-4 bg-buttom-right items-end hide-md" >
+                                <div>
+                                    <h3 class="heading-03 text-00 font-700">OUR SHOWROOM WILL BE OPEN THIS FRIDAY 21 JANUARY. SEE YOU</h3>
+                                    <a href="#" class="text-pre-icon text-00">Khám phá ngay</a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+        </main>
+    </div>
+</body>
+</html>
