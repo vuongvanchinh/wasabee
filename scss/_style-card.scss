@@ -1,0 +1,61 @@
+.style-card {
+    padding-top: 100%;
+    position: relative;
+
+    .style-card-img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        height: 100%;
+        
+    }
+
+    &__info {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+
+        .social-icons {
+            img {
+                $w: 25px;
+                width: $w;
+                height: $w;
+
+            }
+        }
+    }
+
+}
+// @import './variables';
+
+.style-tab {
+    margin-bottom: 1rem;
+    
+    .nav-item {
+        a.nav-link {
+            transition: all 0.5s ease;
+            font-weight: 700;
+            color: $color-07;
+            font-size: $sm-text;
+            border: 0;
+            background-color: transparent;
+            &:hover {
+                color: $color-02;
+                border: 0;
+            }
+            &.nav-link.active {
+                font-size: $md-text;
+                color: $color-02;
+                background-color: transparent !important;
+                border: 0;
+                background-color: red;
+                border-bottom: 2px solid $color-02;
+            }
+        }
+        
+    }
+}

@@ -1,0 +1,86 @@
+@import "./variables";
+.payment-card {
+    .payment-address {
+        .desc {
+            border-left: 0.5rem solid $bg-04;
+            padding: 0.8rem;
+            background-color: $color-12;
+            button {
+                text-decoration: underline;
+                background: none;
+            }
+        }
+    }
+
+    .order-option {
+        border-bottom: 1px dashed $dash;
+    }
+}
+
+.addition-form {
+    button {
+        border: 1px solid $color-11;
+        padding: 0.3rem 0;
+        background: none;
+        min-width: 15rem;
+    }
+}
+
+.momo-logo {
+    background-image: url(../media/momo.svg);
+    background-size: contain;
+    width: 2rem;
+    height: 2rem;
+}
+.dash {
+    border: 1px dashed $dash;
+}
+.btns {
+    button {
+        background: url("../media//angle-down-btn.svg") no-repeat;
+        background-size: contain;
+        background-position: center;
+        width: 2rem;
+        height: 2rem;
+        padding: 0;
+        border: none;
+        // filter: $bg-05;
+    }
+    .left {
+        transform: rotate(90deg);
+    }
+    .right {
+        transform: rotate(-90deg);
+    }
+}
+.rounded-5 {
+    border-radius: 50rem;
+}
+
+.border-07 {
+    border: 0.5px solid $color-07;
+}
+.bg_light-blue {
+    background-color: $light-blue;
+}
+.top-right-navigator-slider-001 {
+    .slick-next {
+        right: 0.5rem;
+        position: absolute;
+        top: 35%;
+    }
+    .slick-prev {
+        left: 0.5rem;
+        position: absolute;
+        top: 35%;
+    }
+}
+.right-side-banner {
+    background: url("../media//bannerdesign.jpg") no-repeat;
+    background-position: top right;
+    height: 20rem;
+}
+.mx--1 {
+    margin-left: -0.5rem;
+    margin-right: -0.5rem;
+}

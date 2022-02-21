@@ -1,0 +1,156 @@
+@import "variables";
+.cart-btns {
+    button:nth-child(1) {
+        background-color: $white;
+        &.active {
+            color: $white;
+            background-color: $bg-05;
+            border-color: $bg-05;
+        }
+    }
+    button:nth-child(2) {
+        background-color: $color-11;
+        color: $white;
+        &.active {
+            color: $color-11;
+            background-color: $white;
+        }
+    }
+}
+
+.left-side-img-list {
+    width: 6rem;
+    max-height: 500px;
+    overflow-y: auto;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+    button {
+        &.active {
+            img {
+                filter: opacity(100%);
+            }
+        }
+    }
+    img {
+        filter: opacity(30%);
+        cursor: pointer;
+        -webkit-user-drag: none;
+    }
+    &::-webkit-scrollbar {
+        width: 1px;
+        // display: none;
+    }
+    &::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+    &::-webkit-scrollbar-thumb {
+        background: #888;
+    }
+
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+    @include tablet {
+        & {
+            display: none;
+        }
+    }
+}
+.bot-side-img-list {
+    display: none;
+    button {
+        &.active {
+            img {
+                filter: opacity(100%);
+            }
+        }
+    }
+    img {
+        filter: opacity(30%);
+        cursor: pointer;
+    }
+
+    @include tablet {
+        & {
+            display: block;
+            .nav {
+                &.__scroll {
+                    width: 100%;
+                    overflow-x: auto;
+                    button {
+                        width: 100%;
+                    }
+                }
+            }
+            img {
+                height: 10vh;
+                width: auto;
+            }
+        }
+    }
+}
+
+.scroll-x {
+    max-width: 100%;
+    overflow-x: auto;
+}
+.delivery-details {
+    position: relative;
+    width: 13rem;
+    margin-left: 3rem;
+    &::after {
+        content: "";
+        background: url("../media/thanhtoan-icon.svg");
+        background-size: contain;
+        position: absolute;
+        right: 102%;
+        top: 0;
+        width: 2rem;
+        height: 2rem;
+    }
+}
+
+.font-400 {
+    & p {
+        font-weight: 400;
+    }
+}
+
+.note-icon {
+    width: 12px;
+    height: 12px;
+    background: url("../media//arrow-button-bl.svg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: inline-block;
+}
+
+.btn-pri {
+    .product-love {
+        width: 1.5rem;
+        height: 1.5rem;
+        color: rgb(40, 161, 178);
+        font-weight: 600;
+        z-index: 2;
+        background-image: url(../media/heart-icon.svg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    &.active {
+        .product-love {
+            background-image: url(../media/heart-white-icon.svg);
+        }
+    }
+}
+.coupon_logo {
+    // height: 5rem;
+}
+.nav {
+    &.__scroll {
+        overflow-y: hidden;
+        max-height: 100%;
+    }
+}

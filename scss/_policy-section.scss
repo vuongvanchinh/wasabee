@@ -1,0 +1,11 @@
+.policy-card {
+    img {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 2rem;
+    }
+    &__info {
+        font-size: $sm-text;
+        font-weight: 600;
+    }
+}

@@ -1,0 +1,400 @@
+@import "./variables";
+.location-path {
+    font-size: 0.65rem;
+}
+
+.path-icon {
+    background: url("../media//angle-down-btn.svg") no-repeat;
+    background-size: 5px 5px;
+    background-position: center;
+    display: inline-block;
+    color: $black;
+    width: 7px;
+    height: 7px;
+    transform: rotate(-90deg);
+}
+
+.dropdown-icon {
+    background: url("../media//angle-down-btn.svg") no-repeat;
+    background-size: 10px 10px;
+    background-position: center;
+    display: inline-block;
+    color: $black;
+    width: 10px;
+    height: 10px;
+    border: none;
+}
+
+.dropdown-btn {
+    border: none;
+    background-color: transparent;
+    position: relative;
+    &::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        margin-top: -5px;
+        border: none;
+        background: url("../media//angle-down-btn.svg") no-repeat;
+        background-size: 10px 10px;
+        background-position: center;
+        width: 10px;
+        height: 10px;
+    }
+}
+
+.dropdown-menu {
+    padding: 0;
+    position: absolute;
+    right: 0;
+    inset: 0px auto auto 0px;
+    min-width: 100%;
+    transform: translate3d(0px, 29px, 0px);
+    .dropdown-toggle {
+        width: 10rem;
+    }
+}
+
+// .path-icon {
+//   visibility: hidden;
+// }
+.flex-1 {
+    flex: 1;
+}
+
+.flex-2 {
+    flex: 2;
+}
+
+.flex-3 {
+    flex: 3;
+}
+
+.flex-4 {
+    flex: 4;
+}
+
+.flex-5 {
+    flex: 5;
+}
+
+.flex-6 {
+    flex: 6;
+}
+
+.flex-7 {
+    flex: 7;
+}
+
+.bold-bottom {
+    border-bottom: solid $color-11;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.table-title {
+    & {
+        border: none;
+        background: none;
+    }
+    &.active {
+        background: $color-11;
+        color: $white;
+    }
+}
+
+.table > :not(caption) > * > * {
+    border-bottom-width: 0;
+}
+
+.table {
+    width: 100%;
+    tr {
+        th {
+            text-align: center;
+        }
+    }
+    .text-left {
+        text-align: left;
+    }
+    tr:not(:first-child) {
+        border-bottom: 1px dashed $dash;
+    }
+    tr:first-child,
+    tr:last-child {
+        border-bottom: 1px solid $color-11;
+    }
+}
+
+.form-checkbox {
+    font-size: 1rem;
+    font-weight: 600;
+    gap: 0.6rem;
+    padding: 0.3rem 0;
+    cursor: pointer;
+    &.accordion-button input {
+        transform: translateY(50%);
+    }
+    input {
+        -webkit-appearance: none;
+        margin: 0;
+        width: 0.7rem;
+        height: 0.7rem;
+        cursor: pointer;
+        border: 2.5px solid $white;
+        outline: 2px solid $border-color-00;
+        border-radius: 50%;
+        display: grid;
+        place-content: center;
+        &:checked {
+            border: 2px solid $white;
+            outline: 2px solid $border-color;
+            background: $bg-05;
+            // outline: 2px solid $black;
+        }
+    }
+}
+
+.w-25\2 {
+    width: 12.5%;
+}
+
+.w-15 {
+    width: 15%;
+}
+
+.w-20 {
+    width: 20%;
+}
+
+.w-40 {
+    width: 40%;
+}
+
+.w-60 {
+    width: 60%;
+}
+
+.w-65 {
+    width: 65%;
+}
+
+.w-70 {
+    width: 70%;
+}
+
+.w-35 {
+    width: 35%;
+}
+
+.w-30 {
+    width: 30%;
+}
+
+.w-5 {
+    width: 5%;
+}
+
+.w-95 {
+    width: 95%;
+}
+
+.w-110 {
+    width: 110%;
+}
+
+.mw-100 {
+    min-width: 100%;
+    width: 100%;
+}
+
+.bg-none {
+    background: none;
+}
+
+.flex-nowrap {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.card-info {
+    display: flex;
+    .card-form {
+        width: 5rem;
+        height: 6rem;
+    }
+    .img {
+        width: 100%;
+        height: 100%;
+    }
+    .content {
+        position: relative;
+        a {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            // text-decoration: underline;
+            cursor: pointer;
+        }
+    }
+}
+
+.mid {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.number-form {
+    width: 100%;
+}
+
+.value-button {
+    display: inline-block;
+    border: 1px solid #ddd;
+    width: 1.5rem;
+    height: 2rem;
+    text-align: center;
+    vertical-align: middle;
+    padding: 0.2rem 0;
+    background: $white;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.value-button:hover {
+    cursor: pointer;
+}
+
+.number-form #decrease {
+    border-radius: 50px 0 0 50px;
+}
+
+.number-form #increase {
+    border-radius: 0 50px 50px 0;
+}
+
+.number-form #input-wrap {
+    margin: 0px;
+    padding: 0px;
+}
+
+input#number {
+    text-align: center;
+    border: none;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    margin: 0px;
+    width: 2rem;
+    height: 2rem;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.line-through {
+    text-decoration: line-through;
+}
+
+.order-summary {
+    h4 {
+        border-style: none none dashed;
+        border-width: 1px;
+        border-color: $dash;
+        padding-bottom: 1rem;
+    }
+    .text-red {
+        color: $bg-06;
+    }
+}
+
+.btn-form {
+    button {
+        padding: 0.5rem 2.5rem;
+    }
+}
+
+.btn-pri {
+    border-radius: 50rem;
+    border: none;
+    background: transparent;
+}
+
+.update-store {
+    color: $color-11;
+    background: none;
+    text-decoration: underline;
+    border: none;
+}
+
+.continue-buy {
+    background-color: $bg-04;
+    border: none;
+}
+
+.delete-product {
+    border: 1px solid $color-11;
+    background: none;
+}
+
+.w-10r {
+    width: 10rem;
+}
+.container,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl,
+.container-xxl {
+    max-width: 1420px;
+}
+.table {
+    // min-width: 1024px;
+    // width: 1340px;
+    th {
+        position: sticky;
+        top: 0;
+    }
+    @include tablet {
+        min-width: 1024px;
+    }
+}
+.croll-table {
+    @include tablet {
+        // padding-bottom: 0.5rem;
+        overflow-x: auto;
+        // max-width: 100%;
+    }
+}
+
+.btn-manipulation {
+    // min-width: 1024px;
+
+    @include mobile {
+        text-align: center;
+        // min-width: 1024px;
+        button {
+            margin: 0.5rem 0 0.5rem 0 !important;
+            padding: 0px;
+        }
+        &__inner2 {
+            margin: 0 auto;
+        }
+        &__inner1 {
+            margin: 0 auto;
+        }
+    }
+}
