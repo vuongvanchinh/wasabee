@@ -16,11 +16,12 @@
     background-size: 0.8rem 0.8rem;
     background-position: center;
     background-image: url("../media//arrow-button-bl.svg");
+    transition: all 0.5s ease;
 }
 
 .accordion-button:not(.collapsed)::after {
     background-image: url("../media//arrow-button-bl.svg");
-    transform: rotate(0deg);
+    transform: rotate(90deg);
 }
 
 .accordion-item {

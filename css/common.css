@@ -1604,4 +1604,21 @@
   overflow-y: visible;
 }
 
+.p-w {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.s-b {
+  margin-bottom: 6rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .sm-flex-end {
+    display: block;
+    flex-grow: 1;
+    text-align: end;
+  }
+}
+
 /*# sourceMappingURL=common.css.map */

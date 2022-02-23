@@ -32,9 +32,9 @@ $(document).ready(() => {
   //     // nextArrow: '<button class="slider-arrow next-arrow">Next</button>'
   //   });
 
-  $(".your-class").slick({
-    rtl: true,
-  });
+  // $(".your-class").slick({
+  //   rtl: true,
+  // });
 
   $(".landing-slider").slick({
     slidesToShow: 1,
@@ -93,11 +93,12 @@ $(document).ready(() => {
       },
     ],
   });
-  $('a[data-toggle="tab"]').on("shown.bs.tab", function (e) {
-    e.target;
-    e.relatedTarget;
-    $(".slider-style").slick("setPosition");
-  });
+$('a[data-toggle="tab"]').on('shown.bs.tab', function(e) {
+    e.target
+    e.relatedTarget
+    $('.slider-style').slick('setPosition');
+});
+
   // End slider style
   // monopoly-slider
   $(".monopoly-slider").slick({
@@ -129,13 +130,126 @@ $(document).ready(() => {
         settings: {
           arrows: true,
           centerMode: true,
-          centerPadding: "12%",
+          centerPadding: "0%",
           slidesToShow: 1,
         },
       },
     ],
   });
+  $(".slider-842").slick({
+    slidesToShow: 8,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 800,
+        settings: {
+          arrows: true,
+          // centerMode: true,
+          // centerPadding: '40px',
+          slidesToShow: 4,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          arrows: true,
+          // centerMode: true,
+          // centerPadding: '40px',
+          slidesToShow: 2,
+        },
+      },
+    ],
+    // prevArrow: '<button class="slider-arrow prev-arrow">Pre</button>',
+    // nextArrow: '<button class="slider-arrow next-arrow">Next</button>'
+  });
+  $(".slider-542").slick({
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 800,
+        settings: {
+          arrows: true,
+          // centerMode: true,
+          // centerPadding: '40px',
+          slidesToShow: 4,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          arrows: true,
+          // centerMode: true,
+          // centerPadding: '40px',
+          slidesToShow: 2,
+        },
+      },
+    ],
+    // prevArrow: '<button class="slider-arrow prev-arrow">Pre</button>',
+    // nextArrow: '<button class="slider-arrow next-arrow">Next</button>'
+  }); 
+  $(".slider-342").slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: true,
+          // centerMode: true,
+          // centerPadding: '40px',
+          slidesToShow: 4,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          arrows: true,
+          // centerMode: true,
+          // centerPadding: '40px',
+          slidesToShow: 2,
+        },
+      },
+    ],
+    // prevArrow: '<button class="slider-arrow prev-arrow">Pre</button>',
+    // nextArrow: '<button class="slider-arrow next-arrow">Next</button>'
+  });
 
+  $(".slider-4321").slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1080,
+        settings: {
+          arrows: true,
+          // centerMode: true,
+          // centerPadding: '40px',
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: true,
+          // centerMode: true,
+          // centerPadding: '40px',
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          arrows: true,
+          // centerMode: true,
+          // centerPadding: '40px',
+          slidesToShow: 1,
+        },
+      },
+    ],
+    // prevArrow: '<button class="slider-arrow prev-arrow">Pre</button>',
+    // nextArrow: '<button class="slider-arrow next-arrow">Next</button>'
+  });
   // end monopoly
   //top-right-navigator-slider
   $(".top-right-navigator-slider-01").slick({

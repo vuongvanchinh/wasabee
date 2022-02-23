@@ -478,3 +478,19 @@
     overflow-x: auto;
     overflow-y: visible;
 }
+
+.p-w {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.s-b {
+    margin-bottom: 6rem;
+}
+
+@include mobile {
+    .sm-flex-end {
+        display: block;
+        flex-grow: 1;
+        text-align: end;
+    }
+}

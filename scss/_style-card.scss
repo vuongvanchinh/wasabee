@@ -34,6 +34,7 @@
 
 .style-tab {
     margin-bottom: 1rem;
+    // background-color: red;
     
     .nav-item {
         a.nav-link {
@@ -45,8 +46,9 @@
             background-color: transparent;
             &:hover {
                 color: $color-02;
-                border: 0;
+               
             }
+
             &.nav-link.active {
                 font-size: $md-text;
                 color: $color-02;
@@ -55,7 +57,18 @@
                 background-color: red;
                 border-bottom: 2px solid $color-02;
             }
+            
         }
+        // &.active {
+        //     .nav-link {
+        //         font-size: $md-text;
+        //         color: $color-02;
+        //         background-color: transparent !important;
+        //         border: 0;
+        //         background-color: red;
+        //         border-bottom: 2px solid $color-02;
+        //     }
+        // }
         
     }
 }

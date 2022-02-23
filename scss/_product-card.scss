@@ -82,6 +82,11 @@
                 overflow: hidden;
                 text-overflow: ellipsis;
                 word-break: break-word;
+                cursor: pointer;
+                transition: all 0.5s ease;
+                &:hover {
+                    color: $bg-05;
+                }
             }
             .product__desc {
                 font-size: 15px;
