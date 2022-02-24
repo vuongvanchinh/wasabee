@@ -486,11 +486,17 @@
 .s-b {
     margin-bottom: 6rem;
 }
+.t-b {
+    margin-bottom: 3rem;
+}
 
 @include mobile {
     .sm-flex-end {
         display: block;
         flex-grow: 1;
         text-align: end;
+    }
+    .sm-t-b {
+        margin-bottom: 0rem;
     }
 }

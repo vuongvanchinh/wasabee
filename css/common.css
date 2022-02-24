@@ -1613,11 +1613,19 @@
   margin-bottom: 6rem;
 }
 
+.t-b {
+  margin-bottom: 3rem;
+}
+
 @media only screen and (max-width: 600px) {
   .sm-flex-end {
     display: block;
     flex-grow: 1;
     text-align: end;
+  }
+
+  .sm-t-b {
+    margin-bottom: 0rem;
   }
 }
 
