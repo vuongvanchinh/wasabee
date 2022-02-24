@@ -1610,7 +1610,6 @@
   margin-bottom: 6rem;
 }
 
-<<<<<<< HEAD
 .font-29 {
   font-size: 29px !important;
 }
@@ -1623,10 +1622,6 @@
   .font-29 {
     font-size: 24px !important;
   }
-=======
-.t-b {
-  margin-bottom: 3rem;
->>>>>>> 8cb0f7b6a17312967b3874aaa8f8e43e44249ce8
 }
 
 @media only screen and (max-width: 600px) {
@@ -1636,7 +1631,6 @@
     text-align: end;
   }
 
-<<<<<<< HEAD
   .p-w {
     padding-left: 0.5rem;
     padding-right: 0.5rem;
@@ -1644,10 +1638,10 @@
 
   .s-b {
     margin-bottom: 4rem;
-=======
+  }
+
   .sm-t-b {
     margin-bottom: 0rem;
->>>>>>> 8cb0f7b6a17312967b3874aaa8f8e43e44249ce8
   }
 }
 

@@ -1432,10 +1432,48 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .momo-logo {
-  background-image: url(../media/momo.svg);
+  background: url(../media/momo.svg) no-repeat;
   background-size: contain;
   width: 2rem;
   height: 2rem;
+  min-width: 2rem;
+  background-position: center;
+}
+
+.payment-logo {
+  background: url(../media/thanhtoankhinhanhang.svg) no-repeat;
+  background-size: contain;
+  width: 2rem;
+  height: 2rem;
+  min-width: 2rem;
+  background-position: center;
+}
+
+.atm-logo {
+  background: url(../media/theatmnoidia.svg) no-repeat;
+  background-size: contain;
+  width: 2rem;
+  height: 2rem;
+  min-width: 2rem;
+  background-position: center;
+}
+
+.visa-logo {
+  background: url(../media/visa.svg) no-repeat;
+  background-size: contain;
+  width: 2rem;
+  height: 2rem;
+  min-width: 2rem;
+  background-position: center;
+}
+
+.vnpay-logo {
+  background: url(../media/vnpay_new.svg) no-repeat;
+  background-size: contain;
+  width: 2rem;
+  height: 2rem;
+  min-width: 2rem;
+  background-position: center;
 }
 
 .dash {
@@ -1618,7 +1656,7 @@ input[type=number]::-webkit-outer-spin-button {
   background-size: contain;
 }
 .btn-pri.active .product-love {
-  background-image: url(../media/heart-white-icon.svg);
+  background-image: url(../media/green-heart-icon-hover.svg);
 }
 
 .nav.__scroll {
