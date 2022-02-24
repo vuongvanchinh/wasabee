@@ -49,15 +49,20 @@
         height: 40px;
         background-position: center;
         background-repeat: no-repeat;
+        background-size: auto;
         &::before {
             background-image: url("../media/right-arrow-dark.svg");
+        }
+        bottom: calc(100% + 2rem);
+        @include tablet {
+            bottom: calc(100% + 1rem);
         }
     }
     .slick-prev {
         right: 4rem;
         left: unset;
         top: unset;
-        bottom: 100%;
+        
 
         &::before {
             transform: rotate(180deg);
@@ -67,14 +72,26 @@
     .slick-next {
         right: 1rem;
         top: unset;
-        bottom: 100%;
+        
+    }
+    @include mobile {
+        .slick-prev {
+            top: calc(50% - 83.5px);
+            right: auto;
+            left: 0.5rem;
+        }
+        .slick-next {
+            right: 0.5rem;
+            top: calc(50% - 83.5px);
+        }
     }
 }
 
 @include mobile {
     .slick-arrow {
+        overflow: visible;
         width: 28px !important;
-        height: 25px !important;
+        height: 36px !important;
         background-size: contain;
     }
 }

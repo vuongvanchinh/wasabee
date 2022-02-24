@@ -1,5 +1,6 @@
 @import "./variables";
 
+$color-text: rgba($color-01, 0.8);
 .accordion-button:focus {
     z-index: 3;
     border-color: #eeeeee;
@@ -90,6 +91,7 @@
         max-height: $w;
         border: 2.5px solid $white;
         outline: 2px solid $border-color-00;
+        margin-left: 2px;
         border-radius: 50%;
         cursor: pointer;
         // display: grid;
@@ -160,6 +162,20 @@
 }
 
 .filter-product {
+    .heading-03 {
+        font-size:29px;
+        color: $color-text;
+        font-weight: 500 !important;
+
+        @include tablet {
+            font-size: 28px;
+
+        }
+
+        @include mobile {
+            font-size: 24px;
+        }
+    }
     .level1 {
         // margin-bottom: 1rem;
         font-weight: 700;
@@ -176,8 +192,8 @@
             }
 
             label {
-                color: $color-02;
-                font-size: 0.875rem;
+                color: $color-text;
+                font-size: 16px;
                 font-weight: 700;
                 margin-bottom: 0.5rem !important;
             }

@@ -8,4 +8,14 @@
         font-size: $sm-text;
         font-weight: 600;
     }
+    &__info {
+        h3 {
+            color: rgba($color-09, 0.7) !important;
+            font-size: 16px;
+        }
+        p {
+            font-size: 14px;
+            color: rgba($color-09, 0.6);
+        }
+    }
 }

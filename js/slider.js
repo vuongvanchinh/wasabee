@@ -6,7 +6,7 @@ $(document).ready(() => {
       {
         breakpoint: 768,
         settings: {
-          arrows: false,
+          arrows: true,
           // centerMode: true,
           // centerPadding: '40px',
           slidesToShow: 3,
@@ -15,7 +15,7 @@ $(document).ready(() => {
       {
         breakpoint: 480,
         settings: {
-          arrows: false,
+          arrows: true,
           // centerMode: true,
           centerPadding: "40px",
           slidesToShow: 2,
@@ -140,6 +140,15 @@ $('a[data-toggle="tab"]').on('shown.bs.tab', function(e) {
     slidesToShow: 8,
     slidesToScroll: 1,
     responsive: [
+      {
+        breakpoint: 1025,
+        settings: {
+          arrows: true,
+          // centerMode: true,
+          // centerPadding: '40px',
+          slidesToShow: 5,
+        },
+      },
       {
         breakpoint: 800,
         settings: {

@@ -9,7 +9,7 @@
   text-transform: uppercase;
   margin-bottom: 2rem;
   color: #fff;
-  font-size: 5rem;
+  font-size: 95px;
   font-weight: bold;
   margin-bottom: 2rem;
   line-height: 1.2;
@@ -17,31 +17,31 @@
 
 .heading-02 {
   text-transform: uppercase;
-  margin-bottom: 1rem;
-  color: #032e34;
-  font-size: 2rem;
+  margin-bottom: 3rem;
+  color: rgba(26, 24, 24, 0.8);
+  font-size: 40px;
   font-weight: 700;
 }
 
 .heading-03 {
   text-transform: uppercase;
   margin-bottom: 1rem;
-  color: #021d21;
-  font-size: 1.5rem;
+  color: #1a1818;
+  font-size: 24px;
   font-weight: 700;
 }
 
 .heading-04 {
   font-size: 1rem;
   font-weight: 700;
-  color: #021d21;
+  color: #1a1818;
   text-transform: uppercase;
 }
 
 .heading-05 {
   text-transform: uppercase;
   margin-bottom: 2rem;
-  color: #021d21;
+  color: #1a1818;
   font-size: 1.5rem;
   font-weight: bold;
 }
@@ -49,7 +49,7 @@
 .heading-06 {
   text-transform: uppercase;
   margin-bottom: 0;
-  color: #021d21;
+  color: #1a1818;
   font-size: 16px;
 }
 
@@ -59,22 +59,21 @@
     margin-bottom: 2rem;
     color: #fff;
     font-size: 5rem;
-    font-weight: bold;
+    font-weight: 700;
     line-height: 1.2;
   }
 
   .heading-02 {
-    text-transform: uppercase;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     color: #032e34;
-    font-size: 2rem;
+    font-size: 32px;
     font-weight: 700;
   }
 
   .heading-03 {
     text-transform: uppercase;
     margin-bottom: 1rem;
-    color: #021d21;
+    color: #1a1818;
     font-size: 1.5rem;
     font-weight: 700;
   }
@@ -82,14 +81,14 @@
   .heading-04 {
     font-size: 1rem;
     font-weight: 700;
-    color: #021d21;
+    color: #1a1818;
     text-transform: uppercase;
   }
 
   .heading-05 {
     text-transform: uppercase;
     margin-bottom: 2rem;
-    color: #021d21;
+    color: #1a1818;
     font-size: 1.5rem;
     font-weight: bold;
   }
@@ -97,7 +96,7 @@
   .heading-06 {
     text-transform: uppercase;
     margin-bottom: 0;
-    color: #021d21;
+    color: #1a1818;
     font-size: 16px;
   }
 }
@@ -106,24 +105,22 @@
     text-transform: uppercase;
     margin-bottom: 2rem;
     color: #fff;
-    font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: 2rem;
     line-height: 1.2;
+    font-size: 2rem;
   }
 
   .heading-02 {
     text-transform: uppercase;
     margin-bottom: 1rem;
     color: #032e34;
-    font-size: 1.25rem;
+    font-size: 24px;
     font-weight: 700;
   }
 
   .heading-03 {
     text-transform: uppercase;
     margin-bottom: 1rem;
-    color: #021d21;
+    color: #1a1818;
     font-size: 1.125rem;
     font-weight: 700;
   }
@@ -133,7 +130,7 @@
 }
 
 .bg-01 {
-  background-color: #021d21;
+  background-color: #1a1818;
 }
 
 .bg-02 {
@@ -177,7 +174,7 @@
 }
 
 .text-01 {
-  color: #021d21;
+  color: #1a1818;
 }
 
 .text-02 {
@@ -189,7 +186,7 @@
 }
 
 .text-04 {
-  color: #707070;
+  color: rgba(26, 24, 24, 0.6);
 }
 
 .text-05 {
@@ -1613,11 +1610,34 @@
   margin-bottom: 6rem;
 }
 
+.font-29 {
+  font-size: 29px !important;
+}
+@media only screen and (max-width: 1366px) {
+  .font-29 {
+    font-size: 28px !important;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .font-29 {
+    font-size: 24px !important;
+  }
+}
+
 @media only screen and (max-width: 600px) {
   .sm-flex-end {
     display: block;
     flex-grow: 1;
     text-align: end;
+  }
+
+  .p-w {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  .s-b {
+    margin-bottom: 4rem;
   }
 }
 
