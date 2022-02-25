@@ -12,7 +12,7 @@
     text-transform: uppercase;
     margin-bottom: 2rem;
     color: $color-10;
-    font-size: 95px;
+    font-size: 5rem;
     font-weight: bold;
     margin-bottom: 2rem;
     line-height: 1.2;
@@ -22,7 +22,7 @@
     text-transform: uppercase;
     margin-bottom: 3rem;
     color: rgba($color-01, 0.8);
-    font-size: 40px;
+    font-size: 2rem;
     font-weight: 700;
 }
 
@@ -58,7 +58,7 @@
         text-transform: uppercase;
         margin-bottom: 2rem;
         color: $color-10;
-        font-size: 5rem;
+        font-size: 4rem;
         font-weight: 700;
         line-height: 1.2;
     }
@@ -67,7 +67,7 @@
         // text-transform: uppercase;
         margin-bottom: 2rem;
         color: $color-02;
-        font-size: 32px;
+        font-size: 1.5rem;
         font-weight: 700;
     }
 
@@ -112,7 +112,7 @@
         text-transform: uppercase;
         margin-bottom: 1rem;
         color: $color-02;
-        font-size: 24px;
+        font-size: 1.25rem;
         font-weight: 700;
     }
 
@@ -209,19 +209,19 @@
     font-size: 0.75rem;
 }
 .text-sm {
-    font-size: 0.875rem;
+    font-size: 0.8rem;
 }
 
 .text-md {
-    font-size: 1rem;
+    font-size: 0.9rem;
 }
 
 .text-lg {
-    font-size: 1.125rem;
+    font-size: 1rem;
 }
 
 .text-xl {
-    font-size: 1.25rem;
+    font-size: 1.125rem;
 }
 
 .text-2xl {
@@ -469,6 +469,30 @@
         margin-left: 1rem;
     }
 }
+.hover-bg-10:hover {
+    background-color: #1c6975;
+    transition: all 0.5s ease;
+}
+.slgap {
+    padding-left: $slide-gap;
+    padding-right: $slide-gap;
+}
+.pl-75 {
+    padding-left: $slide-gap;
+}
+@include tablet {
+    .md-pl-75 {
+        padding-left: $slide-gap !important;
+    }
+}
+
+.mgap {
+    gap: 1.5rem;
+}
+.mygap {
+    padding-left: $slide-gap;
+    padding-right: $slide-gap;
+}
 .pointer {
     cursor: pointer;
 }
@@ -485,16 +509,22 @@
     margin-bottom: 6rem;
 }
 .font-29 {
-    font-size: 29px !important;
+    font-size: 24px !important;
 
     @include tablet {
-        font-size: 28px !important;
+        font-size: 20px !important;
     }
     @include mobile {
-        font-size: 24px !important;
+        font-size: 18px !important;
     }
 }
 
+// .h-policy {
+//     height: 26rem !important;
+// }
+// .h-footer {
+//     height: 32rem;
+// }
 @include mobile {
     .sm-flex-end {
         display: block;
@@ -506,9 +536,9 @@
         padding-right: 0.5rem;
     }
     .s-b {
-        margin-bottom:4rem;
+        margin-bottom: 4rem;
     }
-    
+
     .sm-t-b {
         margin-bottom: 0rem;
     }

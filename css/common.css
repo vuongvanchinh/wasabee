@@ -9,7 +9,7 @@
   text-transform: uppercase;
   margin-bottom: 2rem;
   color: #fff;
-  font-size: 95px;
+  font-size: 5rem;
   font-weight: bold;
   margin-bottom: 2rem;
   line-height: 1.2;
@@ -19,7 +19,7 @@
   text-transform: uppercase;
   margin-bottom: 3rem;
   color: rgba(26, 24, 24, 0.8);
-  font-size: 40px;
+  font-size: 2rem;
   font-weight: 700;
 }
 
@@ -58,7 +58,7 @@
     text-transform: uppercase;
     margin-bottom: 2rem;
     color: #fff;
-    font-size: 5rem;
+    font-size: 4rem;
     font-weight: 700;
     line-height: 1.2;
   }
@@ -66,7 +66,7 @@
   .heading-02 {
     margin-bottom: 2rem;
     color: #032e34;
-    font-size: 32px;
+    font-size: 1.5rem;
     font-weight: 700;
   }
 
@@ -113,7 +113,7 @@
     text-transform: uppercase;
     margin-bottom: 1rem;
     color: #032e34;
-    font-size: 24px;
+    font-size: 1.25rem;
     font-weight: 700;
   }
 
@@ -222,19 +222,19 @@
 }
 
 .text-sm {
-  font-size: 0.875rem;
+  font-size: 0.8rem;
 }
 
 .text-md {
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 
 .text-lg {
-  font-size: 1.125rem;
+  font-size: 1rem;
 }
 
 .text-xl {
-  font-size: 1.25rem;
+  font-size: 1.125rem;
 }
 
 .text-2xl {
@@ -1592,6 +1592,34 @@
   margin-left: 1rem;
 }
 
+.hover-bg-10:hover {
+  background-color: #1c6975;
+  transition: all 0.5s ease;
+}
+
+.slgap {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+.pl-75 {
+  padding-left: 0.75rem;
+}
+
+@media only screen and (max-width: 1366px) {
+  .md-pl-75 {
+    padding-left: 0.75rem !important;
+  }
+}
+.mgap {
+  gap: 1.5rem;
+}
+
+.mygap {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
 .pointer {
   cursor: pointer;
 }
@@ -1611,16 +1639,16 @@
 }
 
 .font-29 {
-  font-size: 29px !important;
+  font-size: 24px !important;
 }
 @media only screen and (max-width: 1366px) {
   .font-29 {
-    font-size: 28px !important;
+    font-size: 20px !important;
   }
 }
 @media only screen and (max-width: 600px) {
   .font-29 {
-    font-size: 24px !important;
+    font-size: 18px !important;
   }
 }
 
