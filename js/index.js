@@ -76,7 +76,7 @@ $(document).ready(() => {
         document.getElementById("sidebar-header").addEventListener("mousedown", closeSidebarHeader);
     });
 
-    $("#sidebar-header .sidebar-header__inner").on("click", () => {
+    $("#sidebar-header .sidebar-header__inner .my-close").on("click", () => {
         onCloseSideBarHeader();
         document.getElementById("sidebar-header").removeEventListener("mousedown", closeFilterProduct);
     });
@@ -96,18 +96,19 @@ $(document).ready(() => {
 
     // header
 
-    // $(".header__nav-item a[data-type='mega']").on('mouseover', (e)=> {
-    //     $(e.target).parent().addClass("active");
-    //     const megaid = $(e.target).attr('data-mega')
-    //     console.log(megaid)
-    //     $(megaid).addClass("open")
-    // })
-    // $(".header__nav-item a[data-type='mega']").on('mouseout', (e)=> {
-    //     $(e.target).parent().removeClass("active");
-    //     const megaid = $(e.target).attr('data-mega')
-    //     console.log(megaid)
-    //     $(megaid).removeClass("open")
-    // })
+    // Accordion 
+        $('.my-accordion .my-accordion__title').on('click', function(e) {
+            $(this).toggleClass('open')
+            const panel = $(this).next();
+            console.log(panel.css('max-height'))
+        
+            if (panel.css('max-height') =="0px") {
+                panel.css('max-height', panel.prop('scrollHeight') + "px")
+            } else {
+                panel.css('max-height',"0px")
+            }
+        })
+    // end accordion 
 });
 
 function increaseValue(that) {

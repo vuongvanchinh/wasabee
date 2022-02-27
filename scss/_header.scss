@@ -180,6 +180,7 @@ $nav-front-size: 1rem;
       &.has-submenu {
         position: relative;
         .header-submenu {
+          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
           position: absolute;
           background-color: #fff;
           top: 100%;
@@ -208,6 +209,7 @@ $nav-front-size: 1rem;
       }
 
       .header-mega {
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
         width: 80vw;
         margin: 0 auto;
         padding-top: 10px;
@@ -414,7 +416,21 @@ $nav-front-size: 1rem;
     width: 100vw;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.8);
+    .login-mobile {
+      padding-left: 2rem;
+      padding-bottom: 1rem;
+      margin-top: 1rem;
+      
+      border-bottom: 1px solid $border-color;
+      
+      img {
+        margin-right: 0.5rem;
+        width: 20px;
+        height: 20px;
 
+      }
+
+    }
     &__inner {
       height: 100%;
       position: absolute;
@@ -436,6 +452,52 @@ $nav-front-size: 1rem;
           // border-bottom: 1px solid $border-color;
           &.active {
             color: $color-04;
+          }
+          &.my-accordion {
+            
+            .my-accordion__title {
+              cursor: pointer;
+              position: relative;
+              &::after {
+                content: '';
+                $w: 15px;
+                width: $w;
+                height: $w;
+                transition: all 0.5s ease;
+                position: absolute;
+                right: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                transform-origin: center;
+                background-image: url('../media/arrow-button-bl.svg');
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain;
+                
+              }
+              &.open {
+
+                &::after {
+                  transform: translateY(-50%) rotate(90deg);
+                  
+                }
+
+              }
+            
+            }
+
+            .my-accordion__body {
+              max-height: 0;
+              overflow-y: hidden;
+              transition: max-height 0.3s ease-out;
+              .sidebar__nav-item {
+                font-size: 0.875rem;
+                padding-left: 0rem;
+                padding-right: 0;
+              }
+
+            }
+            
           }
         }
       }
@@ -495,42 +557,5 @@ $nav-front-size: 1rem;
 
 .header-main-wraper {
   position: relative;
-  .header-mega {
-    width: 80vw;
-    margin: 0 auto;
-    
-    padding-top: 10px;
-    
-   
-    position: absolute;
-    display: none;
-
-    top: calc(100% - 11px);
-    left: 50%;
-    z-index: 1;
-    transform: translateX(-50%);
-    &.open, &:hover {
-      display: block;
-
-    }
-    .mega-content {
-      background-color: #fff;
-      padding: 2rem;
-      border-radius: 0 0 1rem 1rem;
-
-      .header__nav-item {
-        font-size: 0.875rem;
-      }
-    }
-    .mega-gap {
-      gap: 2rem;
-    }
-    .mega-img {
-      border-radius: 1rem;
   
-      img {
-        border-radius: inherit;
-      }
-    }
-  }
 }

@@ -35,7 +35,7 @@
                 <div class="search">
                   <img src="./media/search-icon.svg" alt="" id="mobile-search-icon">
                   <form id="mobile-search" method="get">
-                    <input type="text">
+                    <input type="text" placeholder="Search...">
                     <!-- <button type="submit"></button> -->
                   </form>
                 </div>
@@ -57,18 +57,34 @@
                 <div class="sidebar__banner bg-img py-6 px-4 font-700" style="--bg: url('../media/a.png')">
                   Wasabee | Hello 2022
                 </div>
+               
+                <a href="/login" class="flex items-center login-mobile">
+                    <img src="./media/user-icon.svg">
+                    <span>Đăng nhập</span>
+                </a>
                 <ul class="sidebar-header__nav">
-                  <li class="sidebar__nav-item active"><a href="#">Mới</a></li>
+                  <li class="sidebar__nav-item active">
+                      <a href="#">Mới</a>
+                    </li>
                   <li class="sidebar__nav-item"><a href="#">Nữ</a></li>
                   <li class="sidebar__nav-item"><a href="#">Nam</a></li>
                   <li class="sidebar__nav-item"><a href="#">Bộ sưu tập</a></li>
                   <li class="sidebar__nav-item"><a href="#">Trend</a></li>
                   <li class="sidebar__nav-item"><a href="#">Khuyến mãi</a></li>
+                  <li class="sidebar__nav-item my-accordion">
+                    <div class="my-accordion__title" href="#">Tiêu thụ lớn</div>
+                    <ul class="my-accordion__body">
+                      <li class="sidebar__nav-item"><a href="#">Bộ sưu tập</a></li>
+                      <li class="sidebar__nav-item"><a href="#">Trend</a></li>
+                      <li class="sidebar__nav-item"><a href="#">Khuyến mãi</a></li>
+                      <li class="sidebar__nav-item"><a href="#">Hàng bán chạy</a></li>
+                    </ul>
+                  </li>
                   <li class="sidebar__nav-item"><a href="#">Hàng bán chạy</a></li>
                   <li class="sidebar__nav-item">
                       <a href="#">Hàng khuyến mãi lớn</a>
                   </li>
-                  <li class="sidebar__nav-item"><a href="#">Tiêu thụ lớn</a></li>
+                 
                 </ul>
               </div>
             </div>
