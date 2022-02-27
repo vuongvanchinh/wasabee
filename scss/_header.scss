@@ -39,7 +39,7 @@ $nav-front-size: 1rem;
           border-bottom: 2px solid $border-color;
           outline: 0;
           width: 450px;
-          font-size: 1rem;
+          font-size: 0.875rem;
           background-color: inherit;
           &::placeholder {
             color: $color-01;
@@ -151,11 +151,113 @@ $nav-front-size: 1rem;
 
     .header__nav-item {
       text-transform: uppercase;
+      position: static;
       margin-right: 2rem;
       padding: 0.5rem;
-      font-size: 1rem;
+      font-size: 0.875rem;
       color: $color-10;
       font-weight: 700;
+      transition: all 0.5s ease;
+      a {
+        width: 100%;
+        height: 100%;
+      }
+      &.active {
+        box-sizing: border-box;
+        position: relative;
+        
+        ::after {
+          content: '';
+          width: 100%;
+          height: 3px;
+          background-color: red;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+
+        }
+      }
+      &.has-submenu {
+        position: relative;
+        .header-submenu {
+          position: absolute;
+          background-color: #fff;
+          top: 100%;
+          left: 50%;
+          transform: translateX(-50%);
+          color: rgba($color-01, 0.6);
+          z-index: 10;
+          min-width: 220px;
+          
+          .submenu-item {
+            padding: 0.5rem 1rem;
+            display: none;
+            &:hover {
+              background-color: rgba(0, 0, 0, 0.5);
+              color: #fff;
+            }
+          }
+          
+        }
+        &:hover {
+          .submenu-item {
+            display: block;
+          }
+        }
+
+      }
+
+      .header-mega {
+        width: 80vw;
+        margin: 0 auto;
+        padding-top: 10px;
+        position: absolute;
+        display: none;
+    
+        top: calc(100% - 10px);
+        left: 50%;
+        z-index: 1;
+        transform: translateX(-50%);
+        .mega-content {
+          background-color: #fff;
+          padding: 2rem;
+          border-radius: 0 0 1rem 1rem;
+    
+          .header__nav-item {
+            font-size: 0.875rem;
+            color: rgba($color-01, 0.6);
+            padding-left: 0;
+
+            &:hover {
+              
+              a {
+                color: $color-01;
+              }
+            }
+          }
+        }
+        .mega-gap {
+          gap: 2rem;
+        }
+        .mega-img {
+          border-radius: 1rem;
+      
+          img {
+            border-radius: inherit;
+          }
+        }
+      }
+
+      &:hover {
+        .header-mega {
+          display: block;
+        }
+        & > a:first-child {
+          color: rgba($color-01, 0.6);
+          
+        }
+      }
+      
     }
   }
 }
@@ -233,6 +335,7 @@ $nav-front-size: 1rem;
               background-color: #f9f9fb;
               padding: 0.25rem 0.5rem;
               z-index: inherit;
+              font-size: 0.875rem;
               width: 400px;
               max-width: calc(100vw - 6rem);
     
@@ -244,6 +347,7 @@ $nav-front-size: 1rem;
                 input {
                   width: 100%;
                   max-width: 100vw;
+                  font-size: 0.875rem;
                 }
             }
     
@@ -385,4 +489,48 @@ $nav-front-size: 1rem;
     right: -300px;
   }
 
+}
+
+
+
+.header-main-wraper {
+  position: relative;
+  .header-mega {
+    width: 80vw;
+    margin: 0 auto;
+    
+    padding-top: 10px;
+    
+   
+    position: absolute;
+    display: none;
+
+    top: calc(100% - 11px);
+    left: 50%;
+    z-index: 1;
+    transform: translateX(-50%);
+    &.open, &:hover {
+      display: block;
+
+    }
+    .mega-content {
+      background-color: #fff;
+      padding: 2rem;
+      border-radius: 0 0 1rem 1rem;
+
+      .header__nav-item {
+        font-size: 0.875rem;
+      }
+    }
+    .mega-gap {
+      gap: 2rem;
+    }
+    .mega-img {
+      border-radius: 1rem;
+  
+      img {
+        border-radius: inherit;
+      }
+    }
+  }
 }

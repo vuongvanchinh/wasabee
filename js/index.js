@@ -93,6 +93,21 @@ $(document).ready(() => {
     $(".product-card .product-love").click((e) => {
         $(e.target).toggleClass("active");
     });
+
+    // header
+
+    // $(".header__nav-item a[data-type='mega']").on('mouseover', (e)=> {
+    //     $(e.target).parent().addClass("active");
+    //     const megaid = $(e.target).attr('data-mega')
+    //     console.log(megaid)
+    //     $(megaid).addClass("open")
+    // })
+    // $(".header__nav-item a[data-type='mega']").on('mouseout', (e)=> {
+    //     $(e.target).parent().removeClass("active");
+    //     const megaid = $(e.target).attr('data-mega')
+    //     console.log(megaid)
+    //     $(megaid).removeClass("open")
+    // })
 });
 
 function increaseValue(that) {

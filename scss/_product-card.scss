@@ -1,7 +1,7 @@
 .new-products-slider {
     div.product-card {
-        padding-left: 0.5rem;
-        padding-right: 0.5rem;
+        padding-left: $slide-gap;
+        padding-right: $slide-gap;
     }
 }
 
@@ -72,7 +72,7 @@
         .product-card__info {
             padding-top: 1rem;
             .product__title {
-                font-size: 16px !important;
+                font-size: 0.875rem;
                 text-transform: uppercase;
                 color: rgba($color-09, 0.7) !important;
                 font-weight: 700;
@@ -90,7 +90,7 @@
                 }
             }
             .product__desc {
-                font-size: 14px;
+                font-size: 0.875rem;
                 display: -webkit-box;
                 -webkit-line-clamp: 2;
                 -webkit-box-orient: vertical;
@@ -102,11 +102,11 @@
             .product__price {
                 display: flex;
                 justify-content: space-between;
-                margin-top: 1rem;
+                margin-top: 0.875rem;
                 font-size: 14px;
 
                 .price-new {
-                    font-size: 18px;
+                    font-size: 1rem;
                     font-weight: 600;
                     color: $color-02;
                     margin-bottom: 0;

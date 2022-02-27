@@ -46,7 +46,7 @@
                   </a>
                 </div>
                 <button id="toggle-sidebar-header">
-                  <img src="/media//menu.svg" alt="" srcset="">
+                  <img src="./media/menu.svg" alt="" srcset="">
                 </button>
               </div>
             </div>
@@ -82,7 +82,7 @@
                         Wasabe | Hello 2022
                     </div>
                 </div>
-                <div>
+                <div class="header-main-wraper">
                     <div class="header__main">
                         <div class="logo">
                             <img src="./media/logo-main.svg" alt="logo" srcset="" />
@@ -121,16 +121,104 @@
                         </div>
                     </div>
                     <ul class="header__nav flex mb-0">
-                        <li class="header__nav-item"><a href="#">Mới</a></li>
-                        <li class="header__nav-item"><a href="#">Nữ</a></li>
+                        <li class="header__nav-item">
+                            <a href="#" data-type="mega" data-mega="#new-mega-header">Mới</a>
+                            <div class="header-mega" id="new-mega-header">
+                                <div class="mega-content grid grid-cols-4 mega-gap">
+                                    <div class="mega-img">
+                                        <img src="./media/carousel-hangdocquyen3.jpg" alt="" srcset="">
+                                    </div>
+                                    <div class="mega-img">
+                                        <img src="./media/carousel-hangdocquyen3.jpg" alt="" srcset="">
+                                    </div>
+                                    <div>
+                                        <p class="heading-04">Heading</p>
+                                        <ul class="mb-0 pl-0">
+                                            <li class="header__nav-item" data-type="mega" data-mega="#new-mega-header"><a href="#">Mới</a></li>
+                                            <li class="header__nav-item"><a href="#">Nữ</a></li>
+                                            <li class="header__nav-item"><a href="#">Nam</a></li>
+                                            <li class="header__nav-item"><a href="#">Bộ sưu tập</a></li>
+                                            <li class="header__nav-item"><a href="#">Trend</a></li>
+                                            <li class="header__nav-item"><a href="#">Khuyến mãi</a></li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <p class="heading-04">Heading</p>
+                                        <ul class="mb-0 pl-0">
+                                            <li class="header__nav-item" data-type="mega" data-mega="#new-mega-header"><a href="#">Mới</a></li>
+                                            <li class="header__nav-item"><a href="#">Nữ</a></li>
+                                            <li class="header__nav-item"><a href="#">Nam</a></li>
+                                            <li class="header__nav-item"><a href="#">Bộ sưu tập</a></li>
+                                            <li class="header__nav-item"><a href="#">Trend</a></li>
+                                            <li class="header__nav-item"><a href="#">Khuyến mãi</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="#">Nữ</a>
+                            <div class="header-mega" id="female-mega-header">
+                                <div class="mega-content grid grid-cols-4 mega-gap">
+                                    <div class="mega-img">
+                                        <img src="./media/carousel-hangdocquyen3.jpg" alt="" srcset="">
+                                    </div>
+                                    <div class="mega-img">
+                                        <img src="./media/carousel-hangdocquyen3.jpg" alt="" srcset="">
+                                    </div>
+                                    <div>
+                                        <p class="heading-04">Heading</p>
+                                        <ul class="mb-0 pl-0">
+                                            <li class="header__nav-item" data-type="mega" data-mega="#new-mega-header"><a href="#">Mới</a></li>
+                                            <li class="header__nav-item"><a href="#">Nữ</a></li>
+                                            <li class="header__nav-item"><a href="#">Nam</a></li>
+                                            <li class="header__nav-item"><a href="#">Bộ sưu tập</a></li>
+                                            <li class="header__nav-item"><a href="#">Trend</a></li>
+                                            <li class="header__nav-item"><a href="#">Khuyến mãi</a></li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <p class="heading-04">Heading</p>
+                                        <ul class="mb-0 pl-0">
+                                            <li class="header__nav-item" data-type="mega" data-mega="#new-mega-header"><a href="#">Mới</a></li>
+                                            <li class="header__nav-item"><a href="#">Nữ</a></li>
+                                            <li class="header__nav-item"><a href="#">Nam</a></li>
+                                            <li class="header__nav-item"><a href="#">Bộ sưu tập</a></li>
+                                            <li class="header__nav-item"><a href="#">Trend</a></li>
+                                            <li class="header__nav-item"><a href="#">Khuyến mãi</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
                         <li class="header__nav-item"><a href="#">Nam</a></li>
                         <li class="header__nav-item"><a href="#">Bộ sưu tập</a></li>
                         <li class="header__nav-item"><a href="#">Trend</a></li>
                         <li class="header__nav-item"><a href="#">Khuyến mãi</a></li>
                         <li class="header__nav-item"><a href="#">Hàng bán chạy</a></li>
                         <li class="header__nav-item"><a href="#">Hàng khuyến mãi lớn</a></li>
-                        <li class="header__nav-item"><a href="#">Tiêu thụ lớn</a></li>
+                        <li class="header__nav-item has-submenu">
+                            <a href="#">Tiêu thụ lớn</a>
+                            <div class="header-submenu">
+                                <ul class="pl-0">
+                                    <a href="">
+                                        <li class="submenu-item">Bộ sưu tập</li>
+                                    </a>
+                                    <a href="">
+                                        <li class="submenu-item">Trend</li>
+                                    </a>
+                                    <a href="">
+                                        <li class="submenu-item">Hàng bán chạy</li>
+                                    </a>
+                                    <a href="">
+                                        <li class="submenu-item">Hàng khuyến mãi lớn</li>
+                                    </a>
+                                </ul>
+                            </div>
+                        </li>
                     </ul>
+                   
+                    
                 </div>
             </header>
             <!-- End Header -->
@@ -375,7 +463,7 @@
                         </div>
                     </div>
                     <div class="p-w">
-                        <div class="product-grid grid grid-cols-5 gap-2 md-gap-2 md-grid-cols-3 sm-grid-cols-2 px-8 md-px-2">
+                        <div class="product-grid grid grid-cols-5 mgap md-grid-cols-3 sm-grid-cols-2 px-8 md-px-2">
                             <div class="product-card price-vertical">
                                 <div class="product-card__inner">
                                     <div class="product-card__imgs">
@@ -517,9 +605,9 @@
                       </button>
                                 </div>
                             </div>
-                            <div class="product-grid-wrapper col-8 md-col-12 pr-0 pl-2 md-px-0">
+                            <div class="product-grid-wrapper col-8 md-col-12 pr-0 pl-3 md-px-0">
                                 <h2 class="heading-02">Sản phẩm nổi bật</h2>
-                                <div class="product-grid grid grid-cols-5 gap-2 md-gap-2 md-grid-cols-4 sm-grid-cols-2 px-0">
+                                <div class="product-grid grid grid-cols-5 mgap md-grid-cols-4 sm-grid-cols-2 px-0">
                                     <div class="product-card price-vertical">
                                         <div class="product-card__inner">
                                             <div class="product-card__imgs">
@@ -750,7 +838,7 @@
                                 <a class="text-pre-icon" href="#">Xem thêm</a>
                             </div>
                         </div>
-                        <div class="product-grid grid grid-cols-8 gap-2 md-gap-2 md-grid-cols-4 sm-grid-cols-2">
+                        <div class="product-grid grid grid-cols-8 mgap md-grid-cols-4 sm-grid-cols-2">
                             <div class="product-card price-vertical">
                                 <div class="product-card__inner">
                                     <div class="product-card__imgs">
@@ -952,7 +1040,7 @@
                                 <a class="text-pre-icon" href="#">Xem thêm</a>
                             </div>
                         </div>
-                        <div class="product-grid grid grid-cols-8 gap-2 md-gap-2 md-grid-cols-4 sm-grid-cols-2">
+                        <div class="product-grid grid grid-cols-8 mgap md-grid-cols-4 sm-grid-cols-2">
                             <div class="product-card price-vertical">
                                 <div class="product-card__inner">
                                     <div class="product-card__imgs">
@@ -1165,7 +1253,7 @@
                             <div class="tab-pane fade show active px-1 sm-px-0" id="tabAll">
                                 <div>
                                     <div class="slider-style" id="silder-style-01">
-                                        <div class="px-1">
+                                        <div class="slgap">
                                             <div class="style-card">
                                                 <img class="style-card-img" src="./media/style1.jpg" alt="">
                                                 <div class="style-card__info px-4 md-px-1 sm-px-2 py-3 sm-py-2 text-00 font-600 flex bg-01 align-center space-between">
@@ -1184,7 +1272,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="px-1">
+                                        <div class="slgap">
                                             <div class="style-card">
                                                 <img class="style-card-img" src="./media/style1.jpg" alt="">
                                                 <div class="style-card__info px-4 md-px-1 sm-px-2 py-3 sm-py-2 text-00 font-600 flex bg-01 align-center space-between">
@@ -1203,7 +1291,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="px-1">
+                                        <div class="slgap">
                                             <div class="style-card">
                                                 <img class="style-card-img" src="./media/style2.jpg" alt="">
                                                 <div class="style-card__info px-4 md-px-1 sm-px-2 py-3 sm-py-2 text-00 font-600 flex bg-01 align-center space-between">
@@ -1222,7 +1310,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="px-1">
+                                        <div class="slgap">
                                             <div class="style-card">
                                                 <img class="style-card-img" src="./media/style3.jpg" alt="">
                                                 <div class="style-card__info px-4 md-px-1 sm-px-2 py-3 sm-py-2 text-00 font-600 flex bg-01 align-center space-between">
@@ -1241,7 +1329,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="px-1">
+                                        <div class="slgap">
                                             <div class="style-card">
                                                 <img class="style-card-img" src="./media/style4.jpg" alt="">
                                                 <div class="style-card__info px-4 md-px-1 sm-px-2 py-3 sm-py-2 text-00 font-600 flex bg-01 align-center space-between">
@@ -1266,7 +1354,7 @@
                             <div class="tab-pane fade px-1" id="tabFemale">
                                 <div>
                                     <div class="slider-style" id="silder-style-02">
-                                        <div class="px-1">
+                                        <div class="slgap">
                                             <div class="style-card">
                                                 <img class="style-card-img" src="./media/style1.jpg" alt="">
                                                 <div class="style-card__info px-4 md-px-1 sm-px-2 py-3 sm-py-2 text-00 font-600 flex bg-01 align-center space-between">
@@ -1285,7 +1373,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="px-1">
+                                        <div class="slgap">
                                             <div class="style-card">
                                                 <img class="style-card-img" src="./media/style1.jpg" alt="">
                                                 <div class="style-card__info px-4 md-px-1 sm-px-2 py-3 sm-py-2 text-00 font-600 flex bg-01 align-center space-between">
@@ -1304,7 +1392,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="px-1">
+                                        <div class="slgap">
                                             <div class="style-card">
                                                 <img class="style-card-img" src="./media/style2.jpg" alt="">
                                                 <div class="style-card__info px-4 md-px-1 sm-px-2 py-3 sm-py-2 text-00 font-600 flex bg-01 align-center space-between">
@@ -1323,7 +1411,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="px-1">
+                                        <div class="slgap">
                                             <div class="style-card">
                                                 <img class="style-card-img" src="./media/style3.jpg" alt="">
                                                 <div class="style-card__info px-4 md-px-1 sm-px-2 py-3 sm-py-2 text-00 font-600 flex bg-01 align-center space-between">
@@ -1342,7 +1430,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="px-1">
+                                        <div class="slgap">
                                             <div class="style-card">
                                                 <img class="style-card-img" src="./media/style4.jpg" alt="">
                                                 <div class="style-card__info px-4 md-px-1 sm-px-2 py-3 sm-py-2 text-00 font-600 flex bg-01 align-center space-between">
@@ -1367,7 +1455,7 @@
                             <div class="tab-pane fade px-1" id="tabMale">
                                 <div>
                                     <div class="slider-style" id="silder-style-03">
-                                        <div class="px-1">
+                                        <div class="slgap">
                                             <div class="style-card">
                                                 <img class="style-card-img" src="./media/style1.jpg" alt="">
                                                 <div class="style-card__info px-4 md-px-1 sm-px-2 py-3 sm-py-2 text-00 font-600 flex bg-01 align-center space-between">
@@ -1386,7 +1474,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="px-1">
+                                        <div class="slgap">
                                             <div class="style-card">
                                                 <img class="style-card-img" src="./media/style1.jpg" alt="">
                                                 <div class="style-card__info px-4 md-px-1 sm-px-2 py-3 sm-py-2 text-00 font-600 flex bg-01 align-center space-between">
@@ -1405,7 +1493,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="px-1">
+                                        <div class="slgap">
                                             <div class="style-card">
                                                 <img class="style-card-img" src="./media/style2.jpg" alt="">
                                                 <div class="style-card__info px-4 md-px-1 sm-px-2 py-3 sm-py-2 text-00 font-600 flex bg-01 align-center space-between">
@@ -1424,7 +1512,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="px-1">
+                                        <div class="slgap">
                                             <div class="style-card">
                                                 <img class="style-card-img" src="./media/style3.jpg" alt="">
                                                 <div class="style-card__info px-4 md-px-1 sm-px-2 py-3 sm-py-2 text-00 font-600 flex bg-01 align-center space-between">
@@ -1443,7 +1531,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="px-1">
+                                        <div class="slgap">
                                             <div class="style-card">
                                                 <img class="style-card-img" src="./media/style4.jpg" alt="">
                                                 <div class="style-card__info px-4 md-px-1 sm-px-2 py-3 sm-py-2 text-00 font-600 flex bg-01 align-center space-between">
@@ -1470,7 +1558,7 @@
                     </section>
                     <!-- Policy section -->
                     <section class="py-8" style="border-top: 2px solid rgba(0, 0, 0, 0.15)">
-                        <div class="grid grid-cols-4 md-grid-cols-2 sm-grid-cols-1 gap-4 px-12 md-px-0">
+                        <div class="grid grid-cols-4 md-grid-cols-2 sm-grid-cols-1 gap-4 px-8 md-px-0">
                             <div class="policy-card px-4 sm-px-2">
                                 <img src="./media/delivery-icon.svg" alt="" srcset="" />
                                 <div class="policy-card__info">
@@ -1518,12 +1606,12 @@
 
                 <!-- Subcrice section -->
                 <section class="mb-0">
-                    <div class="flex px-12 py-8 sm-px-2 sm-py-4 subcribe-section" style="--bg: url('../media/get-in-touch.jpg')">
-                        <div class="col-6 md-col-10 sm-col-12">
+                    <div class="flex px-12 md-px-6 sm-px-4 py-8  sm-py-4 subcribe-section" style="--bg: url('../media/get-in-touch.jpg')">
+                        <div class="col-6 md-col-10 sm-col-12 pl-0">
                             <h3 class="heading-03 text-00 font-600 text-xxl mb-6">Nhận tin mới nhất</h3>
                             <h1 class="getintouch text-00 pb-4 mb-4" style="border-bottom: 1px solid #d8d8d8">Get in touch</h1>
                             <button class="button-02 mb-8 font-600 text-sm">Đăng ký ngay</button>
-                            <p class="text-00 font-600">
+                            <p class="text-00 font-600 text-md"> 
                                 Đừng bỏ lỡ tin tức và những ưu đãi của chúng tôi. <br />
                                 Và nhận ngay voucher giamr 10% chơ đơn hàng đầu tiên của bạn trên website của Wasabee!
                             </p>

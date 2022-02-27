@@ -398,3 +398,49 @@ input[type="number"]::-webkit-outer-spin-button {
         }
     }
 }
+
+
+.quantity-select {
+    $w:40px;
+    $h: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    input#number {
+        width: $w;
+        height: $h;
+    }
+    .quantity-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #ddd;
+        width: $w;
+        height:$h;
+        background: $white;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        cursor: pointer;
+        &#decrease {
+            border-radius: 50px 0 0 50px;
+        }
+        &#increase {
+            border-radius: 0 50px 50px 0;
+        }
+    
+    }
+    
+    .quantity-input {
+        border: none;
+        border-top: 1px solid #ddd;
+        border-bottom: 1px solid #ddd;
+        margin: 0px;
+        width: $w;
+        height: $h;
+    }
+}

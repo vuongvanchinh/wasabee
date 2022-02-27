@@ -32,17 +32,28 @@
 .new-products-slider {
     .slick-prev {
         left: 1rem;
-        top: calc(50% - 50px);
+        top: calc(50% - 57.4px);
     }
 
     .slick-next {
         right: 1rem;
-        top: calc(50% - 50px);
+        top: calc(50% - 57.4px);
+    }
+    @include mobile {
+        .slick-prev {
+            left: 1rem;
+            top: calc(50% - 76.9px);
+        }
+    
+        .slick-next {
+            right: 1rem;
+            top: calc(50% - 76.9px);
+        }   
     }
 }
 .top-right-navigator-slider {
     .slick-slide {
-        padding: 0 0.5rem;
+        padding: 0 $slide-gap;
     }
     .slick-arrow {
         width: 30px;
@@ -78,10 +89,10 @@
         .slick-prev {
             top: calc(50% - 83.5px);
             right: auto;
-            left: 0.5rem;
+            left:1rem;
         }
         .slick-next {
-            right: 0.5rem;
+            right: 1rem;
             top: calc(50% - 83.5px);
         }
     }
@@ -93,5 +104,12 @@
         width: 28px !important;
         height: 36px !important;
         background-size: contain;
+    }
+}
+
+.top-right-navigator-slider-001 {
+    .mygap {
+        padding-left: $slide-gap !important;
+        padding-right: $slide-gap !important;
     }
 }

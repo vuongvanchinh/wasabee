@@ -43,7 +43,7 @@
                             </a>
                         </div>
                         <button id="toggle-sidebar-header">
-                            <img src="/media//menu.svg" alt="" srcset="" />
+                            <img src="./media/menu.svg" alt="" srcset="" />
                         </button>
                     </div>
                 </div>
@@ -373,9 +373,16 @@
                                                     </div>
                                                 </div>
                                             </div>
+                                            <div class="mt-3">
+                                                <form class="quantity-select">
+                                                    <div class="quantity-btn flex-center" id="decrease" onclick="decreaseValue(this)">-</div>
+                                                    <input type="number" id="number" value="0" />
+                                                    <div class="quantity-btn flex-center" id="increase" onclick="increaseValue(this)">+</div>
+                                                </form>
+                                            </div>
 
                                             <div class="flex-nowrap mt-3 mb-2">
-                                                <p class="text-decoration-underline text-sm text-04 pointer text-pre-icon">Hướng dẫn đo kích thước</p>
+                                                <p class="text-decoration-underline text-sm text-04 pointer text-pre-icon" data-toggle="modal" data-target="#sizeboard-modal">Hướng dẫn đo kích thước</p>
                                             </div>
                                             <div class="dash my-3"></div>
 
@@ -387,9 +394,11 @@
                                                 </button>
                                             </div>
 
-                                            <div class="w-70 my-4">
-                                                <!-- <img src="./media/thanhtoan-icon.svg" alt="" srcset=""> -->
-                                                <p class="delivery-details my-auto text-ssm">Free shipping over $300(3-7days) & free returns</p>
+                                            <div class="my-2 flex">
+                                                <div class="text-icon mb-3">
+                                                    <img class="text-icon__icon" src="./media/delivery-icon.svg" />
+                                                    <p class="text-icon__text delivery-details my-auto text-ssm ml-2">Free shipping over $300(3-7days) & free returns</p>
+                                                </div>
                                             </div>
 
                                             <div class="mt-6">
@@ -463,30 +472,15 @@
                             </div>
                         </section>
                         <!-- End Details-->
-
-                        <!-- New product Section -->
-                        <section></section>
-                        <!-- End New product Section -->
-
-                        <!-- popular product Section -->
-                        <section></section>
-                        <!-- End popular product Section -->
-
-                        <!-- Middle banner Section -->
-                        <section></section>
-                        <!-- End Middle banner Section -->
-
-                        <!--Colection Section -->
-                        <section class="bg-02"></section>
-                        <!-- End Colection Section -->
+                       
                     </div>
 
                     <!--Similar products 1 -->
                         <section class="pt-4 pl-2 pr-2 md-px-1 s-b">
-                            <h2 class="heading-02 pl-1">Sản phẩm tương tự</h2>
+                            <h2 class="heading-02 pl-75">Sản phẩm tương tự</h2>
                             <div class="flex">
                                 <div class="side-banner flex-center col-4 md-col-12 bg-02 bg-img" style="--bg: url('../media/cua-hang-hermes.jpg')"></div>
-                                <div class="product-grid-wrapper col-8 md-col-12 pr-0 pl-1 md-px-0">
+                                <div class="product-grid-wrapper col-8 md-col-12 pr-0 pl-75 md-px-0">
                                     <!-- <h2 class="heading-02">Sản phẩm nổi bật</h2> -->
                                     <div class="top-right-navigator-slider slider-542">
                                         <div>
@@ -652,7 +646,7 @@
 
                         <!--Similar products  -->
                         <section class="pr-2 pl-1 md-px-1 s-b">
-                            <h2 class="heading-02 pl-1">Sản phẩm tương tự</h2>
+                            <h2 class="heading-02 pl-75">Sản phẩm tương tự</h2>
                             <div class="flex">
                                 <div class="col-12 px-0">
                                     <div class="top-right-navigator-slider slider-842">
@@ -843,9 +837,9 @@
                         <!--End similar -->
                         <!--Suggest -->
                         <section class="pl-1 pr-2 mb-8 md-px-1 s-b">
-                            <h2 class="heading-02 pl-1">Cực kỳ hợp nếu mặc cùng</h2>
+                            <h2 class="heading-02 pl-75">Cực kỳ hợp nếu mặc cùng</h2>
                             <div class="flex">
-                                <div class="product-grid-wrapper col-8 md-col-12 pl-0 pr-1 md-pr-0">
+                                <div class="product-grid-wrapper col-8 md-col-12 pl-0 pr-75 md-pr-0">
                                     <div class="top-right-navigator-slider slider-342">
                                         <div>
                                             <div class="product-card price-vertical">
@@ -995,7 +989,7 @@
                         <!--end sugestion -->
                     <!-- Policy section -->
                     <section class="py-8" style="border-top: 2px solid rgba(0, 0, 0, 0.15)">
-                        <div class="grid grid-cols-4 md-grid-cols-2 sm-grid-cols-1 gap-4 px-12 md-px-0">
+                        <div class="grid grid-cols-4 md-grid-cols-2 sm-grid-cols-1 gap-4 px-8 md-px-0">
                             <div class="policy-card px-4 sm-px-2">
                                 <img src="./media/delivery-icon.svg" alt="" srcset="" />
                                 <div class="policy-card__info">
@@ -1043,12 +1037,12 @@
 
                 <!-- Subcrice section -->
                 <section class="mb-0">
-                    <div class="flex px-12 py-8 sm-px-2 sm-py-4 subcribe-section" style="--bg: url('../media/get-in-touch.jpg')">
-                        <div class="col-6 md-col-10 sm-col-12">
+                    <div class="flex px-12 md-px-6 sm-px-4 py-8  sm-py-4 subcribe-section" style="--bg: url('../media/get-in-touch.jpg')">
+                        <div class="col-6 md-col-10 sm-col-12 pl-0">
                             <h3 class="heading-03 text-00 font-600 text-xxl mb-6">Nhận tin mới nhất</h3>
                             <h1 class="getintouch text-00 pb-4 mb-4" style="border-bottom: 1px solid #d8d8d8">Get in touch</h1>
                             <button class="button-02 mb-8 font-600 text-sm">Đăng ký ngay</button>
-                            <p class="text-00 font-600">
+                            <p class="text-00 font-600 text-md"> 
                                 Đừng bỏ lỡ tin tức và những ưu đãi của chúng tôi. <br />
                                 Và nhận ngay voucher giamr 10% chơ đơn hàng đầu tiên của bạn trên website của Wasabee!
                             </p>
@@ -1120,13 +1114,30 @@
                     </div>
                 </footer>
         </main>
+
+        <!-- Modal -->
+        <div class="modal fade" id="sizeboard-modal" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title text-01" id="exampleModalLongTitle">Bảng chọn size</h5>
+                <span type="button" class="close" data-dismiss="modal" aria-label="Close" style="outline:0;">
+                    <span aria-hidden="true">&times;</span>
+                </span>
+                </div>
+                <div class="modal-body">
+                    <img src="./media/sizeboard.jpg">
+                </div>
+            </div>
+            </div>
+        </div>
         </div>
         <script type="text/javascript" src="js/slick.min.js"></script>
 
         <script src="./js/slider.js"></script>
         <script src="./js/index.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
         <script></script>
     </body>
 </html>
