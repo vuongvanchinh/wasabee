@@ -3,12 +3,10 @@ button {
     cursor: pointer;
 }
 .review-section {
-
     .offset {
         margin-bottom: 2rem;
     }
     .head-section {
-        
         border: 1px solid $border-color;
         border-radius: 1rem;
         display: flex;
@@ -37,7 +35,7 @@ button {
                         border-radius: 2px;
                         background-color: #e5e7eb;
                         &::after {
-                            content: '';
+                            content: "";
                             width: var(--w);
                             height: 100%;
                             background-color: $yellow;
@@ -54,7 +52,6 @@ button {
                     }
                 }
             }
-
         }
 
         .review-now-btn {
@@ -69,12 +66,11 @@ button {
             &:hover {
                 background-color: rgba($color-03, 0.8);
             }
-            
+
             @include mobile {
                 width: 100%;
             }
-        } 
-
+        }
     }
 
     .no-review {
@@ -89,7 +85,6 @@ button {
     }
 
     .form-review {
-        
         form {
             border: 1px solid $border-color;
             border-radius: 8px;
@@ -102,10 +97,7 @@ button {
                 padding: 1rem;
                 border-bottom: 1px solid $border-color;
                 font-size: 0.95rem;
-
             }
-
-            
 
             .form-footer {
                 padding: 1rem;
@@ -113,10 +105,10 @@ button {
                 flex-wrap: wrap;
                 align-items: center;
                 gap: 2rem;
-                margin-top: -8px;;
-            
+                margin-top: -8px;
+
                 background-color: #fff;
-               
+
                 border-radius: inherit;
                 .gender {
                     font-size: 0.875rem;
@@ -135,38 +127,32 @@ button {
                     border-radius: 4px;
                 }
 
-            
-
                 button[type="submit"] {
                     font-weight: 700;
                     padding: 0.5rem 1rem;
                     font-size: 0.875rem;
                     border: 0;
                     border-radius: 4px;
-                    outline: none; 
+                    outline: none;
                     background-color: $yellow;
                     transition: all 0.5s ease;
 
                     &:hover {
                         background-color: rgba($yellow, 0.5);
                     }
-
-
                 }
                 @include mobile {
                     gap: 1rem;
                     .personal-info {
                         width: 100%;
-                       
                     }
 
                     button[type="submit"] {
                         width: 100%;
                     }
-                } 
+                }
             }
         }
-        
     }
 
     .review-search {
@@ -178,7 +164,7 @@ button {
             background-color: #fff;
             display: flex;
             align-items: center;
-            border:  1px solid $border-color;
+            border: 1px solid $border-color;
             border-radius: 4px;
             padding: 0.5rem;
             padding-left: 0.25rem;
@@ -190,7 +176,7 @@ button {
                 border: 0;
                 outline: 0;
                 min-width: 250px;
-                max-width: 100%;  
+                max-width: 100%;
             }
         }
     }
@@ -233,7 +219,8 @@ button {
                     .like {
                         color: #666;
 
-                        &:hover, &.liked {
+                        &:hover,
+                        &.liked {
                             color: blue;
                         }
                     }
@@ -248,12 +235,11 @@ button {
                         position: absolute;
                         bottom: 100%;
                         left: 1rem;
-                        content: '';
+                        content: "";
                         border: 10px solid transparent;
                         border-bottom-color: #f1f1f1;
-                    } 
+                    }
                 }
-
             }
         }
     }

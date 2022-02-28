@@ -644,5 +644,12 @@ section {
     width: 100%;
   }
 }
+.hover-btn {
+  background-color: 1px solid #33a1b2;
+}
+.hover-btn:hover {
+  transition: all 0.5s ease;
+  background-color: 1px solid #33a1b2;
+}
 
 /*# sourceMappingURL=base.css.map */

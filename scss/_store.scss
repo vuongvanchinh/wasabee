@@ -331,6 +331,10 @@ input[type="number"]::-webkit-outer-spin-button {
     border-radius: 50rem;
     border: none;
     background: transparent;
+    &:hover {
+        transition: all 0.5s ease;
+        background: 1px solid #33a1b2;
+    }
 }
 
 .update-store {
@@ -399,10 +403,9 @@ input[type="number"]::-webkit-outer-spin-button {
     }
 }
 
-
 .quantity-select {
-    $w:40px;
-    $h: 36px;
+    $w: 50px;
+    $h: 40px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -417,7 +420,7 @@ input[type="number"]::-webkit-outer-spin-button {
         align-items: center;
         border: 1px solid #ddd;
         width: $w;
-        height:$h;
+        height: $h;
         background: $white;
         -webkit-touch-callout: none;
         -webkit-user-select: none;
@@ -432,9 +435,8 @@ input[type="number"]::-webkit-outer-spin-button {
         &#increase {
             border-radius: 0 50px 50px 0;
         }
-    
     }
-    
+
     .quantity-input {
         border: none;
         border-top: 1px solid #ddd;

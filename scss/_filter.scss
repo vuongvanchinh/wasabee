@@ -138,6 +138,9 @@ $color-text: rgba($color-01, 0.8);
             background-color: $bg-05;
             color: $bg-01;
         }
+        &:hover {
+            border: solid $bg-05;
+        }
     }
 }
 
@@ -163,13 +166,12 @@ $color-text: rgba($color-01, 0.8);
 
 .filter-product {
     .heading-03 {
-        font-size:24px;
+        font-size: 24px;
         color: $color-text;
         font-weight: 500 !important;
 
         @include tablet {
             font-size: 20px;
-
         }
 
         @include mobile {

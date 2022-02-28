@@ -96,20 +96,52 @@ $(document).ready(() => {
 
     // header
 
-    // Accordion 
-        $('.my-accordion .my-accordion__title').on('click', function(e) {
-            $(this).toggleClass('open')
-            const panel = $(this).next();
-            console.log(panel.css('max-height'))
-        
-            if (panel.css('max-height') =="0px") {
-                panel.css('max-height', panel.prop('scrollHeight') + "px")
-            } else {
-                panel.css('max-height',"0px")
-            }
-        })
-    // end accordion 
+    // Accordion
+    $(".my-accordion .my-accordion__title").on("click", function (e) {
+        $(this).toggleClass("open");
+        const panel = $(this).next();
+        console.log(panel.css("max-height"));
+
+        if (panel.css("max-height") == "0px") {
+            panel.css("max-height", panel.prop("scrollHeight") + "px");
+        } else {
+            panel.css("max-height", "0px");
+        }
+    });
+    // end accordion
 });
+
+$(".bank-online-methods").each(function (index) {
+    $(this).on("click", function () {
+        for (let i = 0; i < $(".bank-online-methods").length; i++) {
+            $(".bank-online-methods").eq(i).removeClass("active");
+        }
+        // $(".bank-online-methods").eq(index).css({ "background-color": "#343434" });
+        $(".bank-online-methods").eq(index).addClass("active");
+        // console.log($(".bank-online-methods").eq(index).children(`input`));
+    });
+});
+
+// $('.order-option  input[type="checkbox"]').change(function () {
+//     console.log("ok");
+// });
+
+$(".order-option").each(function (index) {
+    let checkbox = $(".order-option").eq(index).find('.form-checkbox input[type="radio"]').eq(0);
+    checkbox.change(function () {
+        let popup = $(".order-option").eq(index).find("#NH").eq(0);
+
+        $(".order-option").each(function (i) {
+            $(".order-option").eq(i).find("#NH").removeClass("active");
+        });
+
+        if (checkbox.prop("checked")) {
+            popup.addClass("active");
+        }
+    });
+});
+
+let bank = document.getElementsByClassName("bank-online-methods");
 
 function increaseValue(that) {
     let val = parseInt(that.previousSibling.previousSibling.value);
