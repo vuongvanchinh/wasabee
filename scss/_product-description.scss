@@ -157,6 +157,10 @@
             background-image: url(../media/green-heart-icon-hover.svg);
         }
     }
+    &.btn-pri-hover:hover {
+        background-color: #59c1d1;
+        color: white;
+    }
 }
 .coupon_logo {
     // height: 5rem;
