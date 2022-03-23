@@ -12,7 +12,6 @@
         </style>
         <link rel="stylesheet" href="css/slick.css" />
         <link rel="stylesheet" href="css/slick-theme.css" />
-        <link rel="stylesheet" href="css/base.css" />
         <link rel="stylesheet" href="css/common.css" />
         <link rel="stylesheet" href="css/index.css" />
         <script src="js/jquery.min.js"></script>
@@ -20,6 +19,7 @@
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
         <title>Document</title>
+        <link rel="stylesheet" href="css/base.css" />
     </head>
 
 <body>
@@ -1257,8 +1257,8 @@
                     <section class="sm-px-1 s-b">
                         <h2 class="heading-02 text-center">Wasabee style</h2>
                         <!-- Start Tabs -->
-                        <div class="nav-tabs-wrapper">
-                            <ul class="nav nav-tabs style-tab dragscroll horizontal justify-center">
+                        <div class="nav-tabs-wrapper mb-4">
+                            <ul class="nav style-tab dragscroll horizontal justify-center">
                                 <li class="nav-item "><a class="nav-link text-04 text-md font-700 active" data-toggle="tab" href="#tabAll">Tất cả</a></li>
                                 <li class="nav-item"><a class="nav-link text-04 text-md font-700" data-toggle="tab" href="#tabFemale">Nữ</a></li>
                                 <li class="nav-item"><a class="nav-link text-04 text-md font-700" data-toggle="tab" href="#tabMale">Nam</a></li>
@@ -1626,7 +1626,7 @@
                         <div class="col-6 md-col-10 sm-col-12 pl-0">
                             <h3 class="heading-03 text-00 font-600 text-xxl mb-6">Nhận tin mới nhất</h3>
                             <h1 class="getintouch text-00 pb-4 mb-4" style="border-bottom: 1px solid #d8d8d8">Get in touch</h1>
-                            <button class="button-02 mb-8 font-600 text-sm">Đăng ký ngay</button>
+                            <button class="button-02 mb-8 font-600 text-sm" data-toggle="modal" data-target="#exampleModalCenter">Đăng ký ngay</button>
                             <p class="text-00 font-600 text-md"> 
                                 Đừng bỏ lỡ tin tức và những ưu đãi của chúng tôi. <br />
                                 Và nhận ngay voucher giamr 10% chơ đơn hàng đầu tiên của bạn trên website của Wasabee!
@@ -1699,6 +1699,35 @@
                     </div>
                 </footer>
         </main>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Đăng kí ngay</h5>
+                <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">X</button> -->
+            </div>
+            <div class="modal-body">
+
+            <div class="flex">
+                <div class="col-2">
+                    <p>Email</p>
+                </div>
+                <div class="col-10">
+
+                    <input class="register"/>
+                </div>
+
+            </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn-pri btn-secondary py-1 border-07 font-600 col-3 sm-col-12 px-0 py-1"  data-dismiss="modal" style="--bg: #59c1d1">Quay lại</button>
+                <button class="btn-pri py-1 border-07 font-600 col-3 sm-col-12 px-0 py-1" style="--bg: #59c1d1">Đăng ký</button>
+            </div>
+        </div>
+        </div>
+    </div>
         </div>
         <script type="text/javascript" src="js/slick.min.js"></script>
 
